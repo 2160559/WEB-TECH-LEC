@@ -1,0 +1,4 @@
+1.	GET 
+-	Retrieve information identified by the Request-URI in a form of an entity (RFC 1945, 2616).
+-	The primary way of retrieving information and resources. It ‘request transfer of a current selected representation for a target resource’ (RFC 7231).
+-	*Will add from notes*
