@@ -1,4 +1,35 @@
+HTTP Request Methods
+	***NOTE: Each method will be given examples once definitions have been properly added and revised.
+	***NOTE 2: Details will be added as needed
 1.	GET 
 -	Retrieve information identified by the Request-URI in a form of an entity (RFC 1945, 2616).
 -	The primary way of retrieving information and resources. It ‘request transfer of a current selected representation for a target resource’ (RFC 7231).
--	*Will add from notes*
+-	**Will add from notes**
+2.	HEAD
+-	It is the same as the GET method except that the server must not return the payload in the response. Instead, it only return the headers much like if it had been a Get method (RFC 1945, 2616, 7231).
+-	In other words, it returns the metadata of the response (classroom notes)
+3.	POST
+-	Submit an HTML form data to be posted on the server. It requests the target resource to process the representation in the message body (classroom notes).
+-	RFC 1945, 2616: ‘Used to request that the destination server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request Line’. *to be revised acc. to own understanding*
+-	RFC 7231: The method requests the target resource to process a submission of a representation enclosed in a request with respect to the target resource’s semantics. *to be revised*
+4.	PUT
+-	Creates/replaces a representation of the target resource enclosed in a request payload. It is possible that this method can create side effects in the server (MDN web docs & classroom notes).
+-	RFC 2616: ‘Requests that the enclosed entity be stored under the supplied Request-URI. If the Request-URI refers to an already existing resource, the enclosed entity should be considered as a modification of the original resource in the origin server. *to be revised*
+-	RFC 7231: Requests that the state of the target resource be created or replaced with the state defined by the representation enclosed in the request payload. *to be revised* **actually exactly the same as classroom notes**
+NOTE: The difference between the POST and PUT methods is that PUT is idempotent. This means that calling the method repeatedly does the same exact effect whereas the POST method, being not idempotent, may cause additional effects when repeatedly called, otherwise known as a side effect (MDN web docs & classroom notes).
+
+5.	DELETE
+-	Deletes a specified resource in the original server (Classroom notes).
+-	RFC 2616: ‘Requests that the origin server delete the resource identified in the Request-URI’ *to be revised*
+-	RFC 7231: ‘Requests that the origin server remove the association between the target resource and its current functionality. *to be revised* **also from classroom nots**
+6.	CONNECT
+-	
+7.	OPTIONS
+8.	TRACE
+9.	PATCH
+
+
+References:
+Classroom notes
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+RFC 1945, 2616, 7231, 7540
