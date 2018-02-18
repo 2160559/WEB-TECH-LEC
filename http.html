@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>HTTP</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="styles/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="glyphicons.css">
+  <style>
+    .odd-left {
+      padding: 10px;
+      background-color: #dbe9d8;
+    }
+
+    .odd-right {
+      padding: 10px;
+      background-color: #c2d4d8;
+
+    }
+
+    .even-left {
+      padding: 10px;
+      background-color: #b0aac2;
+    }
+
+    .even-right {
+      padding: 10px;
+      background-color: #f2efe8;
+    }
+
+    .odd-left:hover {
+      padding: 10px;
+      background-color: #9ad3de;
+    }
+
+    .odd-right:hover {
+      padding: 10px;
+      background-color: #c9c9c9;
+
+    }
+
+    .even-left:hover {
+      padding: 10px;
+      background-color: #e3e3e3;
+    }
+
+    .even-right:hover {
+      padding: 10px;
+      background-color: #89bdd3;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <br>
+    <h3>Web Systems and Technologies</h3>
+    <p>Saint Louis University</p>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">WebTech 2018</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="navbar-collapse collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Preliminaries</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Overview</a>
+            <a class="dropdown-item" href="http.html">HTTP</a>
+            <a class="dropdown-item" href="#">URL</a>
+            <a class="dropdown-item" href="#">HTML</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Midterms</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">CSS</a>
+            <a class="dropdown-item" href="#">Client-Side Web Scripting</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Finals</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Server-Side Web Scripting</a>
+            <a class="dropdown-item" href="#">Web Security</a>
+          </div>
+        </li>
+      </ul>
+  
+
+    </div>
+  </nav>
+  <div class="container">
+      
+<div class="limiter">
+    
+		<div class="container-table100">
+			<div class="wrap-table100">
+                <h1>Status Codes</h1>
+				<div class="table100">
+					<table>
+                        <thead>
+                           <tr class="table100-head">
+                                
+									
+								<th colspan="4" class=columnM>
+                                Informational
+                                </th>
+								
+								
+							</tr>
+                        </thead>
+						<thead>
+                        
+							<tr class="table100-head">
+                                
+								<th class="column1">Status code </th>
+								<th class="column2">Description</th>
+								<th class="column3">Phrase</th>
+                                <th class="column4">HTTP Version</th>
+							
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td class="column1">100</td>
+									<td class="column2">Continue</td>
+									<td class="column3">Indicates that a section of the request is already received.</td>
+                                    <td class="column4">1.0</td>
+									
+								</tr>
+								<tr>
+									<td class="column1">101</td>
+									<td class="column2">Switching Protocols </td>
+									<td class="column3">Indicates to which protocol the server is switching to.</td>
+                                    <td class="column4">1.0</td>
+									
+								</tr>
+								<tr>
+									<td class="column1">102</td>
+									<td class="column2">Processing </td>
+									<td class="column3">Indicates that a requests takes too long to complete.</td>
+                                    <td class="column4">1.0</td>
+								
+								</tr>
+						        
+						          
+						
+								
+						</tbody>
+					</table>
+                  
+                    
+				</div>
+                <div class="table100">
+					<table>
+                        <thead>
+                           <tr class="table100-head">
+                                
+									
+								<th colspan="4" class=columnM>
+                              Success
+                                </th>
+								
+								
+							</tr>
+                        </thead>
+						<thead>
+                        
+							<tr class="table100-head">
+                                
+								<th class="column1">Status code </th>
+								<th class="column2">Description</th>
+								<th class="column3">Phrase</th>
+                                <th class="column4">HTTP Version</th>
+							
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td class="column1">200</td>
+									<td class="column2">OK</td>
+									<td class="column3">Indicates that the request was fulfilled successfully.</td>
+                                    <td class="column4">1.0</td>
+									
+								</tr>
+								<tr>
+									<td class="column1">201</td>
+									<td class="column2">Created</td>
+									<td class="column3">Indicates that the request was fulfilled successfully and has resulted in one or more new requests.
+                                    </td>
+                                    <td class="column4">1.0</td>
+									
+								</tr>
+								<tr>
+									<td class="column1">202</td>
+									<td class="column2">Processing </td>
+									<td class="column3">Indicates that a requests takes too long to complete.</td>
+                                    <td class="column4">1.0</td>
+								
+								</tr>
+						        
+						          
+						
+								
+						</tbody>
+					</table>
+                  
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+   
+  </div>
+  <div class="container-fluid footer">
+      &copy; Untitled. All rights reserved.<br> Design: <a href="#">Group</a>
+  </div>
+</body>
+
+</html>
