@@ -107,14 +107,15 @@ tbody tr:nth-child(even) {
 tbody tr {
   font-family: OpenSans-Regular;
   font-size: 15px;
+
   color: #808080;
   line-height: 1.5;
   font-weight: unset;
 }
 
 tbody tr:hover {
-  color: #555555;
-  background-color: #f5f5f5;
+  color: black;
+    background-color: aliceblue;
   cursor: pointer;
 }
 
@@ -125,6 +126,7 @@ tbody tr:hover {
 
 .column2 {
   width: 60px;
+      padding-left: 40px;
 }
 
 .column3 {
@@ -134,13 +136,14 @@ tbody tr:hover {
 }
 .column4 {
     width: 102px;
+    text-align: center;
   
   
 }
 .columnM {
 
   text-align: center;
-  
+  background: rgba(245,220,220,0.9);
 }
 
 
@@ -169,6 +172,7 @@ tbody tr:hover {
     font-family: OpenSans-Regular;
     font-size: 14px;
     color: #999999;
+    
     line-height: 1.2;
     font-weight: unset;
     position: absolute;
@@ -185,6 +189,7 @@ tbody tr:hover {
   .column3,
     .columnM{
     width: 100%;
+        
   }
 
   tbody tr {
