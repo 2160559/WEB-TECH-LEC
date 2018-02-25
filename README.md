@@ -20,7 +20,7 @@ This repository features documents, resources, and files related to our group's 
 ## Submissions
 
 - [x] Essay: The World of Mass Media and Communication Without the WWW (Feb 12, 2018)
-- [] Course Website: Prelims (Feb 26, 2018)
+- [ ] Course Website: Prelims (Feb 26, 2018)
 
 ## Contributors
 
