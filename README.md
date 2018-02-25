@@ -1,21 +1,21 @@
 # Web Systems and Technology
 
-Second Semester, 2018 January to May
-*9325A | IT 324 | 1:00 - 2:00 PM | Group 1 *
+Second Semester, 2018 January to May<br>
+*9325A | IT 324 | 1:00 - 2:00 PM | Group 1*
 
 This repository features documents, resources, and files related to our group's course website. Contents feature extended notes based on the subject syllabus. All references have been properly accredited where they are due.
 
-### Table of Contents
+## Table of Contents
 
 **[Prelims](#prelims)**<br>
-**[Submissions](#submissions)**
-**[Contributors](#credits)**
+**[Submissions](#submissions)**<br>
+**[Contributors](#Contributors)**
 
 ## Prelims
 
-- [] HTTP
-- [] URL
-- [] HTML
+- [ ] HTTP
+- [ ] URL
+- [ ] HTML
 
 ## Submissions
 
@@ -24,9 +24,9 @@ This repository features documents, resources, and files related to our group's 
 
 ## Contributors
 
-Dacapias, Princess @ceska
-Gonzaga, Dominic @2161478
-Mejia, Rapha @2168920
-Monoten, Gaspar @jungas
-Pagalanan, Lawrence @lpagalanan
-Titiwa, Karen @2160559
+Dacapias, Princess @ceska <br>
+Gonzaga, Dominic @2161478 <br>
+Mejia, Rapha @2168920 <br>
+Monoten, Gaspar @jungas <br>
+Pagalanan, Lawrence @lpagalanan <br>
+Titiwa, Karen @2160559 <br>
