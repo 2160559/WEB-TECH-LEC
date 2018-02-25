@@ -3,7 +3,7 @@
 
 <head>
   <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-  <title>HTTP</title>
+  <title>HTML</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -157,7 +157,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Developed by Tim Berners-Lee</td>
+                      <td><a id="popover"   rel="popover" data-content="" title="Sir Timothy John Berners-Lee">Developed by Tim Berners-Lee</a></td>
                   </tr>
                   <tr>
                     <td>Debuted in 1991</td>
@@ -448,8 +448,11 @@
    
   </div>
   <div class="container-fluid footer">
-    &copy; Untitled. All rights reserved.<br> Design: <a href="#">Group</a>
+    &copy; Untitled. All rights reserved.<br> Design: <a href="#">Group 1</a>
   </div>
+      <script>
+      var image = '<img src="tbl.jpg">';
+		$('#popover').popover({placement: 'right',trigger : 'hover', content: image, html: true});</script>
 </body>
 
 </html>
