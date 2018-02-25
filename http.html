@@ -121,15 +121,17 @@
     <div id="accordion">
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#information">
-            <h2>Informational</h2>
+          <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#information"> <h2>Informational</h2> 
           </a>
+            
+            Gives information about a connection in progress
         </div>
         <div id="information" class="collapse show">
           <div class="card-body">
             <div class="table-responsive">
               <table class="table table-striped table-hover">
                 <thead class="thead-dark">
+                  <tr></tr>
                   <tr>
                     <th>Status code </th>
                     <th>Description</th>
@@ -165,8 +167,9 @@
       <div class="card">
         <div class="card-header">
           <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#Success">
-            <h2>Success</h2>
+            <h2>Success</h2> 
           </a>
+            Indicates request confirmation
         </div>
         <div id="Success" class="collapse">
           <div class="card-body">
@@ -244,6 +247,7 @@
           <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#Redirection">
             <h2>Redirection</h2>
           </a>
+            Indicates that more action is needed to be done to complete the request
         </div>
         <div id="Redirection" class="collapse">
           <div class="card-body">
@@ -312,6 +316,7 @@
           <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#clientErrors">
             <h2>Client Errors</h2>
           </a>
+            Errors that may have been caused by the client
         </div>
         <div id="clientErrors" class="collapse">
           <div class="card-body">
@@ -448,6 +453,7 @@
           <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#serverErrors">
             <h2>Server Errors</h2>
           </a>
+            Occurs when the server failed to serve a request
         </div>
         <div id="serverErrors" class="collapse">
           <div class="card-body">
@@ -537,6 +543,12 @@
   <div class="container-fluid footer">
     &copy; Untitled. All rights reserved.<br> Design: <a href="#">Group 1</a>
   </div>
+      <script>
+          
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
 </body>
 
 </html>
