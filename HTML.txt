@@ -1,0 +1,57 @@
+HTML
+HyperText Markup Language is the language used for creating documents on the World Wide Web.
+It defines the structure of a webpage and the content semantically. 
+Past practices of web development includes specifications for the presentational aspects
+of a webpage, however, in the present times, it is a good practice to
+solely use HTML to specify the logical organization of a document and
+the to hand over presentational aspects to stylesheets.
+
+HTML HISTORY
+Let us look back to how HTML has evolved into what it is today.
+
+HTML
+-Developed by Tim Berners-Lee
+-Debuted in 1991
+-Originally developed as a tool to build the WWW
+-Based from the Standardized General Markup Language (SGML)
+-This version was far more limiting than what we have now,
+for all it can do was just to display texts up on the web.
+
+HTML 2.0
+-Published in November, 1995
+-Created to be a web standard,
+defining what the language can offer developers.
+-A few new features were added
+
+HTML 3.0
+-A proposed set of standards dumped for it offers
+such great shift from HTML 2.0 that web browsers
+would find it hard to utilize.
+
+HTML 3.2
+-Released in January 14, 1997
+-The first version of HTML to be released as a
+W3C Recommendation
+-Contained several tags and attributes for the
+presentational aspect of the web pages
+
+HTML 4.0
+-Released December, 1997
+-Styling tags and attributes were deprecated
+-Provided tags for stylesheets, scripts, frames,
+embedded objects, richer tables,
+enhanced forms, and improved accessibility
+features for people with disabilities.
+
+HTML 4.01
+-Published December, 1999
+-Revised version of HTML 4.0.
+-New attributes were added and previous errors were corrected
+
+XHTML
+-Became a standard in January, 2000
+-XML-based language
+-The srict version of HTML that centered on the adherence
+to standards and semantics
+
+HTML5
