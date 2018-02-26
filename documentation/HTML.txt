@@ -52,4 +52,14 @@ HTML 5.1
 HTML 5.2
 -December, 2017
 
-HTML Living Stanndard (WHATWG)
+HTML Living Standard
+-In 2011, WHATWG split up with W3C after years of
+working together because of the group's differing
+goals; W3C wanted to bring-out a "finished" version
+of HTML5, while WHATWG wanted a progressive version.
+
+Web Hypertext Application Technology Working Group
+-Maintaining and evolving HTML since 2004
+
+Shortly thereafter, Apple, Mozilla, and Opera jointly announced their intent to continue working on the effort under the umbrella of a new venue called the WHATWG
+ A public mailing list was created, and the draft was moved to the WHATWG site. The copyright was subsequently amended to be jointly owned by all three vendors, and to allow reuse of the specification.
