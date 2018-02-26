@@ -1,0 +1,968 @@
+commit 93357f7b1d3574a109b4961dd61e854cdc5bff9e
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 16:29:44 2018 +0800
+
+    added the group banner in html.html
+
+commit 2582adb614101a7cc9171889ff6decedc459aa75
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 16:28:03 2018 +0800
+
+    final references
+
+commit 76a140467008488bdd3fa4d01f2f4a463570a070
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 16:27:17 2018 +0800
+
+    final
+
+commit aa05cba4dd288a7ed71a3f3e47030a4fa02eba26
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 16:23:18 2018 +0800
+
+    edited again the README.txt
+
+commit 1584af216a4bd84df6224980324c91baa1da1d9a
+Merge: 4120cca 22f542a
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 16:20:33 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 4120cca36ad3711e39aa488003e4dac45c8b1773
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 16:17:43 2018 +0800
+
+    edited the README.txt
+
+commit 22f542a8163639d0e8f2da9b6d62f510c374ac72
+Merge: dd2a3e0 7d9792b
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 16:16:02 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit dd2a3e03cfa64648850f9688afa408c9c0ca377b
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 16:15:56 2018 +0800
+
+    modifications
+
+commit 7d9792bf33989ba1c84c8afdb9ef605cb934f621
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 16:14:45 2018 +0800
+
+    html 5.1 and 5.2
+
+commit b8a1bcd3266e3ff9dea2c0ce26b7d820c835ac40
+Merge: a3cb8f9 07c75aa
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 16:10:24 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit a3cb8f9033b274904eb683727080bb4b3eff07f2
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 16:10:13 2018 +0800
+
+    applied some modifications
+
+commit 07c75aaf47175bbadbb1efa51a7cc8296d904fa2
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 16:10:11 2018 +0800
+
+    changed website title
+
+commit 49777db2848dd6410a4c433dda12d7b611a5706e
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 16:09:43 2018 +0800
+
+    added banner for http.html
+
+commit ce9ed1f308618bf6246b097292daedbe0bf8cb6b
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 16:07:40 2018 +0800
+
+    all topics added in http.html
+
+commit 05d0850d8ba883bb42a529e51e645aa6f6d9868c
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 16:06:27 2018 +0800
+
+    added image files for http features
+
+commit 92077b56ef82ab20203888c3aadb0fc9864146cf
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 16:00:49 2018 +0800
+
+    standardized footer
+
+commit 5734324fee82a80982bfe2820dfd4b77073554aa
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:54:23 2018 +0800
+
+    fixed the footer
+
+commit c68491428ca4a0641a9dc2ab02826daad22ccd18
+Merge: 5c6c0c7 ef55a8e
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:52:27 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 5c6c0c7ed889525061464fa2b1623d56a4416584
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:50:43 2018 +0800
+
+    fixed the header
+
+commit ef55a8eb36cc0d2dae3b23019c04456b60f5d23c
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 15:47:11 2018 +0800
+
+    applied changes
+
+commit 32838cec86c0f144830525b1b6aec448a31dbbe9
+Merge: 91e0ff7 ce3cd57
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 15:36:36 2018 +0800
+
+    merged
+
+commit 91e0ff717c85c6f62503027e145e62ea132b912f
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 15:35:23 2018 +0800
+
+    resized banner.png
+
+commit ce3cd57a604adb40365b26c800ff17a83ef6a401
+Merge: 44106b8 cc49d38
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:34:43 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 44106b8298ce672d81f4b311e6a618751bdb0fb4
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:32:39 2018 +0800
+
+    fixed the banner for www
+
+commit cc49d38ca415b6c0c7be4f83e2711126e6fd57b9
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 15:31:59 2018 +0800
+
+    resized banner.png
+
+commit 2ed633afe6cac234cec3ef6e4c07d3d34b412301
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 15:27:30 2018 +0800
+
+    fixed style.css
+
+commit 7137d7f13e416d08fc62e88d0e5cdcd8db8732d4
+Merge: d09f8b6 2ef5ae7
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:25:11 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit d09f8b648d1c26ead4f2067d4bfd8d945afb32cd
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:25:00 2018 +0800
+
+    added www
+
+commit 2ef5ae7afdff52b2c61ed16bede00d55b08b390f
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 15:22:33 2018 +0800
+
+    file added to http.html
+
+commit be50b578351e1b43a4fa62fe18371200a8b4bb79
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 15:16:19 2018 +0800
+
+    not needed
+
+commit a05489a921b97c642cc69365a820cecd4bf863d1
+Merge: 5a6c23a c29cac5
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:15:06 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 5a6c23ac7781b203e69c149d4c73794c07438d31
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:14:59 2018 +0800
+
+    added some changes
+
+commit c29cac549bcf9827346fc29b56dd7143876d491e
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 15:14:13 2018 +0800
+
+    minor tweaks
+
+commit 5b7404dfc3460e34e689588ef4b9f2faf1ac3b85
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 15:09:47 2018 +0800
+
+    final reference.html
+
+commit 526dcf7f5448bbca41f173ad67d9f2ade6f8735e
+Merge: 002b0b6 edb62af
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:02:49 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 002b0b6dc9bbd36657f3b76c779b68b1e7314279
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 15:02:34 2018 +0800
+
+    added http messaage headers in http
+
+commit edb62af18016d2ae3085708351e818efadeeff13
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 14:53:26 2018 +0800
+
+    banner img
+
+commit 7f369bdcd828db37f63f82964a0f4044ca503e0c
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 14:41:25 2018 +0800
+
+    edited http-message.html
+
+commit 7351b62df95db5d1049168a2767a4070ff38ff94
+Author: lpagalanan <32735734+lpagalanan@users.noreply.github.com>
+Date:   Mon Feb 26 14:39:34 2018 +0800
+
+    Updated References
+
+commit a2742cb38ef95e3511655e6ea4c643cab25a7470
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:39:00 2018 +0800
+
+    made some modifications
+
+commit c536b05c7352cd10d567f08a08cda476cca1b917
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 14:37:18 2018 +0800
+
+    added references.html
+
+commit 2fb95527c756bbcc8f723f51c3c86f8452d9a340
+Merge: 5e10367 8eb31a7
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 14:34:39 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+    merge
+
+commit 5e1036775764c3d5a88f6e1334e43caaeb2f05f5
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 14:33:55 2018 +0800
+
+    final url.html
+
+commit 8eb31a727c32221d7bf128272a25d23df39ffa77
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 14:33:42 2018 +0800
+
+    references to be edited
+
+commit d86501f8136ab810e327f5d5b0ec83bcdafe898c
+Merge: bf89e45 ae7496d
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:30:16 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit bf89e451353888d08aac5798ad2b3ee2117f9b8d
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:30:12 2018 +0800
+
+    Applied some changes
+
+commit ae7496d9242ec5be8b566e4b10f4578c4bc39766
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 14:28:58 2018 +0800
+
+    final overview.html
+
+commit 0c8c3df38f1d7de5b04286661cf0900d43e6f0eb
+Author: lpagalanan <32735734+lpagalanan@users.noreply.github.com>
+Date:   Mon Feb 26 14:27:25 2018 +0800
+
+    Added References
+
+commit 3b0ffe0bc8300a9b64f29b23a712f8dc7f185db6
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:26:05 2018 +0800
+
+    Applied some changes
+
+commit 66182230e62d5fbc22ac7040b8b1ebf1e5f602a3
+Merge: 4067f55 c89a491
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 14:22:28 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+    Merging
+
+commit 4067f556ab6e3a1e8d1a7d40930fd8fc8b6765c0
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 14:22:10 2018 +0800
+
+    added references.html links and file
+
+commit c89a49149318c66c1e7f776a34359146898c4e14
+Merge: d41d32c 99cd210
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:15:55 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit d41d32c0dcc3c0204a1e3ce3780fefce5be14c69
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:15:41 2018 +0800
+
+    Applied some changes
+
+commit 99cd210bbd60166b2bfb55de7ac3707d0b8e534e
+Merge: 9c2ae48 e206ced
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 14:15:31 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 9c2ae48b178f75f273f1589f4cd52c6dac33cd00
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 14:15:28 2018 +0800
+
+    edited http-message.html and added README.txt
+
+commit e206cedd79f178e5289dcf1b385f589b0e490d10
+Merge: 0a8b14f 827ed74
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:08:49 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 0a8b14ff044afccc8be0cb3f76e3cf5369ef9326
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 14:08:45 2018 +0800
+
+    Made some modifications
+
+commit 827ed747c8166d787b9c151ac68adcaa48b8e5d0
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 14:05:15 2018 +0800
+
+    edited documentation files
+
+commit 6db7d93fcb818278cc981acf5569a49d89c92d1d
+Merge: 109f327 980ea6d
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 13:59:53 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 109f327e1347d552a3288f98a484db2393bd8f87
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 13:59:49 2018 +0800
+
+    Made some modifications
+
+commit 980ea6d7e44e7772204ff6a8121222aed39720f6
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 13:58:58 2018 +0800
+
+    added lines for overview.css
+
+commit 212827a7699ba8d59c38622a0affc881c4c4b080
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 13:56:56 2018 +0800
+
+    added the new overview. html
+    
+    need to include text revisions
+
+commit 249ebc102f94120d58935cb2d7ea1cf8d1099881
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 13:55:44 2018 +0800
+
+    deleted to add new overview html
+
+commit c74130ca2b8e92dc30bc880a6d37a9e07db12dc8
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 13:50:43 2018 +0800
+
+    added the complete url html file
+
+commit ec94f79744f3ece81104000ab79954eeeed5e5a4
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 13:28:04 2018 +0800
+
+    Modified
+
+commit 8110f0d0ae5f3950a8656384934572280be39251
+Merge: caafe24 a0a8fa3
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 13:24:00 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit caafe24f810890d62a59dcfc9067e443168842c8
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 13:23:48 2018 +0800
+
+    Modified html.html and style.css
+
+commit a0a8fa3bd9c845c4b055a9f23444f24e5ae79852
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 13:14:09 2018 +0800
+
+    update
+
+commit d2b8456cf85bfef3efcbedf50a9b067335cdefeb
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 13:13:19 2018 +0800
+
+    added more sub topics
+
+commit 35f1f73f79ae8f92c7883488b315b6822fa33090
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 13:13:00 2018 +0800
+
+    fixed link for tbl.jpg
+
+commit c230c5ddd3ba6d4632fe97d7a36bac8e448e35a1
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 13:03:46 2018 +0800
+
+    image for summary (overview html)
+
+commit d96a67f36ef73b9b9abd1792df86506e9cbfc059
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 13:02:46 2018 +0800
+
+    Edited HTTP Message.docx
+
+commit 17378e0168a824b2eef3c0692b9381311ed6134b
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 13:00:03 2018 +0800
+
+    added img for URLS
+
+commit ca358f58c880d862e53b90cea45aaee3baa10c20
+Merge: df66525 8391b38
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 12:59:16 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit df66525ee05ef68a8d257c1e692dc00a1565aa43
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 12:59:14 2018 +0800
+
+    added HTTP Message
+
+commit 8391b38048b25bb8a60b95abb01bffc435eef8af
+Author: lpagalanan <32735734+lpagalanan@users.noreply.github.com>
+Date:   Mon Feb 26 12:14:08 2018 +0800
+
+    Added documentation for HTML Preprocessors
+
+commit 63e05d46333533686591d26895999c5552c78016
+Merge: add1864 9e00aed
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 12:04:22 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit add186416451469984172c8985bed42f1cd6fe66
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 12:04:05 2018 +0800
+
+    added URL Document
+
+commit 9e00aed0ee48645874e5fd1bc89d7188318823e5
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 12:03:28 2018 +0800
+
+    added (http) authentication
+
+commit 74cb242b338a6ddde0fffcc2ecd919dba71f7712
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 11:41:27 2018 +0800
+
+    renamed http introduction
+
+commit 14930369e71dfe3e8d8b2e935348624955d83844
+Merge: d92e148 ae2628b
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 11:38:52 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit d92e148cd1cd351da20bfc77b9572f989011fc9e
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 11:38:37 2018 +0800
+
+    added the dummy file for template
+
+commit ae2628b8f3211691757c5b0bc5a6d414e5ccb8c7
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 11:34:50 2018 +0800
+
+    added overview.html
+
+commit 93d12ea8ae577ef7ce16720219daddacb58e87a3
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 11:34:20 2018 +0800
+
+    added more topics
+
+commit d488446c54361eeb4c93a848f9c1a1a27948a8d6
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 11:19:50 2018 +0800
+
+    updated topcis of http.html
+
+commit 857914be02a562a9ec895a0f2afb6358a4088c71
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 11:15:43 2018 +0800
+
+    some http features
+
+commit cd8434199bde1a8971b9b3a877427c177e7d2335
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:48:17 2018 +0800
+
+    updated the http.html, added other topics
+
+commit a080586e48f60b3e1eb0c5c1e0b5a978e3ef9575
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 10:41:16 2018 +0800
+
+    final http introduction
+
+commit d00b7d55512002e80db768976177098703f51a9e
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 10:40:41 2018 +0800
+
+    will be uploading the final http intro
+
+commit 719b1293675434cc988664e9ddcdc8e2aac6180b
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:34:14 2018 +0800
+
+    updated the links of all pages
+
+commit fabb21d8708e5b8626f769b062b8c738dcceced2
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:34:01 2018 +0800
+
+    updated the links of all pages
+
+commit a3d8b72cc558768e32daa36e2f9229e9dbc858b4
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:24:35 2018 +0800
+
+    added preliminaries.html as the homepage for prelims
+
+commit 030c92eb3dd1a2a5a8217695b406d0b7959526fa
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:24:02 2018 +0800
+
+    index.html now serves as the homepage.
+
+commit 9c3935620389e4117fe99cd840e2a5e85c2dd7b4
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:20:27 2018 +0800
+
+    updated links of the main topics in the navigation bar on index.html
+
+commit d471c78720411c6c29391b3d2883ff12c7ef8a57
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:18:45 2018 +0800
+
+    updated the index.html to have only four main topics
+
+commit 160dc5885982318fdbb24c98e4206a0c42d2d61c
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:05:39 2018 +0800
+
+    added footer for http-message.html
+
+commit a7dc6d8536cf23021b26857426bafa53b46fa075
+Merge: 5dc3625 986367d
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:03:57 2018 +0800
+
+    updated footer
+
+commit 5dc362511f827610336ab7f404ee65d726b64ae7
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:01:53 2018 +0800
+
+    updated footer
+
+commit 3053d676f27d1433c6ce389ce71706fd9e431304
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 10:01:37 2018 +0800
+
+    updated footer
+
+commit 986367d0686cd9f75c444ca7e84cf7b9f38625d1
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 09:59:29 2018 +0800
+
+    introduction 2 - final
+
+commit 1363f14041b0222f2b985a893ddd6b8a2e59c6d3
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 09:56:43 2018 +0800
+
+    added missing files, sorry
+
+commit 48f244561501e054debff0b538e78aa7c0bdfca6
+Merge: e9da181 b7d81bf
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 09:49:15 2018 +0800
+
+    merging complete
+
+commit b7d81bf8bf02c494ee4b028eb329a9de3d7d3681
+Merge: 98205d4 e9da181
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 09:48:41 2018 +0800
+
+    update approved; merging to master
+
+commit e9da1816b4cd9e3732913399d8bf00748cec7049
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 09:42:37 2018 +0800
+
+    deleted contents of master branch
+
+commit c1c6e3614b2f5d265333dcef632f029e53dc087a
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 26 09:41:22 2018 +0800
+
+    Delete tbl.jpg
+
+commit 98205d4b14e22a24346f4cb60add124b8f9a77e2
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 09:40:36 2018 +0800
+
+    reupdated index & style
+
+commit 4f5ef112fbd6693b1f079de55b974e6e69c17cf6
+Author: ceska <princessdacapias@gmail.com>
+Date:   Mon Feb 26 09:36:31 2018 +0800
+
+    update jun raf html/css
+
+commit 0b972983e6a79bcb8608031dcdb9b920083f35e8
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 09:31:25 2018 +0800
+
+    fixed the footer
+
+commit a7ce3a916c167169e9beb1547dd73636d78d13be
+Merge: 5d18cc3 fbc8fbc
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 00:38:28 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit fbc8fbc17ad43bc818db55c04bc46a1333faa734
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 00:35:38 2018 +0800
+
+    added tim berner's lee image on hove on his name
+
+commit 148cec5dcc657721cd658a65956e305886452ea0
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 00:35:06 2018 +0800
+
+    added tim beners lee image
+
+commit 5d18cc3aac43c9e5e62dc0fefdc7050c5477b20e
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 26 00:34:23 2018 +0800
+
+    created a page for message headers
+
+commit 52ae5e0bfab3394b4caadc1b6fb71c577b8aa5da
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 00:15:44 2018 +0800
+
+    fixed the link for html.html and ML != PL
+
+commit bec941d6c716137ef028d556462c2cdec1c7e2ba
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 00:15:02 2018 +0800
+
+    fixed link on html.html
+
+commit b2cff67dada09b22307d6cd8aed1402c39f2905d
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 00:14:31 2018 +0800
+
+    added the website icon link
+
+commit 04f3e12af8cd8184795a1da1a157bf8b06e2b080
+Author: 2168920 <34120729+2168920@users.noreply.github.com>
+Date:   Sun Feb 25 23:04:04 2018 +0800
+
+    Add files via upload
+
+commit e1ff16bddf09ad53f1ac801fd421917beae47ded
+Author: ceska <princessdacapias@gmail.com>
+Date:   Sun Feb 25 21:04:39 2018 +0800
+
+    content negotiation, range request
+
+commit c6f1f68230c3ccc20aa9cb0349830758d0742ff1
+Author: Princess Lyka Dacapias <2160603@slu.edu.ph>
+Date:   Sun Feb 25 20:41:44 2018 +0800
+
+    (http) content negotiation + range request
+
+commit 79793f31b549337bc2a23313b4e8cbdf3092c817
+Merge: b34d960 4cec997
+Author: jungas <gmonoten25@gmail.com>
+Date:   Sun Feb 25 19:50:17 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit b34d9606b06afd38fb4c191e8b629048d9a2a14a
+Author: jungas <gmonoten25@gmail.com>
+Date:   Sun Feb 25 19:50:13 2018 +0800
+
+    added edits
+
+commit 12fa14e52015a4c08e8eb9bc916bccedf12b2fe1
+Author: jungas <gmonoten25@gmail.com>
+Date:   Sun Feb 25 19:50:02 2018 +0800
+
+    create dummy file for template
+
+commit 4cec9977acd376ad7659fb86b382e81778b9e29d
+Author: 2168920 <34120729+2168920@users.noreply.github.com>
+Date:   Sun Feb 25 19:32:42 2018 +0800
+
+    Add files via upload
+    
+    HTML definition and versions
+
+commit c810c23919839ab3ef1b12770e47ba8330d98206
+Author: Princess Lyka Dacapias <2160603@slu.edu.ph>
+Date:   Sun Feb 25 17:45:30 2018 +0800
+
+    edit
+
+commit 9c6f96e2cd7d560aa9105f1f47f8617e30c917c5
+Author: Princess Lyka Dacapias <2160603@slu.edu.ph>
+Date:   Sun Feb 25 17:44:12 2018 +0800
+
+    edit
+
+commit 676f5a026bc09a43b9d12b867d75eb42ce7c188b
+Author: Princess Lyka Dacapias <2160603@slu.edu.ph>
+Date:   Sun Feb 25 17:40:50 2018 +0800
+
+    reorg
+
+commit 2708689904bbfe130e7ab4391c4df67d45ea67f2
+Author: lpagalanan <32735734+lpagalanan@users.noreply.github.com>
+Date:   Sun Feb 25 15:03:01 2018 +0800
+
+    Revised definitions and added syntax
+
+commit 1cc931dd858ee53dd56e2f667d06dbdc3f8f1158
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Sun Feb 25 13:34:15 2018 +0800
+
+    added web icon and updated the pane for http status codes
+
+commit 46b9fdae7112e4af7115662a96cfd7c5a165d223
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Sun Feb 25 13:27:09 2018 +0800
+
+    added the class definitions in http status codes
+
+commit 7ec3b3a99ad8d7e32eb9021c2671ffe8e53c80f4
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Sun Feb 25 12:41:08 2018 +0800
+
+    added the website icon
+
+commit e0b5e8826eedec4b14086eeffa3f4488b5cd0705
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Sun Feb 25 12:40:28 2018 +0800
+
+    removed the http version column and added the website icon
+
+commit 381feef8e9cba7adf13c2f823f3a59266214a442
+Author: lpagalanan <32735734+lpagalanan@users.noreply.github.com>
+Date:   Sun Feb 25 11:38:39 2018 +0800
+
+    Update HTTP Request Methods.txt
+
+commit b5e41a234c16ac2a981df1bbc634b90638d95c83
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Sun Feb 25 00:26:39 2018 +0800
+
+    evolution of http
+
+commit 6dd2c118e3c5dc717f39abfe267f707dafcc6f85
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Sat Feb 24 23:59:27 2018 +0800
+
+    Add files via upload
+
+commit 2cad28d4800581ee04c508c2e444449ce487031d
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Sat Feb 24 23:58:37 2018 +0800
+
+    General Definitions
+
+commit 7dfea001f590f2195916efdf0defdb36e7c68cc1
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Sat Feb 24 23:56:29 2018 +0800
+
+    Delete Prelims overview.docx
+
+commit 7b47bb89499c5aa681ffad9f477c190295439c2f
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Sat Feb 24 11:02:14 2018 +0800
+
+    Add files via upload
+
+commit 33914559ae8d1b3c001d97ad46f49fc8a234e543
+Merge: 3ed452e 2b4c1ac
+Author: jungas <gmonoten25@gmail.com>
+Date:   Wed Feb 21 12:08:09 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 3ed452ec4223eae8706f3a0fca717f111deabee0
+Author: jungas <gmonoten25@gmail.com>
+Date:   Wed Feb 21 12:07:49 2018 +0800
+
+    edited http.html
+
+commit 2b4c1aca5f8c47b6fb6e9f000a28f727b5508d23
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Tue Feb 20 14:11:57 2018 +0800
+
+    updated contents of http.htm;
+
+commit de730baf0471575d351475f9e715e2dc59ad03ac
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 19 21:45:45 2018 +0800
+
+    Add files via upload
+
+commit b4167d8b73c272581553d9f1cc9fd81703bcbbaf
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 19 21:34:16 2018 +0800
+
+    http intro
+
+commit 12fb8241dc829d1818ed47b6ee66fd9cd45bfa88
+Author: 2160559 <34113358+2160559@users.noreply.github.com>
+Date:   Mon Feb 19 21:33:35 2018 +0800
+
+    Final Technical Essay
+
+commit 34458588db8472ba7a0b3df4dd000fc403adce3e
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 19 11:52:46 2018 +0800
+
+    updated http.html and style.css
+
+commit 84d45a7f21280bfbed41a07b4a8380bb3529626f
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 19 11:52:00 2018 +0800
+
+    updated the http status codes for class 400
+
+commit 1f9205b506c5faa28c79896790aeabc8915492b8
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 19 10:58:51 2018 +0800
+
+    updated the http status codes document contents
+
+commit 37a6d8b5c9d811a8faa587771e8c73d47f83409c
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Sun Feb 18 23:55:22 2018 +0800
+
+    created the http staatus codes html file and provided initial contents
+
+commit 7b4429a37f3883e0f2b843c9fce6dd8d4655b1e1
+Merge: 8890f05 43c3b34
+Author: jungas <gmonoten25@gmail.com>
+Date:   Sat Feb 17 21:08:58 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit 8890f05a326f746125ccb361643163a46b7e111a
+Author: jungas <gmonoten25@gmail.com>
+Date:   Sat Feb 17 21:08:44 2018 +0800
+
+    addd styles
+
+commit 43c3b345c3e6ca34942bd2fbe3ab11a26218c2a8
+Author: lpagalanan <32735734+lpagalanan@users.noreply.github.com>
+Date:   Fri Feb 16 15:15:18 2018 +0800
+
+    Added definitions for HEAD, POST, PUT and DELETE
+
+commit aea2c31b29e1334d02b0a4e642e0dfb69d7bb602
+Author: lpagalanan <32735734+lpagalanan@users.noreply.github.com>
+Date:   Fri Feb 16 11:10:34 2018 +0800
+
+    Added new file HTTP Request Methods
+
+commit 10be19461dfc3934a2498eae8160aa3e9fb9eb4b
+Author: jungas <gmonoten25@gmail.com>
+Date:   Fri Feb 16 11:07:27 2018 +0800
+
+    added overview of www
+
+commit e9ed66ac5d11d7612fc0185392e4daf683cae235
+Author: jungas <gmonoten25@gmail.com>
+Date:   Fri Feb 16 11:07:09 2018 +0800
+
+    added initial index page
+
+commit 847195398b892166cfc1fc64f93ef7fe60304073
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Fri Feb 16 10:45:37 2018 +0800
+
+    added initial contens for http status codes
+
+commit 1252a2a5ed7c455a8cd5d6306000e7e185f29bc2
+Author: jungas <gmonoten25@gmail.com>
+Date:   Wed Feb 14 12:33:25 2018 +0800
+
+    added header
+
+commit b2ac607040256f3d5fbc55e330f0aa9740e93c1e
+Author: jungas <gmonoten25@gmail.com>
+Date:   Mon Feb 12 14:49:25 2018 +0800
+
+    added initial content
+
+commit 0721bf3c2ccac3aa97ce7b9369bd6465e2914149
+Author: jungas <gmonoten25@gmail.com>
+Date:   Thu Feb 1 09:45:19 2018 +0800
+
+    added readme
