@@ -82,8 +82,6 @@
 .my-row {
   margin-top: 15px;
   margin-bottom: 15px;
-    padding: 10px;
-    background-color: #e3e3e3;
 }
 
 .even-right:hover {
@@ -130,4 +128,7 @@
 .banner {
   margin: 0;
   padding: 0;
+}
+.banner > img{
+  width: 100%;
 }

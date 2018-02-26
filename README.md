@@ -13,6 +13,7 @@ This repository features documents, resources, and files related to our group's 
 
 ## Prelims
 
+- [X] WWW
 - [X] HTTP
 - [X] URL
 - [X] HTML
