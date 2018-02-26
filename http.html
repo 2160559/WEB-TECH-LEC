@@ -11,7 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -57,7 +57,8 @@
          <a data-toggle="collapse" data-parent="#accordion" href="#HTTPComms"><h1>HTTP Communication</h1></a>
       </a>
       <div id="HTTPComms" class="panel-collapse collapse in">
-      In order for you(the client) to access websites like Youtube, Facebook, Twitter or CNN, you need a web browser where you can enter the URL of the site you want to visit. What the browser does is to connect to the server of the website and send a request message (using HTTP) after a connection with the server has been established. When the server receives the request message, it will try to interpret the message and send a response message (using HTTP) containing the HTML file of the site you want to visit or an HTTP 404 error message which means that the resource being requested is not found in the server. I the resource is found,  the browser will then interpret the response message and try to display the html file in your browser. When the request has been serviced, the connection between the client and server will be terminated. The response message may contain links to other files which needs to be accessed in order for the website to properly render, the connection must be maintained even after the first request has been serviced. (Persistent connection will be discussed here in  detail)
+      <p>In order for you(the client) to access websites like Youtube, Facebook, Twitter or CNN, you need a web browser where you can enter the URL of the site you want to visit. What the browser does is to connect to the server of the website and send a request message (using HTTP) after a connection with the server has been established. When the server receives the request message, it will try to interpret the message and send a response message (using HTTP) containing the HTML file of the site you want to visit or an HTTP 404 error message which means that the resource being requested is not found in the server. I the resource is found,  the browser will then interpret the response message and try to display the html file in your browser. When the request has been serviced, the connection between the client and server will be terminated. The response message may contain links to other files which needs to be accessed in order for the website to properly render, the connection must be maintained even after the first request has been serviced. (Persistent connection will be discussed here in  detail)
+      </p>
       </div>
       </div><!-- end of httpcomms-->
        <div class="card-header">
