@@ -57,6 +57,7 @@
 
     .row.subtopics {
       height: 150px;
+      cursor: pointer;
     }
 
     .row h3 {
