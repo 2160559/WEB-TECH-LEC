@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Overview</title>
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <br>
+    <h3>Web Systems and Technologies</h3>
+    <p>Saint Louis University</p>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="index.html">WebTech 2018</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="navbar-collapse collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown">Preliminaries</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="preliminaries.html">Preliminaries</a>
+            <a class="dropdown-item" href="overview.html">Overview</a>
+            <a class="dropdown-item" href="http.html">HTTP</a>
+            <a class="dropdown-item" href="url.html">URL</a>
+            <a class="dropdown-item" href="html.html">HTML</a>
+          </div>
+        </li>
+
+       
+      </ul>
+    
+    </div>
+  </nav>
+  
+  
+<div class="container">
+<p>Before we go deeper in the world of WWW, HTTP, URL and HTML, first, we need to understand the following terms.</p>
+  
+ <div class="mainCard">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-1">
+                <div class="card">
+                  <div class="card-header bg-info">
+                    <h4>Internet</h4>
+                  </div>
+                  <div class="card-body"><p>Network is a connection of computers that can be obtained using wire medium (e.g cables) or wireless medium (e.g. satellite). Computers in a network can communicate with one another if configured properly. </p>
+      <p>Internet (internetworks) is a worldwide collection of interconnected networks. Computers usually connect to the Internet though an Internet Service Provider. What the IS provider does is to assign the computer an IP address. </p></div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-sm-offset-1">
+                <div class="card">
+                  <div class="card-header bg-info">
+                    <h4>Addresses</h4>
+                  </div>
+                  <div class="card-body">Computers that are connected in the Internet can communicate with one another successfully because of IP addresses and MAC addresses.IP addresses are used to locate the computer in a network (similar to the home address of the person who will receive the message) while MAC addresses is used to determine the specific computer to whom the message is for (person who will receive the message)</div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-sm-offset-1">
+                <div class="card">
+                  <div class="card-header bg-info">
+                    <h4>The World Wide Web</h4>
+                  </div>
+                  <div class="card-body"><p>
+  		WWW is a collection of web resources and application which allows you to access resources via the Internet.<br>
+		●	Web resources - hypertext or hypermedia <br>
+		●	Application - like browsers, web servers, applications servers <br>
+		●	Internet (link to internet above)
+
+  		</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-1">
+                <div class="card">
+                  <div class="card-header bg-info">
+                    <h4>Uniform Resource Locator</h4>
+                  </div>
+                  <div class="card-body">The URL is a unique address that is associated to each web resources. This are used to identify the resources on the web. It is used by browsers as part of the request message.</div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-sm-offset-1">
+                <div class="card">
+                  <div class="card-header bg-info">
+                    <h4>HTML</h4>
+                  </div>
+                  <div class="card-body">The HTML(Hypertext Markup Language) is a markup language that is used by developers to write the content of a website. The html files is usually part of the response message when web browsers and servers communicate with one another.</div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-sm-offset-1">
+                <div class="card">
+                  <div class="card-header bg-info">
+                    <h4>Hypertext Transfer Protocol</h4>
+                  </div>
+                  <div class="card-body">Applications (e.g web browsers, web servers, proxies, gateways) of computers in a network communicate with other applications using a protocol - the http.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+       <div class="card-header" id="overviewSummary">
+       <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries">
+         <a data-toggle="collapse" data-parent="#accordion" href="#mess"><h3>Summary</h3></a>
+      </a>
+      <div id="mess" class="panel-collapse collapse in">
+      <img src="img/summ.png">
+      <p>(Diagram 1 from : 2002, 2005 Rus Shuler, all rights reserved)</p>
+      <p>
+      	Computer 1 (C1) and Computer 2 (C2) are connected through the Internet and they have their own IP address. Computer 1 wants to access the site being hosted by Computer 2 so C1 will send a request message to C2 using the url or the website and http. C2 will send a response message using http and this message contain the html files of the website C1 asked for. The collection of Internet, the computer applications and the web resources is the WWW.
+      </p>
+      </div><!-- end of div id mess-->
+   </div><!-- end of httpmsgs-->
+
+     
+  
+</div>
+  
+  <div class="container-fluid footer">
+    &copy; Untitled. All rights reserved.<br> Design: <a href="#">Group</a>
+  </div>
+
+</body>
+</html>
