@@ -1,4 +1,4 @@
-` .odd-left {
+.odd-left {
   padding: 10px;
   background-color: #dbe9d8;
 }
@@ -27,7 +27,6 @@
 .odd-right:hover {
   padding: 10px;
   background-color: #c9c9c9;
-
 }
 
 .even-left:hover {
@@ -79,8 +78,50 @@
 .my-row {
   margin-top: 15px;
   margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e3e3e3;
 }
 
+.even-right:hover {
+    padding: 10px;
+    background-color: #89bdd3;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: lightgray;
+}
+
+.container {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.card-body p {
+    padding: 20px;
+    text-indent: 50px;
+}
+
+.row.subtopics {
+    height: 150px;
+    cursor: pointer;
+}
+
+.row h3 {
+    color: DarkSlateGray;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.col-sm-3 {
+    align-items: center;
+}
+
+.modal-body li {
+    line-height: 2;
+}
 
 .banner {
   margin: 0;
