@@ -1,3 +1,22 @@
+commit a04d6158e7c64b6663cab61aeab97e0afdb39917
+Merge: d0b367b 060405d
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 16:36:29 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160559/WEB-TECH-LEC
+
+commit d0b367b5eb251a32c9b739dbeca31aa187ae9ccc
+Author: 2168920 <2168920@slu.edu.ph>
+Date:   Mon Feb 26 16:36:24 2018 +0800
+
+    Final
+
+commit 060405d71e9bc274e47df051cd2165b5f0146bdf
+Author: 2161478 <2161478@slu.edu.ph>
+Date:   Mon Feb 26 16:30:58 2018 +0800
+
+    added logs for prelims
+
 commit 93357f7b1d3574a109b4961dd61e854cdc5bff9e
 Author: 2161478 <2161478@slu.edu.ph>
 Date:   Mon Feb 26 16:29:44 2018 +0800
