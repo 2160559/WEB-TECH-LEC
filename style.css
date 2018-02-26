@@ -1,4 +1,4 @@
-.odd-left {
+` .odd-left {
       padding: 10px;
       background-color: #dbe9d8;
     }
@@ -11,7 +11,7 @@
 
     .even-left {
       padding: 10px;
-      background-color: #b0aac2;
+      background-color: #e2c6ff;
     }
 
     .even-right {
@@ -50,14 +50,26 @@
       margin-bottom: 35px;
     }
 
+    p {
+      padding: 20px;
+      text-indent: 50px;
+    }
 
+    .row.subtopics {
+      height: 150px;
+    }
 
-.card{
-  border: 1px solid white;
-}
+    .row h3 {
+      color: DarkSlateGray;
+      text-decoration: none;
+      text-align: center;
+      letter-spacing: 2px;
+    }
 
-.overviewSummary{
-  border: 2px solid black;
-  margin: 2%;
-  background-color: teal;
-}
+    .col-sm-3 {
+      align-items: center;
+    }
+
+    .modal-body li {
+      line-height: 2;
+    }
