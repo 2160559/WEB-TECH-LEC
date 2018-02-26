@@ -9,13 +9,13 @@ This repository features documents, resources, and files related to our group's 
 
 **[Prelims](#prelims)**<br>
 **[Submissions](#submissions)**<br>
-**[Contributors](#Contributors)**
+**[Contributors](#contributors)**
 
 ## Prelims
 
-- [ ] HTTP
-- [ ] URL
-- [ ] HTML
+- [X] HTTP
+- [X] URL
+- [X] HTML
 
 ## Submissions
 
