@@ -67,6 +67,10 @@
   letter-spacing: 2px;
 }
 
+.popovers {
+  cursor: pointer;
+}
+
 .col-sm-3 {
   align-items: center;
 }

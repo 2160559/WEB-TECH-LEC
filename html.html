@@ -193,7 +193,7 @@
                       </div>
                       <div class="modal-body">
                         <ul>
-                          <li><a id="popover"   rel="popover" data-content="" title="Sir Timothy John Berners-Lee">Developed by Tim Berners-Lee</a></li>
+                          <li><a id="popover" class="popovers"  rel="popover" data-content="" title="Sir Timothy John Berners-Lee">Developed by Tim Berners-Lee</a></li>
                           <li>Debuted in 1991</li>
                           <li>Originally developed as a tool to build the WWW</li>
                           <li>Based from the Standardized General Markup Language (SGML)</li>
@@ -399,7 +399,7 @@
                       </div>
                       <div class="modal-body">
                         <ul>
-                          <li>In 2011, WHATWG split up with W3C after years of working together because of the group's differing goals; W3C wanted to bring-out a "finished" version of HTML5, while WHATWG wanted a progressive version, hence the birth of HTML Living Standard</li>
+                          <li>In 2011, <a class="popovers" id="pover"   rel="popover" data-content="" title="Web Hypertext Application Technology Working Group">WHATWG</a> split up with W3C after years of working together because of the group's differing goals; W3C wanted to bring-out a "finished" version of HTML5, while WHATWG wanted a progressive version, hence the birth of HTML Living Standard</li>
                         </ul>
                       </div>
                       <div class="modal-footer">
@@ -426,10 +426,18 @@
     </div>
     <script>
       var image = '<img src="img/tbl.jpg">';
+      var def = '<p>A community of people known for "maintaining and evolving HTML since 2004"</p><p> It was established by individuals from Apple, Mozilla, and Opera in 2004.</p>';
       $('#popover').popover({
         placement: 'right',
         trigger: 'hover',
         content: image,
+        html: true
+      });
+
+      $('#pover').popover({
+        placement: 'right',
+        trigger: 'hover',
+        content: def,
         html: true
       });
 
