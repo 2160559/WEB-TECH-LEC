@@ -50,7 +50,7 @@
       margin-bottom: 35px;
     }
 
-    p {
+    .card-body p {
       padding: 20px;
       text-indent: 50px;
     }

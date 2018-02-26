@@ -37,10 +37,10 @@
             <a class="dropdown-item" href="html.html">HTML</a>
           </div>
         </li>
-      
-    
+
+
       </ul>
-   
+
     </div>
   </nav>
 
@@ -62,12 +62,7 @@
     </div>
     <h2>Message Headers</h2>
     <div id="accordion">
-      
-      
-      
-      
-      
-      
+
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#general">
@@ -77,7 +72,7 @@
         <div id="general" class="collapse show">
           <div class="card-body">
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Cache-Control</h4>
@@ -85,7 +80,7 @@
                   <div class="card-body">Cache-Control is used to specify directives for caching mechanisms in both requests and responses. </div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Connection</h4>
@@ -93,17 +88,17 @@
                   <div class="card-body">Connection controls the network connection between the sender and the server. It specifies if the connection should be closed or kept alive if the current transaction finishes.</div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Date</h4>
                   </div>
-                  <div class="card-body">Date represents the date and time at which the message was originated.</div>
+                  <div class="card-body">Date represents the date and time at which the message was originated. Dates are represented in Greenwich Mean Time (GMT).</div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Pragma</h4>
@@ -111,15 +106,15 @@
                   <div class="card-body">Pragma is the same as the Cache-Control but it is used for older clients that does not support HTTP/1.1, in other words, it is used for backwards compatibility with HTTP/1.0.</div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Trailer</h4>
                   </div>
-                  <div class="card-body">Trailer allows the sender to include additional fields at the end of chunked messages in order to supply metadata that might be dynamically generated while the message bod is sent, such as message integrity check, digital signature, or post-processing status.(Copied from Mozilla)</div>
+                  <div class="card-body">Trailer indicates that the set of header fields present in the last part of a message.</div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Transfer-Encoding</h4>
@@ -129,7 +124,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Upgrade</h4>
@@ -137,7 +132,7 @@
                   <div class="card-body">Upgrade allows the client to specify what communication protocol is preferred.</div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Via</h4>
@@ -145,7 +140,7 @@
                   <div class="card-body">Via specifies where the resource should travel. It is used to track the gateways and proxies where the resource travelled.</div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Warning</h4>
@@ -157,22 +152,16 @@
           </div>
         </div>
       </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
+
+
+
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#request">
@@ -182,7 +171,7 @@
         <div id="request" class="collapse show">
           <div class="card-body">
             <div class="row">
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Accept</h4>
@@ -190,41 +179,41 @@
                   <div class="card-body">Accept specifies what type of media are acceptable or preferred by the client.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Accept-Charset</h4>
                   </div>
-                  <div class="card-body">Specifies the character set preferred or understandable by the client.</div>
+                  <div class="card-body">Accept-Charset specifies the character set preferred or understandable by the client.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Accept-Encoding</h4>
                   </div>
-                  <div class="card-body">Similar to Accept except it restricts that content-encoding that can be accepted in the response.</div>
+                  <div class="card-body"> Accept-encoding is similar to Accept except it restricts that content encoding that can be accepted in the response.</div>
                 </div>
               </div>
-               <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Accept-Language</h4>
                   </div>
-                  <div class="card-body">Similar to Accept except it restricts the set of natural languages that are preferred as a response to the request.</div>
+                  <div class="card-body">Accept-Language is similar to Accept except it restricts the set of natural languages that are preferred as a response to the request.</div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Authorization</h4>
                   </div>
-                  <div class="card-body">Consists of credentials as a mean of authentication information of the user agent.</div>
+                  <div class="card-body">Authorization consists of credentials as a mean of authentication information of the user agent.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Expect</h4>
@@ -232,7 +221,7 @@
                   <div class="card-body">Expect is used to indicate that a certain set of server behavior is required and expected by the client.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>From</h4>
@@ -240,7 +229,7 @@
                   <div class="card-body">From contains an Internet email address for the user who is controlling the requesting user agent.</div>
                 </div>
               </div>
-               <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Host</h4>
@@ -250,7 +239,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>If-Match</h4>
@@ -258,7 +247,7 @@
                   <div class="card-body">If-Match is used to perform the requested method if the given value matches the given entity tags.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>If-Modified-Since</h4>
@@ -266,25 +255,25 @@
                   <div class="card-body">Specifies if the requested URL is still modified since the time specified in this field, the entity will not be returned from the server and a 304 response will be returned.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>If-None-Match</h4>
                   </div>
-                  <div class="card-body">If-None-Match requests the server to do the requested method only if one of the given value matches the given entity tags.</div>
+                  <div class="card-body">If-Modified-Since indicates if the requested URL is modified since the time specified in this field, the entity will not be returned from the server and a 304 response will be returned.</div>
                 </div>
               </div>
-               <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>If-Unmodified-Since</h4>
                   </div>
-                  <div class="card-body">Specifies if the requested resource has not been modified since the time specified, the server would perform the requested operation as if this header were not present.</div>
+                  <div class="card-body">If-None-Match requests the server to do the requested method only if one of the given value matches the given entity tags.</div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Max-Forwards</h4>
@@ -292,7 +281,7 @@
                   <div class="card-body">Max-Forwards provides a mechanism with the TRACE and OPTIONS methods in order to limit the number of proxies or gateways that can forward the request to the next server.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Proxy-Authorization</h4>
@@ -300,7 +289,7 @@
                   <div class="card-body">Proxy-Authorization allows the client to identify itself to a proxy in which requires authentication.</div>
                 </div>
               </div>
-              <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Date</h4>
@@ -308,7 +297,7 @@
                   <div class="card-body">Date represents the date and time at which the message was originated.</div>
                 </div>
               </div>
-               <div class="col-sm-3 col-sm-offset-1">
+              <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Range</h4>
@@ -318,7 +307,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>Referer</h4>
@@ -326,7 +315,7 @@
                   <div class="card-body">Referer allows the client to specify the address of the resource from which URL is requested.</div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>TE</h4>
@@ -334,7 +323,7 @@
                   <div class="card-body">TE indicates what extension transfer encoding it is willing to accept in the response and if it is willing or not to accept the trailer fields in a chunked transfer encoding.</div>
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-offset-1">
+              <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
                     <h4>User-Agent</h4>
@@ -342,38 +331,226 @@
                   <div class="card-body">User-Agent contains information about the user agent in which where the request is originating.</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#response">
+          <h2>Response Headers</h2>
+        </a>
+      </div>
+      <div id="response" class="collapse show">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#response">
-            <h2>Response Headers</h2>
-          </a>
-        </div>
-        <div id="response" class="collapse show">
-          <div class="card-body">
+    </div>
 
-          </div>
-        </div>
+
+
+
+
+
+
+
+
+
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#entity">
+          <h2>Entity Headers</h2>
+        </a>
       </div>
-      <div class="card">
-        <div class="card-header">
-          <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#entity">
-            <h2>Entity Headers</h2>
-          </a>
-        </div>
-        <div id="entity" class="collapse show">
-          <div class="card-body">
+      <div id="entity" class="collapse show">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Title</h4>
+                </div>
+                <div class="card-body">Definition</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
   <div class="container-fluid footer">
-    Design:Group 1   <br>
-    &copy; February 2018 
+    Design:Group 1 <br> &copy; February 2018
   </div>
 </body>
 
