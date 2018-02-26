@@ -103,7 +103,7 @@
                   <div class="card-header bg-info">
                     <h4>Pragma</h4>
                   </div>
-                  <div class="card-body">Pragma is the same as the Cache-Control but it is used for older clients that does not support HTTP/1.1, in other words, it is used for backwards compatibility with HTTP/1.0.</div>
+                  <div class="card-body">Pragma is the same as the Cache-Control but it is used for older clients that does not support HTTP/1.1. In other words, it is used for backwards compatibility with HTTP/1.0.</div>
                 </div>
               </div>
               <div class="col-lg-4 col-lg-offset-1">
@@ -210,7 +210,7 @@
                   <div class="card-header bg-info">
                     <h4>Authorization</h4>
                   </div>
-                  <div class="card-body">Authorization consists of credentials as a mean of authentication information of the user agent.</div>
+                  <div class="card-body">Authorization consists of credentials as a mean of authentication information of the user agent..</div>
                 </div>
               </div>
               <div class="col-lg-3 col-lg-offset-1">
@@ -226,7 +226,7 @@
                   <div class="card-header bg-info">
                     <h4>From</h4>
                   </div>
-                  <div class="card-body">From contains an Internet email address for the user who is controlling the requesting user agent.</div>
+                  <div class="card-body">Form contains an Internet email address for the user who is controlling the requesting user agent.</div>
                 </div>
               </div>
               <div class="col-lg-3 col-lg-offset-1">
@@ -252,7 +252,7 @@
                   <div class="card-header bg-info">
                     <h4>If-Modified-Since</h4>
                   </div>
-                  <div class="card-body">Specifies if the requested URL is still modified since the time specified in this field, the entity will not be returned from the server and a 304 response will be returned.</div>
+                  <div class="card-body">If-Modified-Since indicates if the requested URL is modified since the time specified in this field, the entity will not be returned from the server and a 304 response will be returned.</div>
                 </div>
               </div>
               <div class="col-lg-3 col-lg-offset-1">
@@ -260,15 +260,15 @@
                   <div class="card-header bg-info">
                     <h4>If-None-Match</h4>
                   </div>
-                  <div class="card-body">If-Modified-Since indicates if the requested URL is modified since the time specified in this field, the entity will not be returned from the server and a 304 response will be returned.</div>
+                  <div class="card-body">If-None-Match requests the server to do the requested method only if one of the given value matches the given entity tags.</div>
                 </div>
               </div>
               <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
-                    <h4>If-Unmodified-Since</h4>
+                    <h4>If-Range</h4>
                   </div>
-                  <div class="card-body">If-None-Match requests the server to do the requested method only if one of the given value matches the given entity tags.</div>
+                  <div class="card-body">If-Range can be used with a conditional GET to request a portion of the entity that is missing, if it not been changed, and the entire entity has been changed.</div>
                 </div>
               </div>
             </div>
@@ -276,9 +276,17 @@
               <div class="col-lg-3 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
+                    <h4>If-Unmodified-Since</h4>
+                  </div>
+                  <div class="card-body">If-Unmodified-Since indicates if the requested resource has not been modified since the time specified, the server would perform the requested operation as if this header were not present.</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-lg-offset-1">
+                <div class="card">
+                  <div class="card-header bg-info">
                     <h4>Max-Forwards</h4>
                   </div>
-                  <div class="card-body">Max-Forwards provides a mechanism with the TRACE and OPTIONS methods in order to limit the number of proxies or gateways that can forward the request to the next server.</div>
+                  <div class="card-body">Proxy-Authorization allows the client to identify itself to a proxy in which requires authentication.</div>
                 </div>
               </div>
               <div class="col-lg-3 col-lg-offset-1">
@@ -287,14 +295,6 @@
                     <h4>Proxy-Authorization</h4>
                   </div>
                   <div class="card-body">Proxy-Authorization allows the client to identify itself to a proxy in which requires authentication.</div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-lg-offset-1">
-                <div class="card">
-                  <div class="card-header bg-info">
-                    <h4>Date</h4>
-                  </div>
-                  <div class="card-body">Date represents the date and time at which the message was originated.</div>
                 </div>
               </div>
               <div class="col-lg-3 col-lg-offset-1">
@@ -318,9 +318,9 @@
               <div class="col-lg-4 col-lg-offset-1">
                 <div class="card">
                   <div class="card-header bg-info">
-                    <h4>TE</h4>
+                    <h4>TE (Transfer-Encoding)</h4>
                   </div>
-                  <div class="card-body">TE indicates what extension transfer encoding it is willing to accept in the response and if it is willing or not to accept the trailer fields in a chunked transfer encoding.</div>
+                  <div class="card-body">TE (Transfer Encoding) indicates what extension transfer encoding the user agent is willing to accept in the response and if it is willing or not to accept the trailer fields in a chunked transfer encoding.</div>
                 </div>
               </div>
               <div class="col-lg-4 col-lg-offset-1">
@@ -328,7 +328,7 @@
                   <div class="card-header bg-info">
                     <h4>User-Agent</h4>
                   </div>
-                  <div class="card-body">User-Agent contains information about the user agent in which where the request is originating.</div>
+                  <div class="card-body">contains information about the user agent in which where the request is originating.</div>
                 </div>
               </div>
             </div>
@@ -354,51 +354,25 @@
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Acept-Ranges</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Accept-Ranges allows the server to indicate its range requests acceptance for a resource.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Age</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Age indicates the sender’s estimated time since the response was generated at the server.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>ETag (Entity Tag)</h4>
                 </div>
-                <div class="card-body">Definition</div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-lg-offset-1">
-              <div class="card">
-                <div class="card-header bg-info">
-                  <h4>Title</h4>
-                </div>
-                <div class="card-body">Definition</div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-lg-offset-1">
-              <div class="card">
-                <div class="card-header bg-info">
-                  <h4>Title</h4>
-                </div>
-                <div class="card-body">Definition</div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-lg-offset-1">
-              <div class="card">
-                <div class="card-header bg-info">
-                  <h4>Title</h4>
-                </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">ETag provides the current value of the entity tag for the requested variant.</div>
               </div>
             </div>
           </div>
@@ -406,25 +380,51 @@
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Location</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Location is used to redirect the recipient to another location other than the Request-URI.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Proxy-Authenticate</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Proxy-Authenticate is included as part of the 407 response.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Retry-After</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Retry-After can be used with the 503 response in order to indicate how long the service is expected to be unavailable for the client.</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Server</h4>
+                </div>
+                <div class="card-body">Server contains information about the software used by the server in handling requests.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Vary</h4>
+                </div>
+                <div class="card-body">Vary specifies that the entity has multiple sources and therefore it can vary accordingly to the specified list of request headers.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>WWW-Authenticate </h4>
+                </div>
+                <div class="card-body">WWW-Authenticate should consist of at least one challenge that would indicate the authentication schemes and parameters that are applicable to the Request-URI.</div>
               </div>
             </div>
           </div>
@@ -453,25 +453,25 @@
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Allow</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Allow is the list of methods that are supported by the resource identified by the Request-URI.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Content-Encoding</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Content-Encoding is a modifier to the media-type.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Content-Language</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Content-Language describe the natural languages of the audience for the enclosed entity, although multiple languages can be listed for multiple languages.</div>
               </div>
             </div>
           </div>
@@ -479,59 +479,58 @@
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Content-Length</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Content-Length indicates the size of the entity-body.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Content-Location</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Content-Location is the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource’s URI.</div>
               </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Content-MD5 (Message Digest) </h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Content-MD5 is used to supply an MD5 digest in order to check the integrity of the message upon receipt.</div>
               </div>
             </div>
-          </div>
-          <div class="row">
+            <div class="row">
             <div class="col-lg-3 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Content-Range</h4>
                 </div>
-                <div class="card-body">Definition</div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-lg-offset-1">
-              <div class="card">
-                <div class="card-header bg-info">
-                  <h4>Title</h4>
-                </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Content-Range is used to specify where in the full entity-body should the partial body be applied.</div>
               </div>
             </div>
             <div class="col-lg-3 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Content-Type</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Content-Type indicates the media type of the entity-body that has been sent to the recipient.</div>
               </div>
             </div>
             <div class="col-lg-3 col-lg-offset-1">
               <div class="card">
                 <div class="card-header bg-info">
-                  <h4>Title</h4>
+                  <h4>Expires</h4>
                 </div>
-                <div class="card-body">Definition</div>
+                <div class="card-body">Expires is the date and time in which where the response would be considered stale.</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1">
+              <div class="card">
+                <div class="card-header bg-info">
+                  <h4>Last-Modified</h4>
+                </div>
+                <div class="card-body">Last-Modified indicates the date and time at which the variant was last modified.</div>
               </div>
             </div>
           </div>
@@ -540,7 +539,7 @@
     </div>
   </div>
 
-
+  </div>
 
 
 
