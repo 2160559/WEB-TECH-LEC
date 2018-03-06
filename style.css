@@ -132,3 +132,6 @@
 .banner > img{
   width: 100%;
 }
+.footertry {
+  position: sticky;
+}
