@@ -15,33 +15,37 @@
 </head>
 
 <body>
-   <div class="container-fluid banner">
-        <img src="img/banner.png" alt="Banner">
-    </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <a class="navbar-brand" href="index.html">WebTech 2018</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <div class="container-fluid banner">
+    <img src="img/banner.png" alt="Banner">
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="prelims.html">WebTech 2018</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-        <div class="navbar-collapse collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown">Preliminaries</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="index.html">Preliminaries</a>
-                        <a class="dropdown-item" href="overview.html">Overview</a>
-                        <a class="dropdown-item" href="www.html">World Wide Web</a>
-                        <a class="dropdown-item" href="http.html">HTTP</a>
-                        <a class="dropdown-item" href="url.html">URL</a>
-                        <a class="dropdown-item" href="html.html">HTML</a>
-                        <a class="dropdown-item" href="references.html"><i>Refererences</i></a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
+    <div class="navbar-collapse collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="prelims.html" data-toggle="dropdown">Preliminaries</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="prelims.html">Preliminaries</a>
+            <a class="dropdown-item" href="overview.html">Overview</a>
+            <a class="dropdown-item" href="www.html">World Wide Web</a>
+            <a class="dropdown-item" href="http.html">HTTP</a>
+            <a class="dropdown-item" href="url.html">URL</a>
+            <a class="dropdown-item" href="html.html">HTML</a>
+            <a class="dropdown-item" href="references.html"><i>Refererences</i></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="midterms.html" data-toggle="dropdown">Midterms</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="midterms.html">Midterms</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
     <div class="card-header">
       <h1>Hypertext Transfer Protocol (HTTP) </h1>
@@ -975,250 +979,181 @@
       <!-- end of div id mess-->
     </div>
     <!-- end of httpmsgs-->
-      <div class="card-header">
-       <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries">
-         <a data-toggle="collapse" data-parent="#accordion" href="#HTTPA"><h1>HTTP Authentication</h1></a>
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+      <a data-toggle="collapse" data-parent="#accordion" href="#HTTPA">
+        <h1>HTTP Authentication</h1>
       </a>
       <div id="HTTPA" class="panel-collapse collapse in">
-          <h2>Authentication</h2>
-          <p>Sometimes, a website can have private pages or resources only accessible by certain users. When this happens, the server challenges the request to access, and the user has to provide the appropriate information to prove to the server that they should have access to it. This two-way process is authentication.
-          </p>
-          <p>
-              A framework by HTTP is available to be able to control access and authentication using defined mechanisms, namely:
-
-          </p>
-          <ol>
-              <li>	Basic, which has the user give unencrypted information.
-                    <br>a.	Should only be used with HTTPS
-
-              </li>
-              <li>	Digest, which hashes the user’s password.
-
-              </li>
-              <li>	NTLM, which prevents capturing passwords.
-                   <br> a.	Through persistent connection
-
-              </li>
-          </ol>
-          <p>
-              A common response status is the 401 Unauthorized status. It is sent when the user first tries to access the page, and the server sends a 401 status with WWW-Authenticate. This header field states which method to use for accessing.
-
-
-          </p>
-          
-          <p>
-              The user then responds with information, typically a username/email and password, in the form of an Authorization request. It will either return a 200 OK status (the correct authorization was given, and access has been given), a 401 Unauthorized (the authorization was refused, and the Authorization request should be sent again), or a 403 Forbidden (the user has not been given proper access for the page or resource).
-
-          </p>
-          
-          
-          
-          
-          
-  
+        <h2>Authentication</h2>
+        <p>Sometimes, a website can have private pages or resources only accessible by certain users. When this happens, the server challenges the request to access, and the user has to provide the appropriate information to prove to the server that they should have access to it. This two-way process is authentication.
+        </p>
+        <p>
+          A framework by HTTP is available to be able to control access and authentication using defined mechanisms, namely:
+        </p>
+        <ol>
+          <li> Basic, which has the user give unencrypted information.
+            <br>a. Should only be used with HTTPS
+          </li>
+          <li> Digest, which hashes the user’s password.
+          </li>
+          <li> NTLM, which prevents capturing passwords.
+            <br> a. Through persistent connection
+          </li>
+        </ol>
+        <p>
+          A common response status is the 401 Unauthorized status. It is sent when the user first tries to access the page, and the server sends a 401 status with WWW-Authenticate. This header field states which method to use for accessing.
+        </p>
+        <p>
+          The user then responds with information, typically a username/email and password, in the form of an Authorization request. It will either return a 200 OK status (the correct authorization was given, and access has been given), a 401 Unauthorized (the authorization was refused, and the Authorization request should be sent again), or a 403 Forbidden (the user has not been given proper access for the page or resource).
+        </p>
       </div>
-      </div><!-- end of authentication-->
-            <div class="card-header">
+    </div>
+    <!-- end of authentication-->
+    <div class="card-header">
       <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
       <a data-toggle="collapse" data-parent="#accordion" href="#HTTPF">
         <h1>HTTP Features</h1>
-       
       </a>
-          
     </div>
     <div id="HTTPF" class="card-body panel-collapse collapse in">
-       <div class="card-header">
-           <p style="text-align: center">
-           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Persistent Connections</button>
-           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Chunked Transfer Encoding</button>
-           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Content Negotiation</button>
-           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Range Request</button>
-           </p>
-           
-           
-           
-           
-    <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          
-          <h4 class="modal-title">Persistent Connections</h4>
+      <div class="card-header">
+        <p style="text-align: center">
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Persistent Connections</button>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Chunked Transfer Encoding</button>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Content Negotiation</button>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Range Request</button>
+        </p>
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Persistent Connections</h4>
+              </div>
+              <div class="modal-body">
+                <p>It was established earlier that http is a protocol used by applications to communicate with one another. Communication only happens when a user agent, often browsers, establishes a connection to a server and sends a request message. The server then responds with a response message. A request from a browser may be serviced with just a single connection if the response containing the HTML file does not contain links that point to another resource.
+                </p>
+                <p>
+                  For example, you have an HTML website that only contains text and embedded formatting. Whenever a user agent request for the html file, a single connection is enough in order to serve the request. However, websites nowadays have a more complex composition: they contain links that points to another HTML files, images located in a certain directory, and css files for the design of the website.
+                </p>
+                <p>
+                  In order for web browsers to display the contents of the website, it will first establish a connection before creating a request message to send to the server hosting the website. When it receives the response from the server, it will extract the HTML body in the response message. When it encounters a link in the HTML body that points to another resource, such as a css file, it will automatically send a request to retrieve said css file. The same thing happens with other resources like images.
+                </p>
+                <p>
+                  The early versions of HTTP were developed such that when a user-agent request a website, the server serves the request, and then terminates the connection immediately. When the browser reads the HTML body and encounters an external link, it will establish another connection and send another request to retrieve what it needs. Multiple connections will have to be established in order to properly render the website.
+                </p>
+                <p>
+                  This is a problem because nobody might be patient enough to wait for the website to be rendered properly.
+                </p>
+                <p style="text-align: center">
+                  <img style="width:80%; height: 80%" src="img/1.png" alt="persistent connection">
+                </p>
+                <p>
+                  Persistent connection is a feature introduced in HTTP 1.1, allowing several resources to be fetched with the same connection. This addresses the problem induced by multiple connections. Persistent connections also allow the pipelining of request so that users can make multiple request without waiting for the response in the first request.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <p>It was established earlier that http is a protocol used by applications to communicate with one another. Communication only happens when a user agent, often browsers, establishes a connection to a server and sends a request message. The server then responds with a response message. A request from a browser may be serviced with just a single connection if the response containing the HTML file does not contain links that point to another resource.
-            </p>
-            <p>
-            For example, you have an HTML website that only contains text and embedded formatting. Whenever a user agent request for the html file, a single connection is enough in order to serve the request. However, websites nowadays have a more complex composition: they contain links that points to another HTML files, images located in a certain directory, and css files for the design of the website.
-
-            
-            </p>
-            <p>
-                In order for web browsers to display the contents of the website, it will first establish a connection before creating a request message to send to the server hosting the website. When it receives the response from the server, it will extract the HTML body in the response message. When it encounters a link in the HTML body that points to another resource, such as a css file, it will automatically send a request to retrieve said css file. The same thing happens with other resources like images.
-
-            </p>
-            <p>
-            The early versions of HTTP were developed such that when a user-agent request a website, the server serves the request, and then terminates the connection immediately. When the browser reads the HTML body and encounters an external link, it will establish another connection and send another request to retrieve what it needs. Multiple connections will have to be established in order to properly render the website.
-            </p>
-            <p>
-            This is a problem because nobody might be patient enough to wait for the website to be rendered properly.
-
-            </p>
-            <p style="text-align: center">
-            <img style= "width:80%; height: 80%" src=img/1.png>
-            </p>
-            <p>
-            Persistent connection is a feature introduced in HTTP 1.1, allowing several resources to be fetched with the same connection. This addresses the problem induced by multiple connections. Persistent connections also allow the pipelining of request so that users can make multiple request without waiting for the response in the first request.
-
-            
-            </p>
+        <div class="modal fade" id="myModal2" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Chunked Transfer Encoding</h4>
+              </div>
+              <div class="modal-body">
+                <p>HTTP communication usually takes place over TCP/IP connections (RFC2616). The TCP/IP is the protocol stack used by the Internet.
+                </p>
+                <p style="text-align: center">
+                  <img style="width:90%; height: 90%" src="img/2.png" alt="protocol layer">
+                </p>
+                <p style="text-align: center">
+                  <img style="width:90%; height: 90%" src="img/3.png" alt="tcp/ip model">
+                </p>
+                <p>
+                  The HTTP is an application-level protocol because it is used by network-aware applications (applications that communicate through the network) to communicate with one another.</p>
+                <p>
+                  The information that is communicated starts at the Application level. If the information is long, it will be broken into chunks of data, also known as packets. These packets travel from the application layer down to the TCP layer where port numbers are assigned to it. After going through the TCP layer, it will go down to the IP layer where the packet receives its destination IP address. The packet also has numbers and hash codes which is used to bring back the chopped data back to its original form. These packets containing the necessary information are then converted to bits and travel through the Internet to get to its destination IP address and port.</p>
+                <p>
+                  When it gets to its destination, it will pass through the hardware layer, back to the application layer. By the time it reaches the Application layer, it is expected that the information is back to its original form. Data loss can be determined if there is a changes in the hash code of a packet.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="modal fade" id="myModal3" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Content Negotiation</h4>
+              </div>
+              <div class="modal-body">
+                <p>When multiple information is available, the user can opt to choose which form they might prefer. Content negotiation is a feature that allows this, and there are two types of negotiation.
+                </p>
+                <p>
+                  <b>Server-driven Negotiation</b> is when the server decides for the user what is best/most appropriate, based on the contents of the request (usually by specifying Content-Type, Language, Encoding, etc). Agent-driven Negotiation has the user select from what is available instead. This often means requiring a second request.
+                </p>
+                <p>
+                  Users can give their choice using <b>Accept</b>, in the order of preference. For example, adding <b>Accept: text/html, application/xml, */* </b>to a request tells the server send the information first as a HTML file. If not available, then as XML, and if that is not available either, then whatever it can send.
+                </p>
+                <p>
+                  Additionally, Accept-Charset, Accept-Encoding, and Accept-Language may also be used.
+                  <br> A 406 Not Acceptable status code will be returned if the user’s request cannot be fulfilled.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      
-    </div>
-    </div>
-           <div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          
-          <h4 class="modal-title">Chunked Transfer Encoding</h4>
-        </div>
-        <div class="modal-body">
-          <p>HTTP communication usually takes place over TCP/IP connections (RFC2616). The TCP/IP is the protocol stack used by the Internet.
-
-            </p>
-          
-         
-     
-            <p style="text-align: center">
-            <img style= "width:90%; height: 90%" src=img/2.png>
-            </p>
-            <p style="text-align: center">
-            <img style= "width:90%; height: 90%" src=img/3.png>
-            </p>
-          <p>
-            The HTTP is an application-level protocol because it is used by network-aware applications (applications that communicate through the network) to communicate with one another.</p>
-<p>
-The information that is communicated starts at the Application level. If the information is long, it will be broken into chunks of data, also known as packets. These packets travel from the application layer down to the TCP layer where port numbers are assigned to it.
-After going through the TCP layer, it will go down to the IP layer where the packet receives its destination IP address. The packet also has numbers and hash codes which is used to bring back the chopped data back to its original form. These packets containing the necessary information are then converted to bits and travel through the Internet to get to its destination IP address and port.</p>
-<p>
-When it gets to its destination, it will pass through the hardware layer, back to the application layer. By the time it reaches the Application layer, it is expected that the information is back to its original form. Data loss can be determined if there is a changes in the hash code of a packet.
-
-            
-            
-            </p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-    </div>
-    <div class="modal fade" id="myModal3" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          
-          <h4 class="modal-title">Content Negotiation</h4>
-        </div>
-        <div class="modal-body">
-          <p>When multiple information is available, the user can opt to choose which form they might prefer. Content negotiation is a feature that allows this, and there are two types of negotiation.
-
-
-            </p>
-          <p>
-              <b>Server-driven Negotiation</b> is when the server decides for the user what is best/most appropriate, based on the contents of the request (usually by specifying Content-Type, Language, Encoding, etc).  Agent-driven Negotiation has the user select from what is available instead. This often means requiring a second request.
-
-            </p>
-         
-     
-            
-          <p>
-            Users can give their choice using <b>Accept</b>, in the order of preference. For example, adding <b>Accept: text/html, application/xml, */* </b>to a request tells the server send the information first as a HTML file. If not available, then as XML, and if that is not available either, then whatever it can send.
-            </p>
-            <p>
-            Additionally, Accept-Charset, Accept-Encoding, and Accept-Language may also be used.
-            <br>
-            A 406 Not Acceptable status code will be returned if the user’s request cannot be fulfilled.
-
-            </p>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-    </div>
-           <div class="modal fade" id="myModal4" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          
-          <h4 class="modal-title">Range Request</h4>
-        </div>
-        <div class="modal-body">
-          <p>Also called a <i>partial request</i>, this allows the user/browser to request information (limited through ranges) from a server. This can help reduce interrupted data transfers, and allows users to download a part of the information first, then retrieve the rest later, or download in parts using only a single request.
-
-
-
-            </p>
-          <p>
-          A range request is only supported by servers if <b>Accept-Ranges </b>(a header field) is present in HTTP responses. It is usually expressed in bytes, and users can specify the range of bytes of the information to be sent, and can be either single part or multipart.</p>
-            <p>
-            <b>The Range</b> header field of a request is what triggers the server to modify the information sent back. <b>If-Range</b> can also be used by specifying preconditions, usually in the form of either fulfilling the request if the the information is unchanged or sending the whole thing instead.</p>
-            <p>
-            Single part: <b>Range: bytes=0-499</b> would indicate a request for the first 500 bytes of a resource.
-            Multipart:<b> Range: bytes=0-499, 600-650</b> requests the first 500 bytes, then bytes 600 to 650.</p>
-
-
-     
-          <p>
-            There are 3 responses that a range request can receive:</p>
-           
-              
-              <ol>
-                  <li>	206 Partial Content (Successful request)
-                      a.	Must come with Content-Range and a payload consisting of the range (except when in a multiple part response, to which it will be sent per part instead).</li>
-                  <li>	416 Requested Range Not Satisfiable (Unsuccessful request)</li>
+        <div class="modal fade" id="myModal4" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Range Request</h4>
+              </div>
+              <div class="modal-body">
+                <p>Also called a <i>partial request</i>, this allows the user/browser to request information (limited through ranges) from a server. This can help reduce interrupted data transfers, and allows users to download a part of the information first, then retrieve the rest later, or download in parts using only a single request.
+                </p>
+                <p>
+                  A range request is only supported by servers if <b>Accept-Ranges </b>(a header field) is present in HTTP responses. It is usually expressed in bytes, and users can specify the range of bytes of the information to be sent, and can be either single part or multipart.</p>
+                <p>
+                  <b>The Range</b> header field of a request is what triggers the server to modify the information sent back. <b>If-Range</b> can also be used by specifying preconditions, usually in the form of either fulfilling the request if the the information is unchanged or sending the whole thing instead.</p>
+                <p>
+                  Single part: <b>Range: bytes=0-499</b> would indicate a request for the first 500 bytes of a resource. Multipart:
+                  <b> Range: bytes=0-499, 600-650</b> requests the first 500 bytes, then bytes 600 to 650.</p>
+                <p>
+                  There are 3 responses that a range request can receive:</p>
+                <ol>
+                  <li> 206 Partial Content (Successful request) a. Must come with Content-Range and a payload consisting of the range (except when in a multiple part response, to which it will be sent per part instead).</li>
+                  <li> 416 Requested Range Not Satisfiable (Unsuccessful request)</li>
                   <li>200 OK (No request was made/Unsupported)</li>
-                  </ol>
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-    </div>
-    </div>
-        </div>  
-        
-          
     </div>
     <!-- end of httpFeatures-->
-      
   </div>
   <!-- end of container-->
   <div class="container-fluid footer">
     Design:Group 1 <br> &copy; February 2018
   </div>
-
 </body>
-
 </html>
