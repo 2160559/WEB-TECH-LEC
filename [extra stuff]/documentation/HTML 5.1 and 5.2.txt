@@ -1,0 +1,13 @@
+HTML 5.1
+These are some of the changes since HTML 5.0 according to W3C Recommendation
+
+ o The elements <details> and <summary> allows author to present information which users can choose whether to read or not.
+ o <header> and <footer> elements can be nested
+ o <figcaption> element can appear anywhere within a <figure>
+ o some of the features removed are command, usemap attribute on <object>
+
+HTML 5.2
+ These are some of the changes since HTML 5.1 according to W3C Recommendation.
+   
+o the toolbar type for <menu> and element <dialog> was removed from HTML 5.1 due to lack of implementation and may be removed from HTML 5.2 if not implemented
+o This is also the same for registerContentHandler(), isContentHandlerRegistered(), isProtocolHandlerRegistered() and datetime value for type
