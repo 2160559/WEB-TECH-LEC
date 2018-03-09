@@ -75,6 +75,10 @@
   align-items: center;
 }
 
+.modal-body {
+  height: 300px;
+}
+
 .modal-body li {
   line-height: 2;
 }
