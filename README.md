@@ -8,6 +8,7 @@ This repository features documents, resources, and files related to our group's 
 ## Table of Contents
 
 **[Prelims](#prelims)**<br>
+**[Midterms](#midterms)**<br>
 **[Submissions](#submissions)**<br>
 **[Contributors](#contributors)**
 
@@ -18,10 +19,18 @@ This repository features documents, resources, and files related to our group's 
 - [X] URL
 - [X] HTML
 
+## Midterms
+
+### CSS
+- [ ] History
+- [ ] Statements
+- [ ] Rule Set
+- [ ] Selectors
+
 ## Submissions
 
 - [x] Essay: The World of Mass Media and Communication Without the WWW (Feb 12, 2018)
-- [ ] Course Website: Prelims (Feb 26, 2018)
+- [x] Course Website: Prelims (Feb 26, 2018)
 
 ## Contributors
 

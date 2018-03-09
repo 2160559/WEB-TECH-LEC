@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTTP</title>
+    <link rel="icon" type="image/x-icon" href="../img/icons/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid banner">
+        <img src="../img/banner.png" alt="Banner">
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" href="../index.html">WebTech 2018</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="navbar-collapse collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Preliminaries</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../prelims.html">Preliminaries</a>
+                        <a class="dropdown-item" href="../prelims/overview.html">Overview</a>
+                        <a class="dropdown-item" href="../prelims/www.html">World Wide Web</a>
+                        <a class="dropdown-item" href="../prelims/http.html">HTTP</a>
+                        <a class="dropdown-item" href="../prelims/url.html">URL</a>
+                        <a class="dropdown-item" href="../prelims/html.html">HTML</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Midterms</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../midterms.html">Midterms</a>
+                        <a class="dropdown-item" href="../midterms/css.html">HTML</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="../references.html">References</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-header">
+            <h1>Hypertext Transfer Protocol (HTTP) </h1>
+
+            Hypertext Transfer Protocol (HTTP) is an application-level protocol which is used to access resources (eg. hypertext, hypermedia) on the World Wide Web(redirect to WWW definition) through the Internet. This protocol is a set of rules that defines the format of data that is being exchanged within or between computers (MDN web docs). HTTP is the language used by applications like browsers, server, proxies to communicate with one another.</div>
+
+        <br><br>
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#HTTPComms">
+                <h1>HTTP Communication</h1>
+            </a>
+        </div>
+        <div id="HTTPComms" class="card-body panel-collapse collapse in">
+            <p>In order for you(the client) to access websites like Youtube, Facebook, Twitter or CNN, you need a web browser where you can enter the URL of the site you want to visit. What the browser does is to connect to the server of the website and send a request message (using HTTP) after a connection with the server has been established. When the server receives the request message, it will try to interpret the message and send a response message (using HTTP) containing the HTML file of the site you want to visit or an HTTP 404 error message which means that the resource being requested is not found in the server. I the resource is found, the browser will then interpret the response message and try to display the html file in your browser. When the request has been serviced, the connection between the client and server will be terminated. The response message may contain links to other files which needs to be accessed in order for the website to properly render, the connection must be maintained even after the first request has been serviced. (Persistent connection will be discussed here in detail)
+            </p>
+        </div>
+        <!-- end of httpcomms-->
+
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#HTTPChar">
+                <h1>HTTP Characteristics</h1>
+            </a>
+        </div>
+        <div id="HTTPChar" class="card-body panel-collapse collapse in">
+            <p><b>HTTP is a client-server protocol.</b> Requests are sent by the client which is usually a Web browser, to the server which provides a response. Clients or user-agents is not necessarily a web browser, it could also be a robot.
+            </p>
+            <ul>
+                <li>
+                    Origin server - this is the actual machine where the resource resides
+                </li>
+                <li>
+                    Proxy servers - this are servers that serve the request of a client on behalf of the origin server which is in the case of cache.
+                </li>
+            </ul>
+            <p>
+                <b>HTTP is a pull protocol.</b> The pull of resources by the user-agent will not happen unless the user-agent sends a request
+            </p>
+            <p>
+                <b>HTTP serves and forgets.</b> After serving the requests sent by user-agents, the Web server forgets the request and serve another request from another user-agent or the same user-agent. Components of HTTP-based systems
+            </p>
+        </div>
+
+        <!-- end of httpchar-->
+
+
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#inter">
+                <h1>Intermediaries</h1>
+            </a>
+        </div>
+        <div id="inter" class="card-body panel-collapse collapse in">
+            In a request or response message, there are intermediaries that play their role to help in the exchange of information. The three common forms of intermediaries are the following:
+            <br>
+            <ul>
+                <li>Proxy
+                    <br> A proxy is a forwarding agent, receiving requests for a URI in its absolute form, rewriting all or part of the message, and forwarding the reformatted request toward the server identified by the URI. (rfc2616)
+                    <br><br>
+                </li>
+                <li>Gateway
+                    <br> A gateway is a receiving agent, acting as a layer above some other server(s) and, if necessary, translating the requests to the underlying server's protocol. (rfc2616)
+                    <br><br>
+                </li>
+                <li>Tunnel
+                    <br> A tunnel acts as a relay point between two connections without changing the messages; tunnels are used when the communication needs to pass through an intermediary (such as a firewall) even when the intermediary cannot understand the contents of the messages.(rfc2616)
+                    <br><br>
+                </li>
+            </ul>
+        </div>
+        <!-- end of intermediaries-->
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#codes">
+                <h1>HTTP Status Codes</h1>
+            </a>
+        </div>
+        <div id="codes" class="card-body panel-collapse collapse in">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#information">
+                        <h2>Informational</h2>
+                    </a>
+                    Gives information about a connection in progress
+                </div>
+                <div id="information" class="collapse show">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Status code </th>
+                                        <th>Description</th>
+                                        <th>Phrase</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>100</td>
+                                        <td>Continue</td>
+                                        <td>Indicates that a section of the request is already received.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>101</td>
+                                        <td>Switching Protocols </td>
+                                        <td>Indicates to which protocol the server is switching to.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>102</td>
+                                        <td>Processing </td>
+                                        <td>Indicates that a requests takes too long to complete.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of 1xx-->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#Success">
+                            <h2>Success</h2>
+                        </a>
+                        Indicates request confirmation
+                    </div>
+                    <div id="Success" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Status code </th>
+                                            <th>Description</th>
+                                            <th>Phrase</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>200</td>
+                                            <td>OK</td>
+                                            <td>Indicates that the request was fulfilled successfully.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>201</td>
+                                            <td>Created</td>
+                                            <td>Indicates that the request was fulfilled successfully and has resulted in one or more new requests.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>202</td>
+                                            <td>Processing </td>
+                                            <td>Indicates that a requests takes too long to complete.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>203</td>
+                                            <td>Non-Authoritative Information </td>
+                                            <td>Indicates that the request was successful but the payload has been modified.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>204</td>
+                                            <td>No Content </td>
+                                            <td>Indicates that the server has fulfilled the request and there is no more additional content.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>205</td>
+                                            <td>Reset Content </td>
+                                            <td>Indicates that the user-agent should reset the document view.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>206</td>
+                                            <td>Partial Content </td>
+                                            <td>Indicates that the server has fulfilled a part of the get request resource.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>207</td>
+                                            <td>Multi-Status </td>
+                                            <td>Indicates information about multiple resources in circumstances where multiple status codes might be applicable.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of 2xx -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#Redirection">
+                            <h2>Redirection</h2>
+                        </a>
+                        Indicates that more action is needed to be done to complete the request
+                    </div>
+                    <div id="Redirection" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Status code </th>
+                                            <th>Description</th>
+                                            <th>Phrase</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>300</td>
+                                            <td>Multiple Choices </td>
+                                            <td>Indicates that content negotiation is active.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>301</td>
+                                            <td>Moved Permanently </td>
+                                            <td>Indicates that the requested resource was assigned to a new uniform resource identifier.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>302</td>
+                                            <td>Found </td>
+                                            <td>Indicates that the requested resource is temporarily in a different uniform resource identifier. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>303</td>
+                                            <td>See Other </td>
+                                            <td>Indicates a redirection to a different resource the user-agent has requested. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>304</td>
+                                            <td>Not Modified </td>
+                                            <td>Indicates that the client should display the resource in doubt from its cache. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>305</td>
+                                            <td>Use Proxy </td>
+                                            <td>Indicates that the resource must be accessed through the proxy.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>307</td>
+                                            <td>Temporary Redirect </td>
+                                            <td>A stricter version of status code 302 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of 3xx -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#clientErrors">
+                            <h2>Client Errors</h2>
+                        </a>
+                        Errors that may have been caused by the client
+                    </div>
+                    <div id="clientErrors" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Status code </th>
+                                            <th>Description</th>
+                                            <th>Phrase</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>400</td>
+                                            <td>Bad Request </td>
+                                            <td>Indicates the the server cannot understand the request because of the incorrect syntax.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>401</td>
+                                            <td>Unauthorized </td>
+                                            <td>Indicates that the requested resource needs authentication.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>403</td>
+                                            <td>Forbidden </td>
+                                            <td> Indicates that the server denies to fulfill the requested resource. . </td>
+                                        </tr>
+                                        <tr>
+                                            <td>404</td>
+                                            <td>Not Found </td>
+                                            <td>Indicates the server has not found the matching uniform matching requested URI.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>405</td>
+                                            <td>Method Not Allowed </td>
+                                            <td>Indicates that the server denies the method initiated by the user-agent.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>406</td>
+                                            <td>Not Acceptable </td>
+                                            <td>Indicates that the server cannot give the resource that matches the user-agent’s expected representation of the resource.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>410</td>
+                                            <td>Gone </td>
+                                            <td>Indicates that the requested resource is not in the server anymore.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>411</td>
+                                            <td>Length Required </td>
+                                            <td>Indicates that the server has denied the request because there there is no content-length specified.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>412</td>
+                                            <td>Precondition Failed </td>
+                                            <td>Indicates that one or more conditions in the request header evaluates to false.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>413</td>
+                                            <td>Payload Too Large </td>
+                                            <td>Indicates that the server is refusing to process the request because the request payload is too large for the server to handle.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>415 </td>
+                                            <td>Unsupported Media Type </td>
+                                            <td>The server refuses to serve the request because the payload format is unsupported.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>417</td>
+                                            <td>Expectation Failed </td>
+                                            <td>Indicates the expect header field of the request was not met by at least one of the inbound servers.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>422</td>
+                                            <td>Unprocessable Entity </td>
+                                            <td>The server cannot process the contained instructions of the request entity.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>423</td>
+                                            <td>Locked </td>
+                                            <td>The source or destination resource that is being accessed is locked.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>424</td>
+                                            <td>Failed Dependency </td>
+                                            <td>Indicates that the request failed because of a failed previous request.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>426</td>
+                                            <td>Upgrade Required </td>
+                                            <td>Lets the client know that transport layer security is required for the client request to be completed.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of 4xx -->
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#serverErrors">
+                            <h2>Server Errors</h2>
+                        </a>
+                        Occurs when the server failed to serve a request
+                    </div>
+                    <div id="serverErrors" class="collapse">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Status code </th>
+                                            <th>Description</th>
+                                            <th>Phrase</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>500</td>
+                                            <td>Internal Server Error </td>
+                                            <td>Occurs when the server encounters an unexpected condition, therefore not being able to process the request.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>501</td>
+                                            <td>Not Implemented </td>
+                                            <td>Occurs when the server cannot support the functionality needed by the request.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>502</td>
+                                            <td>Bad Gateway </td>
+                                            <td>Occurs when the server receives an invalid response from another server.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>503</td>
+                                            <td>Service Unavailable </td>
+                                            <td>Occurs when the server is under maintenance or the server temporarily overloaded.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>504</td>
+                                            <td>Gateway Timeout </td>
+                                            <td>Occurs when the server did not receive the response in a right time from another server.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>505</td>
+                                            <td>HTTP Version Not Supported </td>
+                                            <td>Occurs when the server does not support the version of HTTP used in the request.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>506</td>
+                                            <td>Variant Also Negotiates </td>
+                                            <td>Transparent content negotiation for the request results in a circular reference. Circular Reference - happens when the request requests itself.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>507</td>
+                                            <td>Insufficient Storage </td>
+                                            <td>Occurs when the server is unable to store the representation needed to complete the request.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>510</td>
+                                            <td>Not Extended </td>
+                                            <td> Occurs when resource access policy was not fulfilled by the request.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of 5xx -->
+
+            </div>
+            <!-- end of div id codes-->
+        </div>
+        <!-- end status codes-->
+
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#mess">
+                <h1>HTTP Message</h1>
+            </a>
+        </div>
+        <div id="mess" class="card-body panel-collapse collapse in">
+            <div class="jumbotron">
+                <h2>Message Types</h2>
+                <p>There are two types of HTTP messages: the messages that comes from client to server (request message) and messages that comes from the server to the client (response message).</p>
+                <p>Request and Response messages consist of a start-line, zero or more header fields (also known as “headers”), an empty line indicating the end of the header fields, and possibly a message-body.</p>
+                The format to be followed (taken from RFC 2616):<br>
+                <pre>
+          message-header     = field-name ":" [ field-value ]
+              field-name     = token
+              field-value    = *( field-content | LWS )
+              field-content  = &lt;the OCTETs making up the field-value
+                              and consisting of either *TEXT or combinations
+                              of token, separators, and quoted-string&gt;
+      </pre>
+            </div>
+            <h2>Message Headers</h2>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#general">
+                            <h2>General Headers</h2>
+                        </a>
+                    </div>
+                    <div id="general" class="collapse show">
+                        <div class="card-body panel-collapse collapse-in">
+                            <div class="row my-row">
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Cache-Control</h4>
+                                        </div>
+                                        <div class="card-body">Cache-Control is used to specify directives for caching mechanisms in both requests and responses. </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Connection</h4>
+                                        </div>
+                                        <div class="card-body">Connection controls the network connection between the sender and the server. It specifies if the connection should be closed or kept alive if the current transaction finishes.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Date</h4>
+                                        </div>
+                                        <div class="card-body">Date represents the date and time at which the message was originated. Dates are represented in Greenwich Mean Time (GMT).</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row">
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Pragma</h4>
+                                        </div>
+                                        <div class="card-body">Pragma is the same as the Cache-Control but it is used for older clients that does not support HTTP/1.1. In other words, it is used for backwards compatibility with HTTP/1.0.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Trailer</h4>
+                                        </div>
+                                        <div class="card-body">Trailer indicates that the set of header fields present in the last part of a message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Transfer-Encoding</h4>
+                                        </div>
+                                        <div class="card-body">Transfer-Encoding defines what encoding will be used to transfer an entity to the user.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row">
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Upgrade</h4>
+                                        </div>
+                                        <div class="card-body">Upgrade allows the client to specify what communication protocol is preferred.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Via</h4>
+                                        </div>
+                                        <div class="card-body">Via specifies where the resource should travel. It is used to track the gateways and proxies where the resource travelled.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Warning</h4>
+                                        </div>
+                                        <div class="card-body">Warning specifies the possible problems that might occur regarding the status of the message.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#request">
+                            <h2>Request Headers</h2>
+                        </a>
+                    </div>
+                    <div id="request" class="collapse show">
+                        <div class="card-body panel-collapse collapse-in">
+                            <div class="row my-row">
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Accept</h4>
+                                        </div>
+                                        <div class="card-body">Accept specifies what type of media are acceptable or preferred by the client.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Accept-Charset</h4>
+                                        </div>
+                                        <div class="card-body">Accept-Charset specifies the character set preferred or understandable by the client.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Accept-Encoding</h4>
+                                        </div>
+                                        <div class="card-body"> Accept-encoding is similar to Accept except it restricts that content encoding that can be accepted in the response.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Accept-Language</h4>
+                                        </div>
+                                        <div class="card-body">Accept-Language is similar to Accept except it restricts the set of natural languages that are preferred as a response to the request.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row">
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Authorization</h4>
+                                        </div>
+                                        <div class="card-body">Authorization consists of credentials as a mean of authentication information of the user agent..</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Expect</h4>
+                                        </div>
+                                        <div class="card-body">Expect is used to indicate that a certain set of server behavior is required and expected by the client.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>From</h4>
+                                        </div>
+                                        <div class="card-body">Form contains an Internet email address for the user who is controlling the requesting user agent.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Host</h4>
+                                        </div>
+                                        <div class="card-body">Host is used to specify the Internet host and port number of the requested resource.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row">
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>If-Match</h4>
+                                        </div>
+                                        <div class="card-body">If-Match is used to perform the requested method if the given value matches the given entity tags.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>If-Modified-Since</h4>
+                                        </div>
+                                        <div class="card-body">If-Modified-Since indicates if the requested URL is modified since the time specified in this field, the entity will not be returned from the server and a 304 response will be returned.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>If-None-Match</h4>
+                                        </div>
+                                        <div class="card-body">If-None-Match requests the server to do the requested method only if one of the given value matches the given entity tags.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>If-Range</h4>
+                                        </div>
+                                        <div class="card-body">If-Range can be used with a conditional GET to request a portion of the entity that is missing, if it not been changed, and the entire entity has been changed.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row">
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>If-Unmodified-Since</h4>
+                                        </div>
+                                        <div class="card-body">If-Unmodified-Since indicates if the requested resource has not been modified since the time specified, the server would perform the requested operation as if this header were not present.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Max-Forwards</h4>
+                                        </div>
+                                        <div class="card-body">Proxy-Authorization allows the client to identify itself to a proxy in which requires authentication.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Proxy-Authorization</h4>
+                                        </div>
+                                        <div class="card-body">Proxy-Authorization allows the client to identify itself to a proxy in which requires authentication.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Range</h4>
+                                        </div>
+                                        <div class="card-body">Range specifies the partial ranges of the content that has been requested from the document.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-row">
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Referer</h4>
+                                        </div>
+                                        <div class="card-body">Referer allows the client to specify the address of the resource from which URL is requested.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>TE (Transfer-Encoding)</h4>
+                                        </div>
+                                        <div class="card-body">TE (Transfer Encoding) indicates what extension transfer encoding the user agent is willing to accept in the response and if it is willing or not to accept the trailer fields in a chunked transfer encoding.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>User-Agent</h4>
+                                        </div>
+                                        <div class="card-body">contains information about the user agent in which where the request is originating.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#response">
+                        <h2>Response Headers</h2>
+                    </a>
+                </div>
+                <div id="response" class="collapse show">
+                    <div class="card-body panel-collapse collapse-in">
+                        <div class="row my-row">
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Acept-Ranges</h4>
+                                    </div>
+                                    <div class="card-body">Accept-Ranges allows the server to indicate its range requests acceptance for a resource.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Age</h4>
+                                    </div>
+                                    <div class="card-body">Age indicates the sender’s estimated time since the response was generated at the server.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>ETag (Entity Tag)</h4>
+                                    </div>
+                                    <div class="card-body">ETag provides the current value of the entity tag for the requested variant.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-row">
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Location</h4>
+                                    </div>
+                                    <div class="card-body">Location is used to redirect the recipient to another location other than the Request-URI.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Proxy-Authenticate</h4>
+                                    </div>
+                                    <div class="card-body">Proxy-Authenticate is included as part of the 407 response.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Retry-After</h4>
+                                    </div>
+                                    <div class="card-body">Retry-After can be used with the 503 response in order to indicate how long the service is expected to be unavailable for the client.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-row">
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Server</h4>
+                                    </div>
+                                    <div class="card-body">Server contains information about the software used by the server in handling requests.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Vary</h4>
+                                    </div>
+                                    <div class="card-body">Vary specifies that the entity has multiple sources and therefore it can vary accordingly to the specified list of request headers.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>WWW-Authenticate </h4>
+                                    </div>
+                                    <div class="card-body">WWW-Authenticate should consist of at least one challenge that would indicate the authentication schemes and parameters that are applicable to the Request-URI.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#entity">
+                        <h2>Entity Headers</h2>
+                    </a>
+                </div>
+                <div id="entity" class="collapse show">
+                    <div class="card-body panel-collapse collapse-in">
+                        <div class="row my-row">
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Allow</h4>
+                                    </div>
+                                    <div class="card-body">Allow is the list of methods that are supported by the resource identified by the Request-URI.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Content-Encoding</h4>
+                                    </div>
+                                    <div class="card-body">Content-Encoding is a modifier to the media-type.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Content-Language</h4>
+                                    </div>
+                                    <div class="card-body">Content-Language describe the natural languages of the audience for the enclosed entity, although multiple languages can be listed for multiple languages.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-row">
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Content-Length</h4>
+                                    </div>
+                                    <div class="card-body">Content-Length indicates the size of the entity-body.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Content-Location</h4>
+                                    </div>
+                                    <div class="card-body">Content-Location is the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource’s URI.</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-lg-offset-1">
+                                <div class="card">
+                                    <div class="card-header bg-info">
+                                        <h4>Content-MD5 (Message Digest) </h4>
+                                    </div>
+                                    <div class="card-body">Content-MD5 is used to supply an MD5 digest in order to check the integrity of the message upon receipt.</div>
+                                </div>
+                            </div>
+                            <div class="row my-row">
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Content-Range</h4>
+                                        </div>
+                                        <div class="card-body">Content-Range is used to specify where in the full entity-body should the partial body be applied.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Content-Type</h4>
+                                        </div>
+                                        <div class="card-body">Content-Type indicates the media type of the entity-body that has been sent to the recipient.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Expires</h4>
+                                        </div>
+                                        <div class="card-body">Expires is the date and time in which where the response would be considered stale.</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-lg-offset-1">
+                                    <div class="card">
+                                        <div class="card-header bg-info">
+                                            <h4>Last-Modified</h4>
+                                        </div>
+                                        <div class="card-body">Last-Modified indicates the date and time at which the variant was last modified.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of div id mess-->
+        </div>
+        <!-- end of httpmsgs-->
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#HTTPA">
+                <h1>HTTP Authentication</h1>
+            </a>
+            <div id="HTTPA" class="panel-collapse collapse in">
+                <h2>Authentication</h2>
+                <p>Sometimes, a website can have private pages or resources only accessible by certain users. When this happens, the server challenges the request to access, and the user has to provide the appropriate information to prove to the server that they should have access to it. This two-way process is authentication.
+                </p>
+                <p>
+                    A framework by HTTP is available to be able to control access and authentication using defined mechanisms, namely:
+                </p>
+                <ol>
+                    <li> Basic, which has the user give unencrypted information.
+                        <br>a. Should only be used with HTTPS
+                    </li>
+                    <li> Digest, which hashes the user’s password.
+                    </li>
+                    <li> NTLM, which prevents capturing passwords.
+                        <br> a. Through persistent connection
+                    </li>
+                </ol>
+                <p>
+                    A common response status is the 401 Unauthorized status. It is sent when the user first tries to access the page, and the server sends a 401 status with WWW-Authenticate. This header field states which method to use for accessing.
+                </p>
+                <p>
+                    The user then responds with information, typically a username/email and password, in the form of an Authorization request. It will either return a 200 OK status (the correct authorization was given, and access has been given), a 401 Unauthorized (the authorization was refused, and the Authorization request should be sent again), or a 403 Forbidden (the user has not been given proper access for the page or resource).
+                </p>
+            </div>
+        </div>
+        <!-- end of authentication-->
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#Intermediaries"></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#HTTPF">
+                <h1>HTTP Features</h1>
+            </a>
+        </div>
+        <div id="HTTPF" class="card-body panel-collapse collapse in">
+            <div class="card-header">
+                <p style="text-align: center">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Persistent Connections</button>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Chunked Transfer Encoding</button>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Content Negotiation</button>
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Range Request</button>
+                </p>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Persistent Connections</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>It was established earlier that http is a protocol used by applications to communicate with one another. Communication only happens when a user agent, often browsers, establishes a connection to a server and sends a request message. The server then responds with a response message. A request from a browser may be serviced with just a single connection if the response containing the HTML file does not contain links that point to another resource.
+                                </p>
+                                <p>
+                                    For example, you have an HTML website that only contains text and embedded formatting. Whenever a user agent request for the html file, a single connection is enough in order to serve the request. However, websites nowadays have a more complex composition: they contain links that points to another HTML files, images located in a certain directory, and css files for the design of the website.
+                                </p>
+                                <p>
+                                    In order for web browsers to display the contents of the website, it will first establish a connection before creating a request message to send to the server hosting the website. When it receives the response from the server, it will extract the HTML body in the response message. When it encounters a link in the HTML body that points to another resource, such as a css file, it will automatically send a request to retrieve said css file. The same thing happens with other resources like images.
+                                </p>
+                                <p>
+                                    The early versions of HTTP were developed such that when a user-agent request a website, the server serves the request, and then terminates the connection immediately. When the browser reads the HTML body and encounters an external link, it will establish another connection and send another request to retrieve what it needs. Multiple connections will have to be established in order to properly render the website.
+                                </p>
+                                <p>
+                                    This is a problem because nobody might be patient enough to wait for the website to be rendered properly.
+                                </p>
+                                <p style="text-align: center">
+                                    <img style="width:80%; height: 80%" src="img/1.png" alt="persistent connection">
+                                </p>
+                                <p>
+                                    Persistent connection is a feature introduced in HTTP 1.1, allowing several resources to be fetched with the same connection. This addresses the problem induced by multiple connections. Persistent connections also allow the pipelining of request so that users can make multiple request without waiting for the response in the first request.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal2" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Chunked Transfer Encoding</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>HTTP communication usually takes place over TCP/IP connections (RFC2616). The TCP/IP is the protocol stack used by the Internet.
+                                </p>
+                                <p style="text-align: center">
+                                    <img style="width:90%; height: 90%" src="img/2.png" alt="protocol layer">
+                                </p>
+                                <p style="text-align: center">
+                                    <img style="width:90%; height: 90%" src="img/3.png" alt="tcp/ip model">
+                                </p>
+                                <p>
+                                    The HTTP is an application-level protocol because it is used by network-aware applications (applications that communicate through the network) to communicate with one another.</p>
+                                <p>
+                                    The information that is communicated starts at the Application level. If the information is long, it will be broken into chunks of data, also known as packets. These packets travel from the application layer down to the TCP layer where port numbers are assigned to it. After going through the TCP layer, it will go down to the IP layer where the packet receives its destination IP address. The packet also has numbers and hash codes which is used to bring back the chopped data back to its original form. These packets containing the necessary information are then converted to bits and travel through the Internet to get to its destination IP address and port.</p>
+                                <p>
+                                    When it gets to its destination, it will pass through the hardware layer, back to the application layer. By the time it reaches the Application layer, it is expected that the information is back to its original form. Data loss can be determined if there is a changes in the hash code of a packet.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal3" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Content Negotiation</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>When multiple information is available, the user can opt to choose which form they might prefer. Content negotiation is a feature that allows this, and there are two types of negotiation.
+                                </p>
+                                <p>
+                                    <b>Server-driven Negotiation</b> is when the server decides for the user what is best/most appropriate, based on the contents of the request (usually by specifying Content-Type, Language, Encoding, etc). Agent-driven Negotiation has the user select from what is available instead. This often means requiring a second request.
+                                </p>
+                                <p>
+                                    Users can give their choice using <b>Accept</b>, in the order of preference. For example, adding <b>Accept: text/html, application/xml, */* </b>to a request tells the server send the information first as a HTML file. If not available, then as XML, and if that is not available either, then whatever it can send.
+                                </p>
+                                <p>
+                                    Additionally, Accept-Charset, Accept-Encoding, and Accept-Language may also be used.
+                                    <br> A 406 Not Acceptable status code will be returned if the user’s request cannot be fulfilled.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal4" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Range Request</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Also called a <i>partial request</i>, this allows the user/browser to request information (limited through ranges) from a server. This can help reduce interrupted data transfers, and allows users to download a part of the information first, then retrieve the rest later, or download in parts using only a single request.
+                                </p>
+                                <p>
+                                    A range request is only supported by servers if <b>Accept-Ranges </b>(a header field) is present in HTTP responses. It is usually expressed in bytes, and users can specify the range of bytes of the information to be sent, and can be either single part or multipart.</p>
+                                <p>
+                                    <b>The Range</b> header field of a request is what triggers the server to modify the information sent back. <b>If-Range</b> can also be used by specifying preconditions, usually in the form of either fulfilling the request if the the information is unchanged or sending the whole thing instead.</p>
+                                <p>
+                                    Single part: <b>Range: bytes=0-499</b> would indicate a request for the first 500 bytes of a resource. Multipart:
+                                    <b> Range: bytes=0-499, 600-650</b> requests the first 500 bytes, then bytes 600 to 650.</p>
+                                <p>
+                                    There are 3 responses that a range request can receive:</p>
+                                <ol>
+                                    <li> 206 Partial Content (Successful request) a. Must come with Content-Range and a payload consisting of the range (except when in a multiple part response, to which it will be sent per part instead).</li>
+                                    <li> 416 Requested Range Not Satisfiable (Unsuccessful request)</li>
+                                    <li>200 OK (No request was made/Unsupported)</li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of httpFeatures-->
+    </div>
+    <!-- end of container-->
+    <div class="container-fluid footer">
+        9325A 1-2 TF Group 1 <br> &copy; March 2018
+    </div>
+</body>
+
+</html>
