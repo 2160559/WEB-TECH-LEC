@@ -16,7 +16,6 @@
 <body>
 	<nav class="uk-navbar-container" uk-navbar>
 		<div class="uk-navbar-left uk-margin-left uk-margin-right">
-			<a uk-navbar-toggle-icon href="#offcanvas-nav-primary" uk-toggle></a>
 			<a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
 			<ul class="uk-navbar-nav">
 				<li class="uk-active">
@@ -25,14 +24,20 @@
 						<ul class="uk-nav uk-navbar-dropdown-nav">
 							<li><a href="../overview.html">Overview</a></li>
 							<li><a href="../www.html">World Wide Web</a></li>
-							<li class="uk-active"><a href="http.html">HTTP</a></li>
-							<li class="uk-active"><a href="evolution.html" class="uk-margin-left">Version/Evolution</a></li>
-							<li><a href="message.html" class="uk-margin-left">Message</a></li>
-							<li><a href="features.html" class="uk-margin-left">Features</a></li>
+							<li class="uk-active uk-parent">
+								<a href="http.html">HTTP</a>
+								<ul class="uk-nav-sub">
+									<li class="uk-active"><a href="evolution.html">Version/Evolution</a></li>
+									<li><a href="message.html">Message</a></li>
+									<li><a href="features.html">Features</a></li>
+								</ul>
+							</li>
 							<li><a href="../url.html">URL</a></li>
 							<li><a href="../html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
-							<li><a href="#">References</a></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="../references.html">References</a></li>
 						</ul>
 					</div>
 				</li>
@@ -49,36 +54,6 @@
 			</ul>
 		</div>
 	</nav>
-	<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-		<div class="uk-offcanvas-bar uk-flex uk-flex-column">
-			<button class="uk-offcanvas-close" type="button" uk-close></button>
-			<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-				<li><a href="overview.html">Overview</a></li>
-				<li>
-					<a href="www.html">World Wide Web</a>
-				</li>
-				<li class="uk-active">
-					<a href="http.html">HTTP</a>
-					<ul class="uk-nav-sub">
-						<li><a href="http.html">Introduction</a></li>
-						<li><a href="evolution.html">Version/Evolution</a></li>
-						<li><a href="message.html">Message</a></li>
-						<li><a href="features.html">Features</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="../url.html">URL</a>
-				</li>
-				<li>
-					<a href="../html.html">HTML</a>
-				</li>
-				<li class="uk-nav-divider"></li>
-				<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon:file-text"></span> Quiz</a></li>
-				<li class="uk-nav-divider"></li>
-				<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: pencil"></span> References</a></li>
-			</ul>
-		</div>
-	</div>
 	<div class="uk-container uk-container-small uk-margin uk-padding-small">
 		<h1 class="uk-heading-line uk-text-center"><span>Evolution of HTTP</span></h1>
 		<p class="uk-text-justify">HTTP was developed by <i>Tim Berners-Lee</i> and his team at CERN in 1989 as part of the 4 building blocks of Mesh, or what is now known as the World Wide Web. The following are the versions of HTTP and their specifications:</p>
