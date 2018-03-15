@@ -10,7 +10,7 @@
 	<!-- UIkit JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
-	<link rel="stylesheet" href="../../style.css">
+	<link rel="icon" type="image/x-icon" href="../../img/icons/favicon.ico">
 </head>
 
 <body>
@@ -19,18 +19,18 @@
 			<a uk-navbar-toggle-icon href="#offcanvas-nav-primary" uk-toggle></a>
 			<a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
 			<ul class="uk-navbar-nav">
-				<li>
+				<li class="uk-active">
 					<a href="../prelims.html">Preliminaries</a>
 					<div class="uk-navbar-dropdown">
 						<ul class="uk-nav uk-navbar-dropdown-nav">
 							<li><a href="../overview.html">Overview</a></li>
 							<li><a href="../www.html">World Wide Web</a></li>
-							<li><a href="http.html">HTTP</a></li>
+							<li class="uk-active"><a href="http.html">HTTP</a></li>
 							<li><a href="evolution.html" class="uk-margin-left">Version/Evolution</a></li>
 							<li><a href="message.html" class="uk-margin-left">Message</a></li>
-							<li><a href="features.html" class="uk-margin-left">Features</a></li>
-							<li><a href="#">URL</a></li>
-							<li><a href="#">HTML</a></li>
+							<li class="uk-active"><a href="features.html" class="uk-margin-left">Features</a></li>
+							<li><a href="../url.html">URL</a></li>
+							<li><a href="../html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">References</a></li>
 						</ul>
@@ -53,8 +53,8 @@
 		<div class="uk-offcanvas-bar uk-flex uk-flex-column">
 			<button class="uk-offcanvas-close" type="button" uk-close></button>
 			<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-				<li class="uk-parent"><a href="overview.html">Overview</a></li>
-				<li class="uk-parent">
+				<li><a href="overview.html">Overview</a></li>
+				<li>
 					<a href="www.html">World Wide Web</a>
 				</li>
 				<li class="uk-active">
@@ -66,11 +66,11 @@
 						<li><a href="features.html">Features</a></li>
 					</ul>
 				</li>
-				<li class="uk-parent">
-					<a href="#">URL</a>
+				<li>
+					<a href="../url.html">URL</a>
 				</li>
-				<li class="uk-parent">
-					<a href="#">HTML</a>
+				<li>
+					<a href="../html.html">HTML</a>
 				</li>
 				<li class="uk-nav-divider"></li>
 				<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon:file-text"></span> Quiz</a></li>
@@ -147,9 +147,7 @@
 				<p class="uk-text-justify">When multiple information is available, the user can opt to choose which form they might prefer. Content negotiation is a feature that allows this, and there are two types of negotiation.</p>
 				<p class="uk-text-justify"><b>Server-driven Negotiation</b> is when the server decides for the user what is best/most appropriate, based on the contents of the request (usually by specifying Content-Type, Language, Encoding, etc). <b>Agent-driven Negotiation</b> has the user select from what is available instead. This often means requiring a second request.</p>
 				<p class="uk-text-justify">Users can give their choice using <b>Accept</b>, in the order of preference. For example, adding this:</p>
-				<code>
-Accept: text/html, application/xml, */*
-					</code>
+				<code>Accept: text/html, application/xml, */*</code>
 				<p class="uk-text-justify">to a request tells the server send the information first as a HTML file. If not available, then as XML, and if that is not available either, then whatever it can send.</p>
 				<p class="uk-text-justify">Additionally, Accept-Charset, Accept-Encoding, and Accept-Language may also be used.</p>
 				<p class="uk-text-justify">A <code>406 Not Acceptable</code>status code will be returned if the user’s request cannot be fulfilled.</p>

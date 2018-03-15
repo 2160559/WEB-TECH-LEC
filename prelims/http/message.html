@@ -11,6 +11,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
 	<link rel="stylesheet" href="../../style.css">
+	<link rel="icon" type="image/x-icon" href="../../img/icons/favicon.ico">
 </head>
 
 <body>
@@ -19,18 +20,18 @@
 			<a uk-navbar-toggle-icon href="#offcanvas-nav-primary" uk-toggle></a>
 			<a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
 			<ul class="uk-navbar-nav">
-				<li>
+				<li class="uk-active">
 					<a href="../prelims.html">Preliminaries</a>
 					<div class="uk-navbar-dropdown">
 						<ul class="uk-nav uk-navbar-dropdown-nav">
 							<li><a href="../overview.html">Overview</a></li>
 							<li><a href="../www.html">World Wide Web</a></li>
-							<li><a href="http.html">HTTP</a></li>
+							<li class="uk-active"><a href="http.html">HTTP</a></li>
 							<li><a href="evolution.html" class="uk-margin-left">Version/Evolution</a></li>
-							<li><a href="message.html" class="uk-margin-left">Message</a></li>
+							<li class="uk-active"><a href="message.html" class="uk-margin-left">Message</a></li>
 							<li><a href="features.html" class="uk-margin-left">Features</a></li>
-							<li><a href="#">URL</a></li>
-							<li><a href="#">HTML</a></li>
+							<li><a href="../url.html">URL</a></li>
+							<li><a href="../url.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">References</a></li>
 						</ul>
@@ -53,8 +54,8 @@
 		<div class="uk-offcanvas-bar uk-flex uk-flex-column">
 			<button class="uk-offcanvas-close" type="button" uk-close></button>
 			<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-				<li class="uk-parent"><a href="overview.html">Overview</a></li>
-				<li class="uk-parent">
+				<li><a href="overview.html">Overview</a></li>
+				<li>
 					<a href="www.html">World Wide Web</a>
 				</li>
 				<li class="uk-active">
@@ -66,11 +67,11 @@
 						<li><a href="features.html">Features</a></li>
 					</ul>
 				</li>
-				<li class="uk-parent">
-					<a href="#">URL</a>
+				<li>
+					<a href="../url.html">URL</a>
 				</li>
-				<li class="uk-parent">
-					<a href="#">HTML</a>
+				<li>
+					<a href="../html.html">HTML</a>
 				</li>
 				<li class="uk-nav-divider"></li>
 				<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon:file-text"></span> Quiz</a></li>
