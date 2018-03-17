@@ -70,6 +70,9 @@ pre::-webkit-scrollbar {
 
 pre::-webkit-scrollbar-thumb {
 	background-color: lightgray;
+<<<<<<< HEAD
+}
+=======
 }
 
 .ref-apa p,
@@ -82,6 +85,7 @@ pre::-webkit-scrollbar-thumb {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
+<<<<<<< HEAD
 
 .scroll {
 	position: fixed;
@@ -97,3 +101,6 @@ pre::-webkit-scrollbar-thumb {
 	color: white;
 	text-decoration: none;
 }
+=======
+>>>>>>> 17a8bef8ea2e6277d11332f182c44b72bdf585fc
+>>>>>>> cbad31702a292e7929e2305d5d4200277d21fcba
