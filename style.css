@@ -82,3 +82,18 @@ pre::-webkit-scrollbar-thumb {
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
+
+.scroll {
+	position: fixed;
+	background-color: black;
+	display: none;
+	right: 20px;
+	bottom: 15px;
+	padding: 5px 10px;
+}
+
+.scroll a {
+	font-size: 9px;
+	color: white;
+	text-decoration: none;
+}
