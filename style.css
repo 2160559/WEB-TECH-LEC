@@ -70,4 +70,19 @@ pre::-webkit-scrollbar {
 
 pre::-webkit-scrollbar-thumb {
 	background-color: lightgray;
+<<<<<<< HEAD
 }
+=======
+}
+
+.ref-apa p,
+.ref-apa li,
+.ref-apa dd {
+	margin-left: .5in;
+	text-indent: -.5in;
+	margin-left: 2em;
+	text-indent: -2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+>>>>>>> 17a8bef8ea2e6277d11332f182c44b72bdf585fc

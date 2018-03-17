@@ -10,11 +10,18 @@
 	<!-- UIkit JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
 </head>
 
+<<<<<<< HEAD
 <body class="uk-background-mutedy">
 	<nav class="uk-navbar-container uk-margin " uk-navbar>
 		<div class="uk-navbar-left uk-margin-left uk-margin-righ">
+=======
+<body>
+	<nav class="uk-navbar-container uk-margin" uk-navbar>
+		<div class="uk-navbar-left uk-margin-left uk-margin-right">
+>>>>>>> 17a8bef8ea2e6277d11332f182c44b72bdf585fc
 			<a class="uk-navbar-item uk-logo" href="index.html">WebTech 2018</a>
 			<ul class="uk-navbar-nav">
 				<li>
@@ -23,11 +30,20 @@
 						<ul class="uk-nav uk-navbar-dropdown-nav">
 							<li><a href="prelims/overview.html">Overview</a></li>
 							<li><a href="prelims/www.html">World Wide Web</a></li>
-							<li><a href="prelims/http/http.html">HTTP</a></li>
-							<li><a href="#">URL</a></li>
-							<li><a href="#">HTML</a></li>
+							<li class="uk-parent">
+								<a href="prelims/http/http.html">HTTP</a>
+								<ul class="uk-nav-sub">
+									<li><a href="prelims/http/evolution.html">Version/Evolution</a></li>
+									<li><a href="prelims/http/message.html">Message</a></li>
+									<li><a href="prelims/http/features.html">Features</a></li>
+								</ul>
+							</li>
+							<li><a href="prelims/url.html">URL</a></li>
+							<li><a href="prelims/html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
-							<li><a href="#">References</a></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="prelims/references.html">References</a></li>
 						</ul>
 					</div>
 				</li>
@@ -44,6 +60,7 @@
 			</ul>
 		</div>
 	</nav>
+<<<<<<< HEAD
 
 
 	<div class="uk-container uk-container-small uk-margin-top ">
@@ -51,6 +68,11 @@
 
 
 			<div class="uk-width-1-4@m ">		
+=======
+	<div class="uk-container uk-container-small uk-margin uk-padding-small">
+		<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > a >.uk-card; delay: 250; repeat: true">
+			<div>
+>>>>>>> 17a8bef8ea2e6277d11332f182c44b72bdf585fc
 				<a href="prelims/overview.html">
 					<div class=" uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted prelims-topic">
 						<h3 class="uk-card-title">Overview</h3>
@@ -76,19 +98,31 @@
 					</div>
 				</a>
 			</div>
+<<<<<<< HEAD
 
 			<div class="uk-width-2-5@m">
 				<a href="#">
 					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted prelims-topic">
+=======
+			<div>
+				<a href="prelims/url.html">
+					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match">
+>>>>>>> 17a8bef8ea2e6277d11332f182c44b72bdf585fc
 						<h3 class="uk-card-title">URL</h3>
 						<p>Your resource navigator on the web!</p>
 					</div>
 				</a>
 			</div>
+<<<<<<< HEAD
 
 			<div class="uk-width-1-1@m">
 				<a href="#">
 					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted prelims-topic">
+=======
+			<div>
+				<a href="prelims/html.html">
+					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match">
+>>>>>>> 17a8bef8ea2e6277d11332f182c44b72bdf585fc
 						<h3 class="uk-card-title">HTML</h3>
 						<p>HTML is the language used for creating documents on the World Wide Web.</p>
 					</div>
@@ -118,7 +152,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="uk-navbar-container uk-margin" uk-navbar style="margin-bottom: 0;">
+	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar>
 		<div class="uk-navbar-center">
 			9325A 1-2 TF Group 1
 			<br> &copy; March 2018
