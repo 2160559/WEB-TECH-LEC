@@ -1,482 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 	<title>HTML</title>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="styles/favicon.ico" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<style>
-		.odd-left {
-			padding: 10px;
-			background-color: #dbe9d8;
-		}
-
-		.odd-right {
-			padding: 10px;
-			background-color: #c2d4d8;
-
-		}
-
-		.even-left {
-			padding: 10px;
-			background-color: #b0aac2;
-		}
-
-		.even-right {
-			padding: 10px;
-			background-color: #f2efe8;
-		}
-
-		.odd-left:hover {
-			padding: 10px;
-			background-color: #90ee90;
-		}
-
-		.odd-right:hover {
-			padding: 10px;
-			background-color: #c9c9c9;
-
-		}
-
-		.even-left:hover {
-			padding: 10px;
-			background-color: #e3e3e3;
-		}
-
-		.even-right:hover {
-			padding: 10px;
-			background-color: #ff99ff;
-		}
-
-		.footer {
-			text-align: center;
-			padding: 10px 0;
-			background-color: lightgray;
-		}
-
-		.container {
-			margin-top: 35px;
-			margin-bottom: 35px;
-		}
-
-	</style>
-	<link rel="stylesheet" type="text/css" href="../style.css">
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="../img/icons/favicon.ico">
 </head>
 
 <body>
-	<div class="container-fluid banner">
-		<img src="../img/banner.png" alt="Banner">
-	</div>
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-		<a class="navbar-brand" href="../index.html">WebTech 2018</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-		<div class="navbar-collapse collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="prelims.html" data-toggle="dropdown">Preliminaries</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="prelims.html">Preliminaries</a>
-						<a class="dropdown-item" href="overview.html">Overview</a>
-						<a class="dropdown-item" href="www.html">World Wide Web</a>
-						<a class="dropdown-item" href="http.html">HTTP</a>
-						<a class="dropdown-item" href="url.html">URL</a>
-						<a class="dropdown-item" href="html.html">HTML</a>
-						<a class="dropdown-item" href="references.html"><i>Refererences</i></a>
+	<nav class="uk-navbar-container" uk-navbar>
+		<div class="uk-navbar-left uk-margin-left uk-margin-right">
+			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
+			<ul class="uk-navbar-nav">
+				<li class="uk-active">
+					<a href="prelims.html">Preliminaries</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li><a href="overview.html">Overview</a></li>
+							<li><a href="www.html">World Wide Web</a></li>
+							<li class="uk-parent">
+								<a href="http/http.html">HTTP</a>
+								<ul class="uk-nav-sub">
+									<li><a href="http/evolution.html">Version/Evolution</a></li>
+									<li><a href="http/message.html">Message</a></li>
+									<li><a href="http/features.html">Features</a></li>
+								</ul>
+							</li>
+							<li><a href="url.html">URL</a></li>
+							<li class="uk-active"><a href="html.html">HTML</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="references.html">References</a></li>
+						</ul>
 					</div>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="midterms.html" data-toggle="dropdown">Midterms</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="midterms.html">Midterms</a>
+				<li>
+					<a href="../midterms/midterms.html">Midterms</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">CSWS</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">References</a></li>
+						</ul>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</nav>
+	<div class="uk-container uk-container-small uk-margin uk-padding-small">
+		<h1 class="uk-heading-line uk-text-center"><span>Hypertext Markup Language</span></h1>
+		<ul class="uk-tab uk-flex-center" data-uk-tab="{connect:'#my-id'}">
+			<li class="uk-padding-remove-horizontal">
+				<a href="">
+					<h3 class="uk-heading-bullet">Introduction</h3>
+				</a>
+			</li>
+			<li class="uk-padding-remove-horizontal">
+				<a href="">
+					<h3 class="uk-heading-bullet">Versions</h3>
+				</a>
+			</li>
+			<li class="uk-padding-remove-horizontal">
+				<a href="">
+					<h3 class="uk-heading-bullet">HTML Pre-Processors</h3>
+				</a>
+			</li>
 
+		</ul>
+		<ul id="my-id" class="uk-switcher uk-margin">
+			<li>
+				<h2 class="uk-heading-bullet">HTML</h2>
+				<p class="uk-text-justify"><b>Hypertext Markup Language</b>, or HTML, is the language used for creating documents on the World Wide Web, and defines the structure of a webpage and the content semantically. </p>
+				<p class="uk-text-justify">Past practices of web development includes specifications for the presentational aspects of a webpage. However, in the present times, it is a good practice to solely use HTML to specify the logical organization of a document, and to hand over presentational aspects to stylesheets.</p>
 
-	<div class="container">
-		<div class="card-header">
-			<h1>HyperText Markup Language (HTML) </h1>
-			HyperText Markup Language (HTML) is the language used for creating documents on the World Wide Web. It defines the structure of a webpage and the content semantically. Past practices of web development includes specifications for the presentational aspects of a webpage, however, in the present times, it is a good practice to solely use HTML to specify the logical organization of a document and the to hand over presentational aspects to stylesheets.
-		</div><br><br>
+				<h2 class="uk-heading-bullet">Basic HTML Structure</h2>
+				<p class="uk-text-justify"> NEED CONTENT!</p>
+			</li>
+			<li>
+				<h4>HTML</h4>
+				<ul>
+					<li>Developed by Tim Berners-Lee</li>
+					<li>Debuted in 1991</li>
+					<li>Originally developed as a tool to build the WWW</li>
+					<li>Based from the Standardized General Markup Language (SGML)</li>
+					<li>This version was far more limiting than what we have now, for all it can do was just to display texts up on the web.
+					</li>
+				</ul>
+				<hr>
+				<h4>HTML 2.0</h4>
+				<ul>
+					<li>Published in November, 1995</li>
+					<li>Created to be a web standard, defining what the language can offer developers.</li>
+					<li>A few new features were added</li>
+				</ul>
+				<hr>
+				<h4>HTML 3.0</h4>
+				<ul>
+					<li>A set of standards proposed for it offers such a great shift from HTML 2.0, that web browsers would find it hard to utilize.</li>
+				</ul>
+				<hr>
+				<h4>HTML 3.2</h4>
+				<ul>
+					<li>Released in January 14, 1997</li>
+					<li>The first version of HTML to be released as a W3C Recommendation</li>
+					<li>Contained several tags and attributes for the presentational aspect of the web pages</li>
+				</ul>
+				<hr>
+				<h4>HTML 4.0</h4>
+				<ul>
+					<li>Released in December, 1997</li>
+					<li>Styling tags and attributes were deprecated</li>
+					<li>Provided tags for stylesheets, scripts, frames, embedded objects, richer tables, enhanced forms, and improved accessibility features for people with disabilities.</li>
+				</ul>
+				<hr>
+				<h4>HTML 4.01</h4>
+				<ul>
+					<li>Published in December, 1999</li>
+					<li>Revised version of HTML 4.0.</li>
+					<li>New attributes were added and previous errors were corrected</li>
+				</ul>
+				<hr>
+				<h4>XHTML</h4>
+				<ul>
+					<li>Became a standard in January, 2000</li>
+					<li>An XML-based language</li>
+					<li>A stricter version of HTML that centered on the adherence to standards and semantics </li>
+				</ul>
+				<hr>
+				<h4>HTML 5.0</h4>
+				<ul>
+					<li>Released in October, 2014</li>
+					<li>Created with the motivation of evolving HTML 4.01 rather than replacing it with XHTML</li>
+				</ul>
+				<hr>
+				<h4>HTML 5.1</h4>
+				<ul>
+					<li>Released in November, 2016</li>
+					<li>The elements details and summary allows author to present information which users can choose whether to read or not.</li>
+					<li>Header and footer elements can be nested.</li>
+					<li>The figcaption element can appear anywhere within a figure.</li>
+					<li>Some of the features removed are command and the usemap attribute on objects.</li>
+				</ul>
+				<hr>
+				<h4>HTML Living Standard</h4>
+				<ul>
+					<li>In 2011, the <b>Web Hypertext Application Technology Working Group</b>, or WHATWG, split up with W3C after years of working together because of the group's differing goals: W3C wanted to bring-out a "<i>finished</i>" version of HTML5, while WHATWG wanted a progressive version, hence the birth of HTML Living Standard.</li>
+				</ul>
+				<hr>
+				<h4>HTML 5.2</h4>
+				<ul>
+					<li>Published in December, 2017</li>
+					<li>The toolbar type for menu and element dialog was removed from HTML 5.1 due to lack of implementation, and may be removed from HTML 5.2 if not implemented.</li>
+					<li>This is also the same for registerContentHandler(), isContentHandlerRegistered(), isProtocolHandlerRegistered(), and datetime value for type.</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Preprocessor</h2>
+				<p>A <b>preprocessor</b> is a program that converts a type of data into another type. Generally, it aims to help users write a cleaner, shorter and a more readable code.</p>
+				<h2>HTML Preprocessors</h2>
+				<p>Here are some of popular preprocessor languages for HTML:
+				</p>
+				<ol>
+					<li><b>Slim</b></li>
+					<ul>
+						<li>Slim is a preprocessor language that aims to <i>“reduce the view syntax”</i> (Rubydoc), or the length, of the essential parts of your code by shortening its syntax.</li>
+					</ul>
+					<li><b>Haml</b></li>
+					<ul>
+						<li>Short for <i>HTML Abstraction Markup Language</i>, Haml is a markup language that aims to provide the ability to write elegant code. It requires Ruby to be installed for it to be compiled into HTML. </li>
+					</ul>
+					<li><b>Pug</b></li>
+					<ul>
+						<li>Formerly known as <i>Jade</i>, it was renamed to <i>Pug</i> in 2015 due to <i>Jade</i> already being a registered trademark. Pug is a JavaScript language for creating HTML markups that allows users to write simplified, elegant, and concise code, while being close to the syntax of HTML. It has a number of powerful features such as loops, the use of JavaScript, and interpolation. </li>
+					</ul>
+				</ol>
+				<hr class="uk-divider-icon">
+				<h2>Core Principals</h2>
+				<p>According to Haml, the core principles surrounding preprocessors were able to largely influence other preprocessors (startae.com) and are listed below:
+				</p>
+				<ul>
+					<li>Your Markup should be beautiful.”</li>
+					<ul>
+						<li>The code must be easily readable and beautiful to the eyes. </li>
+					</ul>
+					<li>“Your Markup should be DRY.”</li>
+					<ul>
+						<li>With DRY standing for “don’t repeat yourself”, the code should not be redundant. </li>
+					</ul>
+					<li>“Your Markup should be well-indented.”</li>
+					<ul>
+						<li>The code should be properly indented to support the first and fourth principle. </li>
+					</ul>
+					<li>“HTML structure should be clear.”</li>
+					<ul>
+						<li>The code’s structure should show the organization of the final output. </li>
+					</ul>
+				</ul>
 
-		<div id="accordion">
-
-			<div class="card">
-				<div class="card-header">
-					<a class="collapsed card-link" data-toggle="collapse" data-parent="#accordion" href="#Redirection">
-						<h2>Versions</h2>
-					</a>
-				</div>
-				<div id="Redirection" class="collapse">
-					<div class="card-body">
-						<div class="table-responsive">
-							<div class="container">
-
-								<div class="row subtopics">
-									<div class="col-sm-3 odd-left" data-toggle="modal" data-target="#st1">
-										<br>
-										<h3>HTML</h3>
-										<br>
-									</div>
-									<div class="col-sm-3 odd-right" data-toggle="modal" data-target="#st2">
-										<br>
-										<h3>HTML 2.0</h3>
-										<br>
-									</div>
-
-									<div class="col-sm-3 even-right" data-toggle="modal" data-target="#st3">
-										<br>
-										<h3>HTML 3.0</h3>
-										<br>
-									</div>
-
-									<div class="col-sm-3 even-left" data-toggle="modal" data-target="#st4">
-										<br>
-										<h3>HTML 3.2</h3>
-										<br>
-									</div>
-								</div>
-
-								<div class="row subtopics">
-									<div class="col-sm-4 even-right" data-toggle="modal" data-target="#st5">
-										<br>
-										<h3>HTML 4.0</h3>
-										<br>
-									</div>
-
-									<div class="col-sm-4 even-left" data-toggle="modal" data-target="#st6">
-										<br>
-										<h3>HTML 4.01</h3>
-										<br>
-									</div>
-
-									<div class="col-sm-4 odd-left" data-toggle="modal" data-target="#st7">
-										<br>
-										<h3>XHTML</h3>
-										<br>
-									</div>
-								</div>
-
-								<div class="row subtopics">
-									<div class="col-sm-3 even-left" data-toggle="modal" data-target="#st8">
-										<br>
-										<h3>HTML 5.0</h3>
-										<br>
-									</div>
-
-									<div class="col-sm-3 odd-left" data-toggle="modal" data-target="#st9">
-										<br>
-										<h3>HTML 5.1</h3>
-										<br>
-									</div>
-
-									<div class="col-sm-3 even-right" data-toggle="modal" data-target="#st10">
-										<br>
-										<h3>HTML 5.2</h3>
-										<br>
-									</div>
-
-									<div class="col-sm-3 odd-right" data-toggle="modal" data-target="#st11">
-										<br>
-										<h3>HTML Living Standard</h3>
-										<br>
-									</div>
-								</div>
-
-								<!-- Modal -->
-								<div id="st1" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li><a id="popover" class="popovers" data-content="" title="Sir Timothy John Berners-Lee">Developed by Tim Berners-Lee</a></li>
-													<li>Debuted in 1991</li>
-													<li>Originally developed as a tool to build the WWW</li>
-													<li>Based from the Standardized General Markup Language (SGML)</li>
-													<li>This version was far more limiting than what we have now, for all it can do was just to display texts up on the web.
-													</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st2">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st2" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 2.0</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Published in November, 1995</li>
-													<li>Created to be a web standard, defining what the language can offer developers.</li>
-													<li>A few new features were added</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st1">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st3">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st3" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 3.0</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>A proposed set of standards dumped for it offers such great shift from HTML 2.0 that web browsers would find it hard to utilize.</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st2">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st4">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st4" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 3.2</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Released in January 14, 1997</li>
-													<li>The first version of HTML to be released as a W3C Recommendation</li>
-													<li>Contained several tags and attributes for the presentational aspect of the web pages</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st3">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st5">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st5" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 4.0</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Released December, 1997</li>
-													<li>Styling tags and attributes were deprecated</li>
-													<li>Provided tags for stylesheets, scripts, frames, embedded objects, richer tables, enhanced forms, and improved accessibility features for people with disabilities.</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st4">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st6">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st6" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 4.01</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Published December, 1999</li>
-													<li>Revised version of HTML 4.0.</li>
-													<li>New attributes were added and previous errors were corrected</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st5">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st7">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st7" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">XHTML</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Became a standard in January, 2000</li>
-													<li>XML-based language</li>
-													<li>A sricter version of HTML that centered on the adherence to standards and semantics </li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st6">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st8">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st8" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 5.0</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Released October, 2014</li>
-													<li>Created with the motivation of evolving HTML 4.01 rather than replacing it with XHTML</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st7">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st9">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st9" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 5.1</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Released November, 2016</li>
-													<li>The elements details and summary allows author to present information which users can choose whether to read or not.</li>
-													<li>header and footer elements can be nested</li>
-													<li>figcaption element can appear anywhere within a figure</li>
-													<li>Some of the features removed are command, usemap attribute on object</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st8">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st10">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st10" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML 5.2</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>Published December, 2017</li>
-													<li>The toolbar type for menu and element dialog was removed from HTML 5.1 due to lack of implementation and may be removed from HTML 5.2 if not implemented
-													</li>
-													<li>This is also the same for registerContentHandler(), isContentHandlerRegistered(), isProtocolHandlerRegistered() and datetime value for type</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st9">Previous</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st11">Next</button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div id="st11" class="modal" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title">HTML Living Standard</h4>
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<div class="modal-body">
-												<ul>
-													<li>In 2011, <a class="popovers" id="pover" data-content="" title="Web Hypertext Application Technology Working Group">WHATWG</a> split up with W3C after years of working together because of the group's differing goals; W3C wanted to bring-out a "finished" version of HTML5, while WHATWG wanted a progressive version, hence the birth of HTML Living Standard</li>
-												</ul>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#st10">Previous</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			</li>
+		</ul>
+		<hr>
+	</div>
+	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
+		<div class="uk-navbar-center">
+			9325A 1-2 TF Group 1
+			<br> &copy; March 2018
 		</div>
 	</div>
-
-	<div class="footer">
-		Design: Group 1<br> &copy;February 2018
-	</div>
-	<script>
-		var image = '<img src="img/tbl.jpg">';
-		var def = '<p>A community of people known for "maintaining and evolving HTML since 2004"</p><p> It was established by individuals from Apple, Mozilla, and Opera in 2004.</p>';
-		$('#popover').popover({
-			placement: 'right',
-			trigger: 'hover',
-			content: image,
-			html: true
-		});
-
-		$('#pover').popover({
-			placement: 'right',
-			trigger: 'hover',
-			content: def,
-			html: true
-		});
-
-
-	</script>
 </body>
 
 </html>

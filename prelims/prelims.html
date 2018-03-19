@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>World Wide Web</title>
+	<title>Preliminaries</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- UIkit CSS -->
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<nav class="uk-navbar-container" uk-navbar>
+	<nav class="uk-navbar-container uk-margin" uk-navbar>
 		<div class="uk-navbar-left uk-margin-left uk-margin-right">
 			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
 			<ul class="uk-navbar-nav">
@@ -23,7 +23,7 @@
 					<div class="uk-navbar-dropdown">
 						<ul class="uk-nav uk-navbar-dropdown-nav">
 							<li><a href="overview.html">Overview</a></li>
-							<li class="uk-active"><a href="www.html">World Wide Web</a></li>
+							<li><a href="www.html">World Wide Web</a></li>
 							<li><a href="http/http.html">HTTP</a>
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li><a href="http/evolution.html" class="uk-margin-left">Version/Evolution</a></li>
@@ -56,24 +56,51 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="uk-container uk-container-small uk-margin uk-padding-small">
-		<h1 class="uk-heading-line uk-text-center"><span>What is the World Wide Web?</span></h1>
-		<p class="uk-text-justify">The <b>World Wide Web</b> is a collection of resources and applications used to access resources via the internet. It was invented by <i>Tim Berners-Lee</i> in 1989, for the purpose of sharing resources, such as researches, among scientists.</p>
-		<p class="uk-text-justify"><b>Web Resources</b> can be in static or dynamic in form. <i>Static resources</i> exist in the form that we access from the web server, such as HTML files that lies within the web. <i>Dynamic resources</i> are generated on the fly, and may vary differently per user when they access the resource. An example would be PHP scripts.</p>
-		<p class="uk-text-justify"><b>Web applications</b> are applications used to access the resources from the web via the internet. There are two classifications of web applications:
-		</p>
-		<ol>
-			<li><b>Client Applications</b></li>
-			<ul>
-				<li>These are applications that are used by clients to access resources from the web.</li>
-				<li>Examples of client applications include <i>browsers</i> and <i>apps</i>.</li>
-			</ul>
-			<li><b>Server applications</b></li>
-			<ul>
-				<li>These are applications that host dynamic applications.</li>
-				<li>Examples of server applications include <i>Apache Web Server</i>, <i>Tomcat</i> and <i>IIS</i>.</li>
-			</ul>
-		</ol>
+	<div class="uk-container uk-container-small uk-margin uk-padding-small ">
+		<div class="uk-grid-small uk-grid-match uk-flex-center " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > a >.uk-card; delay: 75; repeat: true" uk-grid>
+			<div class="uk-width-1-4@m ">
+				<a href="overview.html">
+					<div class=" uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+						<h3 class="uk-card-title">Overview</h3>
+						<p>So what's this thing for?</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="uk-width-3-4@m">
+				<a href="www.html">
+					<div class=" uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+						<h3 class="uk-card-title">WWW</h3>
+						<p>World Wide Web is a collection of resources and applications that are used to access resources via the internet.</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="uk-width-3-5@m">
+				<a href="http/http.html">
+					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+						<h3 class="uk-card-title">HTTP</h3>
+						<p>The foundation of data communication for the WWW.</p>
+					</div>
+				</a>
+			</div>
+			<div class="uk-width-2-5@m">
+				<a href="url.html">
+					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+						<h3 class="uk-card-title">URL</h3>
+						<p>Your resource navigator on the web!</p>
+					</div>
+				</a>
+			</div>
+			<div class="uk-width-1-1@m">
+				<a href="html.html">
+					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+						<h3 class="uk-card-title">HTML</h3>
+						<p>HTML is the language used for creating documents on the World Wide Web.</p>
+					</div>
+				</a>
+			</div>
+		</div>
 	</div>
 	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
 		<div class="uk-navbar-center">

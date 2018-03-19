@@ -1,89 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<title>URL</title>
-	<link rel="icon" type="image/x-icon" href="../img/icons/favicon.ico">
+	<title>Universal Resource Locator</title>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="../style.css">
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="../img/icons/favicon.ico">
 </head>
 
 <body>
-	<div class="container-fluid banner">
-        <img src="../img/banner.png" alt="Banner">
-    </div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <a class="navbar-brand" href="../index.html">WebTech 2018</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="navbar-collapse collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Preliminaries</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="../prelims.html">Preliminaries</a>
-                        <a class="dropdown-item" href="../prelims/overview.html">Overview</a>
-                        <a class="dropdown-item" href="../prelims/www.html">World Wide Web</a>
-                        <a class="dropdown-item" href="../prelims/http.html">HTTP</a>
-                        <a class="dropdown-item" href="../prelims/url.html">URL</a>
-                        <a class="dropdown-item" href="../prelims/html.html">HTML</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Midterms</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="../midterms.html">Midterms</a>
-                        <a class="dropdown-item" href="../midterms/css.html">HTML</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="../references.html">References</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    
-	<div class="container">
-		<div class="card-header">
-			<h1>What is a URL?</h1>
-			URL stands for Universal Resource Locator. A URL is the path to a unique resource on the Web. A URL points to a unique resource such as HTML documents, images, CSS files, etc. However, there are cases that a URL points to an empty location or the resource is missing.
+	<nav class="uk-navbar-container" uk-navbar>
+		<div class="uk-navbar-left uk-margin-left uk-margin-right">
+			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
+			<ul class="uk-navbar-nav">
+				<li class="uk-active">
+					<a href="prelims.html">Preliminaries</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li><a href="overview.html">Overview</a></li>
+							<li><a href="www.html">World Wide Web</a></li>
+							<li class="uk-parent">
+								<a href="http/http.html">HTTP</a>
+								<ul class="uk-nav-sub">
+									<li><a href="http/evolution.html">Version/Evolution</a></li>
+									<li><a href="http/message.html">Message</a></li>
+									<li><a href="http/features.html">Features</a></li>
+								</ul>
+							</li>
+							<li class="uk-active"><a href="url.html">URL</a></li>
+							<li><a href="html.html">HTML</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="references.html">References</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="../midterms/midterms.html">Midterms</a>
+					<div class="uk-navbar-dropdown ">
+						<ul class="uk-nav uk-navbar-dropdown-nav ">
+							<li><a href="# ">CSS</a></li>
+							<li><a href="# ">CSWS</a></li>
+							<li class="uk-nav-divider "></li>
+							<li><a href="# ">Quiz</a></li>
+							<li class="uk-nav-divider "></li>
+							<li><a href="# ">References</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
 		</div>
-		<br> <br>
-		<div class="card-header">
-			<h1>URL Structure</h1>
-			A URL is composed of different parts, some of them are mandatory and some are optional. The mandatory parts are the protocol and the domain name. The optional parts are the port, path to file, parameters and the anchor.
-			<img style="width: 80%; height: 80%" src="../img/protocol-domain.jpg" alt="Protocol-Domain">
-			<h2>Protocol</h2>
-			Indicates what the browser must use. It is the first part of the URL. In the modern browsers, the user does not need to type the protocol; the browser automatically includes the protocol.
-			<br><br>
-			<h2>Domain Name </h2>
-			Indicates the web server that is being accessed. It is also possible to use the IP address of the web server. However, the domain name is preferred because people do not want to remember numbers.
-			<hr>
-			<img style="width: 80%; height: 80%" src="../img/port-path.jpg" alt="Port-Path">
-			<h2>Port Number </h2>
-			It indicates what port or “gate” used to access the resource on the web server. The standard port of the web servers are 80 for HTTP and 443 for HTTPS. The port number is usually omitted. When the port numbers are other than 80 or 443, the port number is mandatory.
-			<br><br>
-			<h2>Path to file</h2>
-			This is the path to the specific resource on the Web Server.
-			<hr>
-			<img style="width: 80%; height: 80%" src="../img/parameters-anchor.jpg" alt="Parameters-Anchor">
-			<h2>Parameters</h2>
-			It is a list of key-value pairs separated by the “&” symbol. The parameters start with the “?” symbol to indicate that the start of parameters.
-			<br><br>
-			<h2>Anchor</h2>
-			It acts as a bookmark for a page, and is another part of the document itself.
+	</nav>
+	<div class="uk-container uk-container-small uk-margin uk-padding-small ">
+		<h1 class="uk-heading-line uk-text-center "><span>Universal Resource Locator</span></h1>
+		<h2 class="uk-heading-bullet ">What is a URL?</h2>
+		<p class="uk-text-justify ">URL stands for <b>Universal Resource Locator</b>. A URL is the path to a unique resource on the Web. A URL points to a unique resource such as HTML documents, images, CSS files, etc. However, there are cases that a URL points to an empty location, or a missing resource.</p>
+		<hr class="uk-divider-icon ">
+		<h2 class="uk-heading-bullet ">URL Structure</h2>
+		<p class="uk-text-justify ">A URL is composed of different parts, some of them mandatory, some, optional. The mandatory parts are the <i>protocol</i> and the <i>domain name</i>. The optional parts are the <i>port</i>, <i>path to file</i>, <i>parameters</i>, and the <i>anchor</i>.</p>
+		<img src="../img/protocol-domain.jpg " alt="Protocol-Domain ">
+		<dl>
+			<dt><h3>Protocol</h3></dt>
+			<dd>
+				<p>Indicates what the browser must use. It is the first part of the URL. In the modern browsers, the user does not need to type the protocol; the browser automatically includes the protocol.</p>
+			</dd>
+			<dt><h3>Domain Name </h3></dt>
+			<dd>
+				<p>Indicates the web server that is being accessed. It is also possible to use the IP address of the web server. However, the domain name is preferred because people do not want to remember numbers.</p>
+			</dd>
+		</dl>
+		<img src="../img/port-path.jpg " alt="Port-Path ">
+		<dl>
+			<dt><h3>Port Number </h3></dt>
+			<dd>
+				<p>It indicates what port or “gate” used to access the resource on the web server. The standard port of the web servers are 80 for HTTP and 443 for HTTPS. The port number is usually omitted. When the port numbers are other than 80 or 443, the port number is mandatory.</p>
+			</dd>
+			<dt><h3>Path to file</h3></dt>
+			<dd>
+				<p>This is the path to the specific resource on the Web Server.</p>
+			</dd>
+		</dl>
+		<img src="../img/parameters-anchor.jpg " alt="Parameters-Anchor ">
+		<dl>
+			<dt><h3>Parameters</h3></dt>
+			<dd>
+				<p>It is a list of key-value pairs separated by the “&” symbol. The parameters start with the “?” symbol to indicate that the start of parameters.</p>
+			</dd>
+			<dt><h3>Anchor</h3></dt>
+			<dd>
+				<p>It acts as a bookmark for a page, and is another part of the document itself.</p>
+			</dd>
+		</dl>
+		<hr>
+	</div>
+	<div class="uk-navbar-container uk-margin uk-padding-small " uk-navbar style="margin-bottom: 0; ">
+		<div class="uk-navbar-center ">
+			9325A 1-2 TF Group 1
+			<br> &copy; March 2018
 		</div>
 	</div>
-	<div class="container-fluid footer">
-        9325A 1-2 TF Group 1 <br> &copy; March 2018
-    </div>
 </body>
 
 </html>
