@@ -11,7 +11,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
 	<link rel="stylesheet" href="../../style.css">
-	<link rel="icon" type="image/x-icon" href="../../img/icons/favicon.ico">
 </head>
 
 <body>
@@ -20,14 +19,15 @@
 			<a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
 			<ul class="uk-navbar-nav">
 				<li class="uk-active">
-					<a href="../prelims.html">Preliminaries</a>
+					<a class="uk-button uk-button-text" href="../prelims.html">Preliminaries</a>
 					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav">
+						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
 							<li><a href="../overview.html">Overview</a></li>
 							<li><a href="../www.html">World Wide Web</a></li>
 							<li class="uk-active uk-parent">
 								<a href="http.html">HTTP</a>
 								<ul class="uk-nav-sub">
+									<li><a href="prelims/http/http.html">Introduction</a></li>
 									<li><a href="evolution.html">Version/Evolution</a></li>
 									<li class="uk-active"><a href="message.html">Message</a></li>
 									<li><a href="features.html">Features</a></li>
@@ -43,10 +43,10 @@
 					</div>
 				</li>
 				<li>
-					<a href="../../midterms/midterms.html">Midterms</a>
+					<a class="uk-button uk-button-text" href="../../midterms/midterms.html">Midterms</a>
 					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav">
-							<li><a href="#">CSS</a></li>
+						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+							<li><a href="../../midterms/css.html">CSS</a></li>
 							<li><a href="#">CSWS</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">Quiz</a></li>
