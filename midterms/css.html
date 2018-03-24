@@ -1,1 +1,70 @@
-<!DOCTYPE html><html><head><title>CSS</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- UIkit CSS--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css"><!-- Uikit JS--><script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script></head><body><nav class="uk-navbar-container uk-margin" uk-navbar><div class="uk-navbar-left uk-margin-left uk-margin-right"><a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a><ul class="uk-navbar-nav"><li> <a class="uk-button uk-button-text" href="../prelims/prelims.html">Preliminaries</a><div class="uk-navbar-dropdown"><ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav><li><a href="../prelims/overview.html">Overview</a></li><li><a href="../prelims/www.html">World Wide Web</a></li><li class="uk-parent"><a href="../prelims/http/http.html">HTTP</a><ul class="uk-nav-sub"><li><a href="../prelims/http/http.html">Introduction</a></li><li><a href="../prelims/http/evolution.html">Version/Evolution</a></li><li><a href="../prelims/http/message.html">Message</a></li><li><a href="../prelims/http/features.html">Features</a></li></ul></li><li><a href="../prelims/url.html">URL</a></li><li><a href="../prelims/html.html">HTML</a></li><li class="uk-nav-divider"></li><li><a href="#">Quiz</a></li><li class="uk-nav-divider"></li><li><a href="../prelims/references.html">References</a></li></ul></div></li><li class="uk-active"><a class="uk-button uk-button-text" href="../midterms/midterms.html">Midterms</a><div class="uk-navbar-dropdown"><ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav><li><a href="css.html">CSS</a></li><li><a href="#">CSWS</a></li><li class="uk-nav-divider"></li><li><a href="#">Quiz</a></li><li class="uk-nav-divider"></li><li><a href="#">References</a></li></ul></div></li></ul></div></nav><div class="uk-container uk-container-small uk-margin uk-padding-small"><div>I'm really gonna miss you. Doc, about the future… No, Marty, we've already agreed that having information about the future could be extremely dangerous. Even if your intentions are good, they could backfire drastically. Whatever you've got to tell me I'll find out through the natural course of time. (Coffee Shop) (Marty is writing Doc a letter.) Dear Doctor Brown, on the night that I go back in time, you will be shot by terrorists. Please take whatever precautions are necessary to prevent this terrible disaster. Your friend, Marty.</div></div><div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;"><div class="uk-navbar-center">9325A 1-2 TF Group 1<br>&copy; March 2018</div></div></body></html>
+<!DOCTYPE html>
+<html>
+    <head><title>CSS</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><!-- UIkit CSS--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css"><!-- Uikit JS--><script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+    </head>
+    
+    
+    
+    <body>
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <div class="uk-navbar-left uk-margin-left uk-margin-right"><a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a><ul class="uk-navbar-nav"><li> <a class="uk-button uk-button-text" href="../prelims/prelims.html">Preliminaries</a><div class="uk-navbar-dropdown"><ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav><li><a href="../prelims/overview.html">Overview</a></li><li><a href="../prelims/www.html">World Wide Web</a></li><li class="uk-parent"><a href="../prelims/http/http.html">HTTP</a><ul class="uk-nav-sub"><li><a href="../prelims/http/http.html">Introduction</a></li><li><a href="../prelims/http/evolution.html">Version/Evolution</a></li><li><a href="../prelims/http/message.html">Message</a></li><li><a href="../prelims/http/features.html">Features</a></li></ul></li><li><a href="../prelims/url.html">URL</a></li><li><a href="../prelims/html.html">HTML</a></li><li class="uk-nav-divider"></li><li><a href="#">Quiz</a></li><li class="uk-nav-divider"></li><li><a href="../prelims/references.html">References</a></li></ul></div></li><li class="uk-active"><a class="uk-button uk-button-text" href="../midterms/midterms.html">Midterms</a><div class="uk-navbar-dropdown"><ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav><li><a href="css.html">CSS</a></li><li><a href="#">CSWS</a></li><li class="uk-nav-divider"></li><li><a href="#">Quiz</a></li><li class="uk-nav-divider"></li><li><a href="#">References</a></li></ul></div></li></ul></div></nav>
+        
+        
+        
+        <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" 
+             class="uk-container uk-container-small uk-margin uk-padding-small" >
+              <h1>Cascading Style Sheet (CSS)</h1>
+              <hr>
+            <div>
+                <div>
+                    <p>Can be used for all structural markups,
+                    mainly used for the aesthetics of a page. Adapted in HTML v. 4.0.     </p>
+                </div>
+                <div >
+                    <img src="../img/hakon_lie.jpg" style="float: left;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" width="20%" height="20%">
+                    <h3 style="float: left">Hakon Lie</h3>
+                   
+                    <img src="../img/bert_bos.jpg" style="float: right;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" width="20%" height="20%">
+                    <h3 style="float: right">Bert Bos  </h3>
+                </div>
+                <div>
+                    <p style="text-align: center">Started in 1994 by</p>
+                </div>
+            </div>
+        </div>
+        <br>
+         <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" 
+             class="uk-container uk-container-small uk-margin uk-padding-small" >
+              <h1>CSS Syntax</h1>
+              <hr>
+              <img src="../img/css_syntax_figure.png">
+             
+        
+        </div>
+        <br>
+         <div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" 
+             class="uk-container uk-container-small uk-margin uk-padding-small" >
+              <h1>Types of CSS</h1>
+              <hr>
+              <ol>
+              <li><h3>Internal </h3>
+                   
+                  <img src="../img/internal.png">
+              </li>
+                  <br>
+              <li><h3>External (recommended because of reusability and consistency) </h3></li>
+              <li><h3>Inline </h3></li>
+             
+             
+             
+              </ol>
+           
+             
+        
+        </div>
+        
+        <div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
+            <div class="uk-navbar-center">9325A 1-2 TF Group 1<br>&copy; March 2018</div>
+        </div>
+    </body>
+</html>
