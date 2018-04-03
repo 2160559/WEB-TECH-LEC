@@ -5,17 +5,17 @@
 	<title>World Wide Web</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- UIkit CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
-	<!-- UIkit JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+	<link rel="stylesheet" href="../css/uikit.min.css" />
+	<script src="../js/uikit.min.js"></script>
+	<script src="../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-	<nav class="uk-navbar-container" uk-navbar>
-		<div class="uk-navbar-left uk-margin-left uk-margin-right">
+	<nav class="uk-navbar-container" uk-navbar uk-sticky>
+		<div class="uk-navbar-left uk-margin-large-left">
 			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
+		</div>
+		<div class="uk-navbar-right uk-margin-xlarge-right">
 			<ul class="uk-navbar-nav">
 				<li class="uk-active">
 					<a class="uk-button uk-button-text" href="prelims.html">Preliminaries</a>
@@ -57,29 +57,52 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="uk-container uk-container-small uk-margin uk-padding-small">
-		<h1 class="uk-heading-line uk-text-center"><span>What is the World Wide Web?</span></h1>
-		<p class="uk-text-justify">The <b>World Wide Web</b> is a collection of resources and applications used to access resources via the internet. It was invented by <i>Tim Berners-Lee</i> in 1989, for the purpose of sharing resources, such as researches, among scientists.</p>
-		<p class="uk-text-justify"><b>Web Resources</b> can be in static or dynamic in form. <i>Static resources</i> exist in the form that we access from the web server, such as HTML files that lies within the web. <i>Dynamic resources</i> are generated on the fly, and may vary differently per user when they access the resource. An example would be PHP scripts.</p>
-		<p class="uk-text-justify"><b>Web applications</b> are applications used to access the resources from the web via the internet. There are two classifications of web applications:
-		</p>
-		<ol>
-			<li><b>Client Applications</b></li>
-			<ul>
-				<li>These are applications that are used by clients to access resources from the web.</li>
-				<li>Examples of client applications include <i>browsers</i> and <i>apps</i>.</li>
-			</ul>
-			<li><b>Server applications</b></li>
-			<ul>
-				<li>These are applications that host dynamic applications.</li>
-				<li>Examples of server applications include <i>Apache Web Server</i>, <i>Tomcat</i> and <i>IIS</i>.</li>
-			</ul>
-		</ol>
-		<hr>
-		<ul class="uk-pagination">
-			<li><a href="overview.html"><span class="uk-margin-small-right" uk-pagination-previous></span> Overview</a></li>
-			<li class="uk-margin-auto-left"><a href="http/http.html">HTTP <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-		</ul>
+	<div class="uk-container uk-align-center" uk-height-viewport="offset-top: true; offset-bottom: 100px">
+		<div class="uk-margin" uk-grid>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-position-center-left uk-margin-large-left">
+					<ul class="uk-nav uk-nav-default">
+						<li><a href="overview.html">Overview</a></li>
+						<li class="uk-active"><a href="www.html">World Wide Web</a></li>
+						<li class="uk-parent">
+							<a href="http/http.html">HTTP</a>
+							<ul class="uk-nav-sub">
+								<li><a href="http/http.html">Introduction</a></li>
+								<li><a href="http/evolution.html">Version/Evolution</a></li>
+								<li><a href="http/message.html">Message</a></li>
+								<li><a href="http/features.html">Features</a></li>
+							</ul>
+						</li>
+						<li><a href="url.html">URL</a></li>
+						<li><a href="html.html">HTML</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-width-3-4@m uk-width-1-1@s">
+				<h1 class="uk-heading-line uk-text-center"><span>What is the World Wide Web?</span></h1>
+				<p class="uk-text-justify">The <b>World Wide Web</b> is a collection of resources and applications used to access resources via the internet. It was invented by <i>Tim Berners-Lee</i> in 1989, for the purpose of sharing resources, such as researches, among scientists.</p>
+				<p class="uk-text-justify"><b>Web Resources</b> can be in static or dynamic in form. <i>Static resources</i> exist in the form that we access from the web server, such as HTML files that lies within the web. <i>Dynamic resources</i> are generated on the fly, and may vary differently per user when they access the resource. An example would be PHP scripts.</p>
+				<p class="uk-text-justify"><b>Web applications</b> are applications used to access the resources from the web via the internet. There are two classifications of web applications:
+				</p>
+				<ol>
+					<li><b>Client Applications</b></li>
+					<ul>
+						<li>These are applications that are used by clients to access resources from the web.</li>
+						<li>Examples of client applications include <i>browsers</i> and <i>apps</i>.</li>
+					</ul>
+					<li><b>Server applications</b></li>
+					<ul>
+						<li>These are applications that host dynamic applications.</li>
+						<li>Examples of server applications include <i>Apache Web Server</i>, <i>Tomcat</i> and <i>IIS</i>.</li>
+					</ul>
+				</ol>
+				<hr>
+				<ul class="uk-pagination">
+					<li><a href="overview.html"><span class="uk-margin-small-right" uk-pagination-previous></span> Overview</a></li>
+					<li class="uk-margin-auto-left"><a href="http/http.html">HTTP <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
 		<div class="uk-navbar-center">

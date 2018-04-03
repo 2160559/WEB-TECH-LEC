@@ -4,17 +4,15 @@ html
         title='CSS'
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width, initial-scale=1')
-        // UIkit CSS
-        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css')
-
-        // Uikit JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js')
+        link(rel='stylesheet' href='../css/uikit.min.css')
+        script(src='../js/uikit.min.js')
+        script(src='../js/uikit-icons.min.js')
 
     body
-        nav.uk-navbar-container.uk-margin(uk-navbar)
-            div.uk-navbar-left.uk-margin-left.uk-margin-right
+        nav.uk-navbar-container.uk-margin(uk-navbar uk-sticky)
+            div.uk-navbar-left.uk-margin-large-left
                 a.uk-navbar-item.uk-logo(href='../index.html') WebTech 2018
+            div.uk-navbar-right.uk-margin-xlarge-right
                 ul.uk-navbar-nav
                     li 
                         a.uk-button.uk-button-text(href='../prelims/prelims.html') Preliminaries
@@ -59,7 +57,7 @@ html
                                 li.uk-nav-divider
                                 li
                                     a(href='#') References
-        div.uk-container.uk-container-small.uk-margin.uk-padding-small
+        div.uk-container.uk-container-small.uk-margin.uk-padding-small(uk-height-viewport="offset-top: true; offset-bottom: 100px")
             div I'm really gonna miss you. Doc, about the future… No, Marty, we've already agreed that having information about the future could be extremely dangerous. Even if your intentions are good, they could backfire drastically. Whatever you've got to tell me I'll find out through the natural course of time. (Coffee Shop) (Marty is writing Doc a letter.) Dear Doctor Brown, on the night that I go back in time, you will be shot by terrorists. Please take whatever precautions are necessary to prevent this terrible disaster. Your friend, Marty.
         div.uk-navbar-container.uk-margin.uk-padding-small(uk-navbar style='margin-bottom: 0;')
             div.uk-navbar-center
