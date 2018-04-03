@@ -1,0 +1,100 @@
+@media (max-width: 575.99px) {
+	.table-responsive-sm {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+	.table-responsive-sm > .table-bordered {
+		border: 0;
+	}
+}
+
+@media (max-width: 767.99px) {
+	.table-responsive-md {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+	.table-responsive-md > .table-bordered {
+		border: 0;
+	}
+}
+
+@media (max-width: 991.99px) {
+	.table-responsive-lg {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+	.table-responsive-lg > .table-bordered {
+		border: 0;
+	}
+}
+
+@media (max-width: 1199.99px) {
+	.table-responsive-xl {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+	.table-responsive-xl > .table-bordered {
+		border: 0;
+	}
+}
+
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+pre::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+	background-color: #F5F5F5;
+}
+
+pre::-webkit-scrollbar {
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+pre::-webkit-scrollbar-thumb {
+	background-color: lightgray;
+
+}
+
+.ref-apa p,
+.ref-apa li,
+.ref-apa dd {
+	margin-left: .5in;
+	text-indent: -.5in;
+	margin-left: 2em;
+	text-indent: -2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.scroll {
+	position: fixed;
+	background-color: black;
+	display: none;
+	right: 20px;
+	bottom: 15px;
+	padding: 5px 10px;
+}
+
+.scroll a {
+	font-size: 9px;
+	color: white;
+	text-decoration: none;
+}
