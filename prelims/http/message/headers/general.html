@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTTP Message</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../../css/uikit.min.css" />
+  <script src="../../../../js/uikit.min.js"></script>
+  <script src="../../../../js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+  <nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left">
+      <a class="uk-navbar-item uk-logo" href="../../../../index.html">WebTech 2018</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active">
+          <a class="uk-button uk-button-text" href="../../../prelims.html">Preliminaries</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+              <li><a href="../../../overview.html">Overview</a></li>
+              <li><a href="../../../www.html">World Wide Web</a></li>
+              <li class="uk-active uk-parent">
+                <a href="../../http.html">HTTP</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="../../http.html">Introduction</a></li>
+                  <li><a href="../../evolution.html">Version/Evolution</a></li>
+                  <li><a href="../types.html">Message</a></li>
+                  <li class="uk-active"><a href="../../features/authentication.html">Features</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../url.html">URL</a></li>
+              <li><a href="../../../html/html.html">HTML</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">Quiz</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="../../../references.html">References</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="uk-button uk-button-text" href="../../../../midterms/midterms.html">Midterms</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+              <li><a href="../../../../midterms/css.html">CSS</a></li>
+              <li><a href="#">CSWS</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">Quiz</a></li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">References</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+      <div class="uk-width-1-6@m uk-visible@m">
+        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="../../../overview.html">Overview</a></li>
+            <li><a href="../../../www.html">World Wide Web</a></li>
+            <li class="uk-parent uk-active">
+              <a href="../../http.html">HTTP</a>
+              <ul class="uk-nav-sub">
+                <li><a href="../../http.html">Introduction</a></li>
+                <li><a href="../../evolution.html">Version/Evolution</a></li>
+                <li><a href="../types.html">Message</a></li>
+                <li><a href="../../features/authentication.html">Features</a></li>
+              </ul>
+            </li>
+            <li><a href="../../../url.html">URL</a></li>
+            <li><a href="../../../html/html.html">HTML</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="uk-width-2-3@m uk-width-1-1@s">
+        <div class="uk-card uk-card-default uk-card-body">
+          <h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
+          <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+            <li><a href="../types.html">Message Types</a></li>
+            <li class="uk-active"><a href="general.html">Message Headers</a></li>
+            <li><a href="../codes/information.html">HTTP Status Codes</a></li>
+            <li><a href="../methods/request.html">HTTP Methods</a></li>
+          </ul>
+          <hr class="uk-divider-icon">
+          <p>HTTP Headers allow the client and the server to pass additional information with the request or response. HTTP allows the creation of custom headers. An example is the webDAV. The format for HTTP Headers to be followed (taken from RFC 2616):</p>
+          <pre>
+					<code>
+message-header = field-name ":" [ field-value ]
+       field-name     = token
+       field-value    = *( field-content | LWS )
+       field-content  = &lt;the OCTETs making up the field-value
+                        and consisting of either *TEXT or combinations
+                        of token, separators, and quoted-string&gt;<span id="general"></span>
+					</code>
+				</pre>
+          <hr>
+          <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+            <li class="uk-active"><a href="general.html#general"> General Headers</a></li>
+            <li><a href="request.html#request"> Request Headers</a></li>
+            <li><a href="response.html#response">Response Headers</a></li>
+            <li><a href="entity.html#entity">Entity Headers</a></li>
+          </ul>
+          <dl class="uk-description-list uk-description-list-divider">
+            <dt class="uk-text-capitalize" id="cache-control"><span class="uk-text-lead">Cache-Control</span></dt>
+            <dd>Cache-Control is used to specify directives for caching mechanisms in both requests and responses. </dd>
+            <dt class="uk-text-capitalize" id="connection"><span class="uk-text-lead">Connection</span></dt>
+            <dd>Connection controls the network connection between the sender and the server. It specifies if the connection should be closed or kept alive if the current transaction finishes.</dd>
+            <dt class="uk-text-capitalize" id="date"><span class="uk-text-lead">Date</span></dt>
+            <dd>Date represents the date and time at which the message was originated. Dates are represented in Greenwich Mean Time (GMT).</dd>
+            <dt class="uk-text-capitalize" id="pragma"><span class="uk-text-lead">Pragma</span></dt>
+            <dd>Pragma is the same as the Cache-Control but it is used for older clients that does not support HTTP/1.1. In other words, it is used for backwards compatibility with HTTP/1.0.</dd>
+            <dt class="uk-text-capitalize" id="trailer"><span class="uk-text-lead">Trailer</span></dt>
+            <dd>Trailer indicates that the set of header fields present in the last part of a message.</dd>
+            <dt class="uk-text-capitalize" id="transfer-encoding"><span class="uk-text-lead">Transfer-Encoding</span></dt>
+            <dd>Transfer-Encoding defines what encoding will be used to transfer an entity to the user.</dd>
+            <dt class="uk-text-capitalize" id="upgrade"><span class="uk-text-lead">Upgrade</span></dt>
+            <dd>Upgrade allows the client to specify what communication protocol is preferred by the client.</dd>
+            <dt class="uk-text-capitalize" id="via"><span class="uk-text-lead">Via</span></dt>
+            <dd>Via specifies where the resource should travel. It is used to track the gateways and proxies where the resource travelled.</dd>
+            <dt class="uk-text-capitalize" id="warning"><span class="uk-text-lead">Warning</span></dt>
+            <dd>Warning specifies the possible problems that might occur regarding the status of the message.</dd>
+          </dl>
+          <hr>
+          <ul class="uk-pagination">
+            <li><a href="../../evolution.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
+					Evolution</a></li>
+            <li class="uk-margin-auto-left"><a href="../../features/authentication.html">HTTP Features <span
+						class="uk-margin-small-left" uk-pagination-next></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="uk-width-1-6@m uk-visible@m">
+        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
+            <li><a href="#cache-control" offset="100">Cache-Control</a></li>
+            <li><a href="#connection" offset="75">Connection</a></li>
+            <li><a href="#date" offset="75">Date</a></li>
+            <li><a href="#pragma" offset="75">Pragma</a></li>
+            <li><a href="#trailer" offset="75">Trailer</a></li>
+            <li><a href="#transfer-encoding" offset="75">Transfer-Encoding</a></li>
+            <li><a href="#upgrade" offset="75">Upgrade</a></li>
+            <li><a href="#via" offset="75">Via</a></li>
+            <li><a href="#warning" offset="75">Warning</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+    9325A 1-2 TF Group 1
+    <br> &copy; March 2018
+  </div>
+</body>
+
+</html>

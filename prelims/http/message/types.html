@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTTP Message</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../../css/uikit.min.css" />
+	<script src="../../../js/uikit.min.js"></script>
+	<script src="../../../js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
+		<div class="uk-navbar-left uk-margin-large-left">
+			<a class="uk-navbar-item uk-logo" href="../../../index.html">WebTech 2018</a>
+		</div>
+		<div class="uk-navbar-right uk-margin-xlarge-right">
+			<ul class="uk-navbar-nav">
+				<li class="uk-active">
+					<a class="uk-button uk-button-text" href="../../prelims.html">Preliminaries</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+							<li><a href="../../overview.html">Overview</a></li>
+							<li><a href="../../www.html">World Wide Web</a></li>
+							<li class="uk-active uk-parent">
+								<a href="../http.html">HTTP</a>
+								<ul class="uk-nav-sub">
+									<li><a href="../http.html">Introduction</a></li>
+									<li><a href="../evolution.html">Version/Evolution</a></li>
+									<li><a href="types.html">Message</a></li>
+									<li class="uk-active"><a href="../features/authentication.html">Features</a></li>
+								</ul>
+							</li>
+							<li><a href="../../url.html">URL</a></li>
+							<li><a href="../../html/html.html">HTML</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="../../references.html">References</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a class="uk-button uk-button-text" href="../../../midterms/midterms.html">Midterms</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+							<li><a href="../../../midterms/css.html">CSS</a></li>
+							<li><a href="#">CSWS</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">References</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+		<div class="uk-grid-collapse uk-padding " uk-grid>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default">
+						<li><a href="../../overview.html">Overview</a></li>
+						<li><a href="../../www.html">World Wide Web</a></li>
+						<li class="uk-parent uk-active">
+							<a href="../http.html">HTTP</a>
+							<ul class="uk-nav-sub">
+								<li><a href="../http.html">Introduction</a></li>
+								<li><a href="../evolution.html">Version/Evolution</a></li>
+								<li><a href="types.html">Message</a></li>
+								<li><a href="../features/authentication.html">Features</a></li>
+							</ul>
+						</li>
+						<li><a href="../../url.html">URL</a></li>
+						<li><a href="../../html/html.html">HTML</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-width-2-3@m uk-width-1-1@s">
+				<div class="uk-card uk-card-default uk-card-body">
+					<h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
+					<div class="uk-flex uk-flex-center">
+						<ul class="uk-subnav uk-subnav-divider">
+							<li class="uk-active"><a href="types.html">Message Types</a></li>
+							<li><a href="headers/general.html">Message Headers</a></li>
+							<li><a href="codes/information.html">HTTP Status Codes</a></li>
+							<li><a href="methods/request.html">HTTP Methods</a></li>
+						</ul>
+					</div>
+					<hr class="uk-divider-icon">
+					<p>There are two types of HTTP messages: the messages that comes from client to server (request message) and messages that comes from the server to the client (response message).
+					</p>
+					<p>Request and Response messages consist of a start-line, zero or more header fields, also known as headers, an empty line indicating the end of the header fields, and possibly a message-body.
+					</p>
+
+					<div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div >.uk-card; delay: 250; repeat: true">
+						<div>
+							<div class="uk-card uk-card-default uk-card-body">
+								<h3 class="uk-card-title" id="request">Request Message</h3>
+								<pre>
+						<code>
+HEAD http://www.webtech2018.com/ HTTP/1.1
+Host: www.webtech2018.com
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+						</code>
+					</pre>
+							</div>
+						</div>
+						<div>
+							<div class="uk-card uk-card-default uk-card-body">
+								<h3 class="uk-card-title" id="response">Response Message</h3>
+								<pre>
+HTTP/1.1 200 OK
+Date: Sun, 11 Mar 2018 07:00:13 GMT
+Server: Apache/2.4.27 (Win64) PHP/7.1.9
+Last-Modified: Sun, 11 Mar 2018 06:44:35 GMT
+ETag: "fe5-5671d5bcfb2ad"
+Accept-Ranges: bytes
+Content-Length: 4069
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+					</pre>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<ul class="uk-pagination">
+						<li><a href="../evolution.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
+					Evolution</a></li>
+						<li class="uk-margin-auto-left"><a href="../features/authentication.html">HTTP Features <span
+						class="uk-margin-small-left" uk-pagination-next></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+						<li><a href="#request" offset="100">Request Message</a></li>
+						<li><a href="#response" offset="100">Response Message</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+		9325A 1-2 TF Group 1
+		<br> &copy; March 2018
+	</div>
+</body>
+
+</html>

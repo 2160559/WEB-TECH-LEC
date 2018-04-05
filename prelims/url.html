@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<nav class="uk-navbar-container" uk-navbar uk-sticky>
+	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
 		<div class="uk-navbar-left uk-margin-large-left">
 			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
 		</div>
@@ -26,14 +26,14 @@
 							<li class="uk-parent">
 								<a href="http/http.html">HTTP</a>
 								<ul class="uk-nav-sub">
-									<li><a href="prelims/http/http.html">Introduction</a></li>
+									<li><a href="http/http.html">Introduction</a></li>
 									<li><a href="http/evolution.html">Version/Evolution</a></li>
-									<li><a href="http/message.html">Message</a></li>
-									<li><a href="http/features.html">Features</a></li>
+									<li><a href="http/message/types.html">Message</a></li>
+									<li><a href="http/features/authentication.html">Features</a></li>
 								</ul>
 							</li>
 							<li class="uk-active"><a href="url.html">URL</a></li>
-							<li><a href="html.html">HTML</a></li>
+							<li><a href="html/html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">Quiz</a></li>
 							<li class="uk-nav-divider"></li>
@@ -57,10 +57,10 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="uk-container uk-align-center" uk-height-viewport="offset-top: true; offset-bottom: 100px">
-		<div class="uk-margin" uk-grid>
-			<div class="uk-width-1-6@m">
-				<div class="uk-container uk-position-fixed uk-position-center-left uk-margin-large-left">
+	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+		<div class="uk-grid-collapse uk-padding " uk-grid>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
 					<ul class="uk-nav uk-nav-default">
 						<li><a href="overview.html">Overview</a></li>
 						<li><a href="www.html">World Wide Web</a></li>
@@ -69,70 +69,82 @@
 							<ul class="uk-nav-sub">
 								<li><a href="http/http.html">Introduction</a></li>
 								<li><a href="http/evolution.html">Version/Evolution</a></li>
-								<li><a href="http/message.html">Message</a></li>
-								<li><a href="http/features.html">Features</a></li>
+								<li><a href="http/message/types.html">Message</a></li>
+								<li><a href="http/features/authentication.html">Features</a></li>
 							</ul>
 						</li>
 						<li class="uk-active"><a href="url.html">URL</a></li>
-						<li><a href="html.html">HTML</a></li>
+						<li><a href="html/html.html">HTML</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="uk-width-3-4@m uk1-1@s">
-				<div class="uk-container uk-container-small">
+			<div class="uk-width-2-3@m uk-width-1-1@s">
+				<div class="uk-card uk-card-default uk-card-body">
 					<h1 class="uk-heading-line uk-text-center"><span>Universal Resource Locator</span></h1>
-					<h2 class="uk-heading-bullet">What is a URL?</h2>
+					<h2 class="uk-heading-bullet" id="url">What is a URL?</h2>
 					<p class="uk-text-justify ">URL stands for <b>Universal Resource Locator</b>. A URL is the path to a unique resource on the Web. A URL points to a unique resource such as HTML documents, images, CSS files, etc. However, there are cases that a URL points to an empty location, or a missing resource.</p>
 					<hr class="uk-divider-icon">
-					<h2 class="uk-heading-bullet">URL Structure</h2>
+					<h2 class="uk-heading-bullet" id="url-structure">URL Structure</h2>
 					<p class="uk-text-justify ">A URL is composed of different parts, some of them mandatory, some, optional. The mandatory parts are the <i>protocol</i> and the <i>domain name</i>. The optional parts are the <i>port</i>, <i>path to file</i>, <i>parameters</i>, and the <i>anchor</i>.</p>
 					<img src="../img/protocol-domain.jpg " alt="Protocol-Domain ">
 					<dl>
-						<dt><h3>Protocol</h3></dt>
+						<dt id="protocol"><h3>Protocol</h3></dt>
 						<dd>
 							<p>Indicates what the browser must use. It is the first part of the URL. In the modern browsers, the user does not need to type the protocol; the browser automatically includes the protocol.</p>
 						</dd>
-						<dt><h3>Domain Name </h3></dt>
+						<dt id="domain-name"><h3>Domain Name </h3></dt>
 						<dd>
 							<p>Indicates the web server that is being accessed. It is also possible to use the IP address of the web server. However, the domain name is preferred because people do not want to remember numbers.</p>
 						</dd>
 					</dl>
 					<img src="../img/port-path.jpg " alt="Port-Path ">
 					<dl>
-						<dt><h3>Port Number </h3></dt>
+						<dt id="port-number"><h3>Port Number </h3></dt>
 						<dd>
 							<p>It indicates what port or “gate” used to access the resource on the web server. The standard port of the web servers are 80 for HTTP and 443 for HTTPS. The port number is usually omitted. When the port numbers are other than 80 or 443, the port number is mandatory.</p>
 						</dd>
-						<dt><h3>Path to file</h3></dt>
+						<dt id="path-to-file"><h3>Path to file</h3></dt>
 						<dd>
 							<p>This is the path to the specific resource on the Web Server.</p>
 						</dd>
 					</dl>
 					<img src="../img/parameters-anchor.jpg " alt="Parameters-Anchor ">
 					<dl>
-						<dt><h3 id="parameters">Parameters</h3></dt>
+						<dt id="parameters"><h3>Parameters</h3></dt>
 						<dd>
 							<p>It is a list of key-value pairs separated by the “&amp;” symbol. The parameters start with the “?” symbol to indicate that the start of parameters.</p>
 						</dd>
-						<dt><h3>Anchor</h3></dt>
+						<dt id="anchor"><h3>Anchor</h3></dt>
 						<dd>
 							<p>It acts as a bookmark for a page, and is another part of the document itself.</p>
 						</dd>
 					</dl>
 					<hr>
 					<ul class="uk-pagination">
-						<li><a href="http/features.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP Features</a></li>
-						<li class="uk-margin-auto-left"><a href="html.html">HTML <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+						<li><a href="http/features/authentication.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP Features</a></li>
+						<li class="uk-margin-auto-left"><a href="html/html.html">HTML <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+						<li><a href="#url" offset="100">URL</a></li>
+						<li><a href="#url-structure" offset="100">URL Structure</a></li>
+						<li><a href="#protocol" offset="100">Protocol</a></li>
+						<li><a href="#domain-name" offset="100">Domain Name</a></li>
+						<li><a href="#port-number" offset="100">Port Number</a></li>
+						<li><a href="#path-to-file" offset="100">Path to File</a></li>
+						<li><a href="#parameters" offset="100">Parameters</a></li>
+						<li><a href="#anchor" offset="100">Anchor</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="uk-navbar-container uk-margin uk-padding-small " uk-navbar style="margin-bottom: 0; ">
-		<div class="uk-navbar-center ">
-			9325A 1-2 TF Group 1
-			<br> &copy; March 2018
-		</div>
+	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+		9325A 1-2 TF Group 1
+		<br> &copy; March 2018
 	</div>
 </body>
 

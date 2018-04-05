@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<nav class="uk-navbar-container" uk-navbar uk-sticky>
+	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
 		<div class="uk-navbar-left uk-margin-large-left">
 			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
 		</div>
@@ -28,12 +28,12 @@
 								<ul class="uk-nav-sub">
 									<li><a href="http/http.html">Introduction</a></li>
 									<li><a href="http/evolution.html">Version/Evolution</a></li>
-									<li><a href="http/message.html">Message</a></li>
-									<li><a href="http/features.html">Features</a></li>
+									<li><a href="http/message/types.html">Message</a></li>
+									<li><a href="http/features/authentication.html">Features</a></li>
 								</ul>
 							</li>
 							<li><a href="url.html">URL</a></li>
-							<li><a href="html.html">HTML</a></li>
+							<li><a href="html/html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">Quiz</a></li>
 							<li class="uk-nav-divider"></li>
@@ -57,10 +57,10 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="uk-container uk-align-center" uk-height-viewport="offset-top: true; offset-bottom: 100px">
-		<div class="uk-margin" uk-grid>
+	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+		<div class="uk-grid-collapse uk-padding " uk-grid>
 			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-position-center-left uk-margin-large-left">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
 					<ul class="uk-nav uk-nav-default">
 						<li><a href="overview.html">Overview</a></li>
 						<li class="uk-active"><a href="www.html">World Wide Web</a></li>
@@ -69,46 +69,57 @@
 							<ul class="uk-nav-sub">
 								<li><a href="http/http.html">Introduction</a></li>
 								<li><a href="http/evolution.html">Version/Evolution</a></li>
-								<li><a href="http/message.html">Message</a></li>
-								<li><a href="http/features.html">Features</a></li>
+								<li><a href="http/message/types.html">Message</a></li>
+								<li><a href="http/features/authentication.html">Features</a></li>
 							</ul>
 						</li>
 						<li><a href="url.html">URL</a></li>
-						<li><a href="html.html">HTML</a></li>
+						<li><a href="html/html.html">HTML</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="uk-width-3-4@m uk-width-1-1@s">
-				<h1 class="uk-heading-line uk-text-center"><span>What is the World Wide Web?</span></h1>
-				<p class="uk-text-justify">The <b>World Wide Web</b> is a collection of resources and applications used to access resources via the internet. It was invented by <i>Tim Berners-Lee</i> in 1989, for the purpose of sharing resources, such as researches, among scientists.</p>
-				<p class="uk-text-justify"><b>Web Resources</b> can be in static or dynamic in form. <i>Static resources</i> exist in the form that we access from the web server, such as HTML files that lies within the web. <i>Dynamic resources</i> are generated on the fly, and may vary differently per user when they access the resource. An example would be PHP scripts.</p>
-				<p class="uk-text-justify"><b>Web applications</b> are applications used to access the resources from the web via the internet. There are two classifications of web applications:
-				</p>
-				<ol>
-					<li><b>Client Applications</b></li>
-					<ul>
-						<li>These are applications that are used by clients to access resources from the web.</li>
-						<li>Examples of client applications include <i>browsers</i> and <i>apps</i>.</li>
+			<div class="uk-width-2-3@m uk-width-1-1@s">
+				<div class="uk-card uk-card-default uk-card-body">
+					<h1 class="uk-heading-line uk-text-center"><span>What is the World Wide Web?</span></h1>
+					<p class="uk-text-justify" id="www">The <b>World Wide Web</b> is a collection of resources and applications used to access resources via the internet. It was invented by <i>Tim Berners-Lee</i> in 1989, for the purpose of sharing resources, such as researches, among scientists.</p>
+					<p class="uk-text-justify" id="resources"><b>Web Resources</b> can be in static or dynamic in form. <i>Static resources</i> exist in the form that we access from the web server, such as HTML files that lies within the web. <i>Dynamic resources</i> are generated on the fly, and may vary differently per user when they access the resource. An example would be PHP scripts.</p>
+					<p class="uk-text-justify" id="web-app"><b>Web applications</b> are applications used to access the resources from the web via the internet. There are two classifications of web applications:
+					</p>
+					<ol>
+						<li id="client"><b>Client Applications</b></li>
+						<ul>
+							<li>These are applications that are used by clients to access resources from the web.</li>
+							<li>Examples of client applications include <i>browsers</i> and <i>apps</i>.</li>
+						</ul>
+						<li id="server"><b>Server applications</b></li>
+						<ul>
+							<li>These are applications that host dynamic applications.</li>
+							<li>Examples of server applications include <i>Apache Web Server</i>, <i>Tomcat</i> and <i>IIS</i>.</li>
+						</ul>
+					</ol>
+					<hr>
+					<ul class="uk-pagination">
+						<li><a href="overview.html"><span class="uk-margin-small-right" uk-pagination-previous></span> Overview</a></li>
+						<li class="uk-margin-auto-left"><a href="http/http.html">HTTP <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
 					</ul>
-					<li><b>Server applications</b></li>
-					<ul>
-						<li>These are applications that host dynamic applications.</li>
-						<li>Examples of server applications include <i>Apache Web Server</i>, <i>Tomcat</i> and <i>IIS</i>.</li>
+				</div>
+			</div>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+						<li><a href="#www" offset="100">World Wide Web</a></li>
+						<li><a href="#resources" offset="100">Web Resources</a></li>
+						<li><a href="#web-app" offset="100">Web Applications</a></li>
+						<li><a href="#client" offset="100">Client Applications</a></li>
+						<li><a href="#server" offset="100">Server Applications</a></li>
 					</ul>
-				</ol>
-				<hr>
-				<ul class="uk-pagination">
-					<li><a href="overview.html"><span class="uk-margin-small-right" uk-pagination-previous></span> Overview</a></li>
-					<li class="uk-margin-auto-left"><a href="http/http.html">HTTP <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-				</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
-		<div class="uk-navbar-center">
-			9325A 1-2 TF Group 1
-			<br> &copy; March 2018
-		</div>
+	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+		9325A 1-2 TF Group 1
+		<br> &copy; March 2018
 	</div>
 </body>
 

@@ -2,34 +2,38 @@
 <html>
 
 <head>
-	<title>CSS</title>
+	<title>World Wide Web</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/uikit.min.css">
+	<link rel="stylesheet" href="../css/uikit.min.css" />
 	<script src="../js/uikit.min.js"></script>
 	<script src="../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-	<nav class="uk-navbar-container uk-margin" uk-navbar uk-sticky>
-		<div class="uk-navbar-left uk-margin-large-left"><a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a></div>
+	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
+		<div class="uk-navbar-left uk-margin-large-left">
+			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
+		</div>
 		<div class="uk-navbar-right uk-margin-xlarge-right">
 			<ul class="uk-navbar-nav">
-				<li> <a class="uk-button uk-button-text" href="../prelims/prelims.html">Preliminaries</a>
+				<li class="uk-active">
+					<a class="uk-button uk-button-text" href="../prelims/prelims.html">Preliminaries</a>
 					<div class="uk-navbar-dropdown">
 						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
 							<li><a href="../prelims/overview.html">Overview</a></li>
-							<li><a href="../prelims/www.html">World Wide Web</a></li>
-							<li class="uk-parent"><a href="../prelims/http/http.html">HTTP</a>
+							<li class="uk-active"><a href="../prelims/www.html">World Wide Web</a></li>
+							<li class="uk-parent">
+								<a href="../prelims/http/http.html">HTTP</a>
 								<ul class="uk-nav-sub">
 									<li><a href="../prelims/http/http.html">Introduction</a></li>
 									<li><a href="../prelims/http/evolution.html">Version/Evolution</a></li>
-									<li><a href="../prelims/http/message.html">Message</a></li>
-									<li><a href="../prelims/http/features.html">Features</a></li>
+									<li><a href="../prelims/http/message/types.html">Message</a></li>
+									<li><a href="../prelims/http/features/authentication.html">Features</a></li>
 								</ul>
 							</li>
 							<li><a href="../prelims/url.html">URL</a></li>
-							<li><a href="../prelims/html.html">HTML</a></li>
+							<li><a href="../prelims/html/html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">Quiz</a></li>
 							<li class="uk-nav-divider"></li>
@@ -37,10 +41,11 @@
 						</ul>
 					</div>
 				</li>
-				<li class="uk-active"><a class="uk-button uk-button-text" href="../midterms/midterms.html">Midterms</a>
+				<li>
+					<a class="uk-button uk-button-text" href="../midterms/midterms.html">Midterms</a>
 					<div class="uk-navbar-dropdown">
 						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="css.html">CSS</a></li>
+							<li><a href="../midterms/css.html">CSS</a></li>
 							<li><a href="#">CSWS</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">Quiz</a></li>
@@ -52,108 +57,108 @@
 			</ul>
 		</div>
 	</nav>
+	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+		<div class="uk-grid-collapse uk-padding " uk-grid>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default">
 
-	<div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" class="uk-container uk-container-small uk-margin uk-padding-small">
-		<h1>Cascading Style Sheet (CSS)</h1>
-		<hr>
-		<div>
-			<div>
-				<p>Can be used for all structural markups, mainly used for the aesthetics of a page. Adapted in HTML v. 4.0. </p>
+					</ul>
+				</div>
 			</div>
-			<div>
-				<img src="../img/hakon_lie.jpg" style="float: left;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" width="20%" height="20%">
-				<h3 style="float: left">Hakon Lie</h3>
+			<div class="uk-width-2-3@m uk-width-1-1@s">
+				<div class="uk-card uk-card-default uk-card-body">
+					<h1 class="uk-heading-line uk-text-center"><span>Cascading Style Sheet (CSS)</span></h1>
+					<p>Can be used for all structural markups, mainly used for the aesthetics of a page. Adapted in HTML v. 4.0. </p>
+					<p>Started in 1994 by</p>
+					<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+						<div>
+							<figure>
+								<img src="../img/hakon_lie.jpg">
+								<figcaption><span class="uk-text-large">Hakon Lie</span></figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../img/bert_bos.jpg">
+								<figcaption><span class="uk-text-large">Bert Bos</span></figcaption>
+							</figure>
+						</div>
+					</div>
 
-				<img src="../img/bert_bos.jpg" style="float: right;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" width="20%" height="20%">
-				<h3 style="float: right">Bert Bos </h3>
+					<h2 class="uk-heading-line uk-text-center"><span>CSS Syntax</span></h2>
+					<img src="../img/css_syntax_figure.png">
+					<h2 class="uk-heading-line uk-text-center"><span>Types of CSS</span></h2>
+					<ol>
+						<li>
+							<h3>Internal </h3>
+							<pre>
+&lt;html&gt;
+	&lt;style&gt;
+		body {
+			background-color: green;
+		}
+	&lt;/style&gt;
+&lt;/html&gt;
+						</pre>
+						</li>
+						<li>
+							<h3>External (recommended because of reusability and consistency) </h3>
+							<code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+						</li>
+						<br>
+						<li>
+							<h3>Inline </h3>
+						</li>
+						<code>&lt;h1 style= “color:blue; text-align:center”&gt; webtech &lt;/h1&gt;</code>
+					</ol>
+
+					<h2 class="uk-heading-line uk-text-center"><span>CSS Levels</span></h2>
+					<table class="uk-table uk-table-striped uk-table-hover">
+						<thead>
+							<th>Level</th>
+							<th>Year</th>
+							<th>About</th>
+						</thead>
+						<tr>
+							<td>1</td>
+							<td>1996</td>
+							<td>Added properties for text attributes</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>1998</td>
+							<td>Added properties for positioning in page layouts</td>
+						</tr>
+						<tr>
+							<td>2 Revision 1</td>
+							<td>2011</td>
+							<td>Simplifies Web Authoring and site maintenance</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>1999</td>
+							<td>Modular Approach to CSS development</td>
+						</tr>
+					</table>
+					<hr>
+					<ul class="uk-pagination">
+						<li class="uk-margin-auto-left"><a href="#">CSWS<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+					</ul>
+				</div>
 			</div>
-			<div>
-				<p style="text-align: center">Started in 1994 by</p>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-	<br>
-	<div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" class="uk-container uk-container-small uk-margin uk-padding-small">
-		<h1>CSS Syntax</h1>
-		<hr>
-		<img src="../img/css_syntax_figure.png">
-
-
-	</div>
-	<br>
-	<div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" class="uk-container uk-container-small uk-margin uk-padding-small">
-		<h1>Types of CSS</h1>
-		<hr>
-		<ol>
-			<li>
-				<h3>Internal </h3>
-
-				&lt;html&gt;
-				<br> &lt;style&gt;
-				<br> body {
-				<br> background-color: green;
-				<br> }
-				<br> &lt;/style&gt;
-				<br> &lt;/html&gt;
-
-			</li>
-			<br>
-			<li>
-				<h3>External (recommended because of reusability and consistency) </h3>
-
-				&lt;link rel="stylesheet" href="style.css"&gt;
-
-
-			</li>
-			<br>
-			<li>
-				<h3>Inline </h3>
-			</li>
-			&lt;h1 style= “color:blue; text-align:center”&gt; webtech &lt;/h1&gt;
-
-
-		</ol>
-
-
-
-	</div>
-	<br>
-	<div style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" class="uk-container uk-container-small uk-margin uk-padding-small">
-		<h1>CSS Levels</h1>
-		<hr>
-		<table style="width:100%">
-			<tr>
-				<th style="text-align: left">Level</th>
-				<th style="text-align:center">Year</th>
-				<th>About</th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>1996</td>
-				<td>Added properties for text attributes</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>1998</td>
-				<td>Added properties for positioning in page layouts</td>
-			</tr>
-			<tr>
-				<td>2 Revision 1</td>
-				<td>2011</td>
-				<td>Simplifies Web Authoring and site maintenance</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>1999</td>
-				<td>Modular Approach to CSS development</td>
-			</tr>
-		</table>
-
-
-	</div>
-
-	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
-		<div class="uk-navbar-center">9325A 1-2 TF Group 1<br>&copy; March 2018</div>
+	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+		9325A 1-2 TF Group 1
+		<br> &copy; March 2018
 	</div>
 </body>
 

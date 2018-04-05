@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<nav class="uk-navbar-container" uk-navbar uk-sticky>
+	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
 		<div class="uk-navbar-left uk-margin-large-left">
 			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
 		</div>
@@ -26,14 +26,14 @@
 							<li class="uk-parent">
 								<a href="http/http.html">HTTP</a>
 								<ul class="uk-nav-sub">
-									<li><a href="prelims/http/http.html">Introduction</a></li>
+									<li><a href="http/http.html">Introduction</a></li>
 									<li><a href="http/evolution.html">Version/Evolution</a></li>
-									<li><a href="http/message.html">Message</a></li>
-									<li><a href="http/features.html">Features</a></li>
+									<li><a href="http/message/types.html">Message</a></li>
+									<li><a href="http/features/authentication.html">Features</a></li>
 								</ul>
 							</li>
 							<li><a href="url.html">URL</a></li>
-							<li><a href="html.html">HTML</a></li>
+							<li><a href="html/html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">Quiz</a></li>
 							<li class="uk-nav-divider"></li>
@@ -57,57 +57,59 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="uk-container uk-container-small uk-margin uk-padding-small" uk-height-viewport="offset-top: true; offset-bottom: 100px">
-		<div class="uk-grid-small uk-grid-match uk-flex-center " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > a >.uk-card; delay: 75; repeat: true">
-			<div class="uk-width-1-4@m ">
-				<a href="overview.html">
-					<div class=" uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
-						<h1 class="uk-card-title uk-h3">Overview</h1>
-						<p>So what's this thing for?</p>
+	<div class="uk-background-muted uk-padding" uk-height-viewport="offset-top: true; offset-bottom: true">
+		<div class="uk-container uk-container-small uk-padding-small">
+			<div class="uk-card uk-card-default uk-card-body uk-padding-small">
+				<div class="uk-grid-small uk-grid-match uk-flex-center " uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > a >.uk-card; delay: 75; repeat: true">
+					<div class="uk-width-1-4@m ">
+						<a href="overview.html">
+							<div class=" uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+								<h1 class="uk-card-title uk-h3">Overview</h1>
+								<p>So what's this thing for?</p>
+							</div>
+						</a>
 					</div>
-				</a>
-			</div>
 
-			<div class="uk-width-3-4@m">
-				<a href="www.html">
-					<div class=" uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
-						<h1 class="uk-card-title uk-h3">WWW</h1>
-						<p>World Wide Web is a collection of resources and applications that are used to access resources via the internet.</p>
+					<div class="uk-width-3-4@m">
+						<a href="www.html">
+							<div class=" uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+								<h1 class="uk-card-title uk-h3">WWW</h1>
+								<p>World Wide Web is a collection of resources and applications that are used to access resources via the internet.</p>
+							</div>
+						</a>
 					</div>
-				</a>
-			</div>
 
-			<div class="uk-width-3-5@m">
-				<a href="http/http.html">
-					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
-						<h1 class="uk-card-title uk-h3">HTTP</h1>
-						<p>The foundation of data communication for the WWW.</p>
+					<div class="uk-width-3-5@m">
+						<a href="http/http.html">
+							<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+								<h1 class="uk-card-title uk-h3">HTTP</h1>
+								<p>The foundation of data communication for the WWW.</p>
+							</div>
+						</a>
 					</div>
-				</a>
-			</div>
-			<div class="uk-width-2-5@m">
-				<a href="url.html">
-					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
-						<h1 class="uk-card-title uk-h3">URL</h1>
-						<p>Your resource navigator on the web!</p>
+					<div class="uk-width-2-5@m">
+						<a href="url.html">
+							<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+								<h1 class="uk-card-title uk-h3">URL</h1>
+								<p>Your resource navigator on the web!</p>
+							</div>
+						</a>
 					</div>
-				</a>
-			</div>
-			<div class="uk-width-1-1@m">
-				<a href="html.html">
-					<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
-						<h1 class="uk-card-title uk-h3">HTML</h1>
-						<p>HTML is the language used for creating documents on the World Wide Web.</p>
+					<div class="uk-width-1-1@m">
+						<a href="html/html.html">
+							<div class="uk-card uk-card-default uk-card-body uk-grid-item-match uk-background-muted">
+								<h1 class="uk-card-title uk-h3">HTML</h1>
+								<p>HTML is the language used for creating documents on the World Wide Web.</p>
+							</div>
+						</a>
 					</div>
-				</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
-		<div class="uk-navbar-center">
-			9325A 1-2 TF Group 1
-			<br> &copy; March 2018
-		</div>
+	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+		9325A 1-2 TF Group 1
+		<br> &copy; March 2018
 	</div>
 </body>
 

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<nav class="uk-navbar-container" uk-navbar uk-sticky>
+	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
 		<div class="uk-navbar-left uk-margin-large-left">
 			<a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
 		</div>
@@ -26,14 +26,14 @@
 							<li class="uk-active uk-parent">
 								<a href="http.html">HTTP</a>
 								<ul class="uk-nav-sub">
-									<li><a href="prelims/http/http.html">Introduction</a></li>
+									<li><a href="http.html">Introduction</a></li>
 									<li class="uk-active"><a href="evolution.html">Version/Evolution</a></li>
-									<li><a href="message.html">Message</a></li>
-									<li><a href="features.html">Features</a></li>
+									<li><a href="message/types.html">Message</a></li>
+									<li><a href="features/authentication.html">Features</a></li>
 								</ul>
 							</li>
 							<li><a href="../url.html">URL</a></li>
-							<li><a href="../html.html">HTML</a></li>
+							<li><a href="../html/html.html">HTML</a></li>
 							<li class="uk-nav-divider"></li>
 							<li><a href="#">Quiz</a></li>
 							<li class="uk-nav-divider"></li>
@@ -57,10 +57,10 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="uk-container uk-align-center" uk-height-viewport="offset-top: true; offset-bottom: 100px">
-		<div class="uk-argin" uk-grid>
+	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+		<div class="uk-grid-collapse uk-padding " uk-grid>
 			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-position-center-left uk-margin-large-left">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
 					<ul class="uk-nav uk-nav-default">
 						<li><a href="../overview.html">Overview</a></li>
 						<li><a href="../www.html">World Wide Web</a></li>
@@ -69,63 +69,73 @@
 							<ul class="uk-nav-sub">
 								<li><a href="http.html">Introduction</a></li>
 								<li><a href="evolution.html">Version/Evolution</a></li>
-								<li><a href="message.html">Message</a></li>
-								<li><a href="features.html">Features</a></li>
+								<li><a href="message/types.html">Message</a></li>
+								<li><a href="features/authentication.html">Features</a></li>
 							</ul>
 						</li>
 						<li><a href="../url.html">URL</a></li>
-						<li><a href="../html.html">HTML</a></li>
+						<li><a href="../html/html.html">HTML</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="uk-width-3-4@m uk-width-1-1@s">
-				<h1 class="uk-heading-line uk-text-center"><span>Introduction</span></h1>
-				<h2 class="uk-heading-bullet">HTTP</h2>
-				<p class="uk-text-justify"><b>Hypertext Transfer Protocol</b>, or HTTP, is an application-level protocol that is used to access resources (eg. hypertext, hypermedia) on the <a href="../www.html"><i>World Wide Web</i></a> through the Internet. It was developed by Tim Berners-Lee and his team at CERN in 1989 as part of the 4 building blocks of Mesh, now known as the World Wide Web.</p>
-				<p class="uk-text-justify">This protocol is a set of rules that defines the format of data that is being exchanged within or between computers (MDN web docs). HTTP is the language used by applications like browsers, server, and proxies to communicate with one another.</p>
+			<div class="uk-width-2-3@m uk-width-1-1@s">
+				<div class="uk-card uk-card-default uk-card-body">
+					<h1 class="uk-heading-line uk-text-center"><span>Introduction</span></h1>
+					<h2 id="http" class="uk-heading-bullet">HTTP</h2>
+					<p class="uk-text-justify"><b>Hypertext Transfer Protocol</b>, or HTTP, is an application-level protocol that is used to access resources (eg. hypertext, hypermedia) on the <a href="../www.html"><i>World Wide Web</i></a> through the Internet. It was developed by Tim Berners-Lee and his team at CERN in 1989 as part of the 4 building blocks of Mesh, now known as the World Wide Web.</p>
+					<p class="uk-text-justify">This protocol is a set of rules that defines the format of data that is being exchanged within or between computers (MDN web docs). HTTP is the language used by applications like browsers, server, and proxies to communicate with one another.</p>
 
-				<hr>
-				<h2 class="uk-heading-bullet">HTTP Communication</h2>
-				<p class="uk-text-justify">In order for users, or clients, to access websites such as <i>Youtube</i>, <i>Facebook</i>, <i>Twitter</i> and <i>CNN</i>, they need a web browser to enter the URL of the site you want to visit. After a connection with the server has been established, the browser then connects to the server of the website, and send a <a href="message.html#request">request message</a> using HTTP.</p>
-				<p class="uk-text-justify">When the server receives the request message, it will try to interpret the message and send a <a href="message.html#response">response message</a> using HTTP that contains the HTML file of the site you want to visit. If the resource being requested for was found, the browser will then interpret the response message and try to display the HTML file in your browser. Otherwise, an <code>HTTP 404 Not Found</code> message will be shown instead. When the request has been serviced, the connection between the client and server will be terminated.</p>
-				<p class="uk-text-justify">The response message may contain links to other files, which needs to be accessed in order for the website to properly render. The connection must be maintained even after the first request has been serviced. (Persistent connection will be discussed <a href="features.html#persistent">here</a> in detail.)</p>
-				<hr>
+					<hr>
+					<h2 id="http-communication" class="uk-heading-bullet">HTTP Communication</h2>
+					<p class="uk-text-justify">In order for users, or clients, to access websites such as <i>Youtube</i>, <i>Facebook</i>, <i>Twitter</i> and <i>CNN</i>, they need a web browser to enter the URL of the site you want to visit. After a connection with the server has been established, the browser then connects to the server of the website, and send a <a href="message/types.html#request" offset="150">request message</a> using HTTP.</p>
+					<p class="uk-text-justify">When the server receives the request message, it will try to interpret the message and send a <a href="message/types.html#response" offset="150">response message</a> using HTTP that contains the HTML file of the site you want to visit. If the resource being requested for was found, the browser will then interpret the response message and try to display the HTML file in your browser. Otherwise, an <code>HTTP 404 Not Found</code> message will be shown instead. When the request has been serviced, the connection between the client and server will be terminated.</p>
+					<p class="uk-text-justify">The response message may contain links to other files, which needs to be accessed in order for the website to properly render. The connection must be maintained even after the first request has been serviced. (Persistent connection will be discussed <a href="features/connections.html">here</a> in detail.)</p>
+					<hr>
 
-				<h2 class="uk-heading-bullet">Intermediaries</h2>
-				<p class="uk-text-justify">In a request or response message, there are intermediaries that play their role to help in the exchange of information. The three common forms of intermediaries are the following:</p>
-				<dl class="uk-description-list uk-margin-left">
-					<dt>Proxy</dt>
-					<dd>A proxy is a forwarding agent that receives requests for a URI in its absolute form, first rewriting all or part of the message, and then forwarding the reformatted request toward the server identified by the URI. (rfc2616)</dd>
-					<dt>Gateway</dt>
-					<dd>A gateway is a receiving agent, acting as a layer above some other servers that, if necessary, translates the requests to the underlying server’s protocol. (rfc2616)</dd>
-					<dt>Tunnel</dt>
-					<dd>A tunnel acts as a relay point between two connections without changing the messages. Tunnels are used when the communication needs to pass through an intermediary, such as a firewall, even when the intermediary cannot understand the contents of the messages. (rfc2616)</dd>
-				</dl>
-				<hr>
+					<h2 id="intermediaries" class="uk-heading-bullet">Intermediaries</h2>
+					<p class="uk-text-justify">In a request or response message, there are intermediaries that play their role to help in the exchange of information. The three common forms of intermediaries are the following:</p>
+					<dl class="uk-description-list uk-margin-left">
+						<dt>Proxy</dt>
+						<dd>A proxy is a forwarding agent that receives requests for a URI in its absolute form, first rewriting all or part of the message, and then forwarding the reformatted request toward the server identified by the URI. (rfc2616)</dd>
+						<dt>Gateway</dt>
+						<dd>A gateway is a receiving agent, acting as a layer above some other servers that, if necessary, translates the requests to the underlying server’s protocol. (rfc2616)</dd>
+						<dt>Tunnel</dt>
+						<dd>A tunnel acts as a relay point between two connections without changing the messages. Tunnels are used when the communication needs to pass through an intermediary, such as a firewall, even when the intermediary cannot understand the contents of the messages. (rfc2616)</dd>
+					</dl>
+					<hr>
 
-				<h2 class="uk-heading-bullet">Charactersistics</h2>
-				<p class="uk-text-justify">HTTP is a <b>client-server protocol</b>. Requests are sent by the client, usually a Web browser, to the server, which provides a response. Clients or user-agents is not necessarily web browsers; they could also be robots.</p>
-				<dl class="uk-description-list uk-margin-left">
-					<dt>Origin Server</dt>
-					<dd>This is the actual machine where the resource resides.</dd>
-					<dt>Proxy Servers</dt>
-					<dd>These are servers that serve the request of a client on behalf of the origin server, which is in the case of cache.</dd>
-				</dl>
-				<p class="uk-text-justify">HTTP is a <b>pull protocol</b>. The pull of resources by the user-agent will not happen unless the user-agent sends a request.</p>
-				<p class="uk-text-justify">HTTP <b>serves and forgets</b>. After serving the requests sent by user-agents, the web server forgets the request and serves another from either the same user-agent or another one.</p>
-				<hr>
-				<ul class="uk-pagination">
-					<li><a href="../www.html"><span class="uk-margin-small-right" uk-pagination-previous></span> World Wide Web</a></li>
-					<li class="uk-margin-auto-left"><a href="evolution.html">HTTP Evolution <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-				</ul>
+					<h2 id="characteristics" class="uk-heading-bullet">Charactersistics</h2>
+					<p class="uk-text-justify">HTTP is a <b>client-server protocol</b>. Requests are sent by the client, usually a Web browser, to the server, which provides a response. Clients or user-agents is not necessarily web browsers; they could also be robots.</p>
+					<dl class="uk-description-list uk-margin-left">
+						<dt>Origin Server</dt>
+						<dd>This is the actual machine where the resource resides.</dd>
+						<dt>Proxy Servers</dt>
+						<dd>These are servers that serve the request of a client on behalf of the origin server, which is in the case of cache.</dd>
+					</dl>
+					<p class="uk-text-justify">HTTP is a <b>pull protocol</b>. The pull of resources by the user-agent will not happen unless the user-agent sends a request.</p>
+					<p class="uk-text-justify">HTTP <b>serves and forgets</b>. After serving the requests sent by user-agents, the web server forgets the request and serves another from either the same user-agent or another one.</p>
+					<hr>
+					<ul class="uk-pagination">
+						<li><a href="../www.html"><span class="uk-margin-small-right" uk-pagination-previous></span> World Wide Web</a></li>
+						<li class="uk-margin-auto-left"><a href="evolution.html">HTTP Evolution <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+						<li><a href="#http" offset="100">HTTP</a></li>
+						<li><a href="#http-communication" offset="100">HTTP Communication</a></li>
+						<li><a href="#intermediaries" offset="100">Intermediaries</a></li>
+						<li><a href="#characteristics" offset="100">Characteristics</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="uk-navbar-container uk-margin uk-padding-small" uk-navbar style="margin-bottom: 0;">
-		<div class="uk-navbar-center">
-			9325A 1-2 TF Group 1
-			<br> &copy; March 2018
-		</div>
+	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+		9325A 1-2 TF Group 1
+		<br> &copy; March 2018
 	</div>
 </body>
 

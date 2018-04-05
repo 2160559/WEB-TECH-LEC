@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTTP Features</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../../css/uikit.min.css" />
+	<script src="../../../js/uikit.min.js"></script>
+	<script src="../../../js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
+		<div class="uk-navbar-left uk-margin-large-left">
+			<a class="uk-navbar-item uk-logo" href="../../../index.html">WebTech 2018</a>
+		</div>
+		<div class="uk-navbar-right uk-margin-xlarge-right">
+			<ul class="uk-navbar-nav">
+				<li class="uk-active">
+					<a class="uk-button uk-button-text" href="../../prelims.html">Preliminaries</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+							<li><a href="../../overview.html">Overview</a></li>
+							<li><a href="../../www.html">World Wide Web</a></li>
+							<li class="uk-active uk-parent">
+								<a href="../http.html">HTTP</a>
+								<ul class="uk-nav-sub">
+									<li><a href="../http.html">Introduction</a></li>
+									<li><a href="../evolution.html">Version/Evolution</a></li>
+									<li><a href="../message/types.html">Message</a></li>
+									<li class="uk-active"><a href="../features/authentication.html">Features</a></li>
+								</ul>
+							</li>
+							<li><a href="../../url.html">URL</a></li>
+							<li><a href="../../html/html.html">HTML</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="../../references.html">References</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a class="uk-button uk-button-text" href="../../../midterms/midterms.html">Midterms</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+							<li><a href="../../../midterms/css.html">CSS</a></li>
+							<li><a href="#">CSWS</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">Quiz</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#">References</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+		<div class="uk-grid-collapse uk-padding " uk-grid>
+			<div class="uk-width-1-6@m uk-visible@m">
+				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+					<ul class="uk-nav uk-nav-default">
+						<li><a href="../../overview.html">Overview</a></li>
+						<li><a href="../../www.html">World Wide Web</a></li>
+						<li class="uk-parent uk-active">
+							<a href="../http.html">HTTP</a>
+							<ul class="uk-nav-sub">
+								<li><a href="../http.html">Introduction</a></li>
+								<li><a href="../evolution.html">Version/Evolution</a></li>
+								<li><a href="../message/types.html">Message</a></li>
+								<li><a href="../features/authentication.html">Features</a></li>
+							</ul>
+						</li>
+						<li><a href="../../url.html">URL</a></li>
+						<li><a href="../../html/html.html">HTML</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="uk-width-2-3@m uk-width-1-1@s">
+				<div class="uk-card uk-card-default uk-card-body">
+					<h1 class="uk-heading-line uk-text-center"><span>HTTP Features</span></h1>
+					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+						<li><a href="authentication.html" class="uk-active">Authentication</a></li>
+						<li class="uk-active"><a href="connections.html">Persistent Connections</a></li>
+						<li><a href="encoding.html">Chunked Transfer Encoding</a></li>
+					</ul>
+					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+						<li><a href="negotiation.html">Content Negotiation</a></li>
+						<li><a href="range.html">Range Request</a></li>
+					</ul>
+					<hr>
+					<h2 class="uk-heading-bullet" id="persistent">Persistent Connecions</h2>
+					<p class="uk-text-justify">It was already established that HTTP is a protocol used by applications to communicate with one another. <b>Communication</b> only happens when a user-agent, often browsers, establishes a connection to a server and sends a request message. The server then responds with a response message. A request from a browser may be serviced with just a single connection if the response containing the HTML file does not contain links that point to another resource.</p>
+					<p class="uk-text-justify">For example, whenever a user-agent request for the HTML file of a website that only contains text and embedded formatting, a <b>single connection</b> is enough in order to serve the request. However, websites nowadays have a more complex composition: they contain links that points to another HTML files, images located in a certain directory, and CSS files for the design of the website.</p>
+					<p class="uk-text-justify">In order for web browsers to display the contents of the website, it will first establish a connection before creating a request message to send to the server hosting the website. When it receives the response from the server, it will extract the HTML body in the response message. When it encounters a <b>link</b> in the HTML body that points to another resource, such as a CSS file, it will automatically send a request to retrieve said file. The same thing happens with other resources like images.</p>
+					<p class="uk-text-justify">The early versions of HTTP were developed such that when a user-agent request a website, the server serves the request, and then <b>terminates</b> the connection immediately. When the browser reads the HTML body and encounters an external link, it will establish another connection and send another request to retrieve what it needs. Multiple connections will have to be established in order to properly render the website.</p>
+					<p class="uk-text-justify">This is a problem because nobody might be patient enough to wait for the website to be rendered properly.</p>
+					<img src="../../../img/1.png" alt="persistent connection">
+					<p class="uk-text-justify">Persistent connection is a feature introduced in HTTP 1.1, allowing several resources to be fetched with the same connection. This addresses the problem induced by multiple connections. Persistent connections also allow the pipelining of request so that users can make multiple request without waiting for the response in the first request.</p>
+					<hr>
+					<ul class="uk-pagination">
+						<li><a href="../message/types.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
+					Message</a></li>
+						<li class="uk-margin-auto-left"><a href="../../url.html">URL <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+		9325A 1-2 TF Group 1
+		<br> &copy; March 2018
+	</div>
+</body>
+
+</html>
