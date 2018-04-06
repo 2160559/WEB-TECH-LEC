@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>World Wide Web</title>
+	<title>Cascading Style Sheets</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/uikit.min.css" />
@@ -141,6 +141,64 @@
 							<td>Modular Approach to CSS development</td>
 						</tr>
 					</table>
+                    <h2 class="uk-heading-line uk-text-center"><span>CSS Selectors Level 3</span></h2>
+                    Selectors are <b>patterns</b>(2) that are used in CSS to select an <b>element</b>(1) in an xml or html file 
+                    and specify a style for the selected elements. 
+                    <br>
+                    1. An element usually consist of a start tag , a content and an end tag. 
+                    <br>
+                    Example: (to label the parts)
+                    <br>
+                    <span style="color:blue">&lt;</span><span style="color:red">title</span><span style="color:blue">&gt;</span>
+                    Web System and Technologies
+                    <span style="color:blue">&lt;</span><span style="color:red">/title</span><span style="color:blue">&gt;</span>
+                    <br>
+                    <span style="color:blue">&lt;</span><span style="color:red">p</span><span style="color:blue">&gt;</span>
+                    Enter a paragraph
+                    <span style="color:blue">&lt;</span><span style="color:red">/p</span><span style="color:blue">&gt;</span>
+                    <br><br>
+                    2. Selectors follow the <i>pattern</i> : 
+                    <br>
+                    One or more sequence of simple selectors separated by  combinators and an optional pseudo-element that may be appended to the last sequence of the simple selector
+                    <br>
+                    <ul>
+                    <li>	A sequence of simple selectors is a chain of simple selectors that are not separated by a combinator. It always begins with a type selector or a universal selector. No other type selector or universal selector is allowed in the sequence. (W3C Candidate Recommendation)
+                        <ul><li>	A simple selector is either a type selector, universal selector, attribute selector, class selector, ID selector, or pseudo-class.</li></ul>
+                    </li>
+                        <br>
+                    <li>The following may be used as a combinator
+                        <br>
+                    Whitespace, > , +,  ~
+                        <ul><li>Whitespace: Only the characters "space" (U+0020), "tab" (U+0009), "line feed" (U+000A), "carriage return" (U+000D), and "form feed" (U+000C) can occur in whitespace. Other space-like characters, such as "em-space" (U+2003) and "ideographic space" (U+3000), are never part of whitespace.
+                        </li></ul>
+                    </li>
+                    
+                    <li>Pseudo elements are used to select contents of an element.
+                    <br>
+                    Example 
+                    <br>
+                    ::first-line      can refer to a first line of a 
+                    <br>
+                    ::lastline
+                    <br>
+                    ::firstchild
+                    <br>
+                    ::before 	
+                    <br>
+                    ::after
+                    
+                        </li>
+                    </ul>
+
+
+
+
+
+
+                    
+                    
+                    
+                    
 					<hr>
 					<ul class="uk-pagination">
 						<li class="uk-margin-auto-left"><a href="#">CSWS<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
