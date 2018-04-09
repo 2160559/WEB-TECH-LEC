@@ -110,16 +110,14 @@
             <div class="uk-card uk-card-default uk-card-body">
 
                 <h1 class="uk-h2 uk-heading-line uk-text-center"><span>JavaScript Association</span></h1>
-                <h2 class="uk-text-center">The &lt;script&gt; element</h2>
-                The &lt;script&gt;element is a non empty element which contains or links a JavaScript code.
-                 <ul>
-                <li>The &lt;script&gt;element containing the JS code can be inserted in the head element or the body element.
-                    </li>
-                
-                </ul>
-                    &lt;head&gt;
-
-                    <pre>
+                <h2 class="uk-h3">The &lt;script&gt; Element</h2>
+                <p>
+                    The <code>&lt;script&gt;</code> element is a non-empty element which contains or links a JavaScript code. It can be inserted in the head element or the body element.
+                </p>
+                <p>
+                    <code>&lt;head&gt;</code>
+                </p>
+                <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
@@ -135,9 +133,9 @@
         &lt;button type="button" onclick="myFunction()">Try it&lt;/button&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-                    </pre>
-                    &lt;body&gt;
-                    <pre>
+                </pre>
+                <code>&lt;body&gt;</code>
+                <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;body&gt;
@@ -151,13 +149,8 @@
         &lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-                <p>In this example, the code is only executed when the function is invoked.</p>
-
-                <ul>
-                <li>Aside from containing the JS code inside the script element, an external JS code may be used using the script element. Note that the following can also be included in the   &lt;head&gt; and   &lt;body&gt; element.</li>
-                </ul>	
-                Illustration :
+                </pre>
+                <p>In this example, the code is only executed when the function is invoked. Aside from containing the JS code inside the script element, an external JS code may be used using the script element. Note that the following can also be included in the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> element.</p>
                 <pre>
 &lt;script src="myScript.js"&gt;   &lt;/script&gt;
 &lt;script src="script/myScript.js"&gt;   &lt;/script&gt;
@@ -165,11 +158,13 @@
                 </pre>  
                 <p>The use of external script are more effective if different web pages makes use of the same code. It also separates the content from the behavioral aspect of the page which makes the code cleaner
                 </p>
-
-              <h2 class="uk-text-center"> Embedded script</h2>
-                <p>Upon reaching the script element, the rendering of the page is blocked until the JS is retrieved.
-                    Thus, it is recommended to put the script element at the bottom of the body element to improve the display speed.</p>
-                 <p><i>This is an example of an embedded code inside a function. The code within the function are executed as they encountered. </i></p>
+                <h2 class="uk-h3"> Embedded script</h2>
+                <p>
+                    Upon reaching the script element, the rendering of the page is blocked until the JS is retrieved. Thus, it is recommended to put the script element at the bottom of the body element to improve the display speed.
+                </p>
+                <p class="notebox">
+                    This is an example of an embedded code inside a function, taken from <a href="http://www.embeddedjs.com/getting_started.html">here</a>. The code within the function are executed as they encountered.
+                </p>
                 <pre>
 var html = "&lt;h1&gt;"+data.title+"&lt;/h1&gt;"
 html += "&lt;ul&gt;"
@@ -179,12 +174,9 @@ for(var i=0; i&lt;data.supplies.length; i++) {
 }
 html += "&lt;/ul&gt;"
                 </pre>
-                <p>From : http://www.embeddedjs.com/getting_started.html</p>
-                <h2 class="uk-text-center"> The no script</h2>
+                <h2 class="uk-h3">The no script</h2>
                 <p>
-                The &lt;noscript&gt; is used as a disclaimer in case a JS type is not supported or is disabled by the browser.</p>
-                <p>
-                The lifetime of of a script is per page.</p>
+                The <code>&lt;noscript&gt;</code> is used as a disclaimer in case a JS type is not supported or is disabled by the browser. The lifetime of of a script is per page.</p>
                 <hr>
                 <ul class="uk-pagination">
                     <li><a href="js_intro.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript</a></li>
@@ -192,6 +184,7 @@ html += "&lt;/ul&gt;"
                             class="uk-margin-small-left" uk-pagination-next></span></a></li>
                 </ul>
             </div>
+        </div>
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
