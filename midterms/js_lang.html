@@ -102,6 +102,7 @@
                             <li><a href="js_exe.html">JS Execution<br> Environment</a></li>
                             <li><a href="js_lang.html">JS Fundamentals</a></li>
                             <li><a href="js_event.html">JS Event Handling</a></li>
+                            <li><a href="js_pro.html">JS Promises</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -117,10 +118,10 @@
                     end statements explicitly using semicolons. Statements can be grouped into a <i>block</i> when
                     wrapped in braces, which are generally used to with functions and conditionals.</p>
                 <pre>
-                var greeting = "Hello world";
-                function sayHi() {
-                    console.log(`${greeting}`);
-                } // output: Hello world
+var greeting = "Hello world";
+function sayHi() {
+    console.log(`${greeting}`);
+} // output: Hello world
                 </pre>
                 <h3> Variables</h3>
 
@@ -202,27 +203,24 @@ x; // output: 1 more time
                 <p>Also referred to as “global methods”, it executes the operations or arguments inside the
                     function.</p>
                 <pre>
-                function alert() {
-                let warning = "trepasser!";
-                return warning;
-                }
+function alert() {
+    let warning = "trepasser!";
+    return warning;
+}
                 </pre>
                 <p>Functions can also become objects (that is, assigned to a variable) or parameters to other
                     functions.</p>
                 <pre>
-                var today = function (dd) {
-                return "Today is " + dd;
-                }
-                var greeting = function (day, fn) {
-                return tn(day);
-                }
-                greeting("tuesday", today); // output: today is tuesday
+var today = function (dd) {
+    return "Today is " + dd;
+}
+var greeting = function (day, fn) {
+    return tn(day);
+}
+greeting("tuesday", today); // output: today is tuesday
                 </pre>
-
-
                 <h3>Operators</h3>
                 <ul>
-
                     <li>+ (add or concatenation)</li>
                     <li>++ (increment)</li>
                     <li> - (subtract)</li>
@@ -233,8 +231,6 @@ x; // output: 1 more time
                     <li>== (equal: compare)</li>
                     <li>=== (strict equal: compare type and value)</li>
                 </ul>
-
-
                 <hr>
                 <ul class="uk-pagination">
                     <li><a href="js_exe.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript
