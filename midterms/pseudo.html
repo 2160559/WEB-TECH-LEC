@@ -72,7 +72,27 @@
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
-
+                    <li class="uk-parent uk-active">
+                        <a href="">CSS</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="selectors.html">CSS Selectors</a></li>
+                            <li><a href="cascade.html">CSS Cascade</a></li>
+                            <li><a href="declaration.html">CSS Declaration</a></li>
+                            <li><a href="pre.html">Preprocessor,<br> Framework, Libraries</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="js_intro.html">CSWS</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="js_intro.html">Introduction</a></li>
+                            <li><a href="js_assoc.html">JS Association</a></li>
+                            <li><a href="js_def.html">Defer Async</a></li>
+                            <li><a href="js_exe.html">JS Execution<br> Environment</a></li>
+                            <li><a href="js_lang.html">JS Fundamentals</a></li>
+                            <li><a href="js_event.html">JS Event Handling</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -80,9 +100,10 @@
             <div class="uk-card uk-card-default uk-card-body">
                 <h1 class="uk-h2 uk-heading-line uk-text-center"><span>CSS Selectors Level 3</span></h1>
                 <p>
-                    Selectors are <a href="#patterns">patterns</a> that are used in CSS to select an <a href="#element">element</a> in an XML or HTML file and specify a style for the selected elements.
+                    Selectors are <a href="#patterns">patterns</a> that are used in CSS to select an <a href="#element">element</a>
+                    in an XML or HTML file and specify a style for the selected elements.
                 </p>
-                <h2 id="element" class="uk-h3">Element</h2>
+                <h2 id="element" class="uk-h3"><span id="ele"></span> Element</h2>
                 <p>An element usually consist of a start tag, its content, and its corresponding end tag.</p>
                 <p>
                     <code>&lt;title&gt;</code>Web Systems and Technologies<code>&lt;/title&gt;</code>
@@ -90,18 +111,23 @@
                 <p>
                     <code>&lt;p&gt;</code>Enter a paragraph<code>&lt;/p&gt;</code>
                 </p>
-                <h2 id="patterns" class="uk-h3">Followed Patterns</h2>
+                <h2 id="patterns" class="uk-h3"><span id="followed"></span> Followed Patterns</h2>
                 <p>
-                    One or more sequence of simple selectors separated by combinators and an optional pseudo-element that may be appended to the last sequence of the simple selector. <a href="pseudo.html">Pseudo elements</a> are used to select contents of an element.
+                    One or more sequence of simple selectors separated by combinators and an optional pseudo-element
+                    that may be appended to the last sequence of the simple selector. <a href="pseudo.html">Pseudo
+                    elements</a> are used to select contents of an element.
                 </p>
-                <h3 class="uk-h4">Simple Selectors</h3>
+                <h3 class="uk-h4" id="simple-selectors">Simple Selectors</h3>
                 <p>
-                    A sequence of simple selectors is a chain of simple selectors that are not separated by a combinator. It always begins with a type selector or a universal selector. No other type selector or universal selector is allowed in the sequence. (W3C Candidate Recommendation)
+                    A sequence of simple selectors is a chain of simple selectors that are not separated by a
+                    combinator. It always begins with a type selector or a universal selector. No other type selector or
+                    universal selector is allowed in the sequence. (W3C Candidate Recommendation)
                 </p>
                 <p>
-                    A simple selector is either a type selector, universal selector, attribute selector, class selector, ID selector, or pseudo-class.
+                    A simple selector is either a type selector, universal selector, attribute selector, class selector,
+                    ID selector, or pseudo-class.
                 </p>
-                <h3 class="uk-h4">Combinators</h3>
+                <h3 class="uk-h4" id="combinators">Combinators</h3>
                 <p>The following may be used as a combinator:</p>
                 <ul>
                     <li>Whitespace</li>
@@ -110,9 +136,11 @@
                     <li>~</li>
                 </ul>
                 <p class="notebox">
-                    Only the characters "space" (U+0020), "tab" (U+0009), "line feed" (U+000A), "carriage return" (U+000D), and "form feed" (U+000C) can occur in whitespace. Other space-like characters, such as "em-space" (U+2003) and "ideographic space" (U+3000), are never part of whitespace.
+                    Only the characters "space" (U+0020), "tab" (U+0009), "line feed" (U+000A), "carriage return"
+                    (U+000D), and "form feed" (U+000C) can occur in whitespace. Other space-like characters, such as
+                    "em-space" (U+2003) and "ideographic space" (U+3000), are never part of whitespace.
                 </p>
-                <h3 class="uk-h4">Invalid Selector</h3><span id="pseudo"></span>
+                <h3 class="uk-h4" id="invalid">Invalid Selector</h3><span id="pseudo"></span>
                 <p>
                     An empty selector, containing no sequence of simple selectors and no pseudo-element.
                 </p>
@@ -126,24 +154,28 @@
                 </div>
 
                 <hr class="uk-divider-icon">
-                <p>A keyword that follows a selector which allows you to target a specific part of the selected element/s (MDN webdocs).</p>
+                <p>A keyword that follows a selector which allows you to target a specific part of the selected
+                    element/s (MDN webdocs).</p>
 
                 <dl class="uk-description-list uk-description-list-divider">
-                    <dt class="uk-text-capitalize" id="cache-control"><span class="uk-text-lead">Syntax</span></dt>
+                    <dt class="uk-text-capitalize" id="syntax"><span class="uk-text-lead">Syntax</span></dt>
                     <dd>
                         <b>Older CSS levels</b>:<br>
                         selector<code>:pseudo-element</code> { properties } <br>
                         <b>CSS3</b>:<br>
                         selector<code>::pseudo-element</code> { properties }
                     </dd>
-                    <dt class="uk-text-capitalize" id="connection"><span class="uk-text-lead">Standard pseudo-elements:</span></dt>
+                    <dt class="uk-text-capitalize"><span
+                            class="uk-text-lead" id="standard">Standard pseudo-elements:</span></dt>
                     <dd>
                         <ul>
                             <li>
                                 <code>:first-letter</code> or <code>::first-letter</code><br>
                                 <ul>
                                     <li>
-                                        Selects the first letter of the first line of a block-level element for styling (i.e <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>)</li>
+                                        Selects the first letter of the first line of a block-level element for styling
+                                        (i.e <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>)
+                                    </li>
                                     <li>
                                         Only applies if the element is not preceded by other content such as an image
                                     </li>
@@ -153,9 +185,11 @@
                                 <code>:first-line</code> or <code>::first-line</code><br>
                                 <ul>
                                     <li>
-                                        Selects the first line of a block-level element for styling</li>
+                                        Selects the first line of a block-level element for styling
+                                    </li>
                                     <li>
-                                        The length of the first line may depend on factors like the width of the element or document, etc.
+                                        The length of the first line may depend on factors like the width of the element
+                                        or document, etc.
                                     </li>
                                 </ul>
                             </li>
@@ -163,7 +197,9 @@
                                 <code>:after</code> or <code>::after</code><br>
                                 <ul>
                                     <li>
-                                        Creates a pseudo-element, which becomes the last child of the selected element, after the selected element.</li>
+                                        Creates a pseudo-element, which becomes the last child of the selected element,
+                                        after the selected element.
+                                    </li>
                                     <li>
                                         Is inline by default.
                                     </li>
@@ -173,7 +209,9 @@
                                 <code>:before</code> or <code>::before</code><br>
                                 <ul>
                                     <li>
-                                        Creates a pseudo-element, which becomes the first child of the selected element, before the selected element.</li>
+                                        Creates a pseudo-element, which becomes the first child of the selected element,
+                                        before the selected element.
+                                    </li>
                                     <li>
                                         Is inline by default.
                                     </li>
@@ -186,7 +224,8 @@
                 <ul class="uk-pagination">
                     <li><a href="introduction.html"><span class="uk-margin-small-right" uk-pagination-previous></span>Introduction</a>
                     </li>
-                    <li class="uk-margin-auto-left"><a href="cascade.html">CSS Cascade<span class="uk-margin-small-left uk-pagination-next"></span></a>
+                    <li class="uk-margin-auto-left"><a href="cascade.html">CSS Cascade<span
+                            class="uk-margin-small-left uk-pagination-next"></span></a>
                     </li>
                 </ul>
             </div>
@@ -194,6 +233,13 @@
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+                    <li><a href="#ele" offset="100">Element</a></li>
+                    <li><a href="#followed" offset="100">Followed Patterns</a></li>
+                    <li><a href="#simple-selectors" offset="100">Simple Selectors</a></li>
+                    <li><a href="#combinators" offset="100">Combinators</a></li>
+                    <li><a href="#invalid" offset="100">Invalid Selector</a></li>
+                    <li><a href="#syntax" offset="100">Syntax</a></li>
+                    <li><a href="#standard" offset="100">Standard Pseudo-Elements</a></li>
                 </ul>
             </div>
         </div>
