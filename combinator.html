@@ -13,7 +13,7 @@
 
 <body>
 <nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left ">
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
         <a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
@@ -67,29 +67,12 @@
         </ul>
     </div>
 </nav>
-<div class="uk-background-muted lesson-bg" uk-height-viewport="offset-top: true; offset-bottom: true">
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
     <div class="uk-grid-collapse uk-padding " uk-grid>
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
-                    <li class="uk-parent uk-active">
-                        <a href="introduction.html">CSS</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="introduction.html">Introduction</a></li>
-                            <li><a href="selectors.html">CSS Selectors</a></li>
-                            <li><a href="cascade.html"></a></li>
-                            <li><a href="declaration.html">CSS Declaration</a></li>
-                            <li><a href="pre.html">CSS Preprocessor, <br> Framework, Libraries</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="js_intro.html">Client Side Web Scripting</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="js_intro.html">Introduction</a></li>
-                            <li><a href="js_assoc.html">JS Association</a></li>
-                            <li><a href="js_exe.html">JS Execution <br>Environment</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -165,6 +148,59 @@
                 <br>
                 An empty selector, containing no sequence of simple selectors and no pseudo-element
 
+                <hr class="uk-divider-icon">
+                <div class="uk-flex uk-flex-center">
+                    <ul class="uk-subnav uk-subnav-divider">
+                        <li class="uk-active"><a href="simple.html#simple">Simple Selector</a></li>
+                        <li><a href="combinator.html#combinator">Combinators </a></li>
+                        <li><a href="pseudo.html#pseudo">Pseudo Elements </a></li>
+                    </ul>
+                </div>
+                <hr class="uk-divider-icon">
+                <p>Combinators shows the relationship between simple selectors</p>
+
+                <dl class="uk-description-list uk-description-list-divider">
+                    <dt class="uk-text-capitalize" id="cache-control"><span class="uk-text-lead">Descendant Combinator ( white space )</span>
+                    </dt>
+                    <dd>Use: Selects nodes that are descendants of the first element<br>
+                    Syntax: selector1 selector2 <br>
+                    Example: div p will match all &lt;p&gt; elements inside  &lt;div&gt; elements
+
+
+                    </dd>
+                    <dt class="uk-text-capitalize" id="connection"><span class="uk-text-lead">Child Combinator ( > )</span></dt>
+                    <dd>Use: Selects nodes that are immediate children of the first element<br>
+                    Syntax: selector1 > selector2<br>
+                    Example: div >  p will match all &lt;p&gt; elements that are immediate children of a  &lt;div&gt; element
+
+
+
+                    </dd>
+                    <dt class="uk-text-capitalize" id="date"><span class="uk-text-lead">Sibling Combinator </span></dt>
+                    <dd>
+                        Use: Selects an element that has the specified id attribute preceded by “#”<br>
+                        Syntax: #idname<br>
+                        Example: #idname will match all elements that have a class name, “idname”<br>
+
+                        a.  Adjacent Sibling Combinator ( + )<br>
+Use: Selects the element that is an immediate sibling of a specified element.<br>
+Syntax: selector1 + selector2<br>
+Example: img +  p will match all &lt;p&gt; elements that are immediate siblings of an  
+    &lt;img&gt; element<br>
+
+b.  General Sibling Combinator ( ~ )<br>
+Use: Selects all elements that are siblings of a specified element.<br>
+Syntax: selector1 ~ selector2<br>
+Example: img ~  p will match all &lt;p&gt; elements that share the same parent with an  &lt;img&gt; element
+
+
+                    </dd>
+                </dl>
+
+                
+            
+        
+                
 
                 <hr>
                 <ul class="uk-pagination">
@@ -188,7 +224,7 @@
         </div>
     </div>
 </div>
-<div class="uk-background-secondary  uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
 </div>

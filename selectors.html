@@ -13,7 +13,7 @@
 
 <body>
 <nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left ">
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
         <a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
@@ -67,29 +67,12 @@
         </ul>
     </div>
 </nav>
-<div class="uk-background-muted lesson-bg" uk-height-viewport="offset-top: true; offset-bottom: true">
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
     <div class="uk-grid-collapse uk-padding " uk-grid>
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
-                    <li class="uk-parent uk-active">
-                        <a href="introduction.html">CSS</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="introduction.html">Introduction</a></li>
-                            <li><a href="selectors.html">CSS Selectors</a></li>
-                            <li><a href="cascade.html"></a></li>
-                            <li><a href="declaration.html">CSS Declaration</a></li>
-                            <li><a href="pre.html">CSS Preprocessor, <br> Framework, Libraries</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="js_intro.html">Client Side Web Scripting</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="js_intro.html">Introduction</a></li>
-                            <li><a href="js_assoc.html">JS Association</a></li>
-                            <li><a href="js_exe.html">JS Execution <br>Environment</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -145,18 +128,6 @@
                     </li>
 
                     <li>Pseudo elements are used to select contents of an element.
-                        <br>
-                        Example
-                        <br>
-                        ::first-line can refer to a first line of a
-                        <br>
-                        ::lastline
-                        <br>
-                        ::firstchild
-                        <br>
-                        ::before
-                        <br>
-                        ::after
 
                     </li>
                 </ul>
@@ -165,6 +136,72 @@
                 <br>
                 An empty selector, containing no sequence of simple selectors and no pseudo-element
 
+                <hr class="uk-divider-icon">
+                <div class="uk-flex uk-flex-center">
+                    <ul class="uk-subnav uk-subnav-divider">
+                        <li class="uk-active"><a href="simple.html">Simple Selector</a></li>
+                        <li><a href="combinator.html">Combinators </a></li>
+                        <li><a href="psudeo.html">Pseudo Elements </a></li>
+                    </ul>
+                </div>
+                <hr class="uk-divider-icon">
+                <p>Simple Selectors used to define the element(s) to be styled.</p>
+
+                <dl class="uk-description-list uk-description-list-divider">
+                    <dt class="uk-text-capitalize" id="cache-control"><span class="uk-text-lead">Type Selector</span>
+                    </dt>
+                    <dd>Use: Selects all the elements that match the specified element name. <br>
+                    Syntax: p <br>
+                    Example: p will match any &lt;p&gt; element.
+
+                    </dd>
+                    <dt class="uk-text-capitalize" id="connection"><span class="uk-text-lead">Class Selector</span></dt>
+                    <dd>Use: Selects all the elements that have the specified class attribute preceded by “.”<br>
+                    Syntax: .classname<br>
+                    Example: .classname will match all elements that have a class name,  “classname”
+
+                    </dd>
+                    <dt class="uk-text-capitalize" id="date"><span class="uk-text-lead">ID Selector</span></dt>
+                    <dd>
+                        Use: Selects an element that has the specified id attribute preceded by “#”<br>
+                        Syntax: #idname<br>
+                        Example: #idname will match all elements that have a class name, “idname”
+
+                    </dd>
+                    <dt class="uk-text-capitalize" id="pragma"><span class="uk-text-lead">Universal Selector </span></dt>
+                    <dd>Use: Selects all elements.<br>
+                        Syntax: *<br>
+                        Example: div * selects all elements within the <div>
+
+                    </dd>
+                    <dt class="uk-text-capitalize" id="trailer"><span class="uk-text-lead">Attribute Selector </span></dt>
+                    <dd>Use: Selects all elements matching the given attribute name<br>
+                    Syntax: a[attributename]<br>
+                    Example: a[attributename] selects an element with an attribute name attributename
+                    </dd>
+                    
+                    <dt class="uk-text-capitalize" id="transfer-encoding"><span
+                            class="uk-text-lead">Pseudo-Classes</span></dt>
+
+                    <dd>
+                        a.  Dynamic Pseudo-Classes – classify elements on characteristics other than their name, attributes, or content.<br>
+                        i.  Link Pseudo-Classes – displays links depending on whether it is visited or not.<br>
+                        ii. User Action Pseudo-Classes – changes rendering in response to user actions<br>
+                        b.  Target Pseudo-Classes – selects an element with anchor identifier<br>
+                        c.  Language Pseudo-Classes – selects an element with a specified language<br>
+                        Syntax: :lang([language])<br>
+                        Example: :lang(en) selects a n element with language en(English).<br>
+                        d.  UI Element States Pseudo-Classes – selects an element depending on the state of that element<br>
+                        e.  Structural Pseudo-Classes – selects elements based on extra information that cannot be represented by other simple selectors or combinators
+
+
+                    </dd>
+                    
+                    
+                </dl>
+
+        
+                
 
                 <hr>
                 <ul class="uk-pagination">
@@ -188,7 +225,7 @@
         </div>
     </div>
 </div>
-<div class="uk-background-secondary  uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
 </div>

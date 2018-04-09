@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>JavaScript Introduction</title>
+	<title>JavaScript Defer vs Async</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/uikit.min.css" />
@@ -61,7 +61,9 @@
 								<ul class="uk-nav-sub ">
 									<li><a href="js_intro.html">Introduction</a></li>
 									<li><a href="js_assoc.html">JS Association</a></li>
+                                    <li><a href="js_def.html">JS Defer vs Async</a></li>
                                     <li><a href="js_exe.html">JS Execution Environment</a></li>
+                                    
 								</ul>
 				        </li>
 						<li class="uk-nav-divider"></li>
@@ -78,62 +80,33 @@
 		<div class="uk-grid-collapse uk-padding " uk-grid>
 			<div class="uk-width-1-6@m uk-visible@m">
 				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-                    <ul class="uk-nav uk-nav-default">
-                        <li class="uk-parent">
-                            <a href="introduction.html">CSS</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="introduction.html">Introduction</a></li>
-                                <li><a href="selectors.html">CSS Selectors</a></li>
-                                <li><a href="cascade.html"></a></li>
-                                <li><a href="declaration.html">CSS Declaration</a></li>
-                                <li><a href="pre.html">CSS Preprocessor, <br> Framework, Libraries</a></li>
-                            </ul>
-                        </li>
-                        <li class="uk-parent uk-active">
-                            <a href="js_intro.html">Client Side Web Scripting</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="js_intro.html">Introduction</a></li>
-                                <li><a href="js_assoc.html">JS Association</a></li>
-                                <li><a href="js_exe.html">JS Execution <br>Environment</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+					<ul class="uk-nav uk-nav-default">
+
+					</ul>
 				</div>
 			</div>
 			<div class="uk-width-2-3@m uk-width-1-1@s">
 				<div class="uk-card uk-card-default uk-card-body">
 
-                    <h1 class="uk-heading-line uk-text-center"><span>Introduction to JavaScript (JS)</span></h1>
+                    <h2 class="uk-heading-line uk-text-center"><span>JavaScript Defer vs Async</span></h2>
 
+                   <p>The defer and async are attributes of the script element which is used to indicate how the script should be executed. </p> 
+                    
+                    Note : These attributes should not be used when the src attribute is present.
+                     <p>The defer attribute is used to tell the browser to execute the script only when page is finishe parsing.
+                    On the other hand, the async is used to tell the browser to execute the script asynchronously as soon as it is available. </p> 
 
-                    <p class="uk-clearfix">
-                        <img class="uk-align-right" src="../img/bre_eich.jpg" width="50%" height="50%"
-                             alt="Brendan Eich">
+                     <p>Asynchronous execution makes it possible for the browser to execute two things at a time, that is,  while the browser fetches resources, the browser can also render the page. This means that even if the browser is fetching the script, you can still interact with the UI. </p> 
 
-                        - One of the most popular object-oriented, procedural and dynamic scripting language for Web
-                        pages as well as in other non-browser environments (MDN webdocs).
-                        <br>
-                        <br>
-                        - It was created by <b>Brendan Eich</b> in 1995 during his time in Netscape (Medium).
-                        <br>
-                        <br>
-                        - The language was first named as <i>Mocha</i> which aimed to allow web pages to become
-                        interactive meaning Netscape browser would interpret code directly with being compiled and also
-                        without needing a plugin. It was later renamed to <i>LiveScript</i> in September 1995 then <i>JavaScript</i>
-                        later in the same month.
-                    </p>
-                    <p>
-                        The language was later handed over to the European Computer Manufacturer Association
-                        International (ECMA) which was an international standards body and is responsible for its
-                        subsequent developments. Due to this, JavaScript was renamed to ECMAScript although most people
-                        still know it as JavaScript (ThoughtCo).
+                     <p>Note : Asynchronous fetch of resources is preferred over Synchronous fetch as synchronous fetch doesn’t allow the user to interact with the page while it is fetching the scripts.</p> 
 
-                    </p>
+                     <p>Since asynchronous allows parallel fetching and rendering of page, the problem lies in knowing when the resource is ready for execution.The solution in this is the use of callback function</p> 
+
+                    
                     <hr>
 					<ul class="uk-pagination">
-                        <li><a href="selectors.html"><span class="uk-margin-small-right" uk-pagination-previous></span>CSS
-                            Preprocessor, Framework, Libraries </a></li>
-                        <li class="uk-margin-auto-left"><a href="js_assoc.html">JavaScript Association<span
+                        <li><a href="js_assoc.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript Association </a></li>
+                        <li class="uk-margin-auto-left"><a href="js_exe.html">JavaScript Execution Environment <span
                                 class="uk-margin-small-left" uk-pagination-next></span></a></li>
 						
 					</ul>
