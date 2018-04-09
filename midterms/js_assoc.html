@@ -104,27 +104,94 @@
             <div class="uk-card uk-card-default uk-card-body">
 
                 <h1 class="uk-h2 uk-heading-line uk-text-center"><span>JavaScript Association</span></h1>
-                <h2>The &lt;script&gt; element</h2>
+                <h2 class="uk-text-center">The &lt;script&gt; element</h2>
                 The &lt;script&gt;element is a non empty element which contains or links a JavaScript code.
+                 <ul>
+                <li>The &lt;script&gt;element containing the JS code can be inserted in the head element or the body element.
+                    </li>
+                
+                </ul>
+                    &lt;head&gt;
+                    <br>
+             
+                    <code>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;script&gt;<br>
+                    function myFunction() {<br>
+                        document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+                    }<br>
+                    &lt;/script&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+                    &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+                    &lt;button type="button" onclick="myFunction()">Try it&lt;/button&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                    </code>
+                
+                <br>
+                    &lt;body&gt;
+                <br>
+                    <code>
+                   &lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;A Web Page&lt;/h1&gt;<br>
+                    &lt;p id="demo"&gt;A Paragraph&lt;/p&gt;<br>
+                    &lt;button type="button" onclick="myFunction()">Try it&lt;/button&gt;<br>
 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                    &lt;script&gt;<br>
+                    function myFunction() {<br>
+                       document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+                    }<br>
+                    &lt;/script&gt;<br>
+
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                    </code>
+                    <br>
+                    In this example, the code is only executed when the function is invoked.
+
+                <ul>
+                <li>Aside from containing the JS code inside the script element, an external JS code may be used using the script element. Note that the following can also be included in the   &lt;head&gt; and   &lt;body&gt; element.</li>
+                </ul>	
+                Illustration :
+                <pre>
+&lt;script src="myScript.js"&gt;   &lt;/script&gt;
+&lt;script src="script/myScript.js"&gt;   &lt;/script&gt;
+&lt;script src="https://www.domainname.com/js/myScript.js"&gt;   &lt;/script&gt;
+                </pre>  
+                <p>The use of external script are more effective if different web pages makes use of the same code. It also separates the content from the behavioral aspect of the page which makes the code cleaner
+                </p>
+
+              <h2 class="uk-text-center"> Embedded script</h2>
+                <p>Upon reaching the script element, the rendering of the page is blocked until the JS is retrieved.
+                    Thus, it is recommended to put the script element at the bottom of the body element to improve the display speed.</p>
+                 <p><i>This is an example of an embedded code inside a function. The code within the function are executed as they encountered. </i></p>
+                <pre>
+                var html = "&lt;h1&gt;"+data.title+"&lt;/h1&gt;"
+                html += "&lt;ul&gt;"
+                for(var i=0; i&lt;data.supplies.length; i++) {
+                    html += "&lt;li&gt;&lt;a href='supplies/"+data.supplies[i]+"'&gt;"
+                    html += data.supplies[i]+"&lt;/a&gt;&lt;/li&gt;"
+                    }
+                    html += "&lt;/ul&gt;"
+                From : http://www.embeddedjs.com/getting_started.html
+                </pre>
+                <h2 class="uk-text-center"> The no script</h2>
+                <p>
+                The &lt;noscript&gt; is used as a disclaimer in case a JS type is not supported o is disabled byt the browser.</p>
+                <p>
+                The lifetime of of a script is per page.</p>
+                <hr>
                 <ul class="uk-pagination">
-                    <li><a href="selectors.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript</a></li>
-                    <li class="uk-margin-auto-left"><a href="js_exe.html">JavaSctipt Execution Environment<span
+                    <li><a href="js_intro.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript</a></li>
+                    <li class="uk-margin-auto-left"><a href="js_def.html">Defer vs Async<span
                             class="uk-margin-small-left" uk-pagination-next></span></a></li>
                 </ul>
             </div>
