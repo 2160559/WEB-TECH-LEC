@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c680b8d9-cc82-4fd4-a7a1-b1b41317ecb8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/midterms/css_declaration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midterms/declaration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midterms/pre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/midterms/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/midterms/cascade.html" beforeDir="false" afterPath="$PROJECT_DIR$/midterms/cascade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midterms/css_declaration.html" beforeDir="false" afterPath="$PROJECT_DIR$/midterms/js_intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midterms/declaration.html" beforeDir="false" afterPath="$PROJECT_DIR$/midterms/declaration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midterms/introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/midterms/introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midterms/midterms.html" beforeDir="false" afterPath="$PROJECT_DIR$/midterms/midterms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midterms/pre.html" beforeDir="false" afterPath="$PROJECT_DIR$/midterms/pre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midterms/selectors.html" beforeDir="false" afterPath="$PROJECT_DIR$/midterms/selectors.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectors.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="selectors.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/midterms/selectors.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -41,8 +45,11 @@
       <file leaf-file-name="midterms.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/midterms/midterms.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
+            <state relative-caret-position="-127">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+              <folding>
+                <element signature="e#4950#4956#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,17 +57,17 @@
       <file leaf-file-name="introduction.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/midterms/introduction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+            <state relative-caret-position="170">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cascade.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cascade.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/midterms/cascade.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="161" column="92" selection-start-line="161" selection-start-column="92" selection-end-line="161" selection-end-column="92" />
+            <state relative-caret-position="-476">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -117,11 +124,11 @@
         <option value="$PROJECT_DIR$/prelims/html/preprocessors.html" />
         <option value="$PROJECT_DIR$/prelims/html/html.html" />
         <option value="$PROJECT_DIR$/midterms/css.html" />
-        <option value="$PROJECT_DIR$/midterms/selectors.html" />
-        <option value="$PROJECT_DIR$/midterms/midterms.html" />
-        <option value="$PROJECT_DIR$/midterms/introduction.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/midterms/cascade.html" />
+        <option value="$PROJECT_DIR$/midterms/introduction.html" />
+        <option value="$PROJECT_DIR$/midterms/midterms.html" />
+        <option value="$PROJECT_DIR$/midterms/selectors.html" />
       </list>
     </option>
   </component>
@@ -203,12 +210,12 @@
       <option name="presentableId" value="Default" />
       <updated>1523234522790</updated>
       <workItem from="1523234524699" duration="2857000" />
-      <workItem from="1523237430147" duration="2670000" />
+      <workItem from="1523237430147" duration="3336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5527000" />
+    <option name="totallyTimeSpent" value="6193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -483,27 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/midterms/selectors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/midterms/midterms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="47" column="55" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/midterms/introduction.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/midterms/css.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -520,8 +506,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/midterms/cascade.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="161" column="92" selection-start-line="161" selection-start-column="92" selection-end-line="161" selection-end-column="92" />
+        <state relative-caret-position="-476">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/midterms/introduction.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/midterms/midterms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="e#4950#4956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/midterms/selectors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
