@@ -14,7 +14,7 @@
 <body>
 <nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
     <div class="uk-navbar-left uk-margin-large-left uk-light">
-        <a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
+        <a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
         <ul class="uk-navbar-nav">
@@ -42,28 +42,28 @@
                     </ul>
                 </div>
             </li>
-             <li>
+            <li>
                 <a class="uk-button uk-button-text" href="midterms.html">Midterms</a>
                 <div class="uk-navbar-dropdown ">
                     <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-                        <li class="uk-parent uk-actives">
+                        <li class="uk-parent uk-active">
                             <a href="">CSS</a>
                             <ul class="uk-nav-sub">
-                                <li><a href="midterms/introduction.html">Introduction</a></li>
-                                <li><a href="midterms/selectors.html">CSS Selectors</a></li>
-                                <li><a href="midterms/cascade.html">CSS Cascade</a></li>
-                                <li><a href="midterms/declaration.html">CSS Declaration</a></li>
-                                <li><a href="midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                                <li><a href="introduction.html">Introduction</a></li>
+                                <li><a href="selectors.html">CSS Selectors</a></li>
+                                <li><a href="cascade.html">CSS Cascade</a></li>
+                                <li><a href="declaration.html">CSS Declaration</a></li>
+                                <li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
                             </ul>
                         </li>
                         <li class="uk-parent">
                             <a href="js_intro.html">CSWS</a>
                             <ul class="uk-nav-sub">
-                                <li><a href="midterms/js_intro.html">Introduction</a></li>
-                                <li><a href="midterms/js_assoc.html">JS Association</a></li>
-                                <li><a href="midterms/js_def.html">Defer Async</a></li>
-                                <li><a href="midterms/js_exe.html">JS Execution Environment</a></li>
-                                <li><a href="midterms/js_lang.html">JS Fundamentals</a></li>
+                                <li><a href="js_intro.html">Introduction</a></li>
+                                <li><a href="js_assoc.html">JS Association</a></li>
+                                <li><a href="js_def.html">Defer Async</a></li>
+                                <li><a href="js_exe.html">JS Execution Environment</a></li>
+                                <li><a href="js_lang.html">JS Fundamentals</a></li>
                                 <li><a href="midterms/js_event.html">JS Event Handling</a></li>
                             </ul>
                         </li>
@@ -82,7 +82,27 @@
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
-
+                    <li class="uk-parent uk-active">
+                        <a href="">CSS</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="../selectors.html">CSS Selectors</a></li>
+                            <li><a href="cascade.html">CSS Cascade</a></li>
+                            <li><a href="declaration.html">CSS Declaration</a></li>
+                            <li><a href="pre.html">Preprocessor,<br> Framework, Libraries</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="js_intro.html">CSWS</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="js_intro.html">Introduction</a></li>
+                            <li><a href="js_assoc.html">JS Association</a></li>
+                            <li><a href="js_def.html">Defer Async</a></li>
+                            <li><a href="js_exe.html">JS Execution<br> Environment</a></li>
+                            <li><a href="js_lang.html">JS Fundamentals</a></li>
+                            <li><a href="js_event.html">JS Event Handling</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -173,16 +193,17 @@
                     <dt class="uk-text-capitalize" id="cache-control"><span class="uk-text-lead">Descendant Combinator ( white space )</span>
                     </dt>
                     <dd>Use: Selects nodes that are descendants of the first element<br>
-                    Syntax: selector1 selector2 <br>
-                    Example: div p will match all &lt;p&gt; elements inside  &lt;div&gt; elements
+                        Syntax: selector1 selector2 <br>
+                        Example: div p will match all &lt;p&gt; elements inside &lt;div&gt; elements
 
 
                     </dd>
-                    <dt class="uk-text-capitalize" id="connection"><span class="uk-text-lead">Child Combinator ( > )</span></dt>
+                    <dt class="uk-text-capitalize" id="connection"><span
+                            class="uk-text-lead">Child Combinator ( > )</span></dt>
                     <dd>Use: Selects nodes that are immediate children of the first element<br>
-                    Syntax: selector1 > selector2<br>
-                    Example: div >  p will match all &lt;p&gt; elements that are immediate children of a  &lt;div&gt; element
-
+                        Syntax: selector1 > selector2<br>
+                        Example: div > p will match all &lt;p&gt; elements that are immediate children of a &lt;div&gt;
+                        element
 
 
                     </dd>
@@ -192,25 +213,22 @@
                         Syntax: #idname<br>
                         Example: #idname will match all elements that have a class name, “idname”<br>
 
-                        a.  Adjacent Sibling Combinator ( + )<br>
-Use: Selects the element that is an immediate sibling of a specified element.<br>
-Syntax: selector1 + selector2<br>
-Example: img +  p will match all &lt;p&gt; elements that are immediate siblings of an  
-    &lt;img&gt; element<br>
+                        a. Adjacent Sibling Combinator ( + )<br>
+                        Use: Selects the element that is an immediate sibling of a specified element.<br>
+                        Syntax: selector1 + selector2<br>
+                        Example: img + p will match all &lt;p&gt; elements that are immediate siblings of an
+                        &lt;img&gt; element<br>
 
-b.  General Sibling Combinator ( ~ )<br>
-Use: Selects all elements that are siblings of a specified element.<br>
-Syntax: selector1 ~ selector2<br>
-Example: img ~  p will match all &lt;p&gt; elements that share the same parent with an  &lt;img&gt; element
+                        b. General Sibling Combinator ( ~ )<br>
+                        Use: Selects all elements that are siblings of a specified element.<br>
+                        Syntax: selector1 ~ selector2<br>
+                        Example: img ~ p will match all &lt;p&gt; elements that share the same parent with an &lt;img&gt;
+                        element
 
 
                     </dd>
                 </dl>
 
-                
-            
-        
-                
 
                 <hr>
                 <ul class="uk-pagination">

@@ -42,11 +42,11 @@
                     </ul>
                 </div>
             </li>
-             <li>
+            <li>
                 <a class="uk-button uk-button-text" href="midterms.html">Midterms</a>
                 <div class="uk-navbar-dropdown ">
                     <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-                        <li class="uk-parent uk-actives">
+                        <li class="uk-parent">
                             <a href="">CSS</a>
                             <ul class="uk-nav-sub">
                                 <li><a href="introduction.html">Introduction</a></li>
@@ -56,7 +56,7 @@
                                 <li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
                             </ul>
                         </li>
-                        <li class="uk-parent">
+                        <li class="uk-parent uk-active">
                             <a href="js_intro.html">CSWS</a>
                             <ul class="uk-nav-sub">
                                 <li><a href="js_intro.html">Introduction</a></li>
@@ -83,21 +83,24 @@
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
                     <li class="uk-parent uk-active">
-                        <a href="introduction.html">CSS</a>
+                        <a href="">CSS</a>
                         <ul class="uk-nav-sub">
                             <li><a href="introduction.html">Introduction</a></li>
                             <li><a href="selectors.html">CSS Selectors</a></li>
-                            <li><a href="cascade.html"></a></li>
+                            <li><a href="cascade.html">CSS Cascade</a></li>
                             <li><a href="declaration.html">CSS Declaration</a></li>
-                            <li><a href="pre.html">CSS Preprocessor, <br> Framework, Libraries</a></li>
+                            <li><a href="pre.html">Preprocessor,<br> Framework, Libraries</a></li>
                         </ul>
                     </li>
                     <li class="uk-parent">
-                        <a href="js_intro.html">Client Side Web Scripting</a>
+                        <a href="js_intro.html">CSWS</a>
                         <ul class="uk-nav-sub">
                             <li><a href="js_intro.html">Introduction</a></li>
                             <li><a href="js_assoc.html">JS Association</a></li>
-                            <li><a href="js_exe.html">JS Execution Environment</a></li>
+                            <li><a href="js_def.html">Defer Async</a></li>
+                            <li><a href="js_exe.html">JS Execution<br> Environment</a></li>
+                            <li><a href="js_lang.html">JS Fundamentals</a></li>
+                            <li><a href="js_event.html">JS Event Handling</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -106,69 +109,80 @@
         <div class="uk-width-2-3@m uk-width-1-1@s">
             <div class="uk-card uk-card-default uk-card-body">
                 <h1 class="uk-heading-line uk-text-center"><span>JavaScript Language Fundamentals</span></h1>
-               <h2>Statements</h2>
-                <p>Statements make up the Javascript program, consisting of <i>expressions</i> and <i>operations</i> that perform a certain task, like the assignment of a value to a variable or execution of a function. Each new line is inexplicitly considered a new Javascript statement, but it is better to end statements explicitly using semicolons. Statements can be grouped into a <i>block</i> when wrapped in braces, which are generally used to with functions and conditionals.</p>
+                <h2>Statements</h2>
+                <p>Statements make up the Javascript program, consisting of <i>expressions</i> and <i>operations</i>
+                    that perform a certain task, like the assignment of a value to a variable or execution of a
+                    function. Each new line is inexplicitly considered a new Javascript statement, but it is better to
+                    end statements explicitly using semicolons. Statements can be grouped into a <i>block</i> when
+                    wrapped in braces, which are generally used to with functions and conditionals.</p>
                 <pre>
                 var greeting = "Hello world";
                 function sayHi() {
                     console.log(`${greeting}`);
                 } // output: Hello world
                 </pre>
-               <h2> Variables</h2>
-                
+                <h2> Variables</h2>
+
                 <i>var</i>
                 <ul>
-                <li>global</li> 
-                <li>property of object (window)</li> 
-                <li>local variable if inside function</li> 
-                <li> breaks through blocks (variable can be called even outside of a block, except function)</li> 
-                <li>default value: undefined</li> 
+                    <li>global</li>
+                    <li>property of object (window)</li>
+                    <li>local variable if inside function</li>
+                    <li> breaks through blocks (variable can be called even outside of a block, except function)</li>
+                    <li>default value: undefined</li>
                 </ul>
                 <i>let</i>
                 <ul>
-                <li>global</li> 
-               <li>not property of object</li> </ul>
-        
+                    <li>global</li>
+                    <li>not property of object</li>
+                </ul>
+
                 <i>const</i>
                 <ul>
-                <li>global</li> 
-               <li> not property of object</li> 
-                <li>value cannot be changed after declaration</li> 
-               <li>usually written in uppercase letters</li> </ul>
+                    <li>global</li>
+                    <li> not property of object</li>
+                    <li>value cannot be changed after declaration</li>
+                    <li>usually written in uppercase letters</li>
+                </ul>
 
 
                 <h2>Datatypes</h2>
                 <i>Primary Datatypes</i>
                 <ul>
-                <li>
-                 number
-                    <ul>
-                   <li> special: infinity, -infinity, nan </li>
-                  <li>  calculating mathematical operations is safe, because dividing by zero still produced an output rather than halting the operation </li>
-                   <li> integer </li>
-                   <li> floating point </li>
-                    </ul>
-                </li>
-             
-                  <li>string </li>
-                  <li>boolean </li>
-                 </ul>
+                    <li>
+                        number
+                        <ul>
+                            <li> special: infinity, -infinity, nan</li>
+                            <li> calculating mathematical operations is safe, because dividing by zero still produced an
+                                output rather than halting the operation
+                            </li>
+                            <li> integer</li>
+                            <li> floating point</li>
+                        </ul>
+                    </li>
+
+                    <li>string</li>
+                    <li>boolean</li>
+                </ul>
                 <i>Composite Datatypes</i>
                 <ul>
-                <li>object</li>
-                <li>array</li>
+                    <li>object</li>
+                    <li>array</li>
                 </ul>
-                    
-                    
+
+
                 <i>Special Datatypes</i>
                 <ul>
-                <li>null</li>
-                <li>undefined (also considered a NaN, or not a number)
-                   * value of undefined and null are equal </li>
+                    <li>null</li>
+                    <li>undefined (also considered a NaN, or not a number)
+                        * value of undefined and null are equal
+                    </li>
                 </ul>
                 <h2>Coercion</h2>
                 <p>
-                Javascript is a <i>loosely typed</i> language, meaning that variables do not have a predetermined type when declared. This allows almost any value to be assigned to any variable, and variables, if already declared, can be reassigned to values of another type.</p>
+                    Javascript is a <i>loosely typed</i> language, meaning that variables do not have a predetermined
+                    type when declared. This allows almost any value to be assigned to any variable, and variables, if
+                    already declared, can be reassigned to values of another type.</p>
                 <pre>
                 var num = 8;
                 num = "number";
@@ -182,17 +196,18 @@ var x = num+str; //the num variable is turned into a string, then concatenated w
 x; // output: 1 more time
                 </pre>
 
-               
-                
+
                 <h2>Functions</h2>
-                <p>Also referred to as “global methods”, it executes the operations or arguments inside the function.</p>
+                <p>Also referred to as “global methods”, it executes the operations or arguments inside the
+                    function.</p>
                 <pre>
                 function alert() {
                 let warning = "trepasser!";
                 return warning;
                 }
                 </pre>
-                <p>Functions can also become objects (that is, assigned to a variable) or parameters to other functions.</p>
+                <p>Functions can also become objects (that is, assigned to a variable) or parameters to other
+                    functions.</p>
                 <pre>
                 var today = function (dd) {
                 return "Today is " + dd;
@@ -203,30 +218,26 @@ x; // output: 1 more time
                 greeting("tuesday", today); // output: today is tuesday
                 </pre>
 
-                
-               <h2>Operators</h2> 
+
+                <h2>Operators</h2>
                 <ul>
-                 
-                   <li>+ (add or concatenation)</li>
-                   <li>++ (increment)</li>
-                  <li> - (subtract)</li>
-                  <li> * (multiply)</li>
-                   <li>/ (divide)</li>
-                   <li>= (assignment)</li>
-                   <li>!, !== (not equal)</li>
-                   <li>== (equal: compare)</li>
-                   <li>=== (strict equal: compare type and value)</li>
-                    </ul>
-                
-                
-                
-                
-                
-                
-             
+
+                    <li>+ (add or concatenation)</li>
+                    <li>++ (increment)</li>
+                    <li> - (subtract)</li>
+                    <li> * (multiply)</li>
+                    <li>/ (divide)</li>
+                    <li>= (assignment)</li>
+                    <li>!, !== (not equal)</li>
+                    <li>== (equal: compare)</li>
+                    <li>=== (strict equal: compare type and value)</li>
+                </ul>
+
+
                 <hr>
-                  <ul class="uk-pagination">
-                    <li><a href="js_exe.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript Execution Environment </a></li>
+                <ul class="uk-pagination">
+                    <li><a href="js_exe.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript
+                        Execution Environment </a></li>
                     <li class="uk-margin-auto-left"><a href="js_event.html">JavaScript Event Handling<span
                             class="uk-margin-small-left" uk-pagination-next></span></a></li>
                 </ul>
