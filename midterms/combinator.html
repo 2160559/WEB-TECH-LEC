@@ -60,7 +60,7 @@
                         <li class="uk-nav-divider"></li>
                         <li><a href="#">Quiz</a></li>
                         <li class="uk-nav-divider"></li>
-                        <li><a href="references.html">References</a></li>
+                        <li><a href="#">References</a></li>
                     </ul>
                 </div>
             </li>
@@ -119,79 +119,39 @@
                 <hr class="uk-divider-icon">
                 <div class="uk-flex uk-flex-center">
                     <ul class="uk-subnav uk-subnav-divider">
-                        <li class="uk-active"><a href="simple.html#simple">Simple Selector</a></li>
-                        <li><a href="combinator.html#combinator">Combinators </a></li>
+                        <li><a href="simple.html#simple">Simple Selector</a></li>
+                        <li class="uk-active"><a href="combinator.html#combinator">Combinators </a></li>
                         <li><a href="pseudo.html#pseudo">Pseudo Elements </a></li>
                     </ul>
                 </div>
                 <hr class="uk-divider-icon">
-                <p>Simple Selectors used to define the element(s) to be styled.</p>
-
+                <p>Combinators shows the relationship between simple selectors</p>
                 <dl class="uk-description-list uk-description-list-divider">
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Type Selector</span></dt>
+                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Descendant Combinator (white space)</span></dt>
                     <dd>
-                        Use: Selects all the elements that match the specified element name. <br>
-                        Syntax: <code>p</code><br>
-                        Example: p will match any <code>&lt;p&gt;</code> element.
+                        Use: Selects nodes that are descendants of the first element<br>
+                        Syntax: selector1 selector2 <br>
+                        Example: div p will match all <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code> elements
                     </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Class Selector</span></dt>
+                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Child Combinator (>)</span></dt>
                     <dd>
-                        Use: Selects all the elements that have the specified class attribute preceded by <code>.</code><br>
-                        Syntax: <code>.</code>classname<br>
-                        Example: <code>.</code>classname will match all elements that have a class name:  "classname"
+                        Use: Selects nodes that are immediate children of the first element<br>
+                        Syntax: selector1 > selector2<br>
+                        Example: div > p will match all <code>&lt;p&gt;</code> elements that are immediate children of <code>&lt;div&gt;</code> element
                     </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">ID Selector</span></dt>
-                    <dd>
-                        Use: Selects an element that has the specified id attribute preceded by <code>#</code><br>
-                        Syntax: <code>#</code>idname<br>
-                        Example: <code>#</code>idname will match all elements that have a class name: "idname"
-                    </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Universal Selector </span></dt>
-                    <dd>
-                        Use: Selects all elements.<br>
-                        Syntax: <code>*</code><br>
-                        Example: div <code>*</code> selects all elements within the div
-                    </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Attribute Selector </span></dt>
-                    <dd>
-                        Use: Selects all elements matching the given attribute name<br>
-                        Syntax: <code>a[</code>attributename<code>]</code><br>
-                        Example: <code>a[</code>attributename<code>]</code> selects an element with an attribute name: "attributename"
-                    </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Pseudo-Classes</span></dt>
-                    <dd>
-                        <ol type="a">
-                            <li>
-                                <b>Dynamic Pseudo-Classes</b> – classify elements on characteristics other than their name, attributes, or content.
-                                <ul>
-                                    <li>
-                                        <i>Link Pseudo-Classes</i> – displays links depending on whether it is visited or not.
-                                    </li>
-                                    <li>
-                                        <i>User Action Pseudo-Classes</i> – changes rendering in response to user actions.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>Target Pseudo-Classes</b> – selects an element with anchor identifier.
-                            </li>
-                            <li>
-                                <b>Language Pseudo-Classes</b> – selects an element with a specified language.
-                                <ul>
-                                    <li>
-                                        Syntax: <code>:lang(</code>language<code>)</code>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <b>UI Element States Pseudo-Classes</b> – selects an element depending on the state of that element.
-                            </li>
-                            <li>
-                                <b>Structural Pseudo-Classes</b> – selects elements based on extra information that cannot be represented by other simple selectors or combinators
-                            </li>
-                        </ol>
+                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Sibling Combinator </span></dt>
+                    <dd><br>
+                        <b>Adjacent Sibling Combinator (+)</b><br>
+                        Use: Selects the element that is an immediate sibling of a specified element.<br>
+                        Syntax: selector1 <code>+</code> selector2<br>
+                        Example: img <code>+</code> p will match all <code>&lt;p&gt;</code> elements that are immediate siblings of an <code>&lt;img&gt;</code> element.<br><br>
+                        <b>General Sibling Combinator (~)</b><br>
+                        Use: Selects all elements that are siblings of a specified element.<br>
+                        Syntax: selector1 <code>~</code> selector2<br>
+                        Example: img <code>~</code> p will match all <code>&lt;p&gt;</code> elements that share the same parent with an <code>&lt;img&gt;</code> element.
                     </dd>
                 </dl>
+
                 <hr>
                 <ul class="uk-pagination">
                     <li><a href="introduction.html"><span class="uk-margin-small-right" uk-pagination-previous></span>Introduction</a>

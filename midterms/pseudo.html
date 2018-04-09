@@ -60,7 +60,7 @@
                         <li class="uk-nav-divider"></li>
                         <li><a href="#">Quiz</a></li>
                         <li class="uk-nav-divider"></li>
-                        <li><a href="references.html">References</a></li>
+                        <li><a href="#">References</a></li>
                     </ul>
                 </div>
             </li>
@@ -119,77 +119,67 @@
                 <hr class="uk-divider-icon">
                 <div class="uk-flex uk-flex-center">
                     <ul class="uk-subnav uk-subnav-divider">
-                        <li class="uk-active"><a href="simple.html#simple">Simple Selector</a></li>
+                        <li><a href="simple.html#simple">Simple Selector</a></li>
                         <li><a href="combinator.html#combinator">Combinators </a></li>
-                        <li><a href="pseudo.html#pseudo">Pseudo Elements </a></li>
+                        <li class="uk-active"><a href="pseudo.html#pseudo">Pseudo Elements </a></li>
                     </ul>
                 </div>
+
                 <hr class="uk-divider-icon">
-                <p>Simple Selectors used to define the element(s) to be styled.</p>
+                <p>A keyword that follows a selector which allows you to target a specific part of the selected element/s (MDN webdocs).</p>
 
                 <dl class="uk-description-list uk-description-list-divider">
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Type Selector</span></dt>
+                    <dt class="uk-text-capitalize" id="cache-control"><span class="uk-text-lead">Syntax</span></dt>
                     <dd>
-                        Use: Selects all the elements that match the specified element name. <br>
-                        Syntax: <code>p</code><br>
-                        Example: p will match any <code>&lt;p&gt;</code> element.
+                        <b>Older CSS levels</b>:<br>
+                        selector<code>:pseudo-element</code> { properties } <br>
+                        <b>CSS3</b>:<br>
+                        selector<code>::pseudo-element</code> { properties }
                     </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Class Selector</span></dt>
+                    <dt class="uk-text-capitalize" id="connection"><span class="uk-text-lead">Standard pseudo-elements:</span></dt>
                     <dd>
-                        Use: Selects all the elements that have the specified class attribute preceded by <code>.</code><br>
-                        Syntax: <code>.</code>classname<br>
-                        Example: <code>.</code>classname will match all elements that have a class name:  "classname"
-                    </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">ID Selector</span></dt>
-                    <dd>
-                        Use: Selects an element that has the specified id attribute preceded by <code>#</code><br>
-                        Syntax: <code>#</code>idname<br>
-                        Example: <code>#</code>idname will match all elements that have a class name: "idname"
-                    </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Universal Selector </span></dt>
-                    <dd>
-                        Use: Selects all elements.<br>
-                        Syntax: <code>*</code><br>
-                        Example: div <code>*</code> selects all elements within the div
-                    </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Attribute Selector </span></dt>
-                    <dd>
-                        Use: Selects all elements matching the given attribute name<br>
-                        Syntax: <code>a[</code>attributename<code>]</code><br>
-                        Example: <code>a[</code>attributename<code>]</code> selects an element with an attribute name: "attributename"
-                    </dd>
-                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Pseudo-Classes</span></dt>
-                    <dd>
-                        <ol type="a">
+                        <ul>
                             <li>
-                                <b>Dynamic Pseudo-Classes</b> – classify elements on characteristics other than their name, attributes, or content.
+                                <code>:first-letter</code> or <code>::first-letter</code><br>
                                 <ul>
                                     <li>
-                                        <i>Link Pseudo-Classes</i> – displays links depending on whether it is visited or not.
-                                    </li>
+                                        Selects the first letter of the first line of a block-level element for styling (i.e <code>&lt;p&gt;</code> <code>&lt;/p&gt;</code>)</li>
                                     <li>
-                                        <i>User Action Pseudo-Classes</i> – changes rendering in response to user actions.
+                                        Only applies if the element is not preceded by other content such as an image
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <b>Target Pseudo-Classes</b> – selects an element with anchor identifier.
-                            </li>
-                            <li>
-                                <b>Language Pseudo-Classes</b> – selects an element with a specified language.
+                                <code>:first-line</code> or <code>::first-line</code><br>
                                 <ul>
                                     <li>
-                                        Syntax: <code>:lang(</code>language<code>)</code>
+                                        Selects the first line of a block-level element for styling</li>
+                                    <li>
+                                        The length of the first line may depend on factors like the width of the element or document, etc.
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <b>UI Element States Pseudo-Classes</b> – selects an element depending on the state of that element.
+                                <code>:after</code> or <code>::after</code><br>
+                                <ul>
+                                    <li>
+                                        Creates a pseudo-element, which becomes the last child of the selected element, after the selected element.</li>
+                                    <li>
+                                        Is inline by default.
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <b>Structural Pseudo-Classes</b> – selects elements based on extra information that cannot be represented by other simple selectors or combinators
+                                <code>:before</code> or <code>::before</code><br>
+                                <ul>
+                                    <li>
+                                        Creates a pseudo-element, which becomes the first child of the selected element, before the selected element.</li>
+                                    <li>
+                                        Is inline by default.
+                                    </li>
+                                </ul>
                             </li>
-                        </ol>
+                        </ul>
                     </dd>
                 </dl>
                 <hr>
