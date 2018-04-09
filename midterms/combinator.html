@@ -14,7 +14,7 @@
 <body>
 <nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
     <div class="uk-navbar-left uk-margin-large-left uk-light">
-        <a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
+        <a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
         <ul class="uk-navbar-nav">
@@ -56,17 +56,7 @@
                                 <li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
                             </ul>
                         </li>
-                        <li class="uk-parent">
-                            <a href="js_intro.html">CSWS</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="js_intro.html">Introduction</a></li>
-                                <li><a href="js_assoc.html">JS Association</a></li>
-                                <li><a href="js_def.html">Defer Async</a></li>
-                                <li><a href="js_exe.html">JS Execution Environment</a></li>
-                                <li><a href="js_lang.html">JS Fundamentals</a></li>
-                                <li><a href="midterms/js_event.html">JS Event Handling</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="js_intro.html">CSWS</a></li>
                         <li class="uk-nav-divider"></li>
                         <li><a href="#">Quiz</a></li>
                         <li class="uk-nav-divider"></li>
@@ -82,171 +72,98 @@
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
-                    <li class="uk-parent uk-active">
-                        <a href="">CSS</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="introduction.html">Introduction</a></li>
-                            <li><a href="../selectors.html">CSS Selectors</a></li>
-                            <li><a href="cascade.html">CSS Cascade</a></li>
-                            <li><a href="declaration.html">CSS Declaration</a></li>
-                            <li><a href="pre.html">Preprocessor,<br> Framework, Libraries</a></li>
-                        </ul>
-                    </li>
-                    <li class="uk-parent">
-                        <a href="js_intro.html">CSWS</a>
-                        <ul class="uk-nav-sub">
-                            <li><a href="js_intro.html">Introduction</a></li>
-                            <li><a href="js_assoc.html">JS Association</a></li>
-                            <li><a href="js_def.html">Defer Async</a></li>
-                            <li><a href="js_exe.html">JS Execution<br> Environment</a></li>
-                            <li><a href="js_lang.html">JS Fundamentals</a></li>
-                            <li><a href="js_event.html">JS Event Handling</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </div>
         </div>
         <div class="uk-width-2-3@m uk-width-1-1@s">
             <div class="uk-card uk-card-default uk-card-body">
-
-                <h2 class="uk-heading-line uk-text-center"><span>CSS Selectors Level 3</span></h2>
-                Selectors are <b>patterns</b>(2) that are used in CSS to select an <b>element</b>(1) in an xml or html
-                file
-                and specify a style for the selected elements.
-                <br>
-                1. An element usually consist of a start tag , a content and an end tag.
-                <br>
-                Example: (to label the parts)
-                <br>
-                <span style="color:blue">&lt;</span><span style="color:red">title</span><span
-                    style="color:blue">&gt;</span>
-                Web System and Technologies
-                <span style="color:blue">&lt;</span><span style="color:red">/title</span><span
-                    style="color:blue">&gt;</span>
-                <br>
-                <span style="color:blue">&lt;</span><span style="color:red">p</span><span style="color:blue">&gt;</span>
-                Enter a paragraph
-                <span style="color:blue">&lt;</span><span style="color:red">/p</span><span
-                    style="color:blue">&gt;</span>
-                <br><br>
-                2. Selectors follow the <i>pattern</i> :
-                <br>
-                One or more sequence of simple selectors separated by combinators and an optional pseudo-element that
-                may be appended to the last sequence of the simple selector
-                <br>
+                <h1 class="uk-h2 uk-heading-line uk-text-center"><span>CSS Selectors Level 3</span></h1>
+                <p>
+                    Selectors are <a href="#patterns">patterns</a> that are used in CSS to select an <a href="#element">element</a> in an XML or HTML file and specify a style for the selected elements.
+                </p>
+                <h2 id="element" class="uk-h3">Element</h2>
+                <p>An element usually consist of a start tag, its content, and its corresponding end tag.</p>
+                <p>
+                    <code>&lt;title&gt;</code>Web Systems and Technologies<code>&lt;/title&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;p&gt;</code>Enter a paragraph<code>&lt;/p&gt;</code>
+                </p>
+                <h2 id="patterns" class="uk-h3">Followed Patterns</h2>
+                <p>
+                    One or more sequence of simple selectors separated by combinators and an optional pseudo-element that may be appended to the last sequence of the simple selector. <a href="pseudo.html">Pseudo elements</a> are used to select contents of an element.
+                </p>
+                <h3 class="uk-h4">Simple Selectors</h3>
+                <p>
+                    A sequence of simple selectors is a chain of simple selectors that are not separated by a combinator. It always begins with a type selector or a universal selector. No other type selector or universal selector is allowed in the sequence. (W3C Candidate Recommendation)
+                </p>
+                <p>
+                    A simple selector is either a type selector, universal selector, attribute selector, class selector, ID selector, or pseudo-class.
+                </p>
+                <h3 class="uk-h4">Combinators</h3>
+                <p>The following may be used as a combinator:</p>
                 <ul>
-                    <li> A sequence of simple selectors is a chain of simple selectors that are not separated by a
-                        combinator. It always begins with a type selector or a universal selector. No other type
-                        selector or universal selector is allowed in the sequence. (W3C Candidate Recommendation)
-                        <ul>
-                            <li> A simple selector is either a type selector, universal selector, attribute selector,
-                                class selector, ID selector, or pseudo-class.
-                            </li>
-                        </ul>
-                    </li>
-                    <br>
-                    <li>The following may be used as a combinator
-                        <br>
-                        Whitespace, > , +, ~
-                        <ul>
-                            <li>Whitespace: Only the characters "space" (U+0020), "tab" (U+0009), "line feed" (U+000A),
-                                "carriage return" (U+000D), and "form feed" (U+000C) can occur in whitespace. Other
-                                space-like characters, such as "em-space" (U+2003) and "ideographic space" (U+3000), are
-                                never part of whitespace.
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>Pseudo elements are used to select contents of an element.
-                        <br>
-                        Example
-                        <br>
-                        ::first-line can refer to a first line of a
-                        <br>
-                        ::lastline
-                        <br>
-                        ::firstchild
-                        <br>
-                        ::before
-                        <br>
-                        ::after
-
-                    </li>
+                    <li>Whitespace</li>
+                    <li>></li>
+                    <li>+</li>
+                    <li>~</li>
                 </ul>
-                <br>
-                <b>Invalid Selector</b>
-                <br>
-                An empty selector, containing no sequence of simple selectors and no pseudo-element
-
+                <p class="notebox">
+                    Only the characters "space" (U+0020), "tab" (U+0009), "line feed" (U+000A), "carriage return" (U+000D), and "form feed" (U+000C) can occur in whitespace. Other space-like characters, such as "em-space" (U+2003) and "ideographic space" (U+3000), are never part of whitespace.
+                </p>
+                <h3 class="uk-h4">Invalid Selector</h3>
+                <p>
+                    An empty selector, containing no sequence of simple selectors and no pseudo-element.
+                </p>
                 <hr class="uk-divider-icon">
                 <div class="uk-flex uk-flex-center">
                     <ul class="uk-subnav uk-subnav-divider">
-                        <li class="uk-active"><a href="simple.html#simple">Simple Selector</a></li>
-                        <li><a href="combinator.html#combinator">Combinators </a></li>
+                        <li><a href="simple.html#simple">Simple Selector</a></li>
+                        <li class="uk-active"><a href="combinator.html#combinator">Combinators </a></li>
                         <li><a href="pseudo.html#pseudo">Pseudo Elements </a></li>
                     </ul>
                 </div>
                 <hr class="uk-divider-icon">
                 <p>Combinators shows the relationship between simple selectors</p>
-
                 <dl class="uk-description-list uk-description-list-divider">
-                    <dt class="uk-text-capitalize" id="cache-control"><span class="uk-text-lead">Descendant Combinator ( white space )</span>
-                    </dt>
-                    <dd>Use: Selects nodes that are descendants of the first element<br>
-                        Syntax: selector1 selector2 <br>
-                        Example: div p will match all &lt;p&gt; elements inside &lt;div&gt; elements
-
-
-                    </dd>
-                    <dt class="uk-text-capitalize" id="connection"><span
-                            class="uk-text-lead">Child Combinator ( > )</span></dt>
-                    <dd>Use: Selects nodes that are immediate children of the first element<br>
-                        Syntax: selector1 > selector2<br>
-                        Example: div > p will match all &lt;p&gt; elements that are immediate children of a &lt;div&gt;
-                        element
-
-
-                    </dd>
-                    <dt class="uk-text-capitalize" id="date"><span class="uk-text-lead">Sibling Combinator </span></dt>
+                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Descendant Combinator (white space)</span></dt>
                     <dd>
-                        Use: Selects an element that has the specified id attribute preceded by “#”<br>
-                        Syntax: #idname<br>
-                        Example: #idname will match all elements that have a class name, “idname”<br>
-
-                        a. Adjacent Sibling Combinator ( + )<br>
+                        Use: Selects nodes that are descendants of the first element<br>
+                        Syntax: selector1 selector2 <br>
+                        Example: div p will match all <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code> elements
+                    </dd>
+                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Child Combinator (>)</span></dt>
+                    <dd>
+                        Use: Selects nodes that are immediate children of the first element<br>
+                        Syntax: selector1 > selector2<br>
+                        Example: div > p will match all <code>&lt;p&gt;</code> elements that are immediate children of <code>&lt;div&gt;</code> element
+                    </dd>
+                    <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Sibling Combinator </span></dt>
+                    <dd><br>
+                        <b>Adjacent Sibling Combinator (+)</b><br>
                         Use: Selects the element that is an immediate sibling of a specified element.<br>
-                        Syntax: selector1 + selector2<br>
-                        Example: img + p will match all &lt;p&gt; elements that are immediate siblings of an
-                        &lt;img&gt; element<br>
-
-                        b. General Sibling Combinator ( ~ )<br>
+                        Syntax: selector1 <code>+</code> selector2<br>
+                        Example: img <code>+</code> p will match all <code>&lt;p&gt;</code> elements that are immediate siblings of an <code>&lt;img&gt;</code> element.<br><br>
+                        <b>General Sibling Combinator (~)</b><br>
                         Use: Selects all elements that are siblings of a specified element.<br>
-                        Syntax: selector1 ~ selector2<br>
-                        Example: img ~ p will match all &lt;p&gt; elements that share the same parent with an &lt;img&gt;
-                        element
-
-
+                        Syntax: selector1 <code>~</code> selector2<br>
+                        Example: img <code>~</code> p will match all <code>&lt;p&gt;</code> elements that share the same parent with an <code>&lt;img&gt;</code> element.
                     </dd>
                 </dl>
-
 
                 <hr>
                 <ul class="uk-pagination">
                     <li><a href="introduction.html"><span class="uk-margin-small-right" uk-pagination-previous></span>Introduction</a>
                     </li>
-                    <li class="uk-margin-auto-left"><a href="cascade.html">CSS Cascade<span class="uk-margin-small-left"
-                                                                                            uk-pagination-next></span></a>
+                    <li class="uk-margin-auto-left"><a href="cascade.html">CSS Cascade<span class="uk-margin-small-left uk-pagination-next"></span></a>
                     </li>
-
                 </ul>
-
-
             </div>
         </div>
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
-
                 </ul>
             </div>
         </div>
