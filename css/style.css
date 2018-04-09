@@ -153,21 +153,18 @@ a > div.uk-card.uk-card-default.uk-card-body {
 
 	a > div.uk-card.uk-card-default.uk-card-body:hover {
 		background-color: #A5A5AF;
-
+		text-decoration: underline #A5A5AF;
 	}
 
 		a > div.uk-card.uk-card-default.uk-card-body > h1.uk-card-title.uk-h3 {
 			color: #000000;
 		}
-			a > div.uk-card.uk-card-default.uk-card-body > h1.uk-card-title.uk-h3:hover {				
-				
-			}
 
 		a > div.uk-card.uk-card-default.uk-card-body > h1.uk-card-title.uk-h3 ~ p {
 			color: #262626;
 		}
-			a > div.uk-card.uk-card-default.uk-card-body > h1.uk-card-title.uk-h3 ~ p {
-				
+			a > div.uk-card.uk-card-default.uk-card-body > h1.uk-card-title.uk-h3 ~ p:hover {
+				color: #000000;
 			}
 
 div.uk-background-secondary.uk-text-center.uk-margin-remove.uk-padding-small.uk-flex.uk-flex-center {

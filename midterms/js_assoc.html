@@ -13,7 +13,7 @@
 
 <body>
 <nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left uk-light">
+    <div class="uk-navbar-left uk-margin-large-left ">
         <a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
@@ -80,7 +80,24 @@
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
-
+                    <li class="uk-parent">
+                        <a href="introduction.html">CSS</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="selectors.html">CSS Selectors</a></li>
+                            <li><a href="cascade.html"></a></li>
+                            <li><a href="declaration.html">CSS Declaration</a></li>
+                            <li><a href="pre.html">CSS Preprocessor, <br> Framework, Libraries</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent uk-active">
+                        <a href="js_intro.html">Client Side Web Scripting</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="js_intro.html">Introduction</a></li>
+                            <li><a href="js_assoc.html">JS Association</a></li>
+                            <li><a href="js_exe.html">JS Execution <br>Environment</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -88,7 +105,7 @@
             <div class="uk-card uk-card-default uk-card-body">
 
                 <h1 class="uk-h2 uk-heading-line uk-text-center"><span>JavaScript Association</span></h1>
-                <h2 style="text-align: center">The &lt;script&gt; element</h2>
+                <h2 class="uk-text-center">The &lt;script&gt; element</h2>
                 The &lt;script&gt;element is a non empty element which contains or links a JavaScript code.
                  <ul>
                 <li>The &lt;script&gt;element containing the JS code can be inserted in the head element or the body element.
@@ -153,7 +170,7 @@
                 <p>The use of external script are more effective if different web pages makes use of the same code. It also separates the content from the behavioral aspect of the page which makes the code cleaner
                 </p>
 
-              <h2 style="text-align: center"> Embedded script</h2>
+              <h2 class="uk-text-center"> Embedded script</h2>
                 <p>Upon reaching the script element, the rendering of the page is blocked until the JS is retrieved.
                     Thus, it is recommended to put the script element at the bottom of the body element to improve the display speed.</p>
                  <p><i>This is an example of an embedded code inside a function. The code within the function are executed as they encountered. </i></p>
@@ -167,18 +184,11 @@
                     html += "&lt;/ul&gt;"
                 From : http://www.embeddedjs.com/getting_started.html
                 </pre>
-                <h2 style="text-align: center"> The no script</h2>
+                <h2 class="uk-text-center"> The no script</h2>
                 <p>
                 The &lt;noscript&gt; is used as a disclaimer in case a JS type is not supported or is disabled by the browser.</p>
                 <p>
                 The lifetime of of a script is per page.</p>
-
-                
-                
-                
-                
-                
-                
                 <hr>
                 <ul class="uk-pagination">
                     <li><a href="js_intro.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript</a></li>
@@ -194,7 +204,7 @@
         </div>
     </div>
 </div>
-<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+<div class="uk-background-secondary  uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
 </div>
