@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>JavaScript Execution Environment</title>
+    <title>JavaScript Promises</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/uikit.min.css"/>
@@ -12,13 +12,13 @@
 </head>
 
 <body>
-<nav class="uk-panel uk-background-secondary " uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left">
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left ">
         <a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
         <ul class="uk-navbar-nav">
-            <li class="uk-active">
+            <li>
                 <a class="uk-button uk-button-text" href="../prelims/prelims.html">Preliminaries</a>
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
@@ -41,35 +41,26 @@
                         <li><a href="../prelims/references.html">References</a></li>
                     </ul>
                 </div>
+            </li>
             <li>
                 <a class="uk-button uk-button-text" href="midterms.html">Midterms</a>
                 <div class="uk-navbar-dropdown ">
                     <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-                        <li class="uk-parent">
+                        <li class="uk-parent uk-active">
                             <a href="">CSS</a>
                             <ul class="uk-nav-sub">
                                 <li><a href="introduction.html">Introduction</a></li>
                                 <li><a href="selectors.html">CSS Selectors</a></li>
                                 <li><a href="cascade.html">CSS Cascade</a></li>
                                 <li><a href="declaration.html">CSS Declaration</a></li>
-                                <li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
+                                <li><a href="pre.html">Preprocessor,Framework, Libraries</a></li>
                             </ul>
                         </li>
-                        <li class="uk-parent uk-active">
-                            <a href="js_intro.html">CSWS</a>
-                            <ul class="uk-nav-sub">
-                                <li><a href="js_intro.html">Introduction</a></li>
-                                <li><a href="js_assoc.html">JS Association</a></li>
-                                <li><a href="js_def.html">Defer Async</a></li>
-                                <li><a href="js_exe.html">JS Execution Environment</a></li>
-                                <li><a href="js_lang.html">JS Fundamentals</a></li>
-                                <li><a href="js_event.html">JS Event Handling</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="js_intro.html">CSWS</a></li>
                         <li class="uk-nav-divider"></li>
                         <li><a href="#">Quiz</a></li>
                         <li class="uk-nav-divider"></li>
-                        <li><a href="references.html">References</a></li>
+                        <li><a href="#">References</a></li>
                     </ul>
                 </div>
             </li>
@@ -81,25 +72,26 @@
         <div class="uk-width-1-6@m uk-visible@m">
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
-                    <li class="uk-parent">
-                        <a href="">CSS</a>
+                    <li class="uk-parent uk-active">
+                        <a href="introduction.html">CSS</a>
                         <ul class="uk-nav-sub">
                             <li><a href="introduction.html">Introduction</a></li>
                             <li><a href="selectors.html">CSS Selectors</a></li>
-                            <li><a href="cascade.html">CSS Cascade</a></li>
+                            <li><a href="cascade.html"></a></li>
                             <li><a href="declaration.html">CSS Declaration</a></li>
-                            <li><a href="pre.html">Preprocessor,<br> Framework, Libraries</a></li>
+                            <li><a href="pre.html">CSS Preprocessor, <br> Framework, Libraries</a></li>
                         </ul>
                     </li>
-                    <li class="uk-parent uk-active">
-                        <a href="js_intro.html">CSWS</a>
+                    <li class="uk-parent">
+                        <a href="">Client Side Web Scripting</a>
                         <ul class="uk-nav-sub">
                             <li><a href="js_intro.html">Introduction</a></li>
                             <li><a href="js_assoc.html">JS Association</a></li>
-                            <li><a href="js_def.html">Defer Async</a></li>
-                            <li><a href="js_exe.html">JS Execution<br> Environment</a></li>
-                            <li><a href="js_lang.html">JS Fundamentals</a></li>
+                            <li><a href="js_def.html">JS Defer vs Async</a></li>
+                            <li><a href="js_exe.html">JS Execution Environment</a></li>
+                            <li><a href="js_lang.html">JS Language Fundamentals</a></li>
                             <li><a href="js_event.html">JS Event Handling</a></li>
+                            <li><a href="js_pro.html">JS Promises</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -107,39 +99,46 @@
         </div>
         <div class="uk-width-2-3@m uk-width-1-1@s">
             <div class="uk-card uk-card-default uk-card-body">
-                <h1 class="uk-h2 uk-heading-line uk-text-center"><span>JavaScript Execution Environment</span></h1>
+                <h1 class="uk-heading-line uk-text-center"><span>JavaScript Promises</span></h1>
                 <p>
-                    The <i>Javascript Execution Environment</i> is the JS Window object that represents the window in
-                    which the browser displays documents. This object provides the largest enclosing referencing
-                    environment for scripts, as its properties are visible to all scripts in the document.
-                </p>
-                <p>Implicitly defined Window properties:</p>
-                <ul>
-                    <li><b>document</b> &ndash; a reference to the <i>Document</i> object that the window displays</li>
-                    <li><b>frames</b> &ndash; an array of references to the frames of the document</li>
-                </ul>
-                <p>Every <i>Document</i> object has <i>Forms</i>, an array of references to the forms of the document.
-                    Each <i>Form</i> object has an elements array, which has references to the form's elements.
-                </p>
+                    The Promise object represents the eventual completion or failure of an asynchronous operation, and its resulting value (MDN). Basically, it tells that it is going to perform a certain but it doesn’t tell when it will execute the operation.</p>
                 <p>
-                    <b>Core JS</b> (ECMAScript) allows the creation of apps that have multiple working extensions that
-                    all interact with each other without ever actually knowing about one another. 
-                </p>
+                How to create a promise : 
+                <br>
+                To create a promise, the Promise object is used. </p>
+                <pre>
+                &lt;script&gt;
+                    var promise= new Promise(
+                        function(resolve,reject) {
+                            //do something asynchronous
+                            resolve(result) //success
+                            reject(error)//failure
+                        }
+                        )       
+                                    //to use the promise
+                        promise().then(success, failure);
+
+                        function success(result){
+                            //statements
+                        }
+                        function failure(result){
+                    //statements	
+                    }
+
+	            &lt;/script&gt;
+               </pre>
                 <p>
-                    <b>Browser Object Model</b> (BOM) is a browser-specific convention referring to all
-                    the objects exposed by the web browser
-                </p>
-                <p>
-                    <b>Data Object Model</b> (DOM) is an application programming interface (API) for valid HTML and
-                    well-formed XML documents. It defines the logical structure of documents, and the way a document is
-                    accessed and manipulated.
-                </p>
+                Promises may also be implemented this way :</p>
+                    <pre> promise()then(//arguments).then(//arguments).then(//arguments)</pre>
+                
+
+                Note: Information provided are from lecture notes.
+	
+
                 <hr>
-                <ul class="uk-pagination">
-                    <li><a href="js_def.html"><span class="uk-margin-small-right" uk-pagination-previous></span>Defer vs
-                        Async</a></li>
-                    <li class="uk-margin-auto-left"><a href="js_lang.html">JavaScript Language Fundamentals<span
-                            class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                  <ul class="uk-pagination">
+                    <li><a href="js_event.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript Event Handling </a></li>
+                   
                 </ul>
             </div>
         </div>
@@ -152,7 +151,7 @@
         </div>
     </div>
 </div>
-<div class="uk-background-secondary uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+<div class="uk-background-secondary  uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
 </div>
