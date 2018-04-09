@@ -79,81 +79,66 @@
         <div class="uk-width-2-3@m uk-width-1-1@s">
             <div class="uk-card uk-card-default uk-card-body">
 
-                <h2 class="uk-heading-line uk-text-center"><span>CSS Cascade</span></h2>
+                <h1 class="uk-h2 uk-heading-line uk-text-center"><span>CSS Cascade</span></h1>
                 <p>
-                    CSS was designed in a manner where multiple stylesheets may be applied to a single document (e.g.
-                    html, xml). Stylesheets may contain declarations that target a single property/element combination.
-                    The process wherein a specific declaration is chosen for a particular combination is called the
-                    cascade.
+                    CSS was designed in such a manner where multiple stylesheets may be applied to a single document (e.g. html, xml). Stylesheets may contain <i>declarations</i> that target a single property/element combination.
+                </p>
+                <p>
+                    The process wherein a specific declaration is chosen for a particular combination is called the <b>cascade</b>.
                 </p>
                 <p>
                     Cascading happens when declared values for a particular property of an element are collected from
-                    all stylesheets used by the document and are sorted out based on a criteria.
+                    all stylesheets used by the document, and are sorted out based on a criteria.
                 </p>
                 <p>
-                    The following are some of the criteria used by the cascade in sorting out the declarations according
-                    to descending order of priority. The sorted list is then the basis for determining the cascaded
-                    value - the declaration chosen for a particular property or element.
+                    The following, specified in <a href="https://www.w3.org/TR/css-cascade-3/#cascading-origins"><i>CSS Cascading and Inheritance Level 3</i></a> of W3C, are some of the criteria used by the cascade in sorting out the declarations according to descending order of priority. This sorted list is then the basis for determining the <i>cascaded value</i> &ndash; the declaration chosen for a particular property or element.
                 </p>
+                <h2 class="uk-h3">Origin and Importance</h2>
                 <p>
-                    The following are specified in CSS Cascading and Inheritance Level 3 of W3C
-                </p>
-
-                <p><i>Note : Go to this
-                    <a href="https://www.w3.org/TR/css-cascade-3/#cascading-origins">
-                        link</a>
-                    for a more detailed information about cascading and inheritance level 3.</i>
+                    The origin refers to where the CSS came from while the importance refer to whether the <code>!importance</code> annotation is used or not.
                 </p>
                 <ol type="1">
-                    <li>Origin and Importance</li>
-                    <p>The origin refers to where the CSS came from while the importance refer to whether the <b>!importance</b>
-                        annotation is used or not.</p>
-                    <ol type="a">
-                        <li>Transition declarations</li>
-                        <li>Important user agent declarations</li>
-                        <li>Important user declarations</li>
-                        <li>Important override declarations</li>
-                        <li>Important author declarations</li>
-                        <li>Animation declarations</li>
-                        <li>Normal override declarations</li>
-                        <li>Normal author declarations</li>
-                        <li>Normal user declarations</li>
-                        <li>Normal user agent declarations</li>
-                    </ol>
-                    <p><i>
-                        Illustration : Since the list is in a descending order of priority, it means that important user
-                        declaration are applied instead of normal user declaration.It also implies that normal user
-                        declarations are applied instead of user agent declaration.
-                    </i></p>
-                    <p>The user agent, user and author are the candidate origins for style rules. The user agent which
-                        is usually the browser should have a default stylesheet which will be applied to the document
-                        when no stylesheets are specified by the author or user. The author which is usually the web
-                        developers specify style sheets for a document by including it in the document or by linking the
-                        external css with the document. Lastly, the user, is usually someone with special need and
-                        specification of style sheet by the user may happen if a user-agent provides a functionality
-                        which allows users to add stylesheets.</p>
-                    <li>Specificity</li>
-                    <p>Multiple declarations from multiple stylesheets may target that same element in a document. In
-                        cases like this, the browser makes use of the specificity of a declaration to determine which
-                        declaration should be applied to an element. The higher the number of selector types in a
-                        declaration means that the declaration is more specific. </p>
-                    <p>In the MDN web docs, the following list of selector types increases by specificity. </p>
-                    <ul>
-                        <li>Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).</li>
-                        <li>Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and
-                            pseudo-classes (e.g., :hover).
-                        </li>
-                        <li>ID selectors (e.g., #example).</li>
-                    </ul>
-                    <p>
-                        When multiple declarations that have equal specificity, the last declaration in the CSS is
-                        applied. In addition, inline styles are more specific that non inline styles.
-                    </p>
-                    <p><i>Note : There are specificity calculators which can be used to calculate the specificity of a
-                        declaration. One example is the specificity calculator built by Keegan Street. This <a
-                                href="https://specificity.keegan.st/">link</a> directs you to the calculator.</i>
-                    </p>
+                    <li>Transition declarations</li>
+                    <li>Important user agent declarations</li>
+                    <li>Important user declarations</li>
+                    <li>Important override declarations</li>
+                    <li>Important author declarations</li>
+                    <li>Animation declarations</li>
+                    <li>Normal override declarations</li>
+                    <li>Normal author declarations</li>
+                    <li>Normal user declarations</li>
+                    <li>Normal user agent declarations</li>
                 </ol>
+                <p class="notebox">
+                    Since the list is in a descending order of priority, it means that important user declarations are applied first before normal user declarations, then user agent declarations.
+                </p>
+                <p>
+                    The user agent, user, and author are the candidate origins for style rules. The user agent, usually the <i>browser</i>, should have a default stylesheet which will be applied to the document when no stylesheets are specified by the author or user.
+                </p>
+                <p>
+                    The author, usually the <i>web developers</i>, specifies style sheets for a document by including them in the document, or by linking the external CSS within the document.
+                </p>
+                <p>
+                    Lastly, the user, usually someone with <i>special</i> needs, may provide their own specification of style sheets, but only if a browser, or user-agent, provides a functionality for it.
+                </p>
+                <h2 class="uk-h3">Specificity</h2>
+                <p>
+                    Multiple declarations from multiple stylesheets may target that same element in a document. In cases like this, the browser makes use of the specificity of a declaration to determine which one should be applied. The higher the number of selector types in a declaration, the more specific the declaration.
+                </p>
+                <p>In the MDN web docs, the following list of selector types increases by specificity.</p>
+                <ul>
+                    <li>Type selectors (e.g., <code>h1</code>) and pseudo-elements (e.g. <code>::before</code>).</li>
+                    <li>
+                        Class selectors (e.g., <code>.example</code>), attributes selectors (e.g. <code>[type="radio"]</code>) and pseudo-classes (e.g., <code>:hover</code>).
+                    </li>
+                    <li>ID selectors (e.g., <code>#example</code>).</li>
+                </ul>
+                <p>
+                    When multiple declarations that have equal specificity, the <i>last</i> declaration in the CSS is applied. In addition, inline styles are more specific that non-inline styles.
+                </p>
+                <p class="notebox">
+                    There are specificity calculators that can be used to calculate the specificity of a declaration. One example is the <a href="https://specificity.keegan.st/">specificity calculator</a> built by Keegan Street.
+                </p>
                 <hr>
                 <ul class="uk-pagination">
                     <li><a href="selectors.html"><span class="uk-margin-small-right" uk-pagination-previous></span>CSS
