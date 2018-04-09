@@ -2,178 +2,204 @@
 <html>
 
 <head>
-  <title>Evolution of HTTP</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/uikit.min.css" />
-  <script src="../../js/uikit.min.js"></script>
-  <script src="../../js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="../../css/style.css">
+    <title>Evolution of HTTP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/uikit.min.css"/>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="../../js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
-  <nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left">
-      <a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
-      <ul class="uk-navbar-nav">
-        <li class="uk-active">
-          <a class="uk-button uk-button-text" href="../prelims.html">Preliminaries</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../overview.html">Overview</a></li>
-              <li><a href="../www.html">World Wide Web</a></li>
-              <li class="uk-active uk-parent">
-                <a href="http.html">HTTP</a>
-                <ul class="uk-nav-sub">
-                  <li><a href="http.html">Introduction</a></li>
-                  <li class="uk-active"><a href="evolution.html">Version/Evolution</a></li>
-                  <li><a href="message/types.html">Message</a></li>
-                  <li><a href="features/authentication.html">Features</a></li>
-                </ul>
-              </li>
-              <li><a href="../url.html">URL</a></li>
-              <li><a href="../html/html.html">HTML</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="../references.html">References</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a class="uk-button uk-button-text" href="../../midterms/midterms.html">Midterms</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../../midterms/css.html">CSS</a></li>
-              <li><a href="#">CSWS</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">References</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
-    <div class="uk-grid-collapse uk-padding " uk-grid>
-      <div class="uk-width-1-6@m uk-visible@m">
-        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-          <ul class="uk-nav uk-nav-default">
-            <li><a href="../overview.html">Overview</a></li>
-            <li><a href="../www.html">World Wide Web</a></li>
-            <li class="uk-parent uk-active">
-              <a href="http.html">HTTP</a>
-              <ul class="uk-nav-sub">
-                <li><a href="http.html">Introduction</a></li>
-                <li><a href="evolution.html">Version/Evolution</a></li>
-                <li><a href="message/types.html">Message</a></li>
-                <li><a href="features/authentication.html">Features</a></li>
-              </ul>
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../overview.html">Overview</a></li>
+                        <li><a href="../www.html">World Wide Web</a></li>
+                        <li class="uk-active uk-parent">
+                            <a href="http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="http.html">Introduction</a></li>
+                                <li class="uk-active"><a href="evolution.html">Version/Evolution</a></li>
+                                <li><a href="message/types.html">Message</a></li>
+                                <li><a href="features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../url.html">URL</a></li>
+                        <li><a href="../html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../references.html">References</a></li>
+                    </ul>
+                </div>
             </li>
-            <li><a href="../url.html">URL</a></li>
-            <li><a href="../html/html.html">HTML</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="uk-width-2-3@m uk-width-1-1@s">
-        <div class="uk-card uk-card-default uk-card-body">
-          <h1 class="uk-heading-line uk-text-center"><span>Evolution of HTTP</span></h1>
-          <p class="uk-text-justify">HTTP was developed by <i>Tim Berners-Lee</i> and his team at CERN in 1989 as part of the 4 building blocks of Mesh, or what is now known as the World Wide Web. The following are the versions of HTTP and their specifications:</p>
-          <hr class="uk-divider-icon">
-          <h2 id="http-09" class="uk-heading-bullet">HTTP/0.9</h2>
-          <p class="uk-text-justify"><b>HTTP/0.9</b> is the first version of HTTP. It is a simple protocol used for raw data transfer across the Internet. </p>
-          <p class="uk-text-justify">Method names are case sensitive. Some of the specified methods of HTTP 0.9 are the following:</p>
-          <!--<div class="ik-margin-left padding-left">-->
-          <dl class="uk-margin-left">
-            <dt>GET</dt>
-            <dd>used to retrieve the data associated with the specified URL</dd>
-            <dt>HEAD</dt>
-            <dd>same as GET but only returns HTTP headers</dd>
-            <dt>PUT</dt>
-            <dd>specifies that the data in the body section should be stored under the specified URL</dd>
-            <dt>DELETE</dt>
-            <dd>used to delete the data associated with the specified URL</dd>
-          </dl>
-          <p class="uk-text-justify">An issue was an unresolved point, where the client has no way of knowing what data formats the server is prepared to accept (HTTP 1992).</p>
-          <h3 id="some-http">Some HTTP Status Codes</h3>
-          <table class="uk-table uk-table-divider table-responsive-sm">
-            <thead>
-              <tr>
-                <th>Success 2xx</th>
-                <th>Redirection 3xx</th>
-                <th>Client Error 4xx</th>
-                <th>Server Error 5xx</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>OK 200</td>
-                <td>Moved 301</td>
-                <td>Bad Request 400</td>
-                <td>Internal Error 500</td>
-              </tr>
-              <tr>
-                <td>Created 201</td>
-                <td>Found 302</td>
-                <td>Unauthorized 401</td>
-                <td>Not Implemented 501</td>
-              </tr>
-            </tbody>
-          </table>
-          <hr>
-          <h2 id="http-10" class="uk-heading-bullet">HTTP/1.0 (RFC 1945)</h2>
-          <p class="uk-text-justify"><b>HTTP/1.0</b> is an improved protocol that allowed messages to be in the form of MIME-like messages. This means that documents other than texts, like images and sounds, can be inserted in a message. Messages also contained information about the data transferred and modifiers on the request/response semantics. (RFC2616)</p>
-          <p class="uk-text-justify"><i>1xx Informational</i>, Another class of status code was introduced, however, it was intended for future use.
-          </p>
-          <p class="uk-text-justify">HTTP/1.0 only allowed one request to be serviced in a single connection.</p>
-          <hr>
-          <h2 id="http-11" class="uk-heading-bullet">HTTP/1.1 (RFC2616)</h2>
-          <p class="uk-text-justify">HTTP/1.1 added request pipelining, but this only partially addressed request concurrency and still suffers from head-of-line blocking.It also allows support for the following:</p>
-          <dl class="uk-description-list">
-            <dt>Persistent connections</dt>
-            <dd>Connections are now long-lived unlike from the previous versions, which terminated the connection after the response.</dd>
-            <dt>Pipelining</dt>
-            <dd>This allows the clients to make multiple requests without waiting for the response of the first request.</dd>
-          </dl>
-          <hr>
-          <h2 id="http-2" class="uk-heading-bullet">HTTP/2 (RFC7540)</h2>
-          <p>This version has:</p>
-          <dl class="uk-description-list">
-            <dt>Prioritization of requests</dt>
-            <dd>This allows more important requests to be serviced as priorities.</dd>
-            <dt>Multiplexing of requests</dt>
-            <dd>Each request or response exchange has its own stream.</dd>
-            <dt>Server push</dt>
-            <dd>This lets the server to send data which it thinks the client needs.</dd>
-          </dl>
-          <hr>
-          <ul class="uk-pagination">
-            <li><a href="http.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP</a></li>
-            <li class="uk-margin-auto-left"><a href="message/types.html">HTTP Message <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="uk-width-1-6@m uk-visible@m">
-        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
-            <li><a href="#http-09" offset="100">HTTP/0.9</a></li>
-            <li><a href="#some-http" offset="100">Some HTTP Status Codes</a></li>
-            <li><a href="#http-10" offset="100">HTTP/1.0 (RFC 1945)</a></li>
-            <li><a href="#http-11" offset="100">HTTP/1.1 (RFC 2616)</a></li>
-            <li><a href="#http-2" offset="100">HTTP/2 (RFC 7540)</a></li>
-          </ul>
-        </div>
-      </div>
+            <li>
+                <a class="uk-button uk-button-text" href="../../midterms/midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent">
+                            <a href="../../midterms/css.html">CSS</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="../../midterms/css.html">Introduction</a></li>
+                                <li><a href="../../midterms/selectors.html">CSS Selectors</a></li>
+                                <li><a href="../../midterms/cascade.html">CSS Cascade</a></li>
+                                <li><a href="../../midterms/declaration.html">CSS Declaration</a></li>
+                                <li><a href="../../midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
-  </div>
-  <div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="../overview.html">Overview</a></li>
+                    <li><a href="../www.html">World Wide Web</a></li>
+                    <li class="uk-parent uk-active">
+                        <a href="http.html">HTTP</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="http.html">Introduction</a></li>
+                            <li><a href="evolution.html">Version/Evolution</a></li>
+                            <li><a href="message/types.html">Message</a></li>
+                            <li><a href="features/authentication.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../url.html">URL</a></li>
+                    <li><a href="../html/html.html">HTML</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-heading-line uk-text-center"><span>Evolution of HTTP</span></h1>
+                <p class="uk-text-justify">HTTP was developed by <i>Tim Berners-Lee</i> and his team at CERN in 1989 as
+                    part of the 4 building blocks of Mesh, or what is now known as the World Wide Web. The following are
+                    the versions of HTTP and their specifications:</p>
+                <hr class="uk-divider-icon">
+                <h2 id="http-09" class="uk-heading-bullet">HTTP/0.9</h2>
+                <p class="uk-text-justify"><b>HTTP/0.9</b> is the first version of HTTP. It is a simple protocol used
+                    for raw data transfer across the Internet. </p>
+                <p class="uk-text-justify">Method names are case sensitive. Some of the specified methods of HTTP 0.9
+                    are the following:</p>
+                <!--<div class="ik-margin-left padding-left">-->
+                <dl class="uk-margin-left">
+                    <dt>GET</dt>
+                    <dd>used to retrieve the data associated with the specified URL</dd>
+                    <dt>HEAD</dt>
+                    <dd>same as GET but only returns HTTP headers</dd>
+                    <dt>PUT</dt>
+                    <dd>specifies that the data in the body section should be stored under the specified URL</dd>
+                    <dt>DELETE</dt>
+                    <dd>used to delete the data associated with the specified URL</dd>
+                </dl>
+                <p class="uk-text-justify">An issue was an unresolved point, where the client has no way of knowing what
+                    data formats the server is prepared to accept (HTTP 1992).</p>
+                <h3 id="some-http">Some HTTP Status Codes</h3>
+                <table class="uk-table uk-table-divider table-responsive-sm">
+                    <thead>
+                    <tr>
+                        <th>Success 2xx</th>
+                        <th>Redirection 3xx</th>
+                        <th>Client Error 4xx</th>
+                        <th>Server Error 5xx</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>OK 200</td>
+                        <td>Moved 301</td>
+                        <td>Bad Request 400</td>
+                        <td>Internal Error 500</td>
+                    </tr>
+                    <tr>
+                        <td>Created 201</td>
+                        <td>Found 302</td>
+                        <td>Unauthorized 401</td>
+                        <td>Not Implemented 501</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <hr>
+                <h2 id="http-10" class="uk-heading-bullet">HTTP/1.0 (RFC 1945)</h2>
+                <p class="uk-text-justify"><b>HTTP/1.0</b> is an improved protocol that allowed messages to be in the
+                    form of MIME-like messages. This means that documents other than texts, like images and sounds, can
+                    be inserted in a message. Messages also contained information about the data transferred and
+                    modifiers on the request/response semantics. (RFC2616)</p>
+                <p class="uk-text-justify"><i>1xx Informational</i>, Another class of status code was introduced,
+                    however, it was intended for future use.
+                </p>
+                <p class="uk-text-justify">HTTP/1.0 only allowed one request to be serviced in a single connection.</p>
+                <hr>
+                <h2 id="http-11" class="uk-heading-bullet">HTTP/1.1 (RFC2616)</h2>
+                <p class="uk-text-justify">HTTP/1.1 added request pipelining, but this only partially addressed request
+                    concurrency and still suffers from head-of-line blocking.It also allows support for the
+                    following:</p>
+                <dl class="uk-description-list">
+                    <dt>Persistent connections</dt>
+                    <dd>Connections are now long-lived unlike from the previous versions, which terminated the
+                        connection after the response.
+                    </dd>
+                    <dt>Pipelining</dt>
+                    <dd>This allows the clients to make multiple requests without waiting for the response of the first
+                        request.
+                    </dd>
+                </dl>
+                <hr>
+                <h2 id="http-2" class="uk-heading-bullet">HTTP/2 (RFC7540)</h2>
+                <p>This version has:</p>
+                <dl class="uk-description-list">
+                    <dt>Prioritization of requests</dt>
+                    <dd>This allows more important requests to be serviced as priorities.</dd>
+                    <dt>Multiplexing of requests</dt>
+                    <dd>Each request or response exchange has its own stream.</dd>
+                    <dt>Server push</dt>
+                    <dd>This lets the server to send data which it thinks the client needs.</dd>
+                </dl>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="http.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP</a>
+                    </li>
+                    <li class="uk-margin-auto-left"><a href="message/types.html">HTTP Message <span
+                            class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+                    <li><a href="#http-09" offset="100">HTTP/0.9</a></li>
+                    <li><a href="#some-http" offset="100">Some HTTP Status Codes</a></li>
+                    <li><a href="#http-10" offset="100">HTTP/1.0 (RFC 1945)</a></li>
+                    <li><a href="#http-11" offset="100">HTTP/1.1 (RFC 2616)</a></li>
+                    <li><a href="#http-2" offset="100">HTTP/2 (RFC 7540)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
-  </div>
+</div>
 </body>
 
 </html>

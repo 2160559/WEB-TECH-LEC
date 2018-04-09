@@ -2,94 +2,105 @@
 <html>
 
 <head>
-  <title>HTTP Message</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../../../css/uikit.min.css" />
-  <script src="../../../../js/uikit.min.js"></script>
-  <script src="../../../../js/uikit-icons.min.js"></script>
+    <title>HTTP Message</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../css/uikit.min.css"/>
+    <script src="../../../../js/uikit.min.js"></script>
+    <script src="../../../../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left">
-      <a class="uk-navbar-item uk-logo" href="../../../../index.html">WebTech 2018</a>
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../../../../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
-      <ul class="uk-navbar-nav">
-        <li class="uk-active">
-          <a class="uk-button uk-button-text" href="../../../prelims.html">Preliminaries</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../../../overview.html">Overview</a></li>
-              <li><a href="../../../www.html">World Wide Web</a></li>
-              <li class="uk-active uk-parent">
-                <a href="../../http.html">HTTP</a>
-                <ul class="uk-nav-sub">
-                  <li><a href="../../http.html">Introduction</a></li>
-                  <li><a href="../../evolution.html">Version/Evolution</a></li>
-                  <li><a href="../types.html">Message</a></li>
-                  <li class="uk-active"><a href="../../features/authentication.html">Features</a></li>
-                </ul>
-              </li>
-              <li><a href="../../../url.html">URL</a></li>
-              <li><a href="../../../html/html.html">HTML</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="../../../references.html">References</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a class="uk-button uk-button-text" href="../../../../midterms/midterms.html">Midterms</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../../../../midterms/css.html">CSS</a></li>
-              <li><a href="#">CSWS</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">References</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
-    <div class="uk-grid-collapse uk-padding " uk-grid>
-      <div class="uk-width-1-6@m uk-visible@m">
-        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-          <ul class="uk-nav uk-nav-default">
-            <li><a href="../../../overview.html">Overview</a></li>
-            <li><a href="../../../www.html">World Wide Web</a></li>
-            <li class="uk-parent uk-active">
-              <a href="../../http.html">HTTP</a>
-              <ul class="uk-nav-sub">
-                <li><a href="../../http.html">Introduction</a></li>
-                <li><a href="../../evolution.html">Version/Evolution</a></li>
-                <li><a href="../types.html">Message</a></li>
-                <li><a href="../../features/authentication.html">Features</a></li>
-              </ul>
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../../../prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../../../overview.html">Overview</a></li>
+                        <li><a href="../../../www.html">World Wide Web</a></li>
+                        <li class="uk-active uk-parent">
+                            <a href="../../http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="../../http.html">Introduction</a></li>
+                                <li><a href="../../evolution.html">Version/Evolution</a></li>
+                                <li><a href="../types.html">Message</a></li>
+                                <li class="uk-active"><a href="../../features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../../url.html">URL</a></li>
+                        <li><a href="../../../html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../../../references.html">References</a></li>
+                    </ul>
+                </div>
             </li>
-            <li><a href="../../../url.html">URL</a></li>
-            <li><a href="../../../html/html.html">HTML</a></li>
-          </ul>
+            <li>
+                <a class="uk-button uk-button-text" href="../../../../midterms/midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent">
+                            <a href="../../../../midterms/css.html">CSS</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="../../../../midterms/css.html">Introduction</a></li>
+                                <li><a href="../../../../midterms/selectors.html">CSS Selectors</a></li>
+                                <li><a href="../../../../midterms/cascade.html">CSS Cascade</a></li>
+                                <li><a href="../../../../midterms/declaration.html">CSS Declaration</a></li>
+                                <li><a href="../../../../midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="../../../overview.html">Overview</a></li>
+                    <li><a href="../../../www.html">World Wide Web</a></li>
+                    <li class="uk-parent uk-active">
+                        <a href="../../http.html">HTTP</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../../http.html">Introduction</a></li>
+                            <li><a href="../../evolution.html">Version/Evolution</a></li>
+                            <li><a href="../types.html">Message</a></li>
+                            <li><a href="../../features/authentication.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../url.html">URL</a></li>
+                    <li><a href="../../../html/html.html">HTML</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="uk-width-2-3@m uk-width-1-1@s">
-        <div class="uk-card uk-card-default uk-card-body">
-          <h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
-          <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-            <li><a href="../types.html">Message Types</a></li>
-            <li class="uk-active"><a href="general.html">Message Headers</a></li>
-            <li><a href="../codes/information.html">HTTP Status Codes</a></li>
-            <li><a href="../methods/request.html">HTTP Methods</a></li>
-          </ul>
-          <hr class="uk-divider-icon">
-          <p>HTTP Headers allow the client and the server to pass additional information with the request or response. HTTP allows the creation of custom headers. An example is the webDAV. The format for HTTP Headers to be followed (taken from RFC 2616):</p>
-          <pre>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li><a href="../types.html">Message Types</a></li>
+                    <li class="uk-active"><a href="general.html">Message Headers</a></li>
+                    <li><a href="../codes/information.html">HTTP Status Codes</a></li>
+                    <li><a href="../methods/request.html">HTTP Methods</a></li>
+                </ul>
+                <hr class="uk-divider-icon">
+                <p>HTTP Headers allow the client and the server to pass additional information with the request or
+                    response. HTTP allows the creation of custom headers. An example is the webDAV. The format for HTTP
+                    Headers to be followed (taken from RFC 2616):</p>
+                <pre>
 					<code>
 message-header = field-name ":" [ field-value ]
        field-name     = token
@@ -99,63 +110,73 @@ message-header = field-name ":" [ field-value ]
                         of token, separators, and quoted-string&gt;<span id="response"></span>
 					</code>
 				</pre>
-          <hr>
-          <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-            <li><a href="general.html#general"> General Headers</a></li>
-            <li><a href="request.html#request"> Request Headers</a></li>
-            <li class="uk-active"><a href="response.html#response">Response Headers</a></li>
-            <li><a href="entity.html#entity">Entity Headers</a></li>
-          </ul>
-          <dl class="uk-description-list uk-description-list-divider">
-            <dt class="uk-text-capitalize" id="accept-ranges"><span class="uk-text-lead">Accept-Ranges</span></dt>
-            <dd>Accept-Ranges allows the server to indicate its range requests acceptance for a resource.</dd>
-            <dt class="uk-text-capitalize" id="age"><span class="uk-text-lead">Age</span></dt>
-            <dd>Age indicates the sender’s estimated time since the response was generated at the server.</dd>
-            <dt class="uk-text-capitalize" id="etag"><span class="uk-text-lead">ETag </span></dt>
-            <dd>ETag (Entity Tag) provides the current value of the entity tag for the requested variant.</dd>
-            <dt class="uk-text-capitalize" id="location"><span class="uk-text-lead">Location</span></dt>
-            <dd>Location is used to redirect the recipient to another location other than the Request-URI.</dd>
-            <dt class="uk-text-capitalize" id="proxy-authenticate"><span class="uk-text-lead">Proxy-Authenticate</span></dt>
-            <dd>Proxy-Authenticate is included as part of the 407 response.</dd>
-            <dt class="uk-text-capitalize" id="retry-after"><span class="uk-text-lead">Retry-After</span></dt>
-            <dd>Retry-After can be used with the 503 response in order to indicate how long the service is expected to be unavailable for the client.</dd>
-            <dt class="uk-text-capitalize" id="server"><span class="uk-text-lead">Server</span></dt>
-            <dd>Server contains information about the software used by the server in handling requests.</dd>
-            <dt class="uk-text-capitalize" id="vary"><span class="uk-text-lead">Vary</span></dt>
-            <dd>Vary specifies that the entity has multiple sources and therefore it can vary accordingly to the specified list of request headers.</dd>
-            <dt class="uk-text-capitalize" id="www-authenticate"><span class="uk-text-lead">WWW-Authenticate</span></dt>
-            <dd>WWW-Authenticate should consist of at least one challenge that would indicate the authentication schemes and parameters that are applicable to the Request-URI.</dd>
-          </dl>
-          <hr>
-          <ul class="uk-pagination">
-            <li><a href="../../evolution.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
-					Evolution</a></li>
-            <li class="uk-margin-auto-left"><a href="../../features/authentication.html">HTTP Features <span
-						class="uk-margin-small-left" uk-pagination-next></span></a></li>
-          </ul>
+                <hr>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li><a href="general.html#general"> General Headers</a></li>
+                    <li><a href="request.html#request"> Request Headers</a></li>
+                    <li class="uk-active"><a href="response.html#response">Response Headers</a></li>
+                    <li><a href="entity.html#entity">Entity Headers</a></li>
+                </ul>
+                <dl class="uk-description-list uk-description-list-divider">
+                    <dt class="uk-text-capitalize" id="accept-ranges"><span class="uk-text-lead">Accept-Ranges</span>
+                    </dt>
+                    <dd>Accept-Ranges allows the server to indicate its range requests acceptance for a resource.</dd>
+                    <dt class="uk-text-capitalize" id="age"><span class="uk-text-lead">Age</span></dt>
+                    <dd>Age indicates the sender’s estimated time since the response was generated at the server.</dd>
+                    <dt class="uk-text-capitalize" id="etag"><span class="uk-text-lead">ETag </span></dt>
+                    <dd>ETag (Entity Tag) provides the current value of the entity tag for the requested variant.</dd>
+                    <dt class="uk-text-capitalize" id="location"><span class="uk-text-lead">Location</span></dt>
+                    <dd>Location is used to redirect the recipient to another location other than the Request-URI.</dd>
+                    <dt class="uk-text-capitalize" id="proxy-authenticate"><span
+                            class="uk-text-lead">Proxy-Authenticate</span></dt>
+                    <dd>Proxy-Authenticate is included as part of the 407 response.</dd>
+                    <dt class="uk-text-capitalize" id="retry-after"><span class="uk-text-lead">Retry-After</span></dt>
+                    <dd>Retry-After can be used with the 503 response in order to indicate how long the service is
+                        expected to be unavailable for the client.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="server"><span class="uk-text-lead">Server</span></dt>
+                    <dd>Server contains information about the software used by the server in handling requests.</dd>
+                    <dt class="uk-text-capitalize" id="vary"><span class="uk-text-lead">Vary</span></dt>
+                    <dd>Vary specifies that the entity has multiple sources and therefore it can vary accordingly to the
+                        specified list of request headers.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="www-authenticate"><span
+                            class="uk-text-lead">WWW-Authenticate</span></dt>
+                    <dd>WWW-Authenticate should consist of at least one challenge that would indicate the authentication
+                        schemes and parameters that are applicable to the Request-URI.
+                    </dd>
+                </dl>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="../../evolution.html"><span class="uk-margin-small-right"
+                                                             uk-pagination-previous></span> HTTP
+                        Evolution</a></li>
+                    <li class="uk-margin-auto-left"><a href="../../features/authentication.html">HTTP Features <span
+                            class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="uk-width-1-6@m uk-visible@m">
-        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
-            <li><a href="#accept-ranges" offset="100">Accept-Ranges</a></li>
-            <li><a href="#age" offset="75">Age</a></li>
-            <li><a href="#etag" offset="75">ETag</a></li>
-            <li><a href="#location" offset="75">Location</a></li>
-            <li><a href="#proxy-authenticate" offset="75">Proxy-Authenticate</a></li>
-            <li><a href="#retry-after" offset="75">Retry-After</a></li>
-            <li><a href="#server" offset="75">Server</a></li>
-            <li><a href="#vary" offset="75">Vary</a></li>
-            <li><a href="#www-authenticate" offset="75">WWW-Authenticate</a></li>
-          </ul>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
+                    <li><a href="#accept-ranges" offset="100">Accept-Ranges</a></li>
+                    <li><a href="#age" offset="75">Age</a></li>
+                    <li><a href="#etag" offset="75">ETag</a></li>
+                    <li><a href="#location" offset="75">Location</a></li>
+                    <li><a href="#proxy-authenticate" offset="75">Proxy-Authenticate</a></li>
+                    <li><a href="#retry-after" offset="75">Retry-After</a></li>
+                    <li><a href="#server" offset="75">Server</a></li>
+                    <li><a href="#vary" offset="75">Vary</a></li>
+                    <li><a href="#www-authenticate" offset="75">WWW-Authenticate</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
-  </div>
+</div>
 </body>
 
 </html>

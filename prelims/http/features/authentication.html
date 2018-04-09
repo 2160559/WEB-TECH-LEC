@@ -2,120 +2,144 @@
 <html>
 
 <head>
-	<title>HTTP Features</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../../../css/uikit.min.css" />
-	<script src="../../../js/uikit.min.js"></script>
-	<script src="../../../js/uikit-icons.min.js"></script>
+    <title>HTTP Features</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../css/uikit.min.css"/>
+    <script src="../../../js/uikit.min.js"></script>
+    <script src="../../../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-		<div class="uk-navbar-left uk-margin-large-left">
-			<a class="uk-navbar-item uk-logo" href="../../../index.html">WebTech 2018</a>
-		</div>
-		<div class="uk-navbar-right uk-margin-xlarge-right">
-			<ul class="uk-navbar-nav">
-				<li class="uk-active">
-					<a class="uk-button uk-button-text" href="../../prelims.html">Preliminaries</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="../../overview.html">Overview</a></li>
-							<li><a href="../../www.html">World Wide Web</a></li>
-							<li class="uk-active uk-parent">
-								<a href="../http.html">HTTP</a>
-								<ul class="uk-nav-sub">
-									<li><a href="../http.html">Introduction</a></li>
-									<li><a href="../evolution.html">Version/Evolution</a></li>
-									<li><a href="../message/types.html">Message</a></li>
-									<li class="uk-active"><a href="../features/authentication.html">Features</a></li>
-								</ul>
-							</li>
-							<li><a href="../../url.html">URL</a></li>
-							<li><a href="../../html/html.html">HTML</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="../../references.html">References</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a class="uk-button uk-button-text" href="../../../midterms/midterms.html">Midterms</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="../../../midterms/css.html">CSS</a></li>
-							<li><a href="#">CSWS</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">References</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
-		<div class="uk-grid-collapse uk-padding " uk-grid>
-			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-					<ul class="uk-nav uk-nav-default">
-						<li><a href="../../overview.html">Overview</a></li>
-						<li><a href="../../www.html">World Wide Web</a></li>
-						<li class="uk-parent uk-active">
-							<a href="../http.html">HTTP</a>
-							<ul class="uk-nav-sub">
-								<li><a href="../http.html">Introduction</a></li>
-								<li><a href="../evolution.html">Version/Evolution</a></li>
-								<li><a href="../message/types.html">Message</a></li>
-								<li><a href="../features/authentication.html">Features</a></li>
-							</ul>
-						</li>
-						<li><a href="../../url.html">URL</a></li>
-						<li><a href="../../html/html.html">HTML</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="uk-width-2-3@m uk-width-1-1@s">
-				<div class="uk-card uk-card-default uk-card-body">
-					<h1 class="uk-heading-line uk-text-center"><span>HTTP Features</span></h1>
-					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-						<li class="uk-active"><a href="authentication.html" class="uk-active">Authentication</a></li>
-						<li><a href="connections.html">Persistent Connections</a></li>
-						<li><a href="encoding.html">Chunked Transfer Encoding</a></li>
-					</ul>
-					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-						<li><a href="negotiation.html">Content Negotiation</a></li>
-						<li><a href="range.html">Range Request</a></li>
-					</ul>
-					<hr>
-					<h2 class="uk-heading-bullet">Authentication</h2>
-					<p class="uk-text-justify">Sometimes, a website can have private pages or resources only accessible by certain users. When this happens, the server challenges the request to access, and the user has to provide the appropriate information to prove to the server that they should have access to it. This two-way process is <i>authentication</i>.</p>
-					<p class="uk-text-justify">A framework by HTTP is available to be able to control access and authentication using defined mechanisms, namely:
-					</p>
-					<ol>
-						<li><b>Basic</b>, which has the user give unencrypted information. It should only be used with HTTPS</li>
-						<li><b>Digest</b>, which hashes the user’s password.</li>
-						<li><b>NTLM</b>, which prevents capturing passwords. (Through persistent connection)</li>
-					</ol>
-					<p class="uk-text-justify">A common response status is the <code>401 Unauthorized</code> status. It is sent when the user first tries to access the page, and the server sends a 401 status with <b>WWW-Authenticate</b>. This header field states which method to use for accessing.</p>
-					<p class="uk-text-justify">The user then responds with information, typically a username/email and password, in the form of an <b>Authorization</b> request. It will either return a <code>200 OK</code> status (the correct authorization was given, and access has been given), a <code>401 Unauthorized</code> (the authorization was refused, and the Authorization request should be sent again), or a <code>403 Forbidden</code> (the user has not been given proper access for the page or resource).</p>
-					<hr>
-					<ul class="uk-pagination">
-						<li><a href="../message/types.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
-					Message</a></li>
-						<li class="uk-margin-auto-left"><a href="../../url.html">URL <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
-		9325A 1-2 TF Group 1
-		<br> &copy; March 2018
-	</div>
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../../../index.html">WebTech 2018</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../../prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../../overview.html">Overview</a></li>
+                        <li><a href="../../www.html">World Wide Web</a></li>
+                        <li class="uk-active uk-parent">
+                            <a href="../http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="../http.html">Introduction</a></li>
+                                <li><a href="../evolution.html">Version/Evolution</a></li>
+                                <li><a href="../message/types.html">Message</a></li>
+                                <li class="uk-active"><a href="../features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../url.html">URL</a></li>
+                        <li><a href="../../html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../../references.html">References</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-button uk-button-text" href="../../../midterms/midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent">
+                            <a href="../../../midterms/css.html">CSS</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="../../../midterms/css.html">Introduction</a></li>
+                                <li><a href="../../../midterms/selectors.html">CSS Selectors</a></li>
+                                <li><a href="../../../midterms/cascade.html">CSS Cascade</a></li>
+                                <li><a href="../../../midterms/declaration.html">CSS Declaration</a></li>
+                                <li><a href="../../../midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="../../overview.html">Overview</a></li>
+                    <li><a href="../../www.html">World Wide Web</a></li>
+                    <li class="uk-parent uk-active">
+                        <a href="../http.html">HTTP</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../http.html">Introduction</a></li>
+                            <li><a href="../evolution.html">Version/Evolution</a></li>
+                            <li><a href="../message/types.html">Message</a></li>
+                            <li><a href="../features/authentication.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../url.html">URL</a></li>
+                    <li><a href="../../html/html.html">HTML</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-heading-line uk-text-center"><span>HTTP Features</span></h1>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li class="uk-active"><a href="authentication.html" class="uk-active">Authentication</a></li>
+                    <li><a href="connections.html">Persistent Connections</a></li>
+                    <li><a href="encoding.html">Chunked Transfer Encoding</a></li>
+                </ul>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li><a href="negotiation.html">Content Negotiation</a></li>
+                    <li><a href="range.html">Range Request</a></li>
+                </ul>
+                <hr>
+                <h2 class="uk-heading-bullet">Authentication</h2>
+                <p class="uk-text-justify">Sometimes, a website can have private pages or resources only accessible by
+                    certain users. When this happens, the server challenges the request to access, and the user has to
+                    provide the appropriate information to prove to the server that they should have access to it. This
+                    two-way process is <i>authentication</i>.</p>
+                <p class="uk-text-justify">A framework by HTTP is available to be able to control access and
+                    authentication using defined mechanisms, namely:
+                </p>
+                <ol>
+                    <li><b>Basic</b>, which has the user give unencrypted information. It should only be used with HTTPS
+                    </li>
+                    <li><b>Digest</b>, which hashes the user’s password.</li>
+                    <li><b>NTLM</b>, which prevents capturing passwords. (Through persistent connection)</li>
+                </ol>
+                <p class="uk-text-justify">A common response status is the <code>401 Unauthorized</code> status. It is
+                    sent when the user first tries to access the page, and the server sends a 401 status with <b>WWW-Authenticate</b>.
+                    This header field states which method to use for accessing.</p>
+                <p class="uk-text-justify">The user then responds with information, typically a username/email and
+                    password, in the form of an <b>Authorization</b> request. It will either return a <code>200
+                        OK</code> status (the correct authorization was given, and access has been given), a <code>401
+                        Unauthorized</code> (the authorization was refused, and the Authorization request should be sent
+                    again), or a <code>403 Forbidden</code> (the user has not been given proper access for the page or
+                    resource).</p>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="../message/types.html"><span class="uk-margin-small-right"
+                                                              uk-pagination-previous></span> HTTP
+                        Message</a></li>
+                    <li class="uk-margin-auto-left"><a href="../../url.html">URL <span class="uk-margin-small-left"
+                                                                                       uk-pagination-next></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+    9325A 1-2 TF Group 1
+    <br> &copy; March 2018
+</div>
 </body>
 
 </html>

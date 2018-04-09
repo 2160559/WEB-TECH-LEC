@@ -2,163 +2,178 @@
 <html>
 
 <head>
-	<title>CSS Cascade</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/uikit.min.css" />
-	<script src="../js/uikit.min.js"></script>
-	<script src="../js/uikit-icons.min.js"></script>
+    <title>CSS Cascade</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/uikit.min.css"/>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-		<div class="uk-navbar-left uk-margin-large-left">
-			<a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
-		</div>
-		<div class="uk-navbar-right uk-margin-xlarge-right">
-			<ul class="uk-navbar-nav">
-				<li class="uk-active">
-					<a class="uk-button uk-button-text" href="../prelims/prelims.html">Preliminaries</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="../prelims/overview.html">Overview</a></li>
-							<li class="uk-active"><a href="../prelims/www.html">World Wide Web</a></li>
-							<li class="uk-parent">
-								<a href="../prelims/http/http.html">HTTP</a>
-								<ul class="uk-nav-sub">
-									<li><a href="../prelims/http/http.html">Introduction</a></li>
-									<li><a href="../prelims/http/evolution.html">Version/Evolution</a></li>
-									<li><a href="../prelims/http/message/types.html">Message</a></li>
-									<li><a href="../prelims/http/features/authentication.html">Features</a></li>
-								</ul>
-							</li>
-							<li><a href="../prelims/url.html">URL</a></li>
-							<li><a href="../prelims/html/html.html">HTML</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="../prelims/references.html">References</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a class="uk-button uk-button-text" href="midterms.html">Midterms</a>
-					<div class="uk-navbar-dropdown ">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li class="uk-parent">
-								<a href="">CSS</a>
-								<ul class="uk-nav-sub ">
-									<li><a href="introduction.html">Introduction</a></li>
-									<li><a href="selectors.html">CSS Selectors</a></li>
-									<li><a href="cascade.html">CSS Cascade</a></li>
-									<li><a href="declaration.html">CSS Declaration</a></li>
-									<li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
-								</ul>
-							</li>
-							<li><a href="js_intro.html">CSWS</a></li>
-							
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">References</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
-		<div class="uk-grid-collapse uk-padding " uk-grid>
-			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-					<ul class="uk-nav uk-nav-default">
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../index.html">WebTech 2018</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../prelims/prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../prelims/overview.html">Overview</a></li>
+                        <li class="uk-active"><a href="../prelims/www.html">World Wide Web</a></li>
+                        <li class="uk-parent">
+                            <a href="../prelims/http/http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="../prelims/http/http.html">Introduction</a></li>
+                                <li><a href="../prelims/http/evolution.html">Version/Evolution</a></li>
+                                <li><a href="../prelims/http/message/types.html">Message</a></li>
+                                <li><a href="../prelims/http/features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../prelims/url.html">URL</a></li>
+                        <li><a href="../prelims/html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../prelims/references.html">References</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-button uk-button-text" href="midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown ">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent uk-active">
+                            <a href="">CSS</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="introduction.html">Introduction</a></li>
+                                <li><a href="selectors.html">CSS Selectors</a></li>
+                                <li><a href="cascade.html">CSS Cascade</a></li>
+                                <li><a href="declaration.html">CSS Declaration</a></li>
+                                <li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="js_intro.html">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
 
-					</ul>
-				</div>
-			</div>
-			<div class="uk-width-2-3@m uk-width-1-1@s">
-				<div class="uk-card uk-card-default uk-card-body">
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
 
-                    <h2 class="uk-heading-line uk-text-center"><span>CSS Cascade</span></h2>
-                    <p>
-                    CSS was designed in a manner where multiple stylesheets may be applied to a single document (e.g. html, xml). Stylesheets may contain declarations that target a single property/element combination. The process wherein a specific declaration is chosen for a particular combination is called the cascade. 
-                	</p>
-                    <p>
-                   	Cascading happens when declared values for a particular property of an element are collected from all stylesheets used by the document and are sorted out based on a criteria.
-                    </p>
-                    <p>
-                    The following are some of the criteria used by the cascade in sorting out the declarations according to descending order of priority. The sorted list is then the basis for determining the cascaded value - the declaration chosen for a particular property or element.
-                    </p>
-                    <p>
+                <h2 class="uk-heading-line uk-text-center"><span>CSS Cascade</span></h2>
+                <p>
+                    CSS was designed in a manner where multiple stylesheets may be applied to a single document (e.g.
+                    html, xml). Stylesheets may contain declarations that target a single property/element combination.
+                    The process wherein a specific declaration is chosen for a particular combination is called the
+                    cascade.
+                </p>
+                <p>
+                    Cascading happens when declared values for a particular property of an element are collected from
+                    all stylesheets used by the document and are sorted out based on a criteria.
+                </p>
+                <p>
+                    The following are some of the criteria used by the cascade in sorting out the declarations according
+                    to descending order of priority. The sorted list is then the basis for determining the cascaded
+                    value - the declaration chosen for a particular property or element.
+                </p>
+                <p>
                     The following are specified in CSS Cascading and Inheritance Level 3 of W3C
-               	 	</p>
-      
-               	 	<p><i>Note : Go to this 
-               	 	<a href="https://www.w3.org/TR/css-cascade-3/#cascading-origins">
-               	 	link</a> 
-               	 	for a more detailed information about cascading and inheritance level 3.</i>
-               	 			</p>
+                </p>
 
-               	 	<ol type="1">
-               	 		<li>Origin and Importance</li>
-               	 		<p>The origin refers to where the CSS came from while the importance refer to whether the <b>!importance</b> annotation is used or not.</p>
-               	 		<ol type="a">
-               	 			<li>Transition declarations</li>
-               	 			<li>Important user agent declarations</li>
-               	 			<li>Important user declarations</li>
-               	 			<li>Important override declarations</li>
-               	 			<li>Important author declarations</li>
-               	 			<li>Animation declarations</li>
-               	 			<li>Normal override declarations</li>
-               	 			<li>Normal author declarations</li>
-               	 			<li>Normal user declarations</li>
-               	 			<li>Normal user agent declarations</li>
-               	 		</ol>
-               	 		<p><i>
-               	 			Illustration : Since the list is in a descending order of priority, it means that important user declaration are applied instead of normal user declaration.It also implies that normal user declarations are applied instead of user agent declaration. 
-               	 		</i></p>
-               	 		<p>The user agent, user and author are the candidate origins for style rules. The user agent which is usually the browser should have a default stylesheet which will be applied to the document when no stylesheets are specified by the author or user. The author which is usually the web developers specify style sheets for a document by including it in the document or by linking the external css with the document. Lastly, the user, is usually someone with special need and specification of style sheet by the user may happen if a user-agent provides a functionality which allows users to add stylesheets.</p>
-
-               	 		<li>Specificity</li>
-               	 		<p>Multiple declarations from multiple stylesheets may target that same element in a document. In cases like this, the browser makes use of the specificity of a declaration to determine which declaration should be applied to an element. The higher the number of selector types in a declaration means that the declaration is more specific. </p>
-               	 		<p>In the MDN web docs, the following list of selector types increases by specificity. </p>
-               	 		<ul >
-               	 			<li>Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).</li>
-               	 			<li>Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).</li>
-							<li>ID selectors (e.g., #example).</li>
-
-               	 		</ul>
-               	 		<p>
-               	 			When multiple declarations that have equal specificity, the last declaration in the CSS is applied. In addition, inline styles are more specific that non inline styles.
-               	 			</p>
-               	 			<p><i>Note : There are specificity calculators which can be used to calculate the specificity of a declaration. One example is the specificity calculator built by Keegan Street. This <a href="https://specificity.keegan.st/">link</a>  directs you to the calculator.</i>
-               	 			</p>
-
-               	 		
-
-               	 	</ol>
-
-					<hr>
-					<ul class="uk-pagination">
-						<li><a href="selectors.html"><span class="uk-margin-small-right" uk-pagination-previous></span>CSS Selectors</a></li>
-						<li class="uk-margin-auto-left"><a href="declaration.html">CSS Declaration<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-						
-					</ul>
-				</div>
-			</div>
-			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-					<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
-
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
-		9325A 1-2 TF Group 1
-		<br> &copy; March 2018
-	</div>
+                <p><i>Note : Go to this
+                    <a href="https://www.w3.org/TR/css-cascade-3/#cascading-origins">
+                        link</a>
+                    for a more detailed information about cascading and inheritance level 3.</i>
+                </p>
+                <ol type="1">
+                    <li>Origin and Importance</li>
+                    <p>The origin refers to where the CSS came from while the importance refer to whether the <b>!importance</b>
+                        annotation is used or not.</p>
+                    <ol type="a">
+                        <li>Transition declarations</li>
+                        <li>Important user agent declarations</li>
+                        <li>Important user declarations</li>
+                        <li>Important override declarations</li>
+                        <li>Important author declarations</li>
+                        <li>Animation declarations</li>
+                        <li>Normal override declarations</li>
+                        <li>Normal author declarations</li>
+                        <li>Normal user declarations</li>
+                        <li>Normal user agent declarations</li>
+                    </ol>
+                    <p><i>
+                        Illustration : Since the list is in a descending order of priority, it means that important user
+                        declaration are applied instead of normal user declaration.It also implies that normal user
+                        declarations are applied instead of user agent declaration.
+                    </i></p>
+                    <p>The user agent, user and author are the candidate origins for style rules. The user agent which
+                        is usually the browser should have a default stylesheet which will be applied to the document
+                        when no stylesheets are specified by the author or user. The author which is usually the web
+                        developers specify style sheets for a document by including it in the document or by linking the
+                        external css with the document. Lastly, the user, is usually someone with special need and
+                        specification of style sheet by the user may happen if a user-agent provides a functionality
+                        which allows users to add stylesheets.</p>
+                    <li>Specificity</li>
+                    <p>Multiple declarations from multiple stylesheets may target that same element in a document. In
+                        cases like this, the browser makes use of the specificity of a declaration to determine which
+                        declaration should be applied to an element. The higher the number of selector types in a
+                        declaration means that the declaration is more specific. </p>
+                    <p>In the MDN web docs, the following list of selector types increases by specificity. </p>
+                    <ul>
+                        <li>Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).</li>
+                        <li>Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and
+                            pseudo-classes (e.g., :hover).
+                        </li>
+                        <li>ID selectors (e.g., #example).</li>
+                    </ul>
+                    <p>
+                        When multiple declarations that have equal specificity, the last declaration in the CSS is
+                        applied. In addition, inline styles are more specific that non inline styles.
+                    </p>
+                    <p><i>Note : There are specificity calculators which can be used to calculate the specificity of a
+                        declaration. One example is the specificity calculator built by Keegan Street. This <a
+                                href="https://specificity.keegan.st/">link</a> directs you to the calculator.</i>
+                    </p>
+                </ol>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="selectors.html"><span class="uk-margin-small-right" uk-pagination-previous></span>CSS
+                        Selectors</a></li>
+                    <li class="uk-margin-auto-left"><a href="cascade.html">CSS Declaration<span
+                            class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+    9325A 1-2 TF Group 1
+    <br> &copy; March 2018
+</div>
 </body>
 
 </html>

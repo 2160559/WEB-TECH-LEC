@@ -2,117 +2,142 @@
 <html>
 
 <head>
-	<title>HTTP Features</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../../../css/uikit.min.css" />
-	<script src="../../../js/uikit.min.js"></script>
-	<script src="../../../js/uikit-icons.min.js"></script>
+    <title>HTTP Features</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../css/uikit.min.css"/>
+    <script src="../../../js/uikit.min.js"></script>
+    <script src="../../../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-		<div class="uk-navbar-left uk-margin-large-left">
-			<a class="uk-navbar-item uk-logo" href="../../../index.html">WebTech 2018</a>
-		</div>
-		<div class="uk-navbar-right uk-margin-xlarge-right">
-			<ul class="uk-navbar-nav">
-				<li class="uk-active">
-					<a class="uk-button uk-button-text" href="../../prelims.html">Preliminaries</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="../../overview.html">Overview</a></li>
-							<li><a href="../../www.html">World Wide Web</a></li>
-							<li class="uk-active uk-parent">
-								<a href="../http.html">HTTP</a>
-								<ul class="uk-nav-sub">
-									<li><a href="../http.html">Introduction</a></li>
-									<li><a href="../evolution.html">Version/Evolution</a></li>
-									<li><a href="../message/types.html">Message</a></li>
-									<li class="uk-active"><a href="../features/authentication.html">Features</a></li>
-								</ul>
-							</li>
-							<li><a href="../../url.html">URL</a></li>
-							<li><a href="../../html/html.html">HTML</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="../../references.html">References</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a class="uk-button uk-button-text" href="../../../midterms/midterms.html">Midterms</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="../../../midterms/css.html">CSS</a></li>
-							<li><a href="#">CSWS</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">References</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
-		<div class="uk-grid-collapse uk-padding " uk-grid>
-			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-					<ul class="uk-nav uk-nav-default">
-						<li><a href="../../overview.html">Overview</a></li>
-						<li><a href="../../www.html">World Wide Web</a></li>
-						<li class="uk-parent uk-active">
-							<a href="../http.html">HTTP</a>
-							<ul class="uk-nav-sub">
-								<li><a href="../http.html">Introduction</a></li>
-								<li><a href="../evolution.html">Version/Evolution</a></li>
-								<li><a href="../message/types.html">Message</a></li>
-								<li><a href="../features/authentication.html">Features</a></li>
-							</ul>
-						</li>
-						<li><a href="../../url.html">URL</a></li>
-						<li><a href="../../html/html.html">HTML</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="uk-width-2-3@m uk-width-1-1@s">
-				<div class="uk-card uk-card-default uk-card-body">
-					<h1 class="uk-heading-line uk-text-center"><span>HTTP Features</span></h1>
-					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-						<li><a href="authentication.html" class="uk-active">Authentication</a></li>
-						<li><a href="connections.html">Persistent Connections</a></li>
-						<li class="uk-active"><a href="encoding.html">Chunked Transfer Encoding</a></li>
-					</ul>
-					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-						<li><a href="negotiation.html">Content Negotiation</a></li>
-						<li><a href="range.html">Range Request</a></li>
-					</ul>
-					<hr>
-					<h2 class="uk-heading-bullet">Chunked Transfer Encoding</h2>
-					<p class="uk-text-justify"> HTTP communication usually takes place over TCP/IP connections (RFC2616). The TCP/IP is the protocol stack used by the Internet.</p>
-					<img src="../../../img/2.png" alt="protocol layer">
-					<img src="../../../img/3.png" alt="tcp/ip model">
-					<p class="uk-text-justify"> HTTP is an <b>application-level protocol</b> because it is used by network-aware applications (applications that communicate through the network) to communicate with one another.</p>
-					<p class="uk-text-justify">The information that is communicated starts at the <b>Application</b> level. If the information is long, it will be broken into chunks of data, also known as <i>packets</i>. These packets travel from the application layer down to the TCP layer where port numbers are assigned to it.</p>
-					<p class="uk-text-justify">After going through the TCP layer, it will go down to the <b>IP layer</b> where the packet receives its destination IP address. The packet also has numbers and hash codes that are used to bring back the chopped data back to its original form. These packets containing the necessary information are then converted to bits and travel through the Internet to get to its destination IP address and port.</p>
-					<p class="uk-text-justify">When it gets to its destination, it will pass through the <b>hardware layer</b>, then back to the application layer. By the time it reaches the <b>Application layer</b>, it is expected that the information is back to its original form. <i>Data loss</i> can be determined if there is a changes in the hash code of a packet.</p>
-					<hr>
-					<ul class="uk-pagination">
-						<li><a href="../message/types.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
-					Message</a></li>
-						<li class="uk-margin-auto-left"><a href="../../url.html">URL <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
-		9325A 1-2 TF Group 1
-		<br> &copy; March 2018
-	</div>
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../../../index.html">WebTech 2018</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../../prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../../overview.html">Overview</a></li>
+                        <li><a href="../../www.html">World Wide Web</a></li>
+                        <li class="uk-active uk-parent">
+                            <a href="../http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="../http.html">Introduction</a></li>
+                                <li><a href="../evolution.html">Version/Evolution</a></li>
+                                <li><a href="../message/types.html">Message</a></li>
+                                <li class="uk-active"><a href="../features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../url.html">URL</a></li>
+                        <li><a href="../../html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../../references.html">References</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-button uk-button-text" href="../../../midterms/midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent">
+                            <a href="../../../midterms/css.html">CSS</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="../../../midterms/css.html">Introduction</a></li>
+                                <li><a href="../../../midterms/selectors.html">CSS Selectors</a></li>
+                                <li><a href="../../../midterms/cascade.html">CSS Cascade</a></li>
+                                <li><a href="../../../midterms/declaration.html">CSS Declaration</a></li>
+                                <li><a href="../../../midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="../../overview.html">Overview</a></li>
+                    <li><a href="../../www.html">World Wide Web</a></li>
+                    <li class="uk-parent uk-active">
+                        <a href="../http.html">HTTP</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../http.html">Introduction</a></li>
+                            <li><a href="../evolution.html">Version/Evolution</a></li>
+                            <li><a href="../message/types.html">Message</a></li>
+                            <li><a href="../features/authentication.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../url.html">URL</a></li>
+                    <li><a href="../../html/html.html">HTML</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-heading-line uk-text-center"><span>HTTP Features</span></h1>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li><a href="authentication.html" class="uk-active">Authentication</a></li>
+                    <li><a href="connections.html">Persistent Connections</a></li>
+                    <li class="uk-active"><a href="encoding.html">Chunked Transfer Encoding</a></li>
+                </ul>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li><a href="negotiation.html">Content Negotiation</a></li>
+                    <li><a href="range.html">Range Request</a></li>
+                </ul>
+                <hr>
+                <h2 class="uk-heading-bullet">Chunked Transfer Encoding</h2>
+                <p class="uk-text-justify"> HTTP communication usually takes place over TCP/IP connections (RFC2616).
+                    The TCP/IP is the protocol stack used by the Internet.</p>
+                <img src="../../../img/2.png" alt="protocol layer">
+                <img src="../../../img/3.png" alt="tcp/ip model">
+                <p class="uk-text-justify"> HTTP is an <b>application-level protocol</b> because it is used by
+                    network-aware applications (applications that communicate through the network) to communicate with
+                    one another.</p>
+                <p class="uk-text-justify">The information that is communicated starts at the <b>Application</b> level.
+                    If the information is long, it will be broken into chunks of data, also known as <i>packets</i>.
+                    These packets travel from the application layer down to the TCP layer where port numbers are
+                    assigned to it.</p>
+                <p class="uk-text-justify">After going through the TCP layer, it will go down to the <b>IP layer</b>
+                    where the packet receives its destination IP address. The packet also has numbers and hash codes
+                    that are used to bring back the chopped data back to its original form. These packets containing the
+                    necessary information are then converted to bits and travel through the Internet to get to its
+                    destination IP address and port.</p>
+                <p class="uk-text-justify">When it gets to its destination, it will pass through the <b>hardware
+                    layer</b>, then back to the application layer. By the time it reaches the <b>Application layer</b>,
+                    it is expected that the information is back to its original form. <i>Data loss</i> can be determined
+                    if there is a changes in the hash code of a packet.</p>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="../message/types.html"><span class="uk-margin-small-right"
+                                                              uk-pagination-previous></span> HTTP
+                        Message</a></li>
+                    <li class="uk-margin-auto-left"><a href="../../url.html">URL <span class="uk-margin-small-left"
+                                                                                       uk-pagination-next></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+    9325A 1-2 TF Group 1
+    <br> &copy; March 2018
+</div>
 </body>
 
 </html>
