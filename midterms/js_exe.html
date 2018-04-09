@@ -53,13 +53,14 @@
 									<li><a href="selectors.html">CSS Selectors</a></li>
 									<li><a href="cascade.html">CSS Cascade</a></li>
 									<li><a href="declaration.html">CSS Declaration</a></li>
-									<li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
+									<li><a href="pre.html">CSS Preprocessor, Framework, Libraries</a></li>
 								</ul>
 							</li>
 							<li class="uk-parent">
 								<a href="">CSWS</a>
 								<ul class="uk-nav-sub ">
 									<li><a href="js_intro.html">Introduction</a></li>
+                                    <li><a href="js_intro.html">JavaScript Association</a></li>
                                     <li><a href="js_exe.html">JavaScript Execution Environment</a></li>
 								</ul>
 							</li>
@@ -85,65 +86,38 @@
 			<div class="uk-width-2-3@m uk-width-1-1@s">
 				<div class="uk-card uk-card-default uk-card-body">
 
-                    <h2 class="uk-heading-line uk-text-center"><span>CSS Preprocessors, Frameworks and Polyfills</span></h2>
-                    
-                    <h3>Preprocessors</h3>
-                    <ul>
-                   
-                    <li>Generates CSS using a custom language syntax that typically includes features that don’t exist in pure CSS.
-                        <ul>
-                         <li>Examples: 
-                             <span data-uk-tooltip title="an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more. "> <u>Sass</u>,</span>&nbsp;
-                             
-                             <span data-uk-tooltip title="a dynamic style sheet language that can be compiled into Cascading Style Sheets and run on the client side or server side. "><u>Less</u>,</span>
-                            
-                             <span data-uk-tooltip title="a dynamic style sheet language that can be compiled into Cascading Style Sheets, inspired by Sass and Less">and <u>Stylus </u></span>
-                         </li>
-                        </ul>
-                    </li>
-                    </ul>
-                    <hr>
-                    <h3>Frameworks</h3>
-                    <ul>
-                   
-                    <li>Provides predefined CSS design functionality that can be reused, extended or customized.
-                    <ul>
-                         <li>Examples: 
-                             <span data-uk-tooltip title="makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype"> <u>Bootstrap</u>, </span>&nbsp;
-                             
-                             <span data-uk-tooltip title="a responsive front-end framework. Foundation provides a responsive grid and HTML and CSS UI components, templates, and code snippets, including typography, forms, buttons, navigation and other interface elements, as well as optional functionality provided by JavaScript extensions."><u>Foundation</u>, </span>
-                            
-                             <span data-uk-tooltip title="a modern responsive CSS framework based on Material Design by Google.">and <u>Materialize </u></span>
-                         </li>
-                        </ul>    
-                    </li>
-                    </ul>
-                    <hr>
-                    <h3>Polyfills</h3>
-                    <ul>
-                   
-                    <li>Provides features that developers expect browsers to provide natively
+                    <h2 class="uk-heading-line uk-text-center"><span>JavaScript Execution Environment
+                            </span></h2>
+                    <p>The JavaScript Window object represents the window in which the browser displays documents 
+                    <br><br>
+                    The Window object provides the largest enclosing referencing environment for scripts - Its properties are visible to all scripts in the document 
+                    <br><br>
+                    Implicitly defined Window properties:
+                    document - a reference to the Document object that the window displays
+                    frames - an array of references to the frames of the document
+                    <br><br>
+                    Every Document object has:
+                    forms - an array of references to the forms of the document
+                    Each Form object has an elements array, which has references to the form's elements</p>
+                    <ol>
+                    <li>	Core JS (ECMAScript) 
+                    allows creation of apps that have multiple working extensions that all interact with each other without ever actually knowing about one another. 
+                    </li><br>
 
-                    <ul>
-                         <li>Examples: 
-                             <span data-uk-tooltip title="indicates what HTML, CSS and JavaScript features the user's browser has to offer"> <u>Modernizr </u></span>
-                             
-                             <span data-uk-tooltip title="a JavaScript utility that emulates CSS3 selectors in Internet Explorer 6-8.">and <u> Selectivizr </u></span>&nbsp;
-                            
-                           
-                         </li>
-                        </ul>    
-                    </li>
-                    </ul>
-               	
+                    <li>		Browser Object Model (BOM)
+                    a browser-specific convention referring to all the objects exposed by the web browser
+                    </li><br>
 
-               	 	
-					<hr>
-					<ul class="uk-pagination">
-						<li><a href="selectors.html"><span class="uk-margin-small-right" uk-pagination-previous></span>CSS Selectors</a></li>
-						<li class="uk-margin-auto-left"><a href="js_intro.html">JavaScript<span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-						
-					</ul>
+                    <li>		Data Object Model (DOM)
+                    an application programming interface (API) for valid HTML and well-formed XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</li>
+                    </ol>
+
+                    <hr>
+                     <ul class="uk-pagination">
+                    <li><a href="selectors.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript Association</a></li>
+                    <li class="uk-margin-auto-left"><a href="cascade.html">JavaScript Language Fundamentals<span
+                            class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                </ul>
 				</div>
 			</div>
 			<div class="uk-width-1-6@m uk-visible@m">
