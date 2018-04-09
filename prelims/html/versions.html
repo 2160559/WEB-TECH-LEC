@@ -2,198 +2,224 @@
 <html>
 
 <head>
-  <title>HTML</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/uikit.min.css" />
-  <script src="../../js/uikit.min.js"></script>
-  <script src="../../js/uikit-icons.min.js"></script>
-  <link rel="stylesheet" href="../../css/style.css">
+    <title>HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/uikit.min.css"/>
+    <script src="../../js/uikit.min.js"></script>
+    <script src="../../js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
-  <nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left">
-      <a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
-      <ul class="uk-navbar-nav">
-        <li class="uk-active">
-          <a class="uk-button uk-button-text" href="../prelims.html">Preliminaries</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../overview.html">Overview</a></li>
-              <li><a href="../www.html">World Wide Web</a></li>
-              <li class="uk-active uk-parent">
-                <a href="../http/http.html">HTTP</a>
-                <ul class="uk-nav-sub">
-                  <li><a href="../http/http.html">Introduction</a></li>
-                  <li class="uk-active"><a href="../http/evolution.html">Version/Evolution</a></li>
-                  <li><a href="../http/message/types.html">Message</a></li>
-                  <li><a href="../http/features/authentication.html">Features</a></li>
-                </ul>
-              </li>
-              <li><a href="../url.html">URL</a></li>
-              <li><a href="../html/html.html">HTML</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="../references.html">References</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a class="uk-button uk-button-text" href="../../midterms/midterms.html">Midterms</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../../midterms/css.html">CSS</a></li>
-              <li><a href="#">CSWS</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">References</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../overview.html">Overview</a></li>
+                        <li><a href="../www.html">World Wide Web</a></li>
+                        <li class="uk-active uk-parent">
+                            <a href="../http/http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="../http/http.html">Introduction</a></li>
+                                <li class="uk-active"><a href="../http/evolution.html">Version/Evolution</a></li>
+                                <li><a href="../http/message/types.html">Message</a></li>
+                                <li><a href="../http/features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../url.html">URL</a></li>
+                        <li><a href="../html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../references.html">References</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-button uk-button-text" href="../../midterms/midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent">
+                            <a href="../../midterms/css.html">CSS</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="../../midterms/css.html">Introduction</a></li>
+                                <li><a href="../../midterms/selectors.html">CSS Selectors</a></li>
+                                <li><a href="../../midterms/cascade.html">CSS Cascade</a></li>
+                                <li><a href="../../midterms/declaration.html">CSS Declaration</a></li>
+                                <li><a href="../../midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
-  </nav>
-  <div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
     <div class="uk-grid-collapse uk-padding " uk-grid>
-      <div class="uk-width-1-6@m uk-visible@m">
-        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-          <ul class="uk-nav uk-nav-default">
-            <li><a href="../overview.html">Overview</a></li>
-            <li><a href="../www.html">World Wide Web</a></li>
-            <li class="uk-parent">
-              <a href="../http/http.html">HTTP</a>
-              <ul class="uk-nav-sub">
-                <li><a href="../http/http.html">Introduction</a></li>
-                <li><a href="../http/evolution.html">Version/Evolution</a></li>
-                <li><a href="../http/message/types.html">Message</a></li>
-                <li><a href="../http/features/authentication.html">Features</a></li>
-              </ul>
-            </li>
-            <li><a href="../url.html">URL</a></li>
-            <li class="uk-active"><a href="../html/html.html">HTML</a></li>
-          </ul>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="../overview.html">Overview</a></li>
+                    <li><a href="../www.html">World Wide Web</a></li>
+                    <li class="uk-parent">
+                        <a href="../http/http.html">HTTP</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../http/http.html">Introduction</a></li>
+                            <li><a href="../http/evolution.html">Version/Evolution</a></li>
+                            <li><a href="../http/message/types.html">Message</a></li>
+                            <li><a href="../http/features/authentication.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../url.html">URL</a></li>
+                    <li class="uk-active"><a href="../html/html.html">HTML</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="uk-width-2-3@m uk-width-1-1@s">
-        <div class="uk-card uk-card-default uk-card-body">
-          <h1 class="uk-heading-line uk-text-center"><span>Hypertext Markup Language</span></h1>
-          <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center">
-            <li><a href="html.html">Introduction</a></li>
-            <li class="uk-active"><a href="versions.html">Versions</a></li>
-            <li><a href="preprocessors.html">HTML Preprocessors</a></li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html">HTML</h2>
-          <ul>
-            <li>Developed by Tim Berners-Lee</li>
-            <li>Debuted in 1991</li>
-            <li>Originally developed as a tool to build the WWW</li>
-            <li>Based from the Standardized General Markup Language (SGML)</li>
-            <li>This version was far more limiting than what we have now, for all it can do was just to display texts up on the web.
-            </li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-20">HTML 2.0</h2>
-          <ul>
-            <li>Published in November, 1995</li>
-            <li>Created to be a web standard, defining what the language can offer developers.</li>
-            <li>A few new features were added</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-30">HTML 3.0</h2>
-          <ul>
-            <li>A set of standards proposed for it offers such a great shift from HTML 2.0, that web browsers would find it hard to utilize.</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-32">HTML 3.2</h2>
-          <ul>
-            <li>Released in January 14, 1997</li>
-            <li>The first version of HTML to be released as a W3C Recommendation</li>
-            <li>Contained several tags and attributes for the presentational aspect of the web pages</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-40">HTML 4.0</h2>
-          <ul>
-            <li>Released in December, 1997</li>
-            <li>Styling tags and attributes were deprecated</li>
-            <li>Provided tags for stylesheets, scripts, frames, embedded objects, richer tables, enhanced forms, and improved accessibility features for people with disabilities.</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-401">HTML 4.01</h2>
-          <ul>
-            <li>Published in December, 1999</li>
-            <li>Revised version of HTML 4.0.</li>
-            <li>New attributes were added and previous errors were corrected</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="xhtml">XHTML</h2>
-          <ul>
-            <li>Became a standard in January, 2000</li>
-            <li>An XML-based language</li>
-            <li>A stricter version of HTML that centered on the adherence to standards and semantics </li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-50">HTML 5.0</h2>
-          <ul>
-            <li>Released in October, 2014</li>
-            <li>Created with the motivation of evolving HTML 4.01 rather than replacing it with XHTML</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-51">HTML 5.1</h2>
-          <ul>
-            <li>Released in November, 2016</li>
-            <li>The elements details and summary allows author to present information which users can choose whether to read or not.</li>
-            <li>Header and footer elements can be nested.</li>
-            <li>The figcaption element can appear anywhere within a figure.</li>
-            <li>Some of the features removed are command and the usemap attribute on objects.</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-living-standard">HTML Living Standard</h2>
-          <ul>
-            <li>In 2011, the <b>Web Hypertext Application Technology Working Group</b>, or WHATWG, split up with W3C after years of working together because of the group's differing goals: W3C wanted to bring-out a "<i>finished</i>" version of HTML5, while WHATWG wanted a progressive version, hence the birth of HTML Living Standard.</li>
-          </ul>
-          <hr>
-          <h2 class="uk-h4" id="html-52">HTML 5.2</h2>
-          <ul>
-            <li>Published in December, 2017</li>
-            <li>The toolbar type for menu and element dialog was removed from HTML 5.1 due to lack of implementation, and may be removed from HTML 5.2 if not implemented.</li>
-            <li>This is also the same for registerContentHandler(), isContentHandlerRegistered(), isProtocolHandlerRegistered(), and datetime value for type.</li>
-          </ul>
-          <hr>
-          <ul class="uk-pagination">
-            <li><a href="../url.html"><span class="uk-margin-small-right" uk-pagination-previous></span> URL</a></li>
-            <li class="uk-margin-auto-left"><a href="#">Prelim Quiz <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-          </ul>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-heading-line uk-text-center"><span>Hypertext Markup Language</span></h1>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center">
+                    <li><a href="html.html">Introduction</a></li>
+                    <li class="uk-active"><a href="versions.html">Versions</a></li>
+                    <li><a href="preprocessors.html">HTML Preprocessors</a></li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html">HTML</h2>
+                <ul>
+                    <li>Developed by Tim Berners-Lee</li>
+                    <li>Debuted in 1991</li>
+                    <li>Originally developed as a tool to build the WWW</li>
+                    <li>Based from the Standardized General Markup Language (SGML)</li>
+                    <li>This version was far more limiting than what we have now, for all it can do was just to display
+                        texts up on the web.
+                    </li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-20">HTML 2.0</h2>
+                <ul>
+                    <li>Published in November, 1995</li>
+                    <li>Created to be a web standard, defining what the language can offer developers.</li>
+                    <li>A few new features were added</li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-30">HTML 3.0</h2>
+                <ul>
+                    <li>A set of standards proposed for it offers such a great shift from HTML 2.0, that web browsers
+                        would find it hard to utilize.
+                    </li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-32">HTML 3.2</h2>
+                <ul>
+                    <li>Released in January 14, 1997</li>
+                    <li>The first version of HTML to be released as a W3C Recommendation</li>
+                    <li>Contained several tags and attributes for the presentational aspect of the web pages</li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-40">HTML 4.0</h2>
+                <ul>
+                    <li>Released in December, 1997</li>
+                    <li>Styling tags and attributes were deprecated</li>
+                    <li>Provided tags for stylesheets, scripts, frames, embedded objects, richer tables, enhanced forms,
+                        and improved accessibility features for people with disabilities.
+                    </li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-401">HTML 4.01</h2>
+                <ul>
+                    <li>Published in December, 1999</li>
+                    <li>Revised version of HTML 4.0.</li>
+                    <li>New attributes were added and previous errors were corrected</li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="xhtml">XHTML</h2>
+                <ul>
+                    <li>Became a standard in January, 2000</li>
+                    <li>An XML-based language</li>
+                    <li>A stricter version of HTML that centered on the adherence to standards and semantics</li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-50">HTML 5.0</h2>
+                <ul>
+                    <li>Released in October, 2014</li>
+                    <li>Created with the motivation of evolving HTML 4.01 rather than replacing it with XHTML</li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-51">HTML 5.1</h2>
+                <ul>
+                    <li>Released in November, 2016</li>
+                    <li>The elements details and summary allows author to present information which users can choose
+                        whether to read or not.
+                    </li>
+                    <li>Header and footer elements can be nested.</li>
+                    <li>The figcaption element can appear anywhere within a figure.</li>
+                    <li>Some of the features removed are command and the usemap attribute on objects.</li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-living-standard">HTML Living Standard</h2>
+                <ul>
+                    <li>In 2011, the <b>Web Hypertext Application Technology Working Group</b>, or WHATWG, split up with
+                        W3C after years of working together because of the group's differing goals: W3C wanted to
+                        bring-out a "<i>finished</i>" version of HTML5, while WHATWG wanted a progressive version, hence
+                        the birth of HTML Living Standard.
+                    </li>
+                </ul>
+                <hr>
+                <h2 class="uk-h4" id="html-52">HTML 5.2</h2>
+                <ul>
+                    <li>Published in December, 2017</li>
+                    <li>The toolbar type for menu and element dialog was removed from HTML 5.1 due to lack of
+                        implementation, and may be removed from HTML 5.2 if not implemented.
+                    </li>
+                    <li>This is also the same for registerContentHandler(), isContentHandlerRegistered(),
+                        isProtocolHandlerRegistered(), and datetime value for type.
+                    </li>
+                </ul>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="../url.html"><span class="uk-margin-small-right" uk-pagination-previous></span> URL</a>
+                    </li>
+                    <li class="uk-margin-auto-left"><a href="#">Prelim Quiz <span class="uk-margin-small-left"
+                                                                                  uk-pagination-next></span></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="uk-width-1-6@m uk-visible@m">
-        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
-            <li><a href="#html" offset="100">HTML</a></li>
-            <li><a href="#html-20" offset="100">HTML 2.0</a></li>
-            <li><a href="#html-30" offset="100">HTML 3.0</a></li>
-            <li><a href="#html-32" offset="100">HTML 3.2</a></li>
-            <li><a href="#html-40" offset="100">HTML 4.0</a></li>
-            <li><a href="#html-401" offset="100">HTML 4.01</a></li>
-            <li><a href="#xhtml" offset="100">XHTML</a></li>
-            <li><a href="#html-50" offset="100">HTML 5.0</a></li>
-            <li><a href="#html-51" offset="100">HTML 5.1</a></li>
-            <li><a href="#html-living-standard" offset="100">HTML Living Standard</a></li>
-            <li><a href="#html-52" offset="100">HTML 5.2</a></li>
-          </ul>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:150">
+                    <li><a href="#html" offset="100">HTML</a></li>
+                    <li><a href="#html-20" offset="100">HTML 2.0</a></li>
+                    <li><a href="#html-30" offset="100">HTML 3.0</a></li>
+                    <li><a href="#html-32" offset="100">HTML 3.2</a></li>
+                    <li><a href="#html-40" offset="100">HTML 4.0</a></li>
+                    <li><a href="#html-401" offset="100">HTML 4.01</a></li>
+                    <li><a href="#xhtml" offset="100">XHTML</a></li>
+                    <li><a href="#html-50" offset="100">HTML 5.0</a></li>
+                    <li><a href="#html-51" offset="100">HTML 5.1</a></li>
+                    <li><a href="#html-living-standard" offset="100">HTML Living Standard</a></li>
+                    <li><a href="#html-52" offset="100">HTML 5.2</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
-  </div>
+</div>
 </body>
 
 </html>
