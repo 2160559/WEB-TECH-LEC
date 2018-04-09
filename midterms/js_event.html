@@ -108,8 +108,8 @@
         </div>
         <div class="uk-width-2-3@m uk-width-1-1@s">
             <div class="uk-card uk-card-default uk-card-body">
-                <h1 class="uk-heading-line uk-text-center"><span>JavaScript Event Handling</span></h1>
-                <h2>Events</h2>
+                <h2 class="uk-heading-line uk-text-center"><span>JavaScript Event Handling</span></h2>
+                <h3>Events</h3>
                 <p>
                <b>Events</b>  are basically actions that the user makes in order to interact with the web page which, in turn, signals the browser to make dynamic changes within the page. Some examples of these include: mouse clicks over certain elements, keyboard presses, occurrences of errors and others. After events are signaled, a function that is usually user defined, called an <b>event handler</b> (or <b>event listeners</b>) runs in response to it. When this function is defined, it is called <b> event registration</b> (MDN webdocs).</p>
 
@@ -162,7 +162,7 @@
             <li>There is an optional boolean parameter that specifies the propagation order to be either capturing or bubbling in which case by default it is for bubbling (false or empty).</li>
             </ul>
             
-            <h2>Event Propagation Order for DOM-compliant browsers</h2>
+            <h3>Event Propagation Order for DOM-compliant browsers</h3>
             <p>The Event Propagation Order is the order in which the event handlers are called according to the nesting of the elements in the HTML.</p>
             <ol>
             <li>
@@ -171,7 +171,7 @@
             <li>	At Target Phase – the at target phase is where propagation is already at the event target element and all registered listeners will be invoked.</li>
             <li>	Bubbling Phase – the bubbling phase is where the propagation occurs from the event target element to the window. This is implemented when the third parameter of the addEventListener() function is false or if it has no third parameter which, by default, means that it is false.</li>
             </ol>
-            <h2>Event Registration</h2>
+            <h3>Event Registration</h3>
             <ol>
                 <li>	Inline HTML – non-standard, universally supported, not recommended  <br>
                 e.g. &lt;button onclick="this.innerHTML = Date()"&gt;Time&lt;/button&gt;</li> <br>
