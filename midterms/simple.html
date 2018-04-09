@@ -80,7 +80,9 @@
             <div class="uk-card uk-card-default uk-card-body">
                 <h1 class="uk-h2 uk-heading-line uk-text-center"><span>CSS Selectors Level 3</span></h1>
                 <p>
-                    Selectors are <a href="#patterns">patterns</a> that are used in CSS to select an <a href="#element">element</a> in an XML or HTML file and specify a style for the selected elements.
+                    Selectors are <a href="#patterns" offset="100">patterns</a> that are used in CSS to select an <a
+                        href="#element" offset="100">element</a>
+                    in an XML or HTML file and specify a style for the selected elements.
                 </p>
                 <h2 id="element" class="uk-h3">Element</h2>
                 <p>An element usually consist of a start tag, its content, and its corresponding end tag.</p>
@@ -90,16 +92,21 @@
                 <p>
                     <code>&lt;p&gt;</code>Enter a paragraph<code>&lt;/p&gt;</code>
                 </p>
-                <h2 id="patterns" class="uk-h3">Followed Patterns</h2>
+                <h2 id="patterns" class="uk-h3">Followed Patterns from W3C</h2>
                 <p>
-                    One or more sequence of simple selectors separated by combinators and an optional pseudo-element that may be appended to the last sequence of the simple selector. <a href="pseudo.html">Pseudo elements</a> are used to select contents of an element.
+                    One or more sequence of simple selectors separated by combinators and an optional pseudo-element
+                    that may be appended to the last sequence of the simple selector. <a href="pseudo.html">Pseudo
+                    elements</a> are used to select contents of an element.
                 </p>
                 <h3 class="uk-h4">Simple Selectors</h3>
                 <p>
-                    A sequence of simple selectors is a chain of simple selectors that are not separated by a combinator. It always begins with a type selector or a universal selector. No other type selector or universal selector is allowed in the sequence. (W3C Candidate Recommendation)
+                    A sequence of simple selectors is a chain of simple selectors that are not separated by a
+                    combinator. It always begins with a type selector or a universal selector. No other type selector or
+                    universal selector is allowed in the sequence. (W3C Candidate Recommendation)
                 </p>
                 <p>
-                    A simple selector is either a type selector, universal selector, attribute selector, class selector, ID selector, or pseudo-class.
+                    A simple selector is either a type selector, universal selector, attribute selector, class selector,
+                    ID selector, or pseudo-class.
                 </p>
                 <h3 class="uk-h4">Combinators</h3>
                 <p>The following may be used as a combinator:</p>
@@ -110,9 +117,11 @@
                     <li>~</li>
                 </ul>
                 <p class="notebox">
-                    Only the characters "space" (U+0020), "tab" (U+0009), "line feed" (U+000A), "carriage return" (U+000D), and "form feed" (U+000C) can occur in whitespace. Other space-like characters, such as "em-space" (U+2003) and "ideographic space" (U+3000), are never part of whitespace.
+                    Only the characters "space" (U+0020), "tab" (U+0009), "line feed" (U+000A), "carriage return"
+                    (U+000D), and "form feed" (U+000C) can occur in whitespace. Other space-like characters, such as
+                    "em-space" (U+2003) and "ideographic space" (U+3000), are never part of whitespace.
                 </p>
-                <h3 class="uk-h4">Invalid Selector</h3>
+                <h3 class="uk-h4">Invalid Selector</h3><span id="simple"></span>
                 <p>
                     An empty selector, containing no sequence of simple selectors and no pseudo-element.
                 </p>
@@ -138,7 +147,7 @@
                     <dd>
                         Use: Selects all the elements that have the specified class attribute preceded by <code>.</code><br>
                         Syntax: <code>.</code>classname<br>
-                        Example: <code>.</code>classname will match all elements that have a class name:  "classname"
+                        Example: <code>.</code>classname will match all elements that have a class name: "classname"
                     </dd>
                     <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">ID Selector</span></dt>
                     <dd>
@@ -156,19 +165,23 @@
                     <dd>
                         Use: Selects all elements matching the given attribute name<br>
                         Syntax: <code>a[</code>attributename<code>]</code><br>
-                        Example: <code>a[</code>attributename<code>]</code> selects an element with an attribute name: "attributename"
+                        Example: <code>a[</code>attributename<code>]</code> selects an element with an attribute name:
+                        "attributename"
                     </dd>
                     <dt class="uk-text-capitalize" id=""><span class="uk-text-lead">Pseudo-Classes</span></dt>
                     <dd>
                         <ol type="a">
                             <li>
-                                <b>Dynamic Pseudo-Classes</b> – classify elements on characteristics other than their name, attributes, or content.
+                                <b>Dynamic Pseudo-Classes</b> – classify elements on characteristics other than their
+                                name, attributes, or content.
                                 <ul>
                                     <li>
-                                        <i>Link Pseudo-Classes</i> – displays links depending on whether it is visited or not.
+                                        <i>Link Pseudo-Classes</i> – displays links depending on whether it is visited
+                                        or not.
                                     </li>
                                     <li>
-                                        <i>User Action Pseudo-Classes</i> – changes rendering in response to user actions.
+                                        <i>User Action Pseudo-Classes</i> – changes rendering in response to user
+                                        actions.
                                     </li>
                                 </ul>
                             </li>
@@ -184,10 +197,12 @@
                                 </ul>
                             </li>
                             <li>
-                                <b>UI Element States Pseudo-Classes</b> – selects an element depending on the state of that element.
+                                <b>UI Element States Pseudo-Classes</b> – selects an element depending on the state of
+                                that element.
                             </li>
                             <li>
-                                <b>Structural Pseudo-Classes</b> – selects elements based on extra information that cannot be represented by other simple selectors or combinators
+                                <b>Structural Pseudo-Classes</b> – selects elements based on extra information that
+                                cannot be represented by other simple selectors or combinators
                             </li>
                         </ol>
                     </dd>
@@ -196,7 +211,8 @@
                 <ul class="uk-pagination">
                     <li><a href="introduction.html"><span class="uk-margin-small-right" uk-pagination-previous></span>Introduction</a>
                     </li>
-                    <li class="uk-margin-auto-left"><a href="cascade.html">CSS Cascade<span class="uk-margin-small-left uk-pagination-next"></span></a>
+                    <li class="uk-margin-auto-left"><a href="cascade.html">CSS Cascade<span
+                            class="uk-margin-small-left uk-pagination-next"></span></a>
                     </li>
                 </ul>
             </div>
