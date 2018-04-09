@@ -99,42 +99,38 @@
         </div>
         <div class="uk-width-2-3@m uk-width-1-1@s">
             <div class="uk-card uk-card-default uk-card-body">
-                <h1 class="uk-heading-line uk-text-center"><span>JavaScript Promises</span></h1>
+                <h1 class="uk-h2 uk-heading-line uk-text-center"><span>JavaScript Promises</span></h1>
                 <p>
-                    The Promise object represents the eventual completion or failure of an asynchronous operation, and its resulting value (MDN). Basically, it tells that it is going to perform a certain but it doesn’t tell when it will execute the operation.</p>
+                    The Promise object represents the eventual <b>completion</b> or <b>failure</b> of an asynchronous operation, and its resulting value (MDN). Basically, it tells that it is going to perform a certain but it doesn’t tell when it will execute the operation.
+                </p>
                 <p>
-                How to create a promise : 
-                <br>
-                To create a promise, the Promise object is used. </p>
-                <pre>
-                &lt;script&gt;
-                    var promise= new Promise(
-                        function(resolve,reject) {
-                            //do something asynchronous
-                            resolve(result) //success
-                            reject(error)//failure
-                        }
-                        )       
-                                    //to use the promise
-                        promise().then(success, failure);
+                   To create a promise, the <code>Promise</code> object is used.
+                </p>
+                <pre>&lt;script&gt;
+    var promise= new Promise(
+    function(resolve,reject) {
+            //do something asynchronous
+    resolve(result) //success
+    reject(error)//failure
+    }
+)       
 
-                        function success(result){
-                            //statements
-                        }
-                        function failure(result){
-                    //statements	
-                    }
+promise().then(success, failure); //to use the promise
 
-	            &lt;/script&gt;
-               </pre>
+function success(result){
+    //statements
+}
+function failure(result){
+    //statements	
+}
+&lt;/script&gt;</pre>
                 <p>
-                Promises may also be implemented this way :</p>
-                    <pre> promise()then(//arguments).then(//arguments).then(//arguments)</pre>
-                
-
-                Note: Information provided are from lecture notes.
-	
-
+                    Promises may also be implemented this way:
+                </p>
+                <code>promise()then(//arguments).then(//arguments).then(//arguments)</code>
+                <p class="notebox">
+                    Information provided are from lecture notes.
+                </p>
                 <hr>
                   <ul class="uk-pagination">
                     <li><a href="js_event.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript Event Handling </a></li>
