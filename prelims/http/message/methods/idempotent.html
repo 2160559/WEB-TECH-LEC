@@ -2,166 +2,187 @@
 <html>
 
 <head>
-	<title>HTTP Message</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../../../../css/uikit.min.css" />
-	<script src="../../../../js/uikit.min.js"></script>
-	<script src="../../../../js/uikit-icons.min.js"></script>
+    <title>HTTP Message</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../css/uikit.min.css"/>
+    <script src="../../../../js/uikit.min.js"></script>
+    <script src="../../../../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-	<nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-		<div class="uk-navbar-left uk-margin-large-left">
-			<a class="uk-navbar-item uk-logo" href="../../../../index.html">WebTech 2018</a>
-		</div>
-		<div class="uk-navbar-right uk-margin-xlarge-right">
-			<ul class="uk-navbar-nav">
-				<li class="uk-active">
-					<a class="uk-button uk-button-text" href="../../../prelims.html">Preliminaries</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="../../../overview.html">Overview</a></li>
-							<li><a href="../../../www.html">World Wide Web</a></li>
-							<li class="uk-active uk-parent">
-								<a href="../../http.html">HTTP</a>
-								<ul class="uk-nav-sub">
-									<li><a href="../../http.html">Introduction</a></li>
-									<li><a href="../../evolution.html">Version/Evolution</a></li>
-									<li><a href="../types.html">Message</a></li>
-									<li class="uk-active"><a href="../../features/authentication.html">Features</a></li>
-								</ul>
-							</li>
-							<li><a href="../../../url.html">URL</a></li>
-							<li><a href="../../../html/html.html">HTML</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="../../../references.html">References</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a class="uk-button uk-button-text" href="../../../../midterms/midterms.html">Midterms</a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-							<li><a href="../../../../midterms/css.html">CSS</a></li>
-							<li><a href="#">CSWS</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">Quiz</a></li>
-							<li class="uk-nav-divider"></li>
-							<li><a href="#">References</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
-		<div class="uk-grid-collapse uk-padding " uk-grid>
-			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-					<ul class="uk-nav uk-nav-default">
-						<li><a href="../../../overview.html">Overview</a></li>
-						<li><a href="../../../www.html">World Wide Web</a></li>
-						<li class="uk-parent uk-active">
-							<a href="../../http.html">HTTP</a>
-							<ul class="uk-nav-sub">
-								<li><a href="../../http.html">Introduction</a></li>
-								<li><a href="../../evolution.html">Version/Evolution</a></li>
-								<li><a href="../types.html">Message</a></li>
-								<li><a href="../../features/authentication.html">Features</a></li>
-							</ul>
-						</li>
-						<li><a href="../../../url.html">URL</a></li>
-						<li><a href="../../../html/html.html">HTML</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="uk-width-2-3@m uk-width-1-1@s">
-				<div class="uk-card uk-card-default uk-card-body">
-					<h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
-					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-						<li><a href="../types.html">Message Types</a></li>
-						<li><a href="../headers/general.html">Message Headers</a></li>
-						<li><a href="../codes/information.html">HTTP Status Codes</a></li>
-						<li class="uk-active"><a href="request.html">HTTP Methods</a></li>
-					</ul>
-					<hr class="uk-divider-icon">
-					<ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
-						<li><a href="request.html">HTTP Request Methods</a></li>
-						<li><a href="safe.html">Safe Methods</a></li>
-						<li class="uk-active"><a href="idempotent.html">Idempotent Methods</a></li>
-						<li><a href="cacheable.html">Cacheable Methods</a></li>
-					</ul>
-					<p class="uk-text-large">Idempotent Methods are methods that can be called multiple times without having different outcomes. If the method is called many times, the result should be the same.</p>
-					<hr>
-					<dl class="uk-description-list uk-description-list-divider">
-						<dt id="put"><h4 class="uk-heading-bullet">PUT</h4></dt>
-						<dd>
-							<p>Creates/replaces a representation of the target resource enclosed in a request payload. It is possible that this method can create side effects in the server.</p>
-							<p>“Requests that the state of the target resource be created or replaced with the state defined by the representation enclosed in the request payload.” </p>
-							<p class="uk-margin-left">NOTE: The difference between the POST and PUT methods is that PUT is idempotent. This means that calling the method repeatedly does the same exact effect whereas the POST method, being not idempotent, may cause additional effects when repeatedly called, otherwise known as a side effect.</p>
-							<p>Syntax:<code>PUT /newExample.html HTTP/1.1</code></p>
-						</dd>
-						<dt id="delete"><h4 class="uk-heading-bullet">DELETE</h4></dt>
-						<dd>
-							<p>Deletes a specified resource in the original server </p>
-							<p>“RFC 7231: ‘Requests that the origin server remove the association between the target resource and its current functionality.” </p>
-							<p>Syntax:<code>DELETE /oldExample.html HTTP/1.1</code></p>
-						</dd>
-						<dt id="get"><h4 class="uk-heading-bullet">GET</h4></dt>
-						<dd>
-							<p>Retrieves information identified by the Request-URI in a form of an entity.</p>
-							<p>The primary way of retrieving information and resources. It ‘request transfer of a current selected representation for a target resource’.
-							</p>
-							<p>Syntax:<code>GET /example/index.html</code></p>
-						</dd>
-						<dt id="head"><h4 class="uk-heading-bullet">HEAD</h4></dt>
-						<dd>
-							<p>It is the same as the GET method except that the server must not return the payload in the response. Instead, it only return the headers much like if it had been a Get method. </p>
-							<p>In other words, it returns the metadata of the response.</p>
-							<p>Syntax:<code>HEAD /example/index.html</code></p>
-						</dd>
-						<dt id="options"><h4 class="uk-heading-bullet">OPTIONS</h4></dt>
-						<dd>
-							<p>Requests information about the communications options available for the target resource but does not specify a resource action.</p>
-							<p>Syntax:<code>OPTIONS /example/index.html HTTP/1.1 </code></p>
-							<p class="uk-margin-left"><code>OPTIONS * HTTP/1.1</code>(refers to the entire server)</p>
-						</dd>
-						<dt id="trace"><h4 class="uk-heading-bullet">TRACE</h4></dt>
-						<dd>
-							<p>Requests a remote, application-level loop-back test of the request message along the path to the target resource. </p>
-							<p>Syntax:<code>TRACE http://www.example.com  HTTP/1.1</code></p>
-						</dd>
-					</dl>
-					<hr>
-					<ul class="uk-pagination">
-						<li><a href="../../evolution.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
-					Evolution</a></li>
-						<li class="uk-margin-auto-left"><a href="../../features/authentication.html">HTTP Features <span
-						class="uk-margin-small-left" uk-pagination-next></span></a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="uk-width-1-6@m uk-visible@m">
-				<div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-					<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
-						<li><a href="#put" offset="100">PUT</a></li>
-						<li><a href="#delete" offset="75">DELETE</a></li>
-						<li><a href="#get" offset="75">GET</a></li>
-						<li><a href="#head" offset="75">HEAD</a></li>
-						<li><a href="#options" offset="75">OPTIONS</a></li>
-						<li><a href="#trace" offset="75">TRACE</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
-		9325A 1-2 TF Group 1
-		<br> &copy; March 2018
-	</div>
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../../../../index.html">WebTech 2018</a>
+    </div>
+    <div class="uk-navbar-right uk-margin-xlarge-right">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../../../prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../../../overview.html">Overview</a></li>
+                        <li><a href="../../../www.html">World Wide Web</a></li>
+                        <li class="uk-active uk-parent">
+                            <a href="../../http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="../../http.html">Introduction</a></li>
+                                <li><a href="../../evolution.html">Version/Evolution</a></li>
+                                <li><a href="../types.html">Message</a></li>
+                                <li class="uk-active"><a href="../../features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../../url.html">URL</a></li>
+                        <li><a href="../../../html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../../../references.html">References</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="uk-button uk-button-text" href="../../../../midterms/midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent">
+                            <a href="../../../../midterms/css.html">CSS</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="../../../../midterms/css.html">Introduction</a></li>
+                                <li><a href="../../../../midterms/selectors.html">CSS Selectors</a></li>
+                                <li><a href="../../../../midterms/cascade.html">CSS Cascade</a></li>
+                                <li><a href="../../../../midterms/declaration.html">CSS Declaration</a></li>
+                                <li><a href="../../../../midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="../../../overview.html">Overview</a></li>
+                    <li><a href="../../../www.html">World Wide Web</a></li>
+                    <li class="uk-parent uk-active">
+                        <a href="../../http.html">HTTP</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../../http.html">Introduction</a></li>
+                            <li><a href="../../evolution.html">Version/Evolution</a></li>
+                            <li><a href="../types.html">Message</a></li>
+                            <li><a href="../../features/authentication.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../url.html">URL</a></li>
+                    <li><a href="../../../html/html.html">HTML</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li><a href="../types.html">Message Types</a></li>
+                    <li><a href="../headers/general.html">Message Headers</a></li>
+                    <li><a href="../codes/information.html">HTTP Status Codes</a></li>
+                    <li class="uk-active"><a href="request.html">HTTP Methods</a></li>
+                </ul>
+                <hr class="uk-divider-icon">
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center uk-margin">
+                    <li><a href="request.html">HTTP Request Methods</a></li>
+                    <li><a href="safe.html">Safe Methods</a></li>
+                    <li class="uk-active"><a href="idempotent.html">Idempotent Methods</a></li>
+                    <li><a href="cacheable.html">Cacheable Methods</a></li>
+                </ul>
+                <p class="uk-text-large">Idempotent Methods are methods that can be called multiple times without having
+                    different outcomes. If the method is called many times, the result should be the same.</p>
+                <hr>
+                <dl class="uk-description-list uk-description-list-divider">
+                    <dt id="put"><h4 class="uk-heading-bullet">PUT</h4></dt>
+                    <dd>
+                        <p>Creates/replaces a representation of the target resource enclosed in a request payload. It is
+                            possible that this method can create side effects in the server.</p>
+                        <p>“Requests that the state of the target resource be created or replaced with the state defined
+                            by the representation enclosed in the request payload.” </p>
+                        <p class="uk-margin-left">NOTE: The difference between the POST and PUT methods is that PUT is
+                            idempotent. This means that calling the method repeatedly does the same exact effect whereas
+                            the POST method, being not idempotent, may cause additional effects when repeatedly called,
+                            otherwise known as a side effect.</p>
+                        <p>Syntax:<code>PUT /newExample.html HTTP/1.1</code></p>
+                    </dd>
+                    <dt id="delete"><h4 class="uk-heading-bullet">DELETE</h4></dt>
+                    <dd>
+                        <p>Deletes a specified resource in the original server </p>
+                        <p>“RFC 7231: ‘Requests that the origin server remove the association between the target
+                            resource and its current functionality.” </p>
+                        <p>Syntax:<code>DELETE /oldExample.html HTTP/1.1</code></p>
+                    </dd>
+                    <dt id="get"><h4 class="uk-heading-bullet">GET</h4></dt>
+                    <dd>
+                        <p>Retrieves information identified by the Request-URI in a form of an entity.</p>
+                        <p>The primary way of retrieving information and resources. It ‘request transfer of a current
+                            selected representation for a target resource’.
+                        </p>
+                        <p>Syntax:<code>GET /example/index.html</code></p>
+                    </dd>
+                    <dt id="head"><h4 class="uk-heading-bullet">HEAD</h4></dt>
+                    <dd>
+                        <p>It is the same as the GET method except that the server must not return the payload in the
+                            response. Instead, it only return the headers much like if it had been a Get method. </p>
+                        <p>In other words, it returns the metadata of the response.</p>
+                        <p>Syntax:<code>HEAD /example/index.html</code></p>
+                    </dd>
+                    <dt id="options"><h4 class="uk-heading-bullet">OPTIONS</h4></dt>
+                    <dd>
+                        <p>Requests information about the communications options available for the target resource but
+                            does not specify a resource action.</p>
+                        <p>Syntax:<code>OPTIONS /example/index.html HTTP/1.1 </code></p>
+                        <p class="uk-margin-left"><code>OPTIONS * HTTP/1.1</code>(refers to the entire server)</p>
+                    </dd>
+                    <dt id="trace"><h4 class="uk-heading-bullet">TRACE</h4></dt>
+                    <dd>
+                        <p>Requests a remote, application-level loop-back test of the request message along the path to
+                            the target resource. </p>
+                        <p>Syntax:<code>TRACE http://www.example.com HTTP/1.1</code></p>
+                    </dd>
+                </dl>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="../../evolution.html"><span class="uk-margin-small-right"
+                                                             uk-pagination-previous></span> HTTP
+                        Evolution</a></li>
+                    <li class="uk-margin-auto-left"><a href="../../features/authentication.html">HTTP Features <span
+                            class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
+                    <li><a href="#put" offset="100">PUT</a></li>
+                    <li><a href="#delete" offset="75">DELETE</a></li>
+                    <li><a href="#get" offset="75">GET</a></li>
+                    <li><a href="#head" offset="75">HEAD</a></li>
+                    <li><a href="#options" offset="75">OPTIONS</a></li>
+                    <li><a href="#trace" offset="75">TRACE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+    9325A 1-2 TF Group 1
+    <br> &copy; March 2018
+</div>
 </body>
 
 </html>

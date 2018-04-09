@@ -2,94 +2,105 @@
 <html>
 
 <head>
-  <title>HTTP Message</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../../../css/uikit.min.css" />
-  <script src="../../../../js/uikit.min.js"></script>
-  <script src="../../../../js/uikit-icons.min.js"></script>
+    <title>HTTP Message</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../../css/uikit.min.css"/>
+    <script src="../../../../js/uikit.min.js"></script>
+    <script src="../../../../js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <nav class="uk-panel uk-background-secondary uk-light" uk-navbar uk-sticky>
-    <div class="uk-navbar-left uk-margin-large-left">
-      <a class="uk-navbar-item uk-logo" href="../../../../index.html">WebTech 2018</a>
+<nav class="uk-panel uk-background-secondary" uk-navbar uk-sticky>
+    <div class="uk-navbar-left uk-margin-large-left uk-light">
+        <a class="uk-navbar-item uk-logo" href="../../../../index.html">WebTech 2018</a>
     </div>
     <div class="uk-navbar-right uk-margin-xlarge-right">
-      <ul class="uk-navbar-nav">
-        <li class="uk-active">
-          <a class="uk-button uk-button-text" href="../../../prelims.html">Preliminaries</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../../../overview.html">Overview</a></li>
-              <li><a href="../../../www.html">World Wide Web</a></li>
-              <li class="uk-active uk-parent">
-                <a href="../../http.html">HTTP</a>
-                <ul class="uk-nav-sub">
-                  <li><a href="../../http.html">Introduction</a></li>
-                  <li><a href="../../evolution.html">Version/Evolution</a></li>
-                  <li><a href="../types.html">Message</a></li>
-                  <li class="uk-active"><a href="../../features/authentication.html">Features</a></li>
-                </ul>
-              </li>
-              <li><a href="../../../url.html">URL</a></li>
-              <li><a href="../../../html/html.html">HTML</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="../../../references.html">References</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a class="uk-button uk-button-text" href="../../../../midterms/midterms.html">Midterms</a>
-          <div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-              <li><a href="../../../../midterms/css.html">CSS</a></li>
-              <li><a href="#">CSWS</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">Quiz</a></li>
-              <li class="uk-nav-divider"></li>
-              <li><a href="#">References</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
-    <div class="uk-grid-collapse uk-padding " uk-grid>
-      <div class="uk-width-1-6@m uk-visible@m">
-        <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
-          <ul class="uk-nav uk-nav-default">
-            <li><a href="../../../overview.html">Overview</a></li>
-            <li><a href="../../../www.html">World Wide Web</a></li>
-            <li class="uk-parent uk-active">
-              <a href="../../http.html">HTTP</a>
-              <ul class="uk-nav-sub">
-                <li><a href="../../http.html">Introduction</a></li>
-                <li><a href="../../evolution.html">Version/Evolution</a></li>
-                <li><a href="../types.html">Message</a></li>
-                <li><a href="../../features/authentication.html">Features</a></li>
-              </ul>
+        <ul class="uk-navbar-nav">
+            <li>
+                <a class="uk-button uk-button-text" href="../../../prelims.html">Preliminaries</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li><a href="../../../overview.html">Overview</a></li>
+                        <li><a href="../../../www.html">World Wide Web</a></li>
+                        <li class="uk-active uk-parent">
+                            <a href="../../http.html">HTTP</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="../../http.html">Introduction</a></li>
+                                <li><a href="../../evolution.html">Version/Evolution</a></li>
+                                <li><a href="../types.html">Message</a></li>
+                                <li class="uk-active"><a href="../../features/authentication.html">Features</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../../url.html">URL</a></li>
+                        <li><a href="../../../html/html.html">HTML</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="../../../references.html">References</a></li>
+                    </ul>
+                </div>
             </li>
-            <li><a href="../../../url.html">URL</a></li>
-            <li><a href="../../../html/html.html">HTML</a></li>
-          </ul>
+            <li>
+                <a class="uk-button uk-button-text" href="../../../../midterms/midterms.html">Midterms</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
+                        <li class="uk-parent">
+                            <a href="../../../../midterms/css.html">CSS</a>
+                            <ul class="uk-nav-sub ">
+                                <li><a href="../../../../midterms/css.html">Introduction</a></li>
+                                <li><a href="../../../../midterms/selectors.html">CSS Selectors</a></li>
+                                <li><a href="../../../../midterms/cascade.html">CSS Cascade</a></li>
+                                <li><a href="../../../../midterms/declaration.html">CSS Declaration</a></li>
+                                <li><a href="../../../../midterms/pre.html">Preprocessor, Framework, Libraries</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CSWS</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Quiz</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">References</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="uk-background-muted" uk-height-viewport="offset-top: true; offset-bottom: true">
+    <div class="uk-grid-collapse uk-padding " uk-grid>
+        <div class="uk-width-1-6@m uk-visible@m">
+            <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
+                <ul class="uk-nav uk-nav-default">
+                    <li><a href="../../../overview.html">Overview</a></li>
+                    <li><a href="../../../www.html">World Wide Web</a></li>
+                    <li class="uk-parent uk-active">
+                        <a href="../../http.html">HTTP</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="../../http.html">Introduction</a></li>
+                            <li><a href="../../evolution.html">Version/Evolution</a></li>
+                            <li><a href="../types.html">Message</a></li>
+                            <li><a href="../../features/authentication.html">Features</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../../url.html">URL</a></li>
+                    <li><a href="../../../html/html.html">HTML</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="uk-width-2-3@m uk-width-1-1@s">
-        <div class="uk-card uk-card-default uk-card-body">
-          <h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
-          <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center" uk-margin>
-            <li><a href="../types.html">Message Types</a></li>
-            <li class="uk-active"><a href="general.html">Message Headers</a></li>
-            <li><a href="../codes/information.html">HTTP Status Codes</a></li>
-            <li><a href="../methods/request.html">HTTP Methods</a></li>
-          </ul>
-          <hr class="uk-divider-icon">
-          <p>HTTP Headers allow the client and the server to pass additional information with the request or response. HTTP allows the creation of custom headers. An example is the webDAV. The format for HTTP Headers to be followed (taken from RFC 2616):</p>
-          <pre>
+        <div class="uk-width-2-3@m uk-width-1-1@s">
+            <div class="uk-card uk-card-default uk-card-body">
+                <h1 class="uk-heading-line uk-text-center"><span>HTTP Message</span></h1>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center" uk-margin>
+                    <li><a href="../types.html">Message Types</a></li>
+                    <li class="uk-active"><a href="general.html">Message Headers</a></li>
+                    <li><a href="../codes/information.html">HTTP Status Codes</a></li>
+                    <li><a href="../methods/request.html">HTTP Methods</a></li>
+                </ul>
+                <hr class="uk-divider-icon">
+                <p>HTTP Headers allow the client and the server to pass additional information with the request or
+                    response. HTTP allows the creation of custom headers. An example is the webDAV. The format for HTTP
+                    Headers to be followed (taken from RFC 2616):</p>
+                <pre>
 					<code>
 message-header = field-name ":" [ field-value ]
        field-name     = token
@@ -99,118 +110,156 @@ message-header = field-name ":" [ field-value ]
                         of token, separators, and quoted-string&gt;<span id="request"></span>
 					</code>
 				</pre>
-          <hr>
-          <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center" uk-margin>
-            <li><a href="general.html#general"> General Headers</a></li>
-            <li class="uk-active"><a href="request.html#request"> Request Headers</a></li>
-            <li><a href="response.html#response">Response Headers</a></li>
-            <li><a href="entity.html#entity">Entity Headers</a></li>
-          </ul>
-          <dl class="uk-description-list uk-description-list-divider">
-            <dt class="uk-text-capitalize" id="accept"><span class="uk-text-lead">Accept</span></dt>
-            <dd>Accept specifies what type of media are acceptable or preferred by the client.</dd>
-            <dt class="uk-text-capitalize" id="accept-charset"><span class="uk-text-lead">Accept-Charset</span></dt>
-            <dd>Accept-Charset specifies the character set preferred or understandable by the client.</dd>
-            <dt class="uk-text-capitalize" id="accept-encoding"><span class="uk-text-lead">Accept-Encoding</span></dt>
-            <dd>Accept-encoding is similar to Accept except it restricts that content encoding that can be accepted in the response.</dd>
-            <dt class="uk-text-capitalize" id="accept-language"><span class="uk-text-lead">Accept-Language</span></dt>
-            <dd>Accept-Language is similar to Accept except it restricts the set of natural languages that are preferred as a response to the request.</dd>
-            <dt class="uk-text-capitalize" id="authorization"><span class="uk-text-lead">Authorization</span></dt>
-            <dd>Authorization consists of credentials as a mean of authentication information of the user agent.</dd>
-            <dt class="uk-text-capitalize" id="expect"><span class="uk-text-lead">Expect</span></dt>
-            <dd>Expect is used to indicate that a certain set of server behavior is required and expected by the client.</dd>
-            <dt class="uk-text-capitalize" id="from"><span class="uk-text-lead">From</span></dt>
-            <dd>Form contains an Internet email address for the user who is controlling the requesting user agent.</dd>
-            <dt class="uk-text-capitalize" id="host"><span class="uk-text-lead">Host</span></dt>
-            <dd>Host is used to specify the Internet host and port number of the requested resource.</dd>
-            <dt class="uk-text-capitalize" id="if-match"><span class="uk-text-lead">If-Match</span></dt>
-            <dd>If-Match is used to perform the requested method if the given value matches the given entity tags.</dd>
-            <dt class="uk-text-capitalize" id="if-modified-since"><span class="uk-text-lead">If-Modified-Since</span></dt>
-            <dd>If-Modified-Since indicates if the requested URL is modified since the time specified in this field, the entity will not be returned from the server and a 304 response will be returned.</dd>
-            <dt class="uk-text-capitalize" id="if-none-match"><span class="uk-text-lead">If-None-Match</span></dt>
-            <dd>If-None-Match requests the server to do the requested method only if one of the given value matches the given entity tags.</dd>
-            <dt class="uk-text-capitalize" id="if-range"><span class="uk-text-lead">If-Range</span></dt>
-            <dd>If-Range can be used with a conditional GET to request a portion of the entity that is missing, if it not been changed, and the entire entity has been changed.</dd>
-            <dt class="uk-text-capitalize" id="if-unmodified-since"><span class="uk-text-lead">If-Unmodified-Since</span></dt>
-            <dd>If-Unmodified-Since indicates if the requested resource has not been modified since the time specified, the server would perform the requested operation as if this header were not present.</dd>
-            <dt class="uk-text-capitalize" id="max-forwards"><span class="uk-text-lead">Max-Forwards</span></dt>
-            <dd>Max-Forwards provides a mechanism with the TRACE and OPTIONS methods in order to limit the number of proxies or gateways that can forward the request to the next server.</dd>
-            <dt class="uk-text-capitalize" id="proxy-authorization"><span class="uk-text-lead">Proxy-Authorization</span></dt>
-            <dd>Proxy-Authorization allows the client to identify itself to a proxy in which requires authentication.</dd>
-            <dt class="uk-text-capitalize" id="range"><span class="uk-text-lead">Range</span></dt>
-            <dd>Range specifies the partial ranges of the content that has been requested from the document.</dd>
-            <dt class="uk-text-capitalize" id="referer"><span class="uk-text-lead">Referer</span></dt>
-            <dd>Referer allows the client to specify the address of the resource from which URL is requested.</dd>
-            <dt class="uk-text-capitalize" id="te"><span class="uk-text-lead">TE</span></dt>
-            <dd>TE (Transfer Encoding) indicates what extension transfer encoding the user agent is willing to accept in the response and if it is willing or not to accept the trailer fields in a chunked transfer encoding.</dd>
-            <dt class="uk-text-capitalize" id="user-agent"><span class="uk-text-lead">User-Agent</span></dt>
-            <dd>Contains information about the user agent in which where the request is originating.</dd>
-          </dl>
-          <hr>
-          <ul class="uk-pagination">
-            <li><a href="../../evolution.html"><span class="uk-margin-small-right" uk-pagination-previous></span> HTTP
-					Evolution</a></li>
-            <li class="uk-margin-auto-left"><a href="../../features/authentication.html">HTTP Features <span
-						class="uk-margin-small-left" uk-pagination-next></span></a></li>
-          </ul>
+                <hr>
+                <ul class="uk-subnav uk-subnav-divider uk-flex uk-flex-center" uk-margin>
+                    <li><a href="general.html#general"> General Headers</a></li>
+                    <li class="uk-active"><a href="request.html#request"> Request Headers</a></li>
+                    <li><a href="response.html#response">Response Headers</a></li>
+                    <li><a href="entity.html#entity">Entity Headers</a></li>
+                </ul>
+                <dl class="uk-description-list uk-description-list-divider">
+                    <dt class="uk-text-capitalize" id="accept"><span class="uk-text-lead">Accept</span></dt>
+                    <dd>Accept specifies what type of media are acceptable or preferred by the client.</dd>
+                    <dt class="uk-text-capitalize" id="accept-charset"><span class="uk-text-lead">Accept-Charset</span>
+                    </dt>
+                    <dd>Accept-Charset specifies the character set preferred or understandable by the client.</dd>
+                    <dt class="uk-text-capitalize" id="accept-encoding"><span
+                            class="uk-text-lead">Accept-Encoding</span></dt>
+                    <dd>Accept-encoding is similar to Accept except it restricts that content encoding that can be
+                        accepted in the response.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="accept-language"><span
+                            class="uk-text-lead">Accept-Language</span></dt>
+                    <dd>Accept-Language is similar to Accept except it restricts the set of natural languages that are
+                        preferred as a response to the request.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="authorization"><span class="uk-text-lead">Authorization</span>
+                    </dt>
+                    <dd>Authorization consists of credentials as a mean of authentication information of the user
+                        agent.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="expect"><span class="uk-text-lead">Expect</span></dt>
+                    <dd>Expect is used to indicate that a certain set of server behavior is required and expected by the
+                        client.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="from"><span class="uk-text-lead">From</span></dt>
+                    <dd>Form contains an Internet email address for the user who is controlling the requesting user
+                        agent.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="host"><span class="uk-text-lead">Host</span></dt>
+                    <dd>Host is used to specify the Internet host and port number of the requested resource.</dd>
+                    <dt class="uk-text-capitalize" id="if-match"><span class="uk-text-lead">If-Match</span></dt>
+                    <dd>If-Match is used to perform the requested method if the given value matches the given entity
+                        tags.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="if-modified-since"><span
+                            class="uk-text-lead">If-Modified-Since</span></dt>
+                    <dd>If-Modified-Since indicates if the requested URL is modified since the time specified in this
+                        field, the entity will not be returned from the server and a 304 response will be returned.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="if-none-match"><span class="uk-text-lead">If-None-Match</span>
+                    </dt>
+                    <dd>If-None-Match requests the server to do the requested method only if one of the given value
+                        matches the given entity tags.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="if-range"><span class="uk-text-lead">If-Range</span></dt>
+                    <dd>If-Range can be used with a conditional GET to request a portion of the entity that is missing,
+                        if it not been changed, and the entire entity has been changed.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="if-unmodified-since"><span class="uk-text-lead">If-Unmodified-Since</span>
+                    </dt>
+                    <dd>If-Unmodified-Since indicates if the requested resource has not been modified since the time
+                        specified, the server would perform the requested operation as if this header were not present.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="max-forwards"><span class="uk-text-lead">Max-Forwards</span></dt>
+                    <dd>Max-Forwards provides a mechanism with the TRACE and OPTIONS methods in order to limit the
+                        number of proxies or gateways that can forward the request to the next server.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="proxy-authorization"><span class="uk-text-lead">Proxy-Authorization</span>
+                    </dt>
+                    <dd>Proxy-Authorization allows the client to identify itself to a proxy in which requires
+                        authentication.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="range"><span class="uk-text-lead">Range</span></dt>
+                    <dd>Range specifies the partial ranges of the content that has been requested from the document.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="referer"><span class="uk-text-lead">Referer</span></dt>
+                    <dd>Referer allows the client to specify the address of the resource from which URL is requested.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="te"><span class="uk-text-lead">TE</span></dt>
+                    <dd>TE (Transfer Encoding) indicates what extension transfer encoding the user agent is willing to
+                        accept in the response and if it is willing or not to accept the trailer fields in a chunked
+                        transfer encoding.
+                    </dd>
+                    <dt class="uk-text-capitalize" id="user-agent"><span class="uk-text-lead">User-Agent</span></dt>
+                    <dd>Contains information about the user agent in which where the request is originating.</dd>
+                </dl>
+                <hr>
+                <ul class="uk-pagination">
+                    <li><a href="../../evolution.html"><span class="uk-margin-small-right"
+                                                             uk-pagination-previous></span> HTTP
+                        Evolution</a></li>
+                    <li class="uk-margin-auto-left"><a href="../../features/authentication.html">HTTP Features <span
+                            class="uk-margin-small-left" uk-pagination-next></span></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="uk-width-1-6@m uk-visible@m uk-hidden@l">
-        <div class="uk-panel uk-position-fixed uk-panel uk-panel-scrollable uk-height-large uk-margin-left">
-          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
-            <li><a href="#accept" offset="100">Accept</a></li>
-            <li><a href="#accept-charset" offset="75">Accept-Charset</a></li>
-            <li><a href="#accept-encoding" offset="75">Accept-encoding</a></li>
-            <li><a href="#accept-language" offset="75">Accept-Language</a></li>
-            <li><a href="#authorization" offset="75">Authorization</a></li>
-            <li><a href="#expect" offset="75">Expect</a></li>
-            <li><a href="#from" offset="75">From</a></li>
-            <li><a href="#host" offset="75">Host</a></li>
-            <li><a href="#if-match" offset="75">If-Match</a></li>
-            <li><a href="#if-modified-since" offset="75">If-Modified-Since</a></li>
-            <li><a href="#if-none-match" offset="75">If-None-Match</a></li>
-            <li><a href="#if-range" offset="75">If-Range</a></li>
-            <li><a href="#if-un-modified-since" offset="75">If-Unmodified-Since</a></li>
-            <li><a href="#max-forwards" offset="75">Max-Forwards</a></li>
-            <li><a href="#proxy-authorization" offset="75">Proxy-Authorization</a></li>
-            <li><a href="#range" offset="75">Range</a></li>
-            <li><a href="#referer" offset="75">Referer</a></li>
-            <li><a href="te" offset="75">TE</a></li>
-            <li><a href="#user-agent" offset="75">User-Agent</a></li>
-          </ul>
+        <div class="uk-width-1-6@m uk-visible@m uk-hidden@l">
+            <div class="uk-panel uk-position-fixed uk-panel uk-panel-scrollable uk-height-large uk-margin-left">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
+                    <li><a href="#accept" offset="100">Accept</a></li>
+                    <li><a href="#accept-charset" offset="75">Accept-Charset</a></li>
+                    <li><a href="#accept-encoding" offset="75">Accept-encoding</a></li>
+                    <li><a href="#accept-language" offset="75">Accept-Language</a></li>
+                    <li><a href="#authorization" offset="75">Authorization</a></li>
+                    <li><a href="#expect" offset="75">Expect</a></li>
+                    <li><a href="#from" offset="75">From</a></li>
+                    <li><a href="#host" offset="75">Host</a></li>
+                    <li><a href="#if-match" offset="75">If-Match</a></li>
+                    <li><a href="#if-modified-since" offset="75">If-Modified-Since</a></li>
+                    <li><a href="#if-none-match" offset="75">If-None-Match</a></li>
+                    <li><a href="#if-range" offset="75">If-Range</a></li>
+                    <li><a href="#if-un-modified-since" offset="75">If-Unmodified-Since</a></li>
+                    <li><a href="#max-forwards" offset="75">Max-Forwards</a></li>
+                    <li><a href="#proxy-authorization" offset="75">Proxy-Authorization</a></li>
+                    <li><a href="#range" offset="75">Range</a></li>
+                    <li><a href="#referer" offset="75">Referer</a></li>
+                    <li><a href="te" offset="75">TE</a></li>
+                    <li><a href="#user-agent" offset="75">User-Agent</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="uk-width-1-6@m uk-visible@l">
-        <div class="uk-container uk-flex uk-flex-middle uk-panel uk-position-fixed uk-panel">
-          <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
-            <li><a href="#accept" offset="100">Accept</a></li>
-            <li><a href="#accept-charset" offset="75">Accept-Charset</a></li>
-            <li><a href="#accept-encoding" offset="75">Accept-encoding</a></li>
-            <li><a href="#accept-language" offset="75">Accept-Language</a></li>
-            <li><a href="#authorization" offset="75">Authorization</a></li>
-            <li><a href="#expect" offset="75">Expect</a></li>
-            <li><a href="#from" offset="75">From</a></li>
-            <li><a href="#host" offset="75">Host</a></li>
-            <li><a href="#if-match" offset="75">If-Match</a></li>
-            <li><a href="#if-modified-since" offset="75">If-Modified-Since</a></li>
-            <li><a href="#if-none-match" offset="75">If-None-Match</a></li>
-            <li><a href="#if-range" offset="75">If-Range</a></li>
-            <li><a href="#if-un-modified-since" offset="75">If-Unmodified-Since</a></li>
-            <li><a href="#max-forwards" offset="75">Max-Forwards</a></li>
-            <li><a href="#proxy-authorization" offset="75">Proxy-Authorization</a></li>
-            <li><a href="#range" offset="75">Range</a></li>
-            <li><a href="#referer" offset="75">Referer</a></li>
-            <li><a href="#te" offset="75">TE</a></li>
-            <li><a href="#user-agent" offset="75">User-Agent</a></li>
-          </ul>
+        <div class="uk-width-1-6@m uk-visible@l">
+            <div class="uk-container uk-flex uk-flex-middle uk-panel uk-position-fixed uk-panel">
+                <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset:100">
+                    <li><a href="#accept" offset="100">Accept</a></li>
+                    <li><a href="#accept-charset" offset="75">Accept-Charset</a></li>
+                    <li><a href="#accept-encoding" offset="75">Accept-encoding</a></li>
+                    <li><a href="#accept-language" offset="75">Accept-Language</a></li>
+                    <li><a href="#authorization" offset="75">Authorization</a></li>
+                    <li><a href="#expect" offset="75">Expect</a></li>
+                    <li><a href="#from" offset="75">From</a></li>
+                    <li><a href="#host" offset="75">Host</a></li>
+                    <li><a href="#if-match" offset="75">If-Match</a></li>
+                    <li><a href="#if-modified-since" offset="75">If-Modified-Since</a></li>
+                    <li><a href="#if-none-match" offset="75">If-None-Match</a></li>
+                    <li><a href="#if-range" offset="75">If-Range</a></li>
+                    <li><a href="#if-un-modified-since" offset="75">If-Unmodified-Since</a></li>
+                    <li><a href="#max-forwards" offset="75">Max-Forwards</a></li>
+                    <li><a href="#proxy-authorization" offset="75">Proxy-Authorization</a></li>
+                    <li><a href="#range" offset="75">Range</a></li>
+                    <li><a href="#referer" offset="75">Referer</a></li>
+                    <li><a href="#te" offset="75">TE</a></li>
+                    <li><a href="#user-agent" offset="75">User-Agent</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
+</div>
+<div class="uk-background-secondary uk-light uk-text-center uk-margin-remove uk-padding-small uk-flex uk-flex-center">
     9325A 1-2 TF Group 1
     <br> &copy; March 2018
-  </div>
+</div>
 </body>
 
 </html>
