@@ -129,8 +129,8 @@ nav > div > a.uk-navbar-item.uk-logo {
 
 		nav > div > ul > li > a.uk-button.uk-button-text:hover {
 			color: black;
-			background: linear-gradient(to bottom, #d3cce3, #e9e4f0);
-			opacity: 0.4;
+			background: linear-gradient(to bottom, #d3cce3, #ddddff);
+			opacity: 0.5;
 		}
 
 	nav > div > ul > li > div.uk-navbar-dropdown {
@@ -181,8 +181,9 @@ body div.uk-background-muted.lesson-bg {
 }
 
 body div.uk-background-muted.lesson-bg>div>div>div>ul li a:hover {
-	background-color: #e6e6ff;
+	background-color: #f2f2ff;
 }
+
 p.notebox {
   border: 1px solid #448cff;
   padding: 1em;
