@@ -23,7 +23,7 @@
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
                         <li><a href="../prelims/overview.html">Overview</a></li>
-                        <li class="uk-active"><a href="../prelims/www.html">World Wide Web</a></li>
+                        <li><a href="../prelims/www.html">World Wide Web</a></li>
                         <li class="uk-parent">
                             <a href="../prelims/http/http.html">HTTP</a>
                             <ul class="uk-nav-sub">
@@ -46,17 +46,28 @@
                 <a class="uk-button uk-button-text" href="midterms.html">Midterms</a>
                 <div class="uk-navbar-dropdown ">
                     <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-                        <li class="uk-parent uk-active">
+                        <li class="uk-parent">
                             <a href="">CSS</a>
                             <ul class="uk-nav-sub">
                                 <li><a href="introduction.html">Introduction</a></li>
                                 <li><a href="selectors.html">CSS Selectors</a></li>
                                 <li><a href="cascade.html">CSS Cascade</a></li>
                                 <li><a href="declaration.html">CSS Declaration</a></li>
-                                <li><a href="pre.html">Preprocessor,Framework, Libraries</a></li>
+                                <li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
                             </ul>
                         </li>
-                        <li><a href="js_intro.html">CSWS</a></li>
+                        <li class="uk-parent uk-active">
+                            <a href="js_intro.html">CSWS</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="js_intro.html">Introduction</a></li>
+                                <li><a href="js_assoc.html">JS Association</a></li>
+                                <li><a href="js_def.html">Defer Async</a></li>
+                                <li><a href="js_exe.html">JS Execution Environment</a></li>
+                                <li><a href="js_lang.html">JS Fundamentals</a></li>
+                                <li><a href="js_event.html">JS Event Handling</a></li>
+                                <li><a href="js_pro.html">JS Promises</a></li>
+                            </ul>
+                        </li>
                         <li class="uk-nav-divider"></li>
                         <li><a href="#">Quiz</a></li>
                         <li class="uk-nav-divider"></li>
@@ -99,42 +110,38 @@
         </div>
         <div class="uk-width-2-3@m uk-width-1-1@s">
             <div class="uk-card uk-card-default uk-card-body">
-                <h1 class="uk-heading-line uk-text-center"><span>JavaScript Promises</span></h1>
+                <h1 class="uk-h2 uk-heading-line uk-text-center"><span>JavaScript Promises</span></h1>
                 <p>
-                    The Promise object represents the eventual completion or failure of an asynchronous operation, and its resulting value (MDN). Basically, it tells that it is going to perform a certain but it doesn’t tell when it will execute the operation.</p>
+                    The Promise object represents the eventual <b>completion</b> or <b>failure</b> of an asynchronous operation, and its resulting value (MDN). Basically, it tells that it is going to perform a certain but it doesn’t tell when it will execute the operation.
+                </p>
                 <p>
-                How to create a promise : 
-                <br>
-                To create a promise, the Promise object is used. </p>
-                <pre>
-                &lt;script&gt;
-                    var promise= new Promise(
-                        function(resolve,reject) {
-                            //do something asynchronous
-                            resolve(result) //success
-                            reject(error)//failure
-                        }
-                        )       
-                                    //to use the promise
-                        promise().then(success, failure);
+                   To create a promise, the <code>Promise</code> object is used.
+                </p>
+                <pre>&lt;script&gt;
+    var promise= new Promise(
+    function(resolve,reject) {
+            //do something asynchronous
+    resolve(result) //success
+    reject(error)//failure
+    }
+)       
 
-                        function success(result){
-                            //statements
-                        }
-                        function failure(result){
-                    //statements	
-                    }
+promise().then(success, failure); //to use the promise
 
-	            &lt;/script&gt;
-               </pre>
+function success(result){
+    //statements
+}
+function failure(result){
+    //statements	
+}
+&lt;/script&gt;</pre>
                 <p>
-                Promises may also be implemented this way :</p>
-                    <pre> promise()then(//arguments).then(//arguments).then(//arguments)</pre>
-                
-
-                Note: Information provided are from lecture notes.
-	
-
+                    Promises may also be implemented this way:
+                </p>
+                <code>promise()then(//arguments).then(//arguments).then(//arguments)</code>
+                <p class="notebox">
+                    Information provided are from lecture notes.
+                </p>
                 <hr>
                   <ul class="uk-pagination">
                     <li><a href="js_event.html"><span class="uk-margin-small-right" uk-pagination-previous></span>JavaScript Event Handling </a></li>
