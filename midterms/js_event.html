@@ -46,7 +46,7 @@
                 <a class="uk-button uk-button-text" href="midterms.html">Midterms</a>
                 <div class="uk-navbar-dropdown ">
                     <ul class="uk-nav uk-navbar-dropdown-nav uk-nav-parent-icon" uk-nav>
-                        <li class="uk-parent uk-actives">
+                        <li class="uk-parent">
                             <a href="">CSS</a>
                             <ul class="uk-nav-sub">
                                 <li><a href="introduction.html">Introduction</a></li>
@@ -56,7 +56,7 @@
                                 <li><a href="pre.html">Preprocessor, Framework, Libraries</a></li>
                             </ul>
                         </li>
-                        <li class="uk-parent">
+                        <li class="uk-parent uk-active">
                             <a href="js_intro.html">CSWS</a>
                             <ul class="uk-nav-sub">
                                 <li><a href="js_intro.html">Introduction</a></li>
@@ -83,23 +83,23 @@
             <div class="uk-container uk-position-fixed uk-flex uk-flex-middle uk-height-large">
                 <ul class="uk-nav uk-nav-default">
                     <li class="uk-parent uk-active">
-                        <a href="introduction.html">CSS</a>
+                        <a href="">CSS</a>
                         <ul class="uk-nav-sub">
                             <li><a href="introduction.html">Introduction</a></li>
                             <li><a href="selectors.html">CSS Selectors</a></li>
-                            <li><a href="cascade.html"></a></li>
+                            <li><a href="cascade.html">CSS Cascade</a></li>
                             <li><a href="declaration.html">CSS Declaration</a></li>
-                            <li><a href="pre.html">CSS Preprocessor, <br> Framework, Libraries</a></li>
+                            <li><a href="pre.html">Preprocessor,<br> Framework, Libraries</a></li>
                         </ul>
                     </li>
-                    <li class="uk-parent">
-                        <a href="">Client Side Web Scripting</a>
+                    <li class="uk-parent uk-active">
+                        <a href="js_intro.html">CSWS</a>
                         <ul class="uk-nav-sub">
                             <li><a href="js_intro.html">Introduction</a></li>
                             <li><a href="js_assoc.html">JS Association</a></li>
-                            <li><a href="js_def.html">JS Defer vs Async</a></li>
-                            <li><a href="js_exe.html">JS Execution Environment</a></li>
-                            <li><a href="js_lang.html">JS Language Fundamentals</a></li>
+                            <li><a href="js_def.html">Defer Async</a></li>
+                            <li><a href="js_exe.html">JS Execution<br> Environment</a></li>
+                            <li><a href="js_lang.html">JS Fundamentals</a></li>
                             <li><a href="js_event.html">JS Event Handling</a></li>
                         </ul>
                     </li>
@@ -190,14 +190,6 @@
                 -	Use the dispatchEvent() function o trigger an event programmatically  <br>
                 <p>NOTE: You cannot remove anonymous functions specified as paramaters in the addEventListener() function because of its uniqueness.<br>
                 e.g. button.addEventListener(‘click’, handler);</p></li>
-
-
-
-
-
-
-
-
                <li>	Microsoft-specific – non-standard, for Internet Explorer version 6-10 <br>
                 -	has only the attachEvent() function for propagation (considered bubbling) <br>
                 -	can register more than one handler <br>
@@ -205,12 +197,15 @@
                 e.g. button.attachEvent(‘onclick’, this)</li><br>
 
                 <li>Cross-browser by use of feature detection
-                e.g. <pre>
-                    if (typeof addEventListener !== ‘undefined’){
-                    button.addEventListener(‘click’, handler);
-                       } else {
-                    button.onclick = function(){yourCode};
-                } </pre></li>
+                    e.g.
+                    <pre>
+if (typeof addEventListener !== ‘undefined’){
+    button.addEventListener(‘click’, handler);
+} else {
+    button.onclick = function(){yourCode};
+}
+                    </pre>
+                </li>
                 </ol>                
                 <hr>
                   <ul class="uk-pagination">
