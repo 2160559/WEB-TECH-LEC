@@ -1,0 +1,13 @@
+april 17 notes - started by nic, pls supply more info, thank you.
+
+Server Side Web Scripting (SSWS)
+- commonly used in web development that includes deployment of scripts in web servers. 
+- produces responses to the user clients.
+
+Java Servlets
+- handles client requests by generating responses to such requests.
+- applications implemented on web servers.
+- part of the Java Enterprise Edition (EE), which are used for transaction-based applications.
+
+Java Servlet 3.1 (Java EE 7)
+
