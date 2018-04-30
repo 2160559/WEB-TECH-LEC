@@ -1,0 +1,53 @@
+30 questions for FINALS QUIZ
+= item answer
+1. What Does SSSWS mean?
+a. Server Side Web Scripting
+b. Server-Side Web Scripting =
+c. Server Side Web Scripts
+
+2. Java EE's Purpose
+a. Enterprise Applications =
+b. Game Development
+c. Web Development
+
+3. Method used in the request handling of the Java Servlet
+a. service () method = 
+b. constructor call
+c. init() method
+
+4. Latest Version of Java EE
+a. Java EE7
+b. Java EE8 = 
+c. Java EE9
+
+5. Scripts,Operations and Applications executed in the web server itself
+a. Internal Server Applications
+b. Server-side Technologies=
+c. Server-side Programs
+
+6. Developer of PHP
+a. Dennis Ritchie
+b. Guido Van Rossum
+c. Rasmus Lerdorf =
+
+7. Not a paradigm of PHP
+a. Object Oriented
+b. Declarative = 
+c. Procedural 
+
+8. Hosted in a web container
+a. Java Servlets
+b. Server-side Technologies 
+c. HTTP Servlets =
+
+9. Not an argument requirement of the doXXX call
+a. HTTPServletMessage =
+b. HTTPServletRequest
+c. HTTPServletResponse
+
+10.The method invoked before the servlet instance is unloaded.
+a. destroy() method =
+b. init() method
+c. service () method
+
+
