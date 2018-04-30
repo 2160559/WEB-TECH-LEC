@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', 'PagesController@index');
-Route::get('/quiz', 'PagesController@quiz');
-Route::get('/login', 'PagesController@login');
+Route::get('/', 'PagesController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
