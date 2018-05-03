@@ -3,10 +3,13 @@
   &:hover {
     text-decoration: none;
     color: #1d2124;
-    text-shadow: -2px 2px 2px gray;
+    text-shadow: -2px 2px 2px lightgray;
     img{
       box-shadow: -5px 5px 5px lightgray;
     }
+  }
+  img{
+    border-radius: 100%;
   }
   a {
     color: black;

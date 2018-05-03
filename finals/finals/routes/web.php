@@ -12,6 +12,12 @@
 */
 
 Route::get('/', 'PagesController@index')->name('home');
+Route::get('/quiz', 'PagesController@quiz')->name('quiz');
+Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/profile', 'PagesController@profile')->name('profile');
+ROUTE::get('/java', 'PagesController@java')->name('java');
+ROUTE::get('/php', 'PagesController@php')->name('php');
+ROUTE::get('/node', 'PagesController@node')->name('node');
 
 Auth::routes();
 
