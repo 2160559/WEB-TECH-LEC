@@ -48138,8 +48138,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("strong", [_vm._v("Question " + _vm._s(_vm.questionNumber) + ":")]),
-    _c("br"),
+    _c("strong", [_vm._v(_vm._s(_vm.questionNumber) + ".  ")]),
     _vm._v(" "),
     _c("strong", [_vm._v(_vm._s(_vm.question.text) + " ")]),
     _vm._v(" "),
@@ -48235,7 +48234,7 @@ var render = function() {
         )
       : _vm._e(),
     _vm._v(" "),
-    _vm.questionNumber > 0
+    _vm.question.questionNumber > 0
       ? _c("button", { on: { click: _vm.back } }, [_vm._v("Back")])
       : _vm._e(),
     _vm._v(" "),

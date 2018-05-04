@@ -26,7 +26,7 @@
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <h1><img src="{{asset('img/logo.PNG')}}" alt="logo" style="height: 50px">{{ config('app.name',
-                'Laravel')
+                'Webtech 2018')
                 }}</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

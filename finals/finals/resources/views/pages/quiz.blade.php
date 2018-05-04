@@ -1,18 +1,18 @@
 @extends('layouts.app')
 @section('content')
-    <quiz-app url="https://api.myjson.com/bins/ox0fu">
-
-        <div slot="intro" slot-scope="props">
-            <h1>@{{props.title}}</h1>
+        <div class="row">
+            @for($y = 0; $y < 5; $y++)
+            <div class="col-md-6 col-4 ">
+                <a class="card-link" href="{{ route('quiz') }}/{{ 'quiz title' }}">
+                    <div class="card">
+                        <div class="card card-header">Quiz Title</div>
+                        <div class="card card-body">
+                            <p><strong>Number of Questions:</strong> number</p>
+                            <p>some details</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            @endfor
         </div>
-
-        <div slot="results" slot-scope="props">
-            <h1>Your Score:</h1><br>
-            <strong>Correct Answers: &nbsp;</strong>@{{props.correct}}<br>
-            <strong>Total Number of Questions: &nbsp;</strong>@{{props.length}}<br>
-            <strong>Percentage: </strong>@{{props.perc}}%<br>
-            <button><a href="{{ route('quiz') }}">Finish</a></button>
-        </div>
-    </quiz-app>
-
 @endsection

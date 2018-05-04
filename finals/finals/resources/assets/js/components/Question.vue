@@ -1,6 +1,6 @@
 <template>
     <div>
-        <strong>Question {{ questionNumber }}:</strong><br/>
+        <strong>{{ questionNumber }}. &nbsp;</strong>
         <strong>{{ question.text }} </strong>
 
         <div v-if="question.type === 'tf'">
@@ -13,7 +13,7 @@
                 <input type="radio" :id="'answer'+index" name="currentQuestion" v-model="answer" :value="mcanswer"><label :for="'answer'+index">{{mcanswer}}</label><br/>
             </div>
         </div>
-        <button v-if="questionNumber > 0" @click="back">Back</button>
+        <button v-if="question.questionNumber > 0" @click="back">Back</button>
         <button @click="next">Next</button>
 
     </div>
