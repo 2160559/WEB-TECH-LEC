@@ -10,8 +10,6 @@
 
     <title>{{ config('app.name', 'Webtech 2018') }}</title>
 
-
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
@@ -73,8 +71,7 @@
             </div>
         </div>
     </nav>
-
-    <div class="container" style="margin-top: 80px">
+    <div class="container-fluid">
         @yield('content')
     </div>
     <footer class="footer navbar-light navbar-laravel">

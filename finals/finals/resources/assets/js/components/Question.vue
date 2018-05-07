@@ -13,7 +13,7 @@
                 <input type="radio" :id="'answer'+index" name="currentQuestion" v-model="answer" :value="mcanswer"><label :for="'answer'+index">{{mcanswer}}</label><br/>
             </div>
         </div>
-        <button v-if="question.questionNumber > 0" @click="back">Back</button>
+        <button v-if="questionNumber > 1" @click="back">Back</button>
         <button @click="next">Next</button>
 
     </div>

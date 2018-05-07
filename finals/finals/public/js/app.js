@@ -48234,7 +48234,7 @@ var render = function() {
         )
       : _vm._e(),
     _vm._v(" "),
-    _vm.question.questionNumber > 0
+    _vm.questionNumber > 1
       ? _c("button", { on: { click: _vm.back } }, [_vm._v("Back")])
       : _vm._e(),
     _vm._v(" "),

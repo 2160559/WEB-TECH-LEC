@@ -22,3 +22,4 @@ ROUTE::get('/node', 'PagesController@node')->name('node');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('quizzes', 'QuizController');
