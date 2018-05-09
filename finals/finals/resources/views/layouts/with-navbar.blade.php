@@ -20,7 +20,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <h1><img src="{{asset('storage/img/logo.PNG')}}" alt="logo" style="height: 50px">{{ config('app.name',
