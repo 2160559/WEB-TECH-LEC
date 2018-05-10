@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Quiz;
-use PhpParser\Node\Expr\Array_;
 
-class QuizController extends Controller
+class CommentsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +13,7 @@ class QuizController extends Controller
      */
     public function index()
     {
-        $quizzes = Quiz::all();
-        return view('quizzes.index')->with('quizzes', $quizzes);
+        //
     }
 
     /**
@@ -48,9 +45,7 @@ class QuizController extends Controller
      */
     public function show($id)
     {
-        $quiz = Quiz::find($id);
-
-        return view('quizzes.show')->with('quiz',$quiz);
+        //
     }
 
     /**
@@ -85,5 +80,32 @@ class QuizController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function setComments($conn){
+        if(isset($_POST['commentSubmit'])){
+            $uid = $_POST['uid'];
+            $date = $_POST['date'];
+            $message = $_POST['message']; 
+    
+            $sql = "INSERT INTO comments (uid,date,message) 
+                    VALUES ('$uid', '$date', '$message')";
+    
+            #$result = mysqli_query($conn, $sql);
+            $result = $conn->query($sql);
+    
+        }
+    }
+    
+    public function getComments($conn){
+        $sql="SELECT * FROM comments";
+        #$result = $conn->query ($sql);
+        $result = mysqli_query($conn, $sql);
+        while($row = $result->fetch_assoc()){
+            echo $row['ui']."<br>";
+            echo $row['date']."<br>";
+            echo $row['message']."<br><br>";
+        }
+    
     }
 }
