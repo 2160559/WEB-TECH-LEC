@@ -140,7 +140,7 @@
                     </div>
                     
                 </div>
-                <a href="JavaNotes.pdf"  class="pdfdownload" download="Java Web Servlets.pdf">Downloadss topic PDF version</a>
+                <a href="JavaNotes.pdf"  class="pdfdownload" download="JavaNotes.pdf">Downloadss topic PDF version</a>
             </div>
             
             
