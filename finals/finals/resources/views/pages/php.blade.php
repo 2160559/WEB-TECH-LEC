@@ -32,7 +32,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#section3">Handling Data Submissions</a>
                 </li>
-             
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section4">References</a>
+                </li>
             </ul>
         </div>
         <div class="col-sm-10 col-xs-12">
@@ -114,9 +116,134 @@
             <div class="container m-2">
                 <div class="card card-body" id="section1.3">
                     <h3>Data types</h3>
-   
+                    PHP has eight primitive data types namely: integers, floating point numbers, strings, Boolean, arrays, objects, resources and NULL.
+                    <table class="table">
+                      <tr>
+                        <th>Data Type</th>
+                        
+                        <th>Example</th>
+                      </tr>
+                      <tr>
+                        <td>Integers</td>
+                
+                        <td>
+<pre>
+&lt;?php
+$x = 8; // decimal
+$y = -8; // negative
+$z = 0144; // octal
+$a = 0x3E8; // hexadecimal
+?&gt;
+</pre>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Floating Point Numbers  </td>
+                        <td>
+<pre>
+&lt;?php
+$x = 1.5;
+$y = 1.5e5;
+$z = 1.5E-10;
+?&gt;
+</pre>
+                          
+                        </td> 
+
+                      </tr>
+                      <tr>
+                      <td>Strings </td>
+                      <td>
+<pre>
+&lt;?php
+$hi = ‘Hello world!’;
+$hi2 = “Hello World!”;
+?&gt;
+
+</pre>
+                          
+                          
+                      </td>
+
+                          
+                          
+                          
+                      </tr>
+                      <tr>
+                      <td>Boolean</td>
+                      <td>
+<pre>
+&lt;?php
+$isValid = true;
+?&gt;
+
+</pre>
+                       </td>
+               
+                        
+                      </tr>
+                      <tr>
+                      <td>Arrays </td>
+                      <td>
+<pre>
+&lt;?php
+$members = array(“Juan”, “Maria”, “Pedro”);
+?&gt;
+</pre>
+                       </td>
+               
+                        
+                      </tr>
+                      <tr>
+                      <td>Objects</td>
+                      <td>
+<pre>
+&lt;?php
+Class dog{
+    public $dialogue = “Woof!”;
+
+    function bark(){
+        return $this-&gt;str;
+    }
+}
+?&gt;
+</pre>
+                       </td>
+               
+                        
+                      </tr>
+        <tr>
+                      <td>Resources</td>
+                      <td>
+<pre>
+&lt;?php
+$file = fopen(“data.txt”, “r”);
+
+$db = mysql_connect(“localhost”, “root”, “”);
+?&gt;
+</pre>
+                       </td>
+               
+                        
+                      </tr>
+            <tr>
+                      <td>NULL</td>
+                      <td>
+<pre>
+&lt;?php
+$empty = NULL;
+?&gt;
+</pre>
+                       </td>
+               
+                        
+                      </tr>
                     
-                    </div>
+                    
+                    
+                    
+                    </table>
+                </div>
                     
                
             </div>
@@ -246,8 +373,84 @@ while($i &lt;= 3);
                 <div class="card card-body" id="section1.5">
                     <div >
                         <h3>Functions</h3>
-                     
+                        <p>
+                     Functions, also called as methods in the context of other programming/scripting languages, are blocks of code that perform specific tasks. Although PHP has its own collection of libraries that can call directly in your PHP scripts, you can also create user-defined functions for your specific needs.</p>
+                        <b>NOTE:</b> Function names are case-sensitive thus it must start with either a letter or an underscore.
+                        <table>
+                         <tr>
+                        <th>Basic Syntax</th> 
+                        <th style="padding-left:30px">Sample Code</th>
+                         </tr>
+                         <tr>
+<td>
+<pre>
+function funcName(){
+//code to be executed
+}
+</pre>
+    
+</td>
+<td>
+<pre>
+    function sayHello(){
+        echo "Hello dear user!";
+    }
+</pre>                                
+</td>
+                        </tr>
+                        </table>
+                        <p>You can also specify parameters to pass on to a function to be used as arguments for your block of code during run-time. </p>
+                        <table>
+                         <tr>
+                        <th>Basic Syntax</th> 
+                        <th style="padding-left:30px">Sample Code</th>
+                         </tr>
+                         <tr>
+<td>
+<pre>
+function funcName($param1, $param2){
+	// code to be executed
+}
+</pre>    
+</td>
+                             
+<td>
+<pre>
+    function multiply($factor1, $factor2){
+    $product = $factor1 * $factor2;
+    return $sum;
+    }
 
+</pre>                                
+</td>
+                        </tr>
+                        </table>
+                        <p>You can also pass optional parameters with default values into a function. This way, a parameter may or may not be specified when calling its associated function.</p>
+                                        <table>
+                         <tr>
+                        <th>Basic Syntax</th> 
+                        <th style="padding-left:30px">Sample Code</th>
+                         </tr>
+                         <tr>
+<td>
+<pre>
+function funcName($param1, $param2){
+	// code to be executed
+}
+</pre>
+    
+</td>
+<td>
+<pre>
+    function incrementBy($num1, $incrementNum2=1){
+    $result = $num1 + $num22;
+    return $result;
+    }
+
+</pre>                                
+</td>
+                        </tr>
+                        </table>
                     </div>
                     
                 </div>
