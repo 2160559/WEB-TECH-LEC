@@ -1,54 +1,36 @@
 @extends('layouts.with-navbar') @section('content')
-<div class="row">
-	<div class="d-none d-sm-block col-sm-2 left-nav bg-light">
-		<ul class="nav flex-column" style="position: fixed">
-			<li class="nav-item">
-				<a class="nav-link" href="#section1">What is Node JS?</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#section2">Node JS Introductory Clip</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#section3">Node Package Manager</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#section4">Popular Modules</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#section5">package.json file</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#section6">References</a>
-			</li>
-
-		</ul>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div id="sidebar-wrapper" class="sidebar-toggle">
+			<ul class="sidebar-nav">
+				<li><a href="#section1" class="left-nav-link">What is Node JS?</a></li>
+				<li><a href="#section2">Node JS Introductory Clip</a></li>
+				<li><a href="#section3">Node Package Manager</a></li>
+				<li><a href="#section4">Popular Modules</a></li>
+				<li><a href="#section5">package.json file</a></li>
+				<li><a href="#section6">References</a></li>
+			</ul>
+		</div>
 	</div>
-	<div class="col-sm-10 col-xs-12">
-		<div class="container m-2">
-			<div class="card card-body" id="section1">
+</nav>
+<div class="container" id="content">
+	<div class="card card-body p-5">
+		<section id="section1">
 
 				<h3>What is Node JS?</h3>
 				<p>Node.js is an open-source run-time environment for creating server-side applications using Javascript. It runs single-threaded, non-blocking and asynchronous programming.</p>
 
-
-
-			</div>
-		</div>
-		<div class="container m-2">
-			<div class="card card-body" id="section2">
+        </section>
+        <hr>
+		<section id="section2">
 				<h3>Node JS Introductory Clip</h3>
 
 				<video width="90%" height="90%" controls>
                     <source src="../public/img/Async-Nodejs.mp4" type="video/mp4">
                 </video>
-
-
-
-			</div>
-		</div>
-
-		<div class="container m-2">
-			<div class="card card-body" id="section3">
+        </section>
+        	<hr>
+        <section id="section3">
 				<h3>Node Package Manager</h3>
 				<ul>
 
@@ -60,16 +42,10 @@
 				<p>
 					<b>npm install express</b> – express module will be installed in the node_modules folder <br/>
 					<b> npm intall –g express </b>– express module will be installed globally, in your system so you can access it not only in that location/ directory
-
-
-
 				</p>
-
-			</div>
-		</div>
-
-		<div class="container m-2">
-			<div class="card card-body" id="section4">
+        </section>
+        <hr>
+        <section id="section4">
 				<h3>Popular Modules</h3>
 				<ol>
 					<li>Express – Web development framework</li>
@@ -79,35 +55,26 @@
 					<li>Mongo/ Mongoose – Wrappers to interact with MongoDB</li>
 
 				</ol>
-			</div>
-			<comment></comment>
-
-		</div>
-		<div class="container m-2">
-			<div class="card card-body" id="section5">
+         </section>
+            <hr>
+         <section id="section5">
 				<h3> package.json file</h3>
 				<ul>
 					<li>Goes in the root of your package/ application</li>
 					<li>Tells npm how your package is structured and what to do to install it</li>
 					<li> It holds things like the name of your application. version, main (entry point to the app, file), author, license, dependencies</li>
 				</ul>
-			</div>
-			<comment></comment>
-
-		</div>
-
-		<div class="container m-2">
-			<div class="card card-body">
-				<div id="section6">
+			</section>
+            <hr>
+        <section id="section6">
 					<h3>References</h3>
 					Docs.oracle.com. (2018). Java Servlet Technology - The Java EE 5 Tutorial. [online] Available at: https://docs.oracle.com/javaee/5/tutorial/doc/bnafd.html [Accessed 6 May 2018].<br/> Docs.oracle.com. (2018). What Is a Servlet? - The Java EE 5 Tutorial. [online] Available at: https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html [Accessed 6 May 2018].<br/> Wai Chan, S. and Burns, E. (2017). Java™ Servlet Specification. [online] Javaee.github.io. Available at: https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf [Accessed 6 May 2018].
 
 
-				</div>
-
-			</div>
-			<a href="JavaNotes.pdf" class="pdfdownload" download="JavaNotes.pdf">Downloadss topic PDF version</a>
-		</div>
+				
+		</section>
+		<hr>
+		<a href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download as topic
+                PDF version</a>
 	</div>
 </div>
-@endsection
