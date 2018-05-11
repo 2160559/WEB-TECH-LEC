@@ -1,14 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <h1>Quizzes</h1>
-    @guest
-        <div class="alert alert-warning">
-            <strong>Warning!</strong>
-            You Must Be logged in in order to take the quizzes
-            <a href="{{ route('login') }}" class="alert-link"> Click here to login </a>
-        </div>
-    @else
-    @endguest
     <div class="row">
 
         @if(count($quizzes)>0)
