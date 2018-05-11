@@ -18,6 +18,10 @@ class PagesController extends Controller
         $title = 'About Us';
         return view('pages.about')-> with('title', $title);
     }
+    public function was() {
+        $title = 'Web Application Security';
+        return view('pages.was')-> with('title', $title);
+    }
     public function profile() {
         $title = 'Profile';
         return view('pages.profile')-> with('title', $title);
