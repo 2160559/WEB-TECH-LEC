@@ -1,41 +1,25 @@
 @extends('layouts.with-navbar') @section('content')
-<div class="row">
-	<div class="d-none d-sm-block col-sm-2 left-nav bg-light">
-		<ul class="nav flex-column" style="position: fixed">
-			<li class="nav-item">
-				<a class="nav-link" href="#section0">Introduction</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#section1.1">Fundamentals</a> </li>
 
-			<li class="nav-item">
-				<a style="padding-left:30px" class="nav-link" href="#section1.1">Basic Syntax</a>
-			</li>
-			<li class="nav-item">
-				<a style="padding-left:30px" class="nav-link" href="#section1.2">Variables</a>
-			</li>
-			<li class="nav-item">
-				<a style="padding-left:30px" class="nav-link" href="#section1.3">Data Types</a>
-			</li>
-			<li class="nav-item">
-				<a style="padding-left:30px" class="nav-link" href="#section1.4">Loops</a>
-			</li>
-			<li class="nav-item">
-				<a style="padding-left:30px" class="nav-link" href="#section1.5">Functions</a>
-			</li>
-
-
-			<li class="nav-item">
-				<a class="nav-link" href="#section2">Sessions</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#section4">References</a>
-			</li>
-		</ul>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<div id="sidebar-wrapper" class="sidebar-toggle">
+			<ul class="sidebar-nav">
+				<li><a href="#section1" class="left-nav-link">Introduction</a></li>
+				<li><a href="#section2">Basic Syntax</a></li>
+				<li><a href="#section3">Variables</a></li>
+				<li><a href="#section4">Data Types</a></li>
+				<li><a href="#section5">Loops</a></li>
+                <li><a href="#section6">Functions</a></li>
+                <li><a href="#section7">Sessions</a></li>
+                <li><a href="#section8">References</a></li>
+                
+			</ul>
+		</div>
 	</div>
-	<div class="col-sm-10 col-xs-12">
-		<div class="container m-2">
-			<div class="card card-body" id="section0">
+</nav>
+<div class="container" id="content">
+	<div class="card card-body p-5">
+		<section id="section1">
 				<h3>Introduction</h3>
 				<p>PHP(PHP: Hypertext Preprocessor), originally named Personal Homepage, is a general purpose scripting language developed by Rasmus Lerdorf in 1994. PHP is now widely-used as a general-purpose scripting language, however, it is mostly used for back-end web development and can be embedded into HTML. </p>
 
@@ -45,13 +29,9 @@
 				<p>PHP is a very popular scripting language, however, it is not a very disciplined language in a way that there’s a lot of inconsistencies in the language such as function names and there’s no central organization governing the development of PHP.</p>
 				<p>In php, there are 2 ways of coding, the Object Oriented and the Procedural Paradigm. </p>
 
-
-
-
-			</div>
-		</div>
-		<div class="container m-2">
-			<div class="card card-body" id="section1.1">
+ </section>
+        <hr>
+		<section id="section2">
 				<h3>Basic Syntax</h3>
 				<p>PHP Tags When PHP parses a file, it looks for opening and closing tags, which are &lt;?php and ?&gt; which tells the parser the beginning and end of a php code. This allows PHP to be embedded anywhere in the HTML. This also allows php to be embedded in different documents aside from HTML.</p>
 
@@ -73,15 +53,11 @@
                     Otherwise this will be shown.
                      &lt;?php } ?&gt;
                     </pre>
+            </section>
+        	<hr>
+        <section id="section3">
 
 
-
-
-			</div>
-		</div>
-
-		<div class="container m-2">
-			<div class="card card-body" id="section1.2">
 				<h3>Variables</h3>
 				<p> Variables are represented by dollar sign($) followed by the name of the variable. PHP is a loosely typed language, meaning, that variable types are defined at run time, and can change at any time during execution.
 				</p>
@@ -101,12 +77,10 @@
 
 				</ol>
 
+            </section>
+        <hr>
+        <section id="section4">
 
-			</div>
-		</div>
-
-		<div class="container m-2">
-			<div class="card card-body" id="section1.3">
 				<h3>Data types</h3>
 				PHP has eight primitive data types namely: integers, floating point numbers, strings, Boolean, arrays, objects, resources and NULL.
 				<table class="table">
@@ -235,13 +209,9 @@ $empty = NULL;
 
 
 				</table>
-			</div>
-
-
-		</div>
-
-		<div class="container m-2">
-			<div class="card card-body" id="section1.4">
+        </section>
+   <hr>
+         <section id="section5">
 
 				<h3>Loops</h3>
 				<p>
@@ -358,12 +328,9 @@ while($i &lt;= 3);
 				</table>
 
 
-
-			</div>
-		</div>
-		<div class="container m-2">
-			<div class="card card-body" id="section1.5">
-				<div>
+</section>
+            <hr>
+        <section id="section6">
 					<h3>Functions</h3>
 					<p>
 						Functions, also called as methods in the context of other programming/scripting languages, are blocks of code that perform specific tasks. Although PHP has its own collection of libraries that can call directly in your PHP scripts, you can also create user-defined functions for your specific needs.</p>
@@ -443,14 +410,9 @@ function funcName($param1, $param2){
 							</td>
 						</tr>
 					</table>
-				</div>
-
-			</div>
-
-		</div>
-		<div class="container m-2">
-			<div class="card card-body" id="section2">
-				<div>
+        </section>
+		 <section id="section7">
+				
 					<h3>Sessions</h3>
 					<p>
 						Normally, accessing a website causes data to be stored using cookies which, in turn, are stored in the user’s computer. Cookies are basically small pieces of data sent by the server to be stored in a user’s browser which may send it back with the next request to the same server. It is typically used to tell if two requests came from the same browser (MDN Webdocs). Since cookies are susceptible to web attacks and can negatively affect a website’s performance, PHP sessions solve these issues since it stores data in the server instead. In a session based environment, every user is identified through a unique number called session identifier or SID which is used to link each user with their own information in the server like emails and the like (TutorialRepublic). </p>
@@ -504,24 +466,19 @@ function funcName($param1, $param2){
                         // Destroying session
                         session_destroy();
                         ?&gt;</pre>
+                    </section>
 
-				</div>
-
-			</div>
-			<div class="card card-body" id="section4">
+				<section id="section8">
 				<h3>References</h3>
 				MDN Web Docs. (2018). HTTP cookies. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies [Accessed 11 May 2018].<br> Morris, J. (2018). How to Build a PHP Login Form Using Sessions - John Morris. [online] John Morris. Available at: https://www.johnmorrisonline.com/build-php-login-form-using-sessions/ [Accessed 11 May 2018].<br> Php.net. (2018). PHP: Introduction - Manual. [online] Available at: http://php.net/manual/en/intro.session.php [Accessed 11 May 2018].<br> Tutorialrepublic.com. (2018). How to Create, Access and Destroy Sessions in PHP - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-sessions.php [Accessed 11 May 2018].<br> Tutorialrepublic.com. (2018). PHP If, Else and Elseif Conditional Statements - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-if-else-statements.php [Accessed 11 May 2018]. <br> Tutorialrepublic.com. (2018). PHP Switch Case Conditional Statements - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-switch-case-statements.php [Accessed 11 May 2018].<br> Tutorialrepublic.com. (2018). PHP While, Do-While, For and Foreach Loops - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-loops.php [Accessed 11 May 2018].<br>
 
 
 
 
-
-			</div>
-		</div>
-		<a href="JavaNotes.pdf" class="pdfdownload" download=".pdf">Download topic PDF version</a>
+		</section>
+		<hr>
+		<a href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download as topic
+                PDF version</a>
 	</div>
-
-
-</div>
 </div>
 @endsection
