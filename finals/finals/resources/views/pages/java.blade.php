@@ -18,7 +18,7 @@
 	<div class="card card-body p-5">
 		<section id="web-apps">
 			<h3>Web Applications</h3>
-			{{$_SERVER['REQUEST_URI']}}
+			
 			<p>A web application (web app) is an application that users run through their browsers. Common examples of web applications are webmails (e.g. Google Mail, Yahoo Mail), online stores (e.g. Lazada) and social media sites (e.g. Facebook, Instagram, Twitter).</p>
 			<p>Users run the web app by entering the domain name (e.g. facebook.com , gmail.com). When this happens, the browser connects to the server that is hosting the application and display whatever information it has received from the server.</p>
 			<p>Web application grew in popularity because of the benefits it provides to both customers and service providers. For service providers, web applications allows central management of the application, easier and much cheaper upgrades, hardware independent among others. For customers, they can check out the services and avail it even when they are at their home.
@@ -108,3 +108,4 @@
                 PDF version</a>
 	</div>
 </div>
+@endsection
