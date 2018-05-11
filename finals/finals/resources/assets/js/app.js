@@ -17,7 +17,7 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('quiz-app', require('./components/QuizApp.vue'));
 Vue.component('question', require('./components/Question.vue'));
-
+Vue.component('comment', require('./components/Comment.vue'));
 
 const app = new Vue({
     el: '#app',

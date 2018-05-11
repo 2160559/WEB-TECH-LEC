@@ -17,10 +17,18 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <script>
+        var shiftWindow = function() {
+            scrollBy(0, -100);
+        };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+    </script>
 </head>
-<body>
+<body onload="load()">
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel sticky-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <h1><img src="{{asset('storage/img/logo.PNG')}}" alt="logo" style="height: 50px">{{ config('app.name',

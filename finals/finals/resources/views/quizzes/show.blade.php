@@ -8,12 +8,21 @@
         </div>
 
         <div slot="results" slot-scope="props">
+
             <h1>Your Score:</h1><br>
             <strong>Correct Answers: &nbsp;</strong>@{{props.correct}}<br>
             <strong>Total Number of Questions: &nbsp;</strong>@{{props.length}}<br>
             <strong>Percentage: </strong>@{{props.perc}}%<br>
-            <button><a href="{{ route('quizzes.index') }}">Finish</a></button>
-        </div>
-    </quiz-app>
+            <form action="" method="POST">
 
+            </form>
+
+            {!! Form::open(['action' => 'QuizzesTakenController@store', 'method' => 'POST']) !!}
+            <input id="score" type="text" v-bind:value="props.correct" class="d-none" name="correct">
+            <input id="length" type="text" v-bind:value="props.length" class="d-none" name="length">
+            <input type="submit" value="Finish">
+            {!! Form::close() !!}
+        </div>
+
+    </quiz-app>
 @endsection
