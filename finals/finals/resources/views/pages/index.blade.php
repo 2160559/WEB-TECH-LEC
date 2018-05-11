@@ -6,7 +6,7 @@
             <img class="card-img-top" src="{{asset('storage/img/javaee.png')}}" alt="Java EE">
             <div class="card-body text-center">
                 <h1 class="card-title">Java</h1>
-                <p class="card-text">Servlets and more</p>
+                <p class="card-text">Some example text.</p>
             </div>
             </a>
         </div>
@@ -15,7 +15,7 @@
                 <img class="card-img-top" src="{{asset('storage/img/phplogo.png')}}" alt="PHP Logo">
                 <div class="card-body text-center">
                     <h1 class="card-title">PHP</h1>
-                    <p class="card-text">Introduction, Fundamentals and Sessions </p>
+                    <p class="card-text">Some example text.</p>
                 </div>
             </a>
         </div>
@@ -24,7 +24,7 @@
             <img class="card-img-top" src="{{asset('storage/img/nodejs.png')}}" alt="Node JS">
             <div class="card-body text-center">
                 <h1 class="card-title">NodeJS</h1>
-                <p class="card-text">Definition and Code Snippets</p>
+                <p class="card-text">Some example text.</p>
             </div>
             </a>
         </div>
