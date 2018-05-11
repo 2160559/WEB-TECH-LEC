@@ -29,9 +29,6 @@
 				<a class="nav-link" href="#section2">Sessions</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#section3">Handling Data Submissions</a>
-			</li>
-			<li class="nav-item">
 				<a class="nav-link" href="#section4">References</a>
 			</li>
 		</ul>
@@ -511,10 +508,20 @@ function funcName($param1, $param2){
 				</div>
 
 			</div>
-			<a href="JavaNotes.pdf" class="pdfdownload" download=".pdf">Download topic PDF version</a>
+			<div class="card card-body" id="section4">
+				<h3>References</h3>
+				MDN Web Docs. (2018). HTTP cookies. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies [Accessed 11 May 2018].<br> Morris, J. (2018). How to Build a PHP Login Form Using Sessions - John Morris. [online] John Morris. Available at: https://www.johnmorrisonline.com/build-php-login-form-using-sessions/ [Accessed 11 May 2018].<br> Php.net. (2018). PHP: Introduction - Manual. [online] Available at: http://php.net/manual/en/intro.session.php [Accessed 11 May 2018].<br> Tutorialrepublic.com. (2018). How to Create, Access and Destroy Sessions in PHP - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-sessions.php [Accessed 11 May 2018].<br> Tutorialrepublic.com. (2018). PHP If, Else and Elseif Conditional Statements - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-if-else-statements.php [Accessed 11 May 2018]. <br> Tutorialrepublic.com. (2018). PHP Switch Case Conditional Statements - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-switch-case-statements.php [Accessed 11 May 2018].<br> Tutorialrepublic.com. (2018). PHP While, Do-While, For and Foreach Loops - Tutorial Republic. [online] Available at: https://www.tutorialrepublic.com/php-tutorial/php-loops.php [Accessed 11 May 2018].<br>
+
+
+
+
+
+			</div>
 		</div>
-
-
+		<a href="JavaNotes.pdf" class="pdfdownload" download=".pdf">Download topic PDF version</a>
 	</div>
+
+
+</div>
 </div>
 @endsection
