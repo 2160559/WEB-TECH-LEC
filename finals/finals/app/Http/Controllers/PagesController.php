@@ -18,10 +18,6 @@ class PagesController extends Controller
         $title = 'About Us';
         return view('pages.about')-> with('title', $title);
     }
-    public function was() {
-        $title = 'Web Application Security';
-        return view('pages.was')-> with('title', $title);
-    }
     public function profile() {
         $title = 'Profile';
         return view('pages.profile')-> with('title', $title);
@@ -37,5 +33,9 @@ class PagesController extends Controller
     public function node() {
         $title = 'Node.Js';
         return view('pages.node')-> with('title', $title);
+    }
+     public function was() {
+        $title = 'was';
+        return view('pages.was')-> with('title', $title);
     }
 }
