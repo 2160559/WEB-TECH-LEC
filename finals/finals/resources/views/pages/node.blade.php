@@ -78,3 +78,4 @@
                 PDF version</a>
 	</div>
 </div>
+@endsection
