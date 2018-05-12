@@ -10,7 +10,7 @@
 
     <title>{{ config('app.name', 'Webtech 2018') }}</title>
 
-
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -37,7 +37,6 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -54,7 +53,7 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('profile') }}">{{ __('Profile') }}</a>
+                                <a class="dropdown-item" href="{{ '/profile' }}">{{ __('Profile') }}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -66,9 +65,8 @@
                                 </form>
                             </div>
                         </li>
-                        <li><a class="nav-link" href="{{ route('quizzes.index') }}">Quiz</a></li>
                     @endguest
-                    <li><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
+                    <li><a class="nav-link" href="{{ route('quizzes.index') }}">Quiz</a></li>
                 </ul>
             </div>
         </div>

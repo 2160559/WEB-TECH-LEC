@@ -11,4 +11,7 @@ class Quiz extends Model
 
     //Primary key
     public $primaryKey = 'id';
+    public function takequiz(){
+        return $this->hasMany('App\QuizTaken');
+}
 }
