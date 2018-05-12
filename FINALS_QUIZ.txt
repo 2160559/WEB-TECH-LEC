@@ -1,5 +1,6 @@
 30 questions for FINALS QUIZ
 = item answer
+
 1. What Does SSSWS mean?
 a. Server Side Web Scripting
 b. Server-Side Web Scripting =
@@ -50,4 +51,42 @@ a. destroy() method =
 b. init() method
 c. service () method
 
+11. Original name of PHP
+a. Personal Hypertext Processor
+b. Personal Homepage =
+c. Personal Home Processor
 
+12. PHP allows 2 ways of coding: object oriented and functional paradigm.
+true
+false =
+
+13. Which one is not a built-in superglobal variables?
+a. $_COOKIE
+b. $_SERVER
+c. $_HTTP =
+
+14. this is an example of PHP code:
+<?php
+while ($i <= 5) {
+$i++; echo $i;
+}
+?>
+true
+false =
+
+?. Which is a run-time environment in server-side technology
+a. Java Servlets
+b. Php
+c. Node.js =
+
+?. What is Google Chrome's JS engine also known as
+a. V5 engine
+b. V8 engine =
+c. VC engine
+
+?. Node.js uses the web development server-side framework called
+a. Django
+b. Angular
+c. Express =
+
+?. 
