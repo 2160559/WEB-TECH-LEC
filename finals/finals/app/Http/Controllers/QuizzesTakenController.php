@@ -37,6 +37,8 @@ class QuizzesTakenController extends Controller
         $quizTaken = new QuizTaken;
         $quizTaken->score = $request->input('correct');
         $quizTaken->no_items = $request->input('length');
+        $quizTaken->user_id = $request->input('user');
+        $quizTaken->quiz_name = $request->input('quiz_name');
         $quizTaken->save();
         return redirect('/quizzes');
     }

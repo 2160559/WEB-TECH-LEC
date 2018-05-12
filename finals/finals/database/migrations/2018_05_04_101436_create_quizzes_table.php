@@ -16,6 +16,7 @@ class CreateQuizzesTable extends Migration
         Schema::create('quizzes', function (Blueprint $table) {
             $table->increments('id');
             $table->smallInteger('no_items');
+            $table->string('name');
             $table->string('description');
             $table->string('json_location');
             $table->timestamps();
