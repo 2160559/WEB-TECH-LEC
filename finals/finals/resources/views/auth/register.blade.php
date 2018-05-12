@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="form-container register">
-            <img class="logo" src="{{ asset('img/logo.png') }}" alt="Logo">
+            <img class="logo" src="{{ asset('storage/img/logo.png') }}" alt="Logo">
             <div class="form-box">
                 <form method="POST" action="{{ route('register') }}">
                     @csrf

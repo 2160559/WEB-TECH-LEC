@@ -16,10 +16,11 @@
             <form action="" method="POST">
 
             </form>
-
             {!! Form::open(['action' => 'QuizzesTakenController@store', 'method' => 'POST']) !!}
-            <input id="score" type="text" v-bind:value="props.correct" class="d-none" name="correct">
-            <input id="length" type="text" v-bind:value="props.length" class="d-none" name="length">
+            <input type="text" v-bind:value="props.correct" class="d-none" name="correct">
+            <input type="text" v-bind:value="props.length" class="d-none" name="length">
+            <input type="text" v-bind:value="props.title" class="d-none" name="title">
+            <input type="text" value="{{Auth::user()->id}}" class="d-none" name="user">
             <input type="submit" value="Finish">
             {!! Form::close() !!}
         </div>

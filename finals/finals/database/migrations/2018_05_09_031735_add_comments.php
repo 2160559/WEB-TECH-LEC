@@ -19,7 +19,7 @@ class AddComments extends Migration
             $table->integer('spam')->default(0);
             $table->integer('reply_id')->default(0);
             $table->string('page_id')->default(0);
-            $table->integer('users_id');
+            $table->integer('user');
             $table->timestamps();
         });
     }
