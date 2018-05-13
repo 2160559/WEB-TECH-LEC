@@ -29,7 +29,7 @@
                 <h3>Node JS Introductory Clip</h3>
 
                 <video width="90%" height="90%" controls>
-                    <source src="{{ asset('storage/Async-Nodejs.mp4') }}" type="video/mp4">
+                    <source src="../storage/app/public/Async-Nodejs.mp4" type="video/mp4">
                 </video>
             </section>
             <hr>
@@ -86,7 +86,8 @@
             <hr>
             @if (Auth::user())
                   <div style="text-align:center">
-                <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
+     
+                      <a href="{{asset('storage/NodeNotes.pdf')}}" class="pdfdownload" download="NodeNotes.pdf">Download topic PDF file</a>
                 </div>
                 <hr>
             @endif
