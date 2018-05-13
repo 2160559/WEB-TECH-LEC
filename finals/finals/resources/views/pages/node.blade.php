@@ -38,9 +38,9 @@
                 <ul>
 
 
-                    <li> &gt; Used to install node programs/ modules</li>
-                    <li>&gt; Easy to specify and link dependencies</li>
-                    <li> &gt; Modules get installed into the node_modules folder</li>
+                    <li> Used to install node programs/ modules</li>
+                    <li>Easy to specify and link dependencies</li>
+                    <li>  Modules get installed into the node_modules folder</li>
                 </ul>
                 <p>
                     <b>npm install express</b> – express module will be installed in the node_modules folder <br/>
@@ -74,12 +74,8 @@
             <hr>
             <section id="references">
                 <h3>References</h3>
-                Docs.oracle.com. (2018). Java Servlet Technology - The Java EE 5 Tutorial. [online] Available at:
-                https://docs.oracle.com/javaee/5/tutorial/doc/bnafd.html [Accessed 6 May 2018].<br/> Docs.oracle.com.
-                (2018). What Is a Servlet? - The Java EE 5 Tutorial. [online] Available at:
-                https://docs.oracle.com/javaee/5/tutorial/doc/bnafe.html [Accessed 6 May 2018].<br/> Wai Chan, S. and
-                Burns, E. (2017). Java™ Servlet Specification. [online] Javaee.github.io. Available at:
-                https://javaee.github.io/servlet-spec/downloads/servlet-4.0/servlet-4_0_FINAL.pdf [Accessed 6 May 2018].
+                Foundation, N. (2018). Node.js. [online] Node.js. Available at: https://nodejs.org/en/ [Accessed 11 May 2018]. <br>
+                Heller, M. (2018). What is Node.js? The JavaScript runtime explained. [online] InfoWorld. Available at: https://www.infoworld.com/article/3210589/node-js/what-is-nodejs-javascript-runtime-explained.html [Accessed 11 May 2018].<br>
 
 
             </section>
