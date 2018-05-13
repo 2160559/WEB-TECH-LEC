@@ -510,7 +510,7 @@ function funcName($param1, $param2){
             <hr>
             @if (Auth::user())
                   <div style="text-align:center">
-                <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
+                <a style="text-align:center" href="{{asset('storage/PHPNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
                 </div>
                 <hr>
             @endif
