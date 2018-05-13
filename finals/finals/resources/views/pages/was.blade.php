@@ -132,7 +132,7 @@ remove or update old library components that may potentially be vulnerable</li>
             <hr>
             <section id="bc">
                 <h3>Insufficient Logging & Monitoring</h3>
-                
+                 <img src="{{ asset('storage/img/InsufficientLogging.png') }}" width="50%" length="50%">
                 <p>Insufficient logging and monitoring is a situation where some user activities within the website are not recorded. It is also the case when all user activities are logged but important details such as activity, time in, time out, or even frequency of visits are not recorded. Not being able to track any suspicious activities or sensitive actions happening within an application or a system, such as change of passwords, financial transactions, or not being able to store logs, properly give way for attackers to prevent or damage security controls. The lack of logs causes security breaches to remain undetected, which allows attackers to have more time to escalate further into the application or the system, and to further exploit stolen data. The said attacks will, in turn, result in a more difficult and longer process of repairing any damage done and/or recovering any data loss.</p>
                 
                  <b>Mitigation Case</b>
