@@ -6,7 +6,11 @@
                 <ul class="sidebar-nav">
                     <li><a href="#what-is-was" class="left-nav-link">What is WAS?</a></li>
                     <li><a href="#sample-case">Sample Case</a></li>
+                    <li><a href="#data-pri-act">Data Privacy Act</a></li>
                     <li><a href="#top-10">Top 10 OWASP 2017</a></li>
+                    <li><a href="#bA">Broken Authentication</a></li>
+                    <li><a href="#bb">Using Components with Known Vulnerabilities</a></li>
+                    <li><a href="#bc">Insufficient Logging & Monitoring</a></li>
                     <li><a href="#references">References</a></li>
                 </ul>
             </div>
@@ -53,26 +57,108 @@
 
             </section>
             <hr>
+            <section id="data-pri-act">
+            <img src="{{ asset('storage/img/dataprin.png') }}">
+            <p>The Data Privacy Act was enforced in order to ensure the presence of security in web applications.
+                </p>
+            
+            
+            
+            
+            </section>
+            <hr>
             <section id="top-10">
                 <h3>Top 10 Open Web Application Security Project (OWASP) 2k17</h3>
                 <ul>
 
                     <li> A1 - Injection</li>
-                    <li> A2 – Broken Authentication and Session Management</li>
+                    <li><b> A2 – Broken Authentication and Session Management</b></li>
                     <li>A3 – 2017-Sensitive Data Exposure</li>
                     <li>A4 – XML External Entities (XXE)</li>
                     <li>A5 – Broken Access Control</li>
                     <li> A6 – Security Misconfiguration</li>
                     <li>A7 – Cross-Site Scripting (XSS)</li>
                     <li>A8 – Insecure Deserialization</li>
-                    <li>A9 – Using Components with Known Vulnerabilities</li>
-                    <li> A10 –Insufficient Logging & Monitoring</li>
+                    <li><b>A9 – Using Components with Known Vulnerabilities</b></li>
+                    <li> <b>A10 –Insufficient Logging & Monitoring</b></li>
                 </ul>
                 For in depth explanation please follow this link : <a
                         href="https://www.owasp.org/index.php/Top_10-2017_Top_10">https://www.owasp.org/index.php/Top_10-2017_Top_10</a>
+                <p>For this lesson, we will be focusing on 3 web application security. The remaining security risks will be covered soon. Come back after a week if you want to know more about the reamining security risk. </p>
             </section>
 
             <hr>
+            <section id="bA">
+                <h3>Broken authentication</h3>
+                <p>
+                Broken authentication is a security risk which occurs when a hacker makes use of valid combinations of compromised account credentials, and try those combinations to enter a login page or any page that requires authentication, posing as an authentic user. Broken authentication is the result of poor authentication implementations. For example, session IDs are explicitly embedded in URLs, and unencrypted user data are transmitted to servers. Functions such as the Reset or Forgot Password are mostly exploited in this vulnerability, and are used by the attacker in order to retrieve the details of an account. </p>
+                
+                <b>Mitigation Tips</b>
+                <ol>
+                
+                <li>Setting strong passwords at least eight characters long with the use of special characters and uppercase letters. Temporarily deny login service if there were too many failed attempts. </li>
+<li>Set session timeouts when there is no user activity.</li>
+<li>When a wrong credential is entered, there should be an output saying “Invalid password/username”  instead of “Invalid password” or “Invalid username”.</li>
+<li>Login details should be encrypted or hashed when placed and transmitted to the database.</li>
+<li>When using a PC, remember to logout the account instead of just closing the web browser.</li>
+                    
+                    </ol>
+                
+                <b>Sample Case</b>
+                <p>
+A case of broken authentication occurred between October and December 2015, where nearly 9,000 user accounts of an online tax preparation service company were compromised. The attack is a credential-stuffing attack where hackers obtained a multitude of username and password credentials, and used them to enter the accounts of TaxSlayer customers. TaxSlayer LLS only noticed the attack in January 2016, when a customer of complained that hackers used their information to obtain tax refunds by filing fake tax returns with altered bank routing numbers directed to the hackers (Feigelson, J., & Bucher, W.). In order to end the attack, the TaxSlayer imposed multi-factor authentication requirements. The Federal Trade Commission, who is working on this issue, filed their final approval of settlement with TaxSlayer LLC on November 8, 2017, containing the rules TaxSlayer must follow to continue its services (FTC, 2018).
+</p>
+
+            </section>
+            <hr>
+            <section id="bb">
+                <h3>Using Components with Known Vulnerabilities</h3>
+                <p>Codes nowadays tend to link to open-source external components such as modules, libraries, and frameworks. Most of the time, no standards or requisites are given which means that anyone can create, use, or edit the components as they wish. This poses a security risk, especially for companies or developers that use these components. Not every component can affect different applications in the same way.  This solely depends on how deeply embedded these components are inside the software and programs that use them. As these components run on the same access level as the application that uses them, attackers can exploit vulnerable components to access sensitive information and perform tasks that can compromise the companies that use these components.</p>
+                <b>Mitigation Tips</b>
+                <ol>
+                    <li>Proper management of all dependencies and libraries are required</li>
+<li>Components should be analyzed for insecure codes (such as codes unintentionally allowing users to access private files or even sensitve compueter processes)
+remove or update old library components that may potentially be vulnerable</li>
+<li> All components and/or sources should be checked for approved licenses ( indicate that they have already been reviewed for security)</li>
+<li>Unapproved libraries should be removed; otherwise, if the companies will decide to take the risk of using them, then there should be restricted use.</li>
+
+                
+                
+                </ol>
+                                <b>Sample Case</b>
+                <p>One particular case involving this security risk involves a hacking incident that happened on a blogging website used by Thomson Reuters. Damages to the blog site includes false posts, which includes a false interview with a Syrian rebel army leader. Following the attack was a security breach on his twitter account, which the hackers have taken control of. The website was taken back after some time.</p>
+<p> According to the security team of WordPress, the hacking happened because Reuters was using an outdated version of Wordpress, which is publicly known for having a lot of security issues.  The reason why websites, like the blogging website being used by Reuters, are prone to attacks could be because customers assume that vendors have already taken care of the security issues, and they find no need for updates.
+</p>
+            </section>
+            <hr>
+            <section id="bc">
+                <h3>Insufficient Logging & Monitoring</h3>
+                
+                <p>Insufficient logging and monitoring is a situation where some user activities within the website are not recorded. It is also the case when all user activities are logged but important details such as activity, time in, time out, or even frequency of visits are not recorded. Not being able to track any suspicious activities or sensitive actions happening within an application or a system, such as change of passwords, financial transactions, or not being able to store logs, properly give way for attackers to prevent or damage security controls. The lack of logs causes security breaches to remain undetected, which allows attackers to have more time to escalate further into the application or the system, and to further exploit stolen data. The said attacks will, in turn, result in a more difficult and longer process of repairing any damage done and/or recovering any data loss.</p>
+                <ol>
+                 <li>proper logging and monitoring system must be planned and developed to track all activity within the application, suspicious or not</li>
+ 
+ <li>Alerts concerning suspicious activities must also be ensured that they are effective enough and that an incident response and recovery plan is well established</li>
+  <li>a penetration test must also be conducted wherein the system will be tested if it successfully logs and monitors any activity within the application properly, including any suspicious activities. This is to test the sufficiency of the logs being generated by the logging and monitoring system (Hack2Secure, 2018).</li>
+
+                
+                </ol>
+                <b>Sample Case</b>
+                
+                
+                <p>
+                An example case where the vulnerability of insufficient logging and monitoring  was exploited, happened in 2013 where the German branch of Vodafone was hacked. A third-party subcontractor was reported to steal the names, addresses, bank account numbers, birthdates, and possibly phone credit card details and passwords of over 2 million customers. Though unclear of when the breach took place, it appeared that the hackers were able so successfully compromise an internal server on their network. A software which could have alerted the company of the attack as soon as the breach happened and in turn would have mitigated the breach was believed to be absent.</p>
+                
+                
+                
+                
+                
+                
+                
+                
+            </section>
+            <hr>
+            
             <section id="references">
                 <h3>References</h3>
                 News, A. (2018). Jollibee takes down delivery website after gov't raises privacy concern. [online]
