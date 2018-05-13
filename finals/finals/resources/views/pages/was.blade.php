@@ -58,15 +58,14 @@
             </section>
             <hr>
             <section id="data-pri-act">
-            <img src="{{ asset('storage/img/dataprin.png') }}">
-            <p>The Data Privacy Act was enforced in order to ensure the presence of security in web applications.
-                </p>
+            <img src="{{ asset('storage/img/datapri.png') }}" width="50%" length="50%">
+            <p>The Data Privacy Act was enforced in order to ensure the presence of security in web applications.</p>
             
             
             
             
             </section>
-            <hr>
+            <hr><hr>
             <section id="top-10">
                 <h3>Top 10 Open Web Application Security Project (OWASP) 2k17</h3>
                 <ul>
@@ -84,7 +83,7 @@
                 </ul>
                 For in depth explanation please follow this link : <a
                         href="https://www.owasp.org/index.php/Top_10-2017_Top_10">https://www.owasp.org/index.php/Top_10-2017_Top_10</a>
-                <p>For this lesson, we will be focusing on 3 web application security. The remaining security risks will be covered soon. Come back after a week if you want to know more about the reamining security risk. </p>
+                <p>For this lesson, we will be focusing on 3 web application securities. The remaining security risks will be covered soon. Come back after a week if you want to know more about the reamining security risk. </p>
             </section>
 
             <hr>
@@ -135,6 +134,8 @@ remove or update old library components that may potentially be vulnerable</li>
                 <h3>Insufficient Logging & Monitoring</h3>
                 
                 <p>Insufficient logging and monitoring is a situation where some user activities within the website are not recorded. It is also the case when all user activities are logged but important details such as activity, time in, time out, or even frequency of visits are not recorded. Not being able to track any suspicious activities or sensitive actions happening within an application or a system, such as change of passwords, financial transactions, or not being able to store logs, properly give way for attackers to prevent or damage security controls. The lack of logs causes security breaches to remain undetected, which allows attackers to have more time to escalate further into the application or the system, and to further exploit stolen data. The said attacks will, in turn, result in a more difficult and longer process of repairing any damage done and/or recovering any data loss.</p>
+                
+                 <b>Mitigation Case</b>
                 <ol>
                  <li>proper logging and monitoring system must be planned and developed to track all activity within the application, suspicious or not</li>
  
@@ -173,7 +174,7 @@ remove or update old library components that may potentially be vulnerable</li>
             <hr>
             @if (Auth::user())
                  <div style="text-align:center">
-                <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
+                <a style="text-align:center" href="{{asset('storage/NodeNotes.pdf')}}" class="pdfdownload" download="NodeNotes.pdf">Download topic PDF file</a> 
                 </div>
                 <hr>
             @endif
