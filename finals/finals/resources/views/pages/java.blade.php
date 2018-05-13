@@ -241,17 +241,17 @@ static
             </section>
             <hr>
             @if (Auth::user())
-                <a href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download as
-                    topic
-                    PDF version</a>
+                <div style="text-align:center">
+                <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
+                </div>
                 <hr>
             @endif
             <div class="row">
                 <div class="d-flex justify-content-start">
-                    <a id="next" class="btn btn-outline-primary" href="/">Back</a>
+                    <a id="" class="btn btn-outline-primary" href="{{route('home')}}">Home</a>
                 </div>
                 <div class="ml-auto justify-content-end">
-                    <a id="next" class="btn btn-outline-primary" href="/php">Next</a>
+                    <a id="next" class="btn btn-outline-primary" href="{{route('php')}}">Next</a>
                 </div>
             </div>
 
