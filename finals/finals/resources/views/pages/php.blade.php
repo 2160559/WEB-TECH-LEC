@@ -10,6 +10,7 @@
                     <li><a href="#data-types">Data Types</a></li>
                     <li><a href="#loops">Loops</a></li>
                     <li><a href="#functions">Functions</a></li>
+                    <li><a href="#errors">Handling Error Messages</a></li>
                     <li><a href="#sessions">Sessions</a></li>
                     <li><a href="#references">References</a></li>
                 </ul>
@@ -371,6 +372,53 @@ function funcName($param1, $param2){
                     </tr>
                 </table>
             </section>
+            <hr>
+            <section id="errors">
+                <h3>Handling Error Messages</h3>
+             <p>PHP has built in functions for handling errors. Custom error handling functions can also be made with also exception error handling. When handling errors within your PHP code, you can either display, log, act on and/or ignore the errors that occur. </p>
+	           <p>Error reports generated can be contained in different possible locations. It may be in the php.ini file, the .htaccess fil in the web browser, or in your own PHP code. You can set the error reporting level using the error_reporting variable in the php.ini file such as E_ALL or E_STRICT. You can also set it during run-time using the error_reporting() function (i.e. error_reporting(E_ALL)). Different error levels are also represented by an integer and an associated constant. Some of the most common error levels are the following: </p>
+
+              <table>
+                    <tr>
+                        <th>Error Level</th>
+                        <th style="padding-left:20px">Value</th>
+                        <th style="padding-left:20px">Description</th>
+                    </tr>
+                    <tr>
+                        <td>E_ERROR</td>
+                        <td style="padding-left:20px">1</td>
+                        <td style="padding-left:20px">A fatal run-time error that stops the execution of the script immediately.</td>		
+                    </tr>
+                    <tr>
+                        <td>E_WARNING</td>
+                        <td style="padding-left:20px">2</td>
+                        <td style="padding-left:20px">A non-fatal run-time error where most errors fall into this category. This, however, doesn’t does not the execution of the script.</td>	
+                  
+                    </tr>
+                    <tr>
+                        <td>E_NOTICE</td>
+                        <td style="padding-left:20px">8</td>
+                        <td style="padding-left:20px">A run-time notice that indicates a possible error that had been encountered.</td>
+                    </tr>
+                  	
+                     <tr>
+                        <td>E_STRICT</td>
+                        <td style="padding-left:20px">2048</td>
+                        <td style="padding-left:20px">	Although this is not strictly an error, it is triggered when PHP encounters any code that may cause future problems or forward incompatibilities.</td>
+                    </tr>	
+                      <tr>
+                        <td> E_ALL</td>
+                        <td style="padding-left:20px">8191</td>
+                        <td style="padding-left:20px">This indicates that all errors and warnings  are to be displayed except for E_STRICT prior to PHP 5.4.0</td>
+                    </tr>
+                   		
+                </table>
+            
+            
+            
+            
+            <hr>
+            </section>
             <section id="sessions">
                 <h3>Sessions</h3>
                 <p>
@@ -440,7 +488,7 @@ function funcName($param1, $param2){
                         session_destroy();
                         ?&gt;</pre>
             </section>
-
+            <hr>
             <section id="references">
                 <h3>References</h3>
                 MDN Web Docs. (2018). HTTP cookies. [online] Available at:
@@ -462,7 +510,7 @@ function funcName($param1, $param2){
             <hr>
             @if (Auth::user())
                   <div style="text-align:center">
-                <a style="text-align:center" href="{{asset('storage/JavaNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
+                <a style="text-align:center" href="{{asset('storage/PHPNotes.pdf')}}" class="pdfdownload" download="JavaNotes.pdf">Download topic PDF file</a> 
                 </div>
                 <hr>
             @endif
