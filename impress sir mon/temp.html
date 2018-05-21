@@ -24,7 +24,7 @@
         <div class="row card-group">
           <div class="col-md-12 heading card-header" id="topic-title">
             <h1 class="font-weight-bold text-monospace text-uppercase">
-              <a  data-toggle="collapse" href="#javaServlets" aria-expanded="true" aria-controls="collapseExample" id="underline-topic">
+              <a  data-toggle="collapse" href="#javaServlets" aria-expanded="true" aria-controls="javaServlets" id="underline-topic">
                 Java Servlet
               </a>
             </h1>
@@ -36,25 +36,108 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 card subtopic" id="subtopic1">
-            <div class="transform-on-hover card border-0">
+            <div class="card border-0">
               <div class="card-body">
-                <h2><a href="#">Servlet Lifecycle</a></h2>
-                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                <h2>Servlet Lifecycle</h2>
+                <p class="text-muted card-text">The life cycle of a servlet has 4 stages: instantiation, initialization, request handling, and destruction.</p>
+              </div>
+            </div>
+            <br>            
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head1">
+                <a data-toggle="collapse" href="#stage1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Instantiation
+                </a>
+              </div>
+              <div id="stage1" class="collapse" role="tabpanel" aria-labelledby="head1">
+                <div class="card-body text-left">
+                  <ul>
+                    <li>
+                      the constructor call
+                    </li><hr>
+                    <li>
+                      creates an instance of the servlet to service client requests
+                    </li><hr>
+                    <li>
+                      invoked implicitly by the servlet container when the servlet is called upon
+                      to service client request and no instance currently exists
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head2">
+                <a data-toggle="collapse" href="#stage2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Initialization
+                </a>
+              </div>
+              <div id="stage2" class="collapse" role="tabpanel" aria-labelledby="head2">
+                <div class="card-body text-left">
+                  <ul>
+                    <li>
+                      <code>init()</code> method
+                    </li><hr>
+                    <li>
+                      invoked only once intended for any startup init code
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>  
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head3">
+                <a data-toggle="collapse" href="#stage3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3. Request Handling
+                </a>
+              </div>
+              <div id="stage3" class="collapse" role="tabpanel" aria-labelledby="head2">
+                <div class="card-body text-left">
+                  <ul>
+                    <li>
+                      <code>service()</code> method
+                    </li><hr>
+                    <li>
+                      invoked for each client request
+                    </li><hr>
+                    <li>
+                      performs whatever logic to serve request and generate response
+                    </li><hr>
+                    <li>
+                      multi-threaded service instance; 'thread safe'
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>       
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head4">
+                <a data-toggle="collapse" href="#stage4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Destruction
+                </a>
+              </div>
+              <div id="stage4" class="collapse" role="tabpanel" aria-labelledby="head4">
+                <div class="card-body text-left">
+                  <ul>
+                    <li>
+                      <code>destroy()</code> method
+                    </li><hr>
+                    <li>invoked before servlet instance is 'unloaded', housekeeping cleanup code</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <br>
             <div class="transform-on-hover card border-0">
               <div class="card-body">
-                <h2><a href="#">Servlet Lifecycle</a></h2>
-                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                <img src="img/lifecycle.gif" class="img-fluid">
               </div>
             </div>
           </div>
+          
           <div class="col-md-6 col-lg-4 card subtopic" id="subtopic2">
             <div class="transform-on-hover card border-0">
               <div class="card-body">
                 <h2><a href="#">HTTP Servlet</a></h2>
-                <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                <p class="text-muted card-text">HTTP Servlets handles
+                  <br>HTTP requests and generates responses. Hosted in a web container, it takes care of converting requests to responses. The service() method call is routed to a doXXX() handler method</p>
               </div>
             </div>
           </div>

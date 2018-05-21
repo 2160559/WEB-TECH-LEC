@@ -131,6 +131,16 @@ section > div > div> div > h1:hover::after {
 
 	.topic-block .transform-on-hover:hover {
 	    transform: translateY(-10px) scale(1.02);
-	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.10) !important; 
 	}
+}
+
+.card > div > .emphasize-on-hover:hover,  
+.card > div > .emphasize-on-hover:focus {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.collapse > .card-body > ul{
+  margin-left: -20px;
 }
