@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A website showing off our best, rich UI/UX">
+<meta name="author" content="9325A-1">
+
+<title>A Short Story</title>
+
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/typeit.min.js"></script>
+
+</head>
+<body>
+
+<div>
+    <p id="intro"></p>
+</div>
+
+<script>
+new TypeIt('#intro', {
+    speed: 150,
+    deleteSpeed: 150,
+    autoStart: false
+    })
+    .type('Wlcome')
+    .pause(1000)
+    .delete(5)
+    .type('elcum')
+    .pause(1000)
+    .delete(3)
+    .type('come to ')
+    .pause(1000)
+    .type('<strong>Web Tech</strong>!')
+    .break()
+    .pause(1000)
+    .type('<a href="" style="color:black;">Enter</a>')
+    .destroy();
+</script>
+</body>
+</html>

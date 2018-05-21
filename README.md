@@ -5,43 +5,6 @@ Second Semester, 2018 January to May<br>
 
 This repository features documents, resources, and files related to our group's course website. Contents feature extended notes based on the subject syllabus. All references have been properly accredited where they are due.
 
-## Table of Contents
+## Objective
 
-**[Prelims](#prelims)**<br>
-**[Midterms](#midterms)**<br>
-**[Submissions](#submissions)**<br>
-**[Contributors](#contributors)**
-
-## Prelims
-
-- [X] WWW
-- [X] HTTP
-- [X] URL
-- [X] HTML
-
-## Midterms
-
-### CSS
-- [x] History
-- [x] Statements
-- [ ] Rule Set
-- [ ] Selectors
-
-### Javascript
-- [ ] ?
-
-## Submissions
-
-- [x] Essay: The World of Mass Media and Communication Without the WWW (Feb 12, 2018)
-- [x] Course Website: Prelims (Feb 26, 2018)
-- [x] Research Activity: Comparative Website Evaluation (April 2, 2018)
-- [ ] Course Website: Midterms (April 9, 2018)
-
-## Contributors
-
-Dacapias, Princess @ceska <br>
-Gonzaga, Dominic @2161478 <br>
-Mejia, Rapha @2168920 <br>
-Monoten, Gaspar @jungas <br>
-Pagalanan, Lawrence @lpagalanan <br>
-Titiwa, Karen @2160559 <br>
+*Rich Ui/UX*
