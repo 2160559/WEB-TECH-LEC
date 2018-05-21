@@ -9,6 +9,7 @@ body {
     position: fixed;
     left: 50%;
     top: 40%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: left;
 }
@@ -83,12 +84,15 @@ section > div > div> div > h1::after {
   display: block;
   width: 0%;
   height: 5px;
+  background:-webkit-gradient(linear, left top, right bottom, from(#ffcc66), to(#ff99cc)) !important;
   background:linear-gradient(to bottom right, #ffcc66 0%, #ff99cc 100%) !important;
+  -webkit-transition: width .5s;
   transition: width .5s;
 }
 
 section > div > div> div > h1:hover::after {
   width: 100%;
+  -webkit-transition: width .5s;
   transition: width .5s;
   content: 'Click Me';
   font-size: 10px;
@@ -100,6 +104,7 @@ section > div > div> div > h1:hover::after {
 }
 
 .topic-block.subtopic-grid .card{
+  -webkit-transition: 0.4s ease;
   transition: 0.4s ease; 
 }
 
@@ -109,6 +114,8 @@ section > div > div> div > h1:hover::after {
 }
 .topic-block.subtopic-grid .card img:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
 }
 
 .topic-block.subtopic-grid .card-body {
@@ -128,13 +135,16 @@ section > div > div> div > h1:hover::after {
 }
 
 .topic-block.subtopic-grid .card {
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 576px) {
 
 	.topic-block .transform-on-hover:hover {
+	    -webkit-transform: translateY(-10px) scale(1.02);
 	    transform: translateY(-10px) scale(1.02);
+	    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.10) !important;
 	    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.10) !important; 
 	}
 }
