@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Webtech 2018</title>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A website showing off our best, rich UI/UX">
+  <meta name="author" content="9325A-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="js/typeit.min.js"></script>
+
+  <script> 
+      $(document).ready(function(){
+          $("#java-logo").click(function(){
+              $("#java-content").animate({
+                  width: 'toggle'
+              });
+              $("#home").fadeIn(1200);
+              $("#was-content").fadeOut(1200);
+              $("#was-content").fadeOut(1200);
+          });
+
+
+      });
+  </script> 
+
+
+  <script> 
+      $(document).ready(function(){
+          $("#home-logo").click(function(){
+              $("#java-content").animate({
+                  width: 'toggle'
+              });
+              $("#home").fadeOut();
+          });
+
+      });
+  </script> 
+
+    <script> 
+      $(document).ready(function(){
+          $("#home-logo2").click(function(){
+              $("#was-content").animate({
+                  width: 'toggle'
+              });
+              $("#home2").fadeOut();
+              
+          });
+
+      });
+  </script> 
+
+  <script> 
+      $(document).ready(function(){
+          $("#was-logo").click(function(){
+              $("#was-content").animate({
+                  width: 'toggle'
+              });
+              $("#home2").fadeIn(1200);
+              $("#java-content").fadeOut(1200);
+
+          });
+      });
+  </script> 
+
+</head>
+
+<body>
+    <div id="left" style="background-color:#9fcdff">
+        <img id="java-logo" src="img/java-logo.png" alt="Java Logo" class="zoom">
+    </div>
+
+    <div id="home2">
+      <img id="home-logo2" src="img/home-page.png" alt="Home Logo" class="zoom">
+    </div>
+
+    <div id="center" style="padding-left: 10%;padding-top: 10%">
+      <img id="main-logo" src="img/main-logo.png" class="img-fluid" alt="Responsive image" style="position: auto;">
+      <br><br><br><br><br><br><br>
+            <div>
+                <p id="intro"></p>
+            </div>
+
+            <script>
+            new TypeIt('#intro', {
+                speed: 150,
+                deleteSpeed: 150,
+                autoStart: false
+                })
+                .type('Wc')
+                .pause(500)
+                .delete(1)
+                .type('ellcum')
+                .pause(1000)
+                .delete(4)
+                .type('come ')
+                .pause(300)
+                .type('to <strong>WebTech 2018</strong>!')
+                .break()
+                .pause(1000)
+                .type('If you wanna know more about Java Servlets ')
+                .type('<a href="main.html" style="color:black;">If you wanna know more about Java Servlets <br> click the icon on the left...</a>')
+                .type('<a href="main.html" style="color:black;">If you wanna know more about Java Servlets <br> click the icon on the left...</a>')
+                .destroy();
+            </script>
+            
+          
+          <div id="aboutUs" style="background-color:grey;padding:20px;color: white;">
+
+            <a href="about.html" style="color: white;float:left;">About Us</a>
+            <div style="float:right;padding-bottom:20px; ">9325A 1-2 TF Group 1<br> &copy; May 2018</div>
+          </div>
+          <div id="aboutUs" style="background-color:grey;padding:20px;color: white;">
+
+        </div>
+
+    </div>
+    
+    <div id="home">
+      <img id="home-logo" src="img/home-page.png" alt="Home Logo" class="zoom">
+    </div>
+
+
+    <div id="right" style="background-color:#ff6368;">
+        <img id="was-logo" src="img/was-logo.png" alt="WAS Logo" class="zoom""></a>
+    </div>
+
+    <!--JAVA CONTENT-->
+    <div id="java-content">
+      <div  class="topic-block">
+    <section class="topic-block subtopic-grid">
+      <div class="container">
+        <div class="row card-group">
+          <div class="col-md-12 heading card-header" id="topic-title">
+            <h1 class="font-weight-bold text-monospace text-uppercase">
+              <a  data-toggle="collapse" href="#javaServlets" aria-expanded="true" aria-controls="javaServlets" id="underline-topic">
+                Java Servlet
+              </a>
+            </h1>
+            <div class="collapse" id="javaServlets">
+              <div class="card card-body">
+                <p>A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers. For such applications, Java Servlet technology defines HTTP-specific servlet classes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 card subtopic" id="subtopic1">
+            <div class="transform-on-hover card border-0">
+              <div class="card-body">
+                <h2>Servlet Lifecycle</h2>
+                <p class="text-muted card-text text-monospace">The life cycle of a servlet<br>has 4 stages:</p>
+              </div>
+            </div>
+            <br>            
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head1">
+                <a data-toggle="collapse" href="#stage1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Instantiation
+                </a>
+              </div>
+              <div id="stage1" class="collapse" role="tabpanel" aria-labelledby="head1">
+                <div class="card-body text-left">
+                  <ul class="small list-group">
+                    <li class="list-group-item list-group-item">the constructor call</li>
+                    <li class="list-group-item list-group-item-info">creates an instance of the servlet to service client requests</li>
+                    <li class="list-group-item list-group-item">invoked implicitly by the servlet container when the servlet is called upon
+                      to service client request and no instance currently exists</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head2">
+                <a data-toggle="collapse" href="#stage2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Initialization
+                </a>
+              </div>
+              <div id="stage2" class="collapse" role="tabpanel" aria-labelledby="head2">
+                <div class="card-body text-left">
+                  <ul class="small list-group">
+                    <li class="list-group-item list-group-item"><code>init()</code> method</li>
+                    <li class="list-group-item list-group-item-info">invoked only once intended for any startup init code</li>
+                  </ul>
+                </div>
+              </div>
+            </div>  
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head3">
+                <a data-toggle="collapse" href="#stage3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3. Request Handling
+                </a>
+              </div>
+              <div id="stage3" class="collapse" role="tabpanel" aria-labelledby="head3">
+                <div class="card-body text-left">
+                  <ul class="small list-group">
+                    <li class="list-group-item list-group-item"><code>service()</code> method</li>
+                    <li class="list-group-item list-group-item-info">invoked for each client request</li>
+                    <li class="list-group-item list-group-item">performs whatever logic to serve request and generate response</li>
+                    <li class="list-group-item list-group-item-info">multi-threaded service instance; 'thread safe'</li>
+                  </ul>
+                </div>
+              </div>
+            </div>       
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head4">
+                <a data-toggle="collapse" href="#stage4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Destruction
+                </a>
+              </div>
+              <div id="stage4" class="collapse" role="tabpanel" aria-labelledby="head4">
+                <div class="card-body text-left">
+                  <ul class="small list-group">
+                    <li class="list-group-item list-group-item"><code>destroy()</code> method</li>
+                    <li class="list-group-item list-group-item-info">invoked before servlet instance is 'unloaded', housekeeping cleanup code</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="transform-on-hover card border-0">
+              <div class="card-body" data-toggle="modal" data-target="#lifecycle">
+                <img src="img/lifecycle.gif" class="img-fluid d-block">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 card subtopic" id="subtopic2">
+            <div class="transform-on-hover card border-0">
+              <div class="card-body">
+                <h2>HTTP Servlet</h2>
+                <p class="text-muted small text-monospace card-text">HTTP Servlets handles
+                  <br>HTTP requests and generates responses.<br> Hosted in a web container, it takes care of converting requests to responses.<br>The service() method call is routed to a doXXX() handler method</p>
+              </div>
+            </div>
+            <br>
+            <div class="transform-on-hover card border-0">
+              <div class="card-body" data-toggle="modal" data-target="#http">
+                <img class="img-fluid d-block mx-auto " src="img/servlet.gif">
+              </div>
+            </div>
+            <div class="card border-0">
+              <div class="card-body"> 
+                <p class="small card-text">The server sends off any type of requests made by the client to the servlet’s service() method.</p>
+                <p class="small card-text">This method routes the requests to the doXXX() handler method for each HTTP request type.</p>
+              </div>
+            </div>
+            <br>
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head5">
+                <a data-toggle="collapse" href="#stage5" aria-expanded="true" aria-controls="stage5" class="card-text text-left emphasize-on-hover">List of doXXX() calls
+                </a>
+              </div>
+              <div id="stage5" class="collapse" role="tabpanel" aria-labelledby="head5">
+                <div class="card-body">
+                  <ul class="small list-group">
+                    <li class="list-group-item list-group-item">doGet</li>
+                    <li class="list-group-item list-group-item-success">doPost</li>
+                    <li class="list-group-item list-group-item">doPut</li>
+                    <li class="list-group-item list-group-item-success">doDelete</li>
+                    <li class="list-group-item list-group-item">doTrace</li>
+                    <li class="list-group-item list-group-item-success">doOptions</li>
+                    <li class="list-group-item list-group-item">doHead</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card border-0">
+              <div class="card-header" role="tab" id="head6">
+                <a data-toggle="collapse" href="#stage6" aria-expanded="true" aria-controls="stage6" class="card-text text-left emphasize-on-hover">Methods of HTTP Servlet class
+                </a>
+              </div>
+              <div id="stage6" class="card-body collapse" role="tabpanel" aria-labelledby="head6">
+                <ul class="small list-group">
+                  <li class="list-group-item list-group-item">protected void doDelete (HttpServletRequest req,HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item-success">protected void doGet (HttpServletRequest req, HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item">protected void doHead (HttpServletRequest req, HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item-success">protected void doOptions (HttpServletRequest req, HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item">protected void doPost (HttpServletRequest req, HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item-success">protected void doPut (HttpServletRequest req, HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item">protected void doTrace (HttpServletRequest req, HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item-success">protected long getLastModified (HttpServletRequest req)</li>
+                  <li class="list-group-item list-group-item">protected void service (HttpServletRequest req, HttpServletResponse resp)</li>
+                  <li class="list-group-item list-group-item-success">void service (ServletRequest req, ServletResponse resp)</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4 card subtopic" id="subtopic3">
+            <div class="transform-on-hover card border-0">
+              <div class="card-body">
+                <h2>Java Server Pages</h2>
+                <p class="text-muted card-text small text-monospace">JSP, compared to Java Servlets, which is comprised of HTML code within a Java program, allows Java code to be inserted into HTML or XML pages. </p>
+              </div>
+            </div>
+            <br>
+
+            <div class="card border-0">
+              <div class="card-body"> 
+                <p class="small card-text">When a client sends a request over the internet, the web server compiles files with the .jsp extension, converting them into executable Java Servlets before serving or processing client HTTP
+                  requests. </p> 
+              </div>
+            </div>
+            <br>
+            <div class="card border-0">
+              <div class="card-body"> 
+                <p class="small card-text">This produces
+                  a document, like a HTML page, which is then handled like any other page or servlet and sent back to
+                  the client with a HTTP response.
+                </p>
+              </div>
+            </div>
+            <br>
+            <div class="transform-on-hover card border-0">
+              <div class="card-body" data-toggle="modal" data-target="#jsp">
+                <img class="img-fluid d-block" src="img/jsp.gif">
+              </div>
+            </div>
+            <br>
+
+            <div class="transform-on-hover card border-0">
+              <div class="card-body" role="tab" id="head99">
+                <a data-toggle="collapse" href="#stage99" aria-expanded="true" aria-controls="stage99" class="card-text text-left font-weight-bold">Elements</a>
+              </div>
+            </div>
+            <div id="stage99" class="collapse" role="tabpanel" aria-labelledby="head99">
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head7">
+                  <a data-toggle="collapse" href="#stage7" aria-expanded="true" aria-controls="stage7" class="card-text text-left emphasize-on-hover">1. Actions
+                  </a>
+                </div>
+                <div id="stage7" class="collapse" role="tabpanel" aria-labelledby="head7">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Uses: </strong>inserts a file, reuses JavaBeans, forwards, generates html</li>
+                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;jsp:actionName attrib="value" /></code></li>                                                                                                                                          
+                      <li class="list-group-item list-group-item"><p><strong>Action Name</strong></p>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item list-group-item" data-toggle="tooltip" title="called when page is requested">include</li>
+                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="Looks for or creates object. Can use setProperty/ getProperty only after this has been called">useBean</li>
+                          <li class="list-group-item list-group-item">setProperty</li>
+                          <li class="list-group-item list-group-item-secondary">getProperty</li>
+                          <li class="list-group-item list-group-item" data-toggle="tooltip" title="can only forward to another page or servlet">forward</li>
+                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="inserts java components">plugin</li>
+                          <li class="list-group-item list-group-item">element</li>
+                          <li class="list-group-item list-group-item-secondary">attrib</li>
+                          <li class="list-group-item list-group-item">body</li>
+                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="write template text">text</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head8">
+                  <a data-toggle="collapse" href="#stage8" aria-expanded="true" aria-controls="stage8" class="card-text text-left emphasize-on-hover">2. Directives
+                  </a>
+                </div>
+                <div id="stage8" class="collapse" role="tabpanel" aria-labelledby="head8">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Uses: </strong>Instructions for how to translate and execute JSP </li>
+                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%@ directiveName attrib=”value” %></code>
+                      </li>
+                      <li class="list-group-item list-group-item"><p>ex:</p>
+                        <p><strong>handling jsp page errors: </strong><br><code>&lt;%@ page errorPage="filename" %></code></p>
+                      </li>
+                      <li class="list-group-item list-group-item-info">
+                        <p>ex:</p>
+                        <p>
+                          <b>static html:</b><br>
+                          <code>&lt;%@ page contentType="text/html" &></code><br>
+                          <code>&lt;%@ page pageEncoding="utf-8" %></code>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>  
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head9">
+                  <a data-toggle="collapse" href="#stage9" aria-expanded="true" aria-controls="stage9" class="card-text text-left emphasize-on-hover">3. Expressions
+                  </a>
+                </div>
+                <div id="stage9" class="collapse" role="tabpanel" aria-labelledby="head9">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Syntax: </strong> <code>&lt;%= expression %></code></li>
+                      <li class="list-group-item list-group-item-info"> ex:  <code>&lt;%= new java.util.Date() %></code></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>       
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head10">
+                  <a data-toggle="collapse" href="#stage10" aria-expanded="true" aria-controls="stage10" class="card-text text-left emphasize-on-hover">4. Scriplets
+                  </a>
+                </div>
+                <div id="stage10" class="collapse" role="tabpanel" aria-labelledby="head10">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Uses:</strong> inserts any Java code within the JSP file</li>
+                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%= code %></code></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head11">
+                  <a data-toggle="collapse" href="#stage11" aria-expanded="true" aria-controls="stage11" class="card-text text-left emphasize-on-hover">5. Declarations
+                  </a>
+                </div>
+                <div id="stage11" class="collapse" role="tabpanel" aria-labelledby="head11">
+                  <div class="card-body text-left">     
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Syntax: </strong><code>&lt;! code %></code></li>
+                      <li class="list-group-item list-group-item-info">ex: <code>&lt;! int i = 0; %></code></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head12">
+                  <a data-toggle="collapse" href="#stage12" aria-expanded="true" aria-controls="stage12" class="card-text text-left emphasize-on-hover">6. Comments
+                  </a>
+                </div>
+                <div id="stage12" class="collapse" role="tabpanel" aria-labelledby="head12">
+                  <div class="card-body text-left">
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-light"><strong>Syntax: </strong>&lt;%-- comment --%></li>
+                    </ul>             
+                  </div>
+                </div>
+              </div>  
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head13">
+                  <a data-toggle="collapse" href="#stage13" aria-expanded="true" aria-controls="stage13" class="card-text text-left emphasize-on-hover">7. Predefined Objects
+                  </a>
+                </div>
+                <div id="stage13" class="collapse" role="tabpanel" aria-labelledby="head13">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item">request (HTTPServletRequest)</li>
+                      <li class="list-group-item list-group-item-info">response (HTTPServletResponse)</li>
+                      <li class="list-group-item list-group-item">out (PrintWriter)</li>
+                      <li class="list-group-item list-group-item-info">session (HTTPSession)</li>
+                      <li class="list-group-item list-group-item">application (ServletContext)</li>
+                      <li class="list-group-item list-group-item-info">page (this)</li>
+                      <li class="list-group-item list-group-item">exception</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- The Modals -->
+        <div class="modal fade" id="lifecycle">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title text-monospace">Servlet Lifecycle</h3>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/lifecycle.gif">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="http">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title text-monospace">HTTP Servlet</h3>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/servlet.gif">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="jsp">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title text-monospace">JSP</h3>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/jsp.gif">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
+
+  </div>
+  </div>  <!--topic-block div-->
+
+    </div>
+
+
+    <!-- WAS CONTENT-->
+    <div id="was-content">
+      <div class="topic-block" id="was-main-content">
+  <section class="topic-block subtopic-grid">
+    <div class="container">
+      <div class="row card-group">
+        <div class="col-md-12 heading card-header" id="topic-title">
+          <h1 class="font-weight-bold text-monospace text-uppercase">
+            <a data-toggle="collapse" href="#javaServlets" aria-expanded="true" aria-controls="javaServlets" id="underline-topic">
+                Web Application Security
+              </a>
+          </h1>
+          <div class="collapse" id="javaServlets">
+            <div class="card card-body">
+              <p>WAS involves the protection of web applications on the world wide web, particularly its codes which may contain vulnerabilities or risks that can be exploited for malicious purposes. Considering how almost all online services require the use of web applications, this can greatly affect the applications’ functionalities and the people using them.
+              </p>
+              <hr>
+              <div class="row">
+                <div class="col-md-4">
+                  <p>In relation to web application security, the Open Web Application Security publishes their top 10 list of Application Security Risks. Their most recent list is the Application Security Risk for 2017.</p>
+                  <h4>Top 10 Open Web Application Security Project (OWASP) 2k17</h4>
+                  <div class="justify-content-left">
+                    <ul class="list-unstyled text-left">
+                      <li> A1 - Injection</li>
+                      <li> A2 – Broken Authentication and Session Management</li>
+                      <li>A3 – 2017-Sensitive Data Exposure</li>
+                      <li>A4 – XML External Entities (XXE)</li>
+                      <li>A5 – Broken Access Control</li>
+                      <li> A6 – Security Misconfiguration</li>
+                      <li>A7 – Cross-Site Scripting (XSS)</li>
+                      <li>A8 – Insecure Deserialization</li>
+                      <li>A9 – Using Components with Known Vulnerabilities</li>
+                      <li>A10 –Insufficient Logging &amp; Monitoring</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <img src="img/dataprin.png" class="img-fluid">
+                  <p>The Data Privacy Act was enforced in order to ensure the presence of security in web applications.</p>
+                  <p><i>The National Privacy Commission is the country’s privacy watchdog; an independent body mandated to administer and implement the Data Privacy Act of 2012, and to monitor and ensure compliance of the country with international standards set for data protection. (NPC)</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 card subtopic" id="subtopic1">
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <h2>Broken Authentication</h2>
+              <p class="text-muted card-text">Broken authentication is a security risk that occurs when a hacker makes use of valid combinations of compromised account credentials, and try those combinations to enter a login page or any page that requires authentication, posing as an authentic user. </p>
+            </div>
+          </div>
+          <br>
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <h2>Mitigation Tips</h2>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head1">
+              <a data-toggle="collapse" href="#stage1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Set Strong Passwords</a>
+            </div>
+            <div id="stage1" class="collapse" role="tabpanel" aria-labelledby="head1">
+              <div class="card-body text-left">
+                <p>Setting strong passwords at least eight characters long with the use of special characters and uppercase letters. Temporarily deny login service if there were too many failed attempts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head2">
+              <a data-toggle="collapse" href="#stage2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Set Session Timeouts</a>
+            </div>
+            <div id="stage2" class="collapse" role="tabpanel" aria-labelledby="head2">
+              <div class="card-body text-left">
+                <p>Set session timeouts when there is no user activity.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head3">
+              <a data-toggle="collapse" href="#stage3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3. Use Invalid Username/Password</a>
+            </div>
+            <div id="stage3" class="collapse" role="tabpanel" aria-labelledby="head2">
+              <div class="card-body text-left">
+                <p>When a wrong credential is entered, there should be an output saying “Invalid password/username” instead of “Invalid password” or “Invalid username”.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head4">
+              <a data-toggle="collapse" href="#stage4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Encrypt Login Details</a>
+            </div>
+            <div id="stage4" class="collapse" role="tabpanel" aria-labelledby="head4">
+              <div class="card-body text-left">
+                <p>Login details should be encrypted or hashed when placed and transmitted to the database.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head-5">
+              <a data-toggle="collapse" href="#stage5" aria-expanded="true" aria-controls="stage5" class="card-text text-left emphasize-on-hover">5. Always Logout</a>
+            </div>
+            <div id="stage5" class="collapse" role="tabpanel" aria-labelledby="head5">
+              <div class="card-body text-left">
+                <p>When using a PC, remember to logout the account instead of just closing the web browser.</p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <img src="img/brokenAuth.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 card subtopic" id="subtopic2">
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <h2><a href="#">Using Components width Known Vulnerabilities</a></h2>
+              <p class="text-muted card-text">Codes nowadays tend to link to open-source external components such as modules, libraries, and frameworks. Most of the time, no standards or requisites are given which means that anyone can create, use, or edit the components as they wish. This poses a security risk, especially for companies or developers that use these components.</p>
+            </div>
+          </div>
+          <br>
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <h2>Mitigation Tips</h2>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head1">
+              <a data-toggle="collapse" href="#1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Manage Dependencies Properly</a>
+            </div>
+            <div id="1" class="collapse" role="tabpanel" aria-labelledby="head1">
+              <div class="card-body text-left">
+                <p>Proper management of all dependencies and libraries are required</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head2">
+              <a data-toggle="collapse" href="#2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Always Analyze Components</a>
+            </div>
+            <div id="2" class="collapse" role="tabpanel" aria-labelledby="head2">
+              <div class="card-body text-left">
+                <p>Components should be analyzed for insecure codes (such as codes unintentionally allowing users to access private files or even sensitve compueter processes) remove or update old library components that may potentially be vulnerable</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head3">
+              <a data-toggle="collapse" href="#3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3.Check for Licenses</a>
+            </div>
+            <div id="3" class="collapse" role="tabpanel" aria-labelledby="head2">
+              <div class="card-body text-left">
+                <p>All components and/or sources should be checked for approved licenses ( indicate that they have already been reviewed for security).</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head4">
+              <a data-toggle="collapse" href="#4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Remove Unapproved Libraries</a>
+            </div>
+            <div id="4" class="collapse" role="tabpanel" aria-labelledby="head4">
+              <div class="card-body text-left">
+                <p>Unapproved libraries should be removed; otherwise, if the companies will decide to take the risk of using them, then there should be restricted use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 card subtopic" id="subtopic3">
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <h2><a href="#">Insfficient Logging and Monitoring</a></h2>
+              <p class="text-muted card-text">Insufficient logging and monitoring is a situation where some user activities within the website are not recorded. It is also the case when all user activities are logged but important details such as activity, time in, time out, or even frequency of visits are not recorded.</p>
+            </div>
+          </div>
+          <br>
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <h2>Mitigation Tips</h2>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head1">
+              <a data-toggle="collapse" href="#1-1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Properly Monitor and Log Systems</a>
+            </div>
+            <div id="1-1" class="collapse" role="tabpanel" aria-labelledby="head1">
+              <div class="card-body text-left">
+                <p>A proper logging and monitoring system must be planned and developed to track all activity within the application, suspicious or not.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head2">
+              <a data-toggle="collapse" href="#2-2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2.Provide Sufficient Logs</a>
+            </div>
+            <div id="2-2" class="collapse" role="tabpanel" aria-labelledby="head2">
+              <div class="card-body text-left">
+                <p>Generated logs should be easily understood and provide sufficient information about any activity within the application.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head3">
+              <a data-toggle="collapse" href="#3-3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3.Stay on alert for suspicious activities</a>
+            </div>
+            <div id="3-3" class="collapse" role="tabpanel" aria-labelledby="head2">
+              <div class="card-body text-left">
+                <p>Alerts concerning suspicious activities must be ensured that they are effective enough and that an incident response and recovery plan is well established</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0">
+            <div class="card-header" role="tab" id="head4">
+              <a data-toggle="collapse" href="#4-4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Perform Penetration Testings</a>
+            </div>
+            <div id="4-4" class="collapse" role="tabpanel" aria-labelledby="head4">
+              <div class="card-body text-left">
+                <p>A penetration test must also be conducted wherein the system will be tested if it successfully logs and monitors any activity within the application properly, including any suspicious activities. This is to test the sufficiency of the logs being generated by the logging and monitoring system (Hack2Secure, 2018).be removed; otherwise, if the companies will decide to take the risk of using them, then there should be restricted use.</p>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <img src="img/InsufficientLogging.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+    </div>
+</body>
+</html>
