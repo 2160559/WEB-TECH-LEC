@@ -107,7 +107,7 @@
             <br>
             <div class="transform-on-hover card border-0">
               <div class="card-body" data-toggle="modal" data-target="#lifecycle">
-                <img src="img/lifecycle.gif" class="img-fluid">
+                <img src="img/lifecycle.gif" class="img-fluid d-block">
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@
             <br>
             <div class="transform-on-hover card border-0">
               <div class="card-body" data-toggle="modal" data-target="#http">
-                <img class="img-fluid" src="img/servlet.gif">
+                <img class="img-fluid d-block mx-auto " src="img/servlet.gif">
               </div>
             </div>
             <div class="card border-0">
@@ -183,153 +183,167 @@
               </div>
             </div>
             <br>
-            <div class="transform-on-hover card border-0">
-              <div class="card-body" data-toggle="modal" data-target="#http">
-                <img class="img-fluid" src="img/servlet.gif">
-              </div>
-            </div>
+
             <div class="card border-0">
               <div class="card-body"> 
-                <p class="small card-text">The server sends off any type of requests made by the client to the servlet’s service() method.</p>
-                <p class="small card-text">This method routes the requests to the doXXX() handler method for each HTTP request type.</p>
+                <p class="small card-text">When a client sends a request over the internet, the web server compiles files with the .jsp extension, converting them into executable Java Servlets before serving or processing client HTTP
+                  requests. </p> 
+              </div>
+            </div>
+            <br>
+            <div class="card border-0">
+              <div class="card-body"> 
+                <p class="small card-text">This produces
+                  a document, like a HTML page, which is then handled like any other page or servlet and sent back to
+                  the client with a HTTP response.
+                </p>
               </div>
             </div>
             <br>
             <div class="transform-on-hover card border-0">
-              <div class="card-body">
-                <p class="card-text text-left font-weight-bold">Elements:</p>
+              <div class="card-body" data-toggle="modal" data-target="#jsp">
+                <img class="img-fluid d-block" src="img/jsp.gif">
               </div>
             </div>
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head7">
-                <a data-toggle="collapse" href="#stage7" aria-expanded="true" aria-controls="stage7" class="card-text text-left emphasize-on-hover">1. Actions
-                </a>
-              </div>
-              <div id="stage7" class="collapse" role="tabpanel" aria-labelledby="head7">
-                <div class="card-body text-left">
-                  <ul class="list-group small">
-                    <li class="list-group-item list-group-item"><strong>Uses: </strong>inserts a file, reuses JavaBeans, forwards, generates html</li>
-                    <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;jsp:actionName attrib="value" /></code></li>                                                                                                                                          
-                    <li class="list-group-item list-group-item"><p><strong>Action Name</strong></p>
-                      <ul class="list-group text-center">
-                        <li class="list-group-item list-group-item" data-toggle="tooltip" title="called when page is requested">include</li>
-                        <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="Looks for or creates object. Can use setProperty/ getProperty only after this has been called">useBean</li>
-                        <li class="list-group-item list-group-item">setProperty</li>
-                        <li class="list-group-item list-group-item-secondary">getProperty</li>
-                        <li class="list-group-item list-group-item" data-toggle="tooltip" title="can only forward to another page or servlet">forward</li>
-                        <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="inserts java components">plugin</li>
-                        <li class="list-group-item list-group-item">element</li>
-                        <li class="list-group-item list-group-item-secondary">attrib</li>
-                        <li class="list-group-item list-group-item">body</li>
-                        <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="write template text">text</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <br>
 
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head8">
-                <a data-toggle="collapse" href="#stage8" aria-expanded="true" aria-controls="stage8" class="card-text text-left emphasize-on-hover">2. Directives
-                </a>
-              </div>
-              <div id="stage8" class="collapse" role="tabpanel" aria-labelledby="head8">
-                <div class="card-body text-left">
-                  <ul class="list-group small">
-                    <li class="list-group-item list-group-item"><strong>Uses: </strong>Instructions for how to translate and execute JSP </li>
-                    <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%@ directiveName attrib=”value” %></code>
-                    </li>
-                    <li class="list-group-item list-group-item"><p>ex:</p>
-                      <p><strong>handling jsp page errors: </strong><br><code>&lt;%@ page errorPage="filename" %></code></p>
-                    </li>
-                    <li class="list-group-item list-group-item-info">
-                      <p>ex:</p>
-                      <p>
-                        <b>static html:</b><br>
-                        <code>&lt;%@ page contentType="text/html" &></code><br>
-                        <code>&lt;%@ page pageEncoding="utf-8" %></code>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>  
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head9">
-                <a data-toggle="collapse" href="#stage9" aria-expanded="true" aria-controls="stage9" class="card-text text-left emphasize-on-hover">3. Expressions
-                </a>
-              </div>
-              <div id="stage9" class="collapse" role="tabpanel" aria-labelledby="head9">
-                <div class="card-body text-left">
-                  <ul class="list-group small">
-                    <li class="list-group-item list-group-item"><strong>Syntax: </strong> <code>&lt;%= expression %></code></li>
-                    <li class="list-group-item list-group-item-info"> ex:  <code>&lt;%= new java.util.Date() %></code></li>
-                  </ul>
-                </div>
-              </div>
-            </div>       
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head10">
-                <a data-toggle="collapse" href="#stage10" aria-expanded="true" aria-controls="stage10" class="card-text text-left emphasize-on-hover">4. Scriplets
-                </a>
-              </div>
-              <div id="stage10" class="collapse" role="tabpanel" aria-labelledby="head10">
-                <div class="card-body text-left">
-                  <ul class="list-group small">
-                    <li class="list-group-item list-group-item"><strong>Uses:</strong> inserts any Java code within the JSP file</li>
-                    <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%= code %></code></li>
-                  </ul>
-                </div>
+            <div class="transform-on-hover card border-0">
+              <div class="card-body" role="tab" id="head99">
+                <a data-toggle="collapse" href="#stage99" aria-expanded="true" aria-controls="stage99" class="card-text text-left font-weight-bold">Elements</a>
               </div>
             </div>
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head11">
-                <a data-toggle="collapse" href="#stage11" aria-expanded="true" aria-controls="stage11" class="card-text text-left emphasize-on-hover">5. Declarations
-                </a>
-              </div>
-              <div id="stage11" class="collapse" role="tabpanel" aria-labelledby="head11">
-                <div class="card-body text-left">     
-                  <ul class="list-group small">
-                    <li class="list-group-item list-group-item"><strong>Syntax: </strong><code>&lt;! code %></code></li>
-                    <li class="list-group-item list-group-item-info">ex: <code>&lt;! int i = 0; %></code></li>
-                  </ul>
+            <div id="stage99" class="collapse" role="tabpanel" aria-labelledby="head99">
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head7">
+                  <a data-toggle="collapse" href="#stage7" aria-expanded="true" aria-controls="stage7" class="card-text text-left emphasize-on-hover">1. Actions
+                  </a>
+                </div>
+                <div id="stage7" class="collapse" role="tabpanel" aria-labelledby="head7">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Uses: </strong>inserts a file, reuses JavaBeans, forwards, generates html</li>
+                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;jsp:actionName attrib="value" /></code></li>                                                                                                                                          
+                      <li class="list-group-item list-group-item"><p><strong>Action Name</strong></p>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item list-group-item" data-toggle="tooltip" title="called when page is requested">include</li>
+                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="Looks for or creates object. Can use setProperty/ getProperty only after this has been called">useBean</li>
+                          <li class="list-group-item list-group-item">setProperty</li>
+                          <li class="list-group-item list-group-item-secondary">getProperty</li>
+                          <li class="list-group-item list-group-item" data-toggle="tooltip" title="can only forward to another page or servlet">forward</li>
+                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="inserts java components">plugin</li>
+                          <li class="list-group-item list-group-item">element</li>
+                          <li class="list-group-item list-group-item-secondary">attrib</li>
+                          <li class="list-group-item list-group-item">body</li>
+                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="write template text">text</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head12">
-                <a data-toggle="collapse" href="#stage12" aria-expanded="true" aria-controls="stage12" class="card-text text-left emphasize-on-hover">6. Comments
-                </a>
-              </div>
-              <div id="stage12" class="collapse" role="tabpanel" aria-labelledby="head12">
-                <div class="card-body text-left">
-                  <ul class="list-group">
-                    <li class="list-group-item list-group-item-light"><strong>Syntax: </strong>&lt;%-- comment --%></li>
-                  </ul>             
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head8">
+                  <a data-toggle="collapse" href="#stage8" aria-expanded="true" aria-controls="stage8" class="card-text text-left emphasize-on-hover">2. Directives
+                  </a>
+                </div>
+                <div id="stage8" class="collapse" role="tabpanel" aria-labelledby="head8">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Uses: </strong>Instructions for how to translate and execute JSP </li>
+                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%@ directiveName attrib=”value” %></code>
+                      </li>
+                      <li class="list-group-item list-group-item"><p>ex:</p>
+                        <p><strong>handling jsp page errors: </strong><br><code>&lt;%@ page errorPage="filename" %></code></p>
+                      </li>
+                      <li class="list-group-item list-group-item-info">
+                        <p>ex:</p>
+                        <p>
+                          <b>static html:</b><br>
+                          <code>&lt;%@ page contentType="text/html" &></code><br>
+                          <code>&lt;%@ page pageEncoding="utf-8" %></code>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>  
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head9">
+                  <a data-toggle="collapse" href="#stage9" aria-expanded="true" aria-controls="stage9" class="card-text text-left emphasize-on-hover">3. Expressions
+                  </a>
+                </div>
+                <div id="stage9" class="collapse" role="tabpanel" aria-labelledby="head9">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Syntax: </strong> <code>&lt;%= expression %></code></li>
+                      <li class="list-group-item list-group-item-info"> ex:  <code>&lt;%= new java.util.Date() %></code></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>       
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head10">
+                  <a data-toggle="collapse" href="#stage10" aria-expanded="true" aria-controls="stage10" class="card-text text-left emphasize-on-hover">4. Scriplets
+                  </a>
+                </div>
+                <div id="stage10" class="collapse" role="tabpanel" aria-labelledby="head10">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Uses:</strong> inserts any Java code within the JSP file</li>
+                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%= code %></code></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>  
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head13">
-                <a data-toggle="collapse" href="#stage13" aria-expanded="true" aria-controls="stage13" class="card-text text-left emphasize-on-hover">7. Predefined Objects
-                </a>
-              </div>
-              <div id="stage13" class="collapse" role="tabpanel" aria-labelledby="head13">
-                <div class="card-body text-left">
-                  <ul class="list-group small">
-                    <li class="list-group-item list-group-item">request (HTTPServletRequest)</li>
-                    <li class="list-group-item list-group-item-info">response (HTTPServletResponse)</li>
-                    <li class="list-group-item list-group-item">out (PrintWriter)</li>
-                    <li class="list-group-item list-group-item-info">session (HTTPSession)</li>
-                    <li class="list-group-item list-group-item">application (ServletContext)</li>
-                    <li class="list-group-item list-group-item-info">page (this)</li>
-                    <li class="list-group-item list-group-item">exception</li>
-                  </ul>
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head11">
+                  <a data-toggle="collapse" href="#stage11" aria-expanded="true" aria-controls="stage11" class="card-text text-left emphasize-on-hover">5. Declarations
+                  </a>
+                </div>
+                <div id="stage11" class="collapse" role="tabpanel" aria-labelledby="head11">
+                  <div class="card-body text-left">     
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item"><strong>Syntax: </strong><code>&lt;! code %></code></li>
+                      <li class="list-group-item list-group-item-info">ex: <code>&lt;! int i = 0; %></code></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>                 
+
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head12">
+                  <a data-toggle="collapse" href="#stage12" aria-expanded="true" aria-controls="stage12" class="card-text text-left emphasize-on-hover">6. Comments
+                  </a>
+                </div>
+                <div id="stage12" class="collapse" role="tabpanel" aria-labelledby="head12">
+                  <div class="card-body text-left">
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-light"><strong>Syntax: </strong>&lt;%-- comment --%></li>
+                    </ul>             
+                  </div>
+                </div>
+              </div>  
+              <div class="card border-0">
+                <div class="card-header" role="tab" id="head13">
+                  <a data-toggle="collapse" href="#stage13" aria-expanded="true" aria-controls="stage13" class="card-text text-left emphasize-on-hover">7. Predefined Objects
+                  </a>
+                </div>
+                <div id="stage13" class="collapse" role="tabpanel" aria-labelledby="head13">
+                  <div class="card-body text-left">
+                    <ul class="list-group small">
+                      <li class="list-group-item list-group-item">request (HTTPServletRequest)</li>
+                      <li class="list-group-item list-group-item-info">response (HTTPServletResponse)</li>
+                      <li class="list-group-item list-group-item">out (PrintWriter)</li>
+                      <li class="list-group-item list-group-item-info">session (HTTPSession)</li>
+                      <li class="list-group-item list-group-item">application (ServletContext)</li>
+                      <li class="list-group-item list-group-item-info">page (this)</li>
+                      <li class="list-group-item list-group-item">exception</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -348,7 +362,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="modal fade" id="http">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -357,12 +371,26 @@
                 <button type="button" class="close" data-dismiss="modal">×</button>
               </div>
               <div class="modal-body">
-                <img class="img-fluid float-d" src="img/servlet.gif">
+                <img class="img-fluid" src="img/servlet.gif">
               </div>
             </div>
           </div>
         </div>
-        
+
+        <div class="modal fade" id="jsp">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title text-monospace">JSP</h3>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="img/jsp.gif">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
