@@ -12,9 +12,6 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: left;
-}
-
-p#landing {
     font-family: 'Mono';
     font-size: 40px;
 }
