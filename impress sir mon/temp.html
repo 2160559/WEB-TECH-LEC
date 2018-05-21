@@ -1,404 +1,525 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A website showing off our best, rich UI/UX">
-    <meta name="author" content="9325A-1">
 
-    <title>Webtech 2018</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A website showing off our best, rich UI/UX">
+	<meta name="author" content="9325A-1">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+	<title>Webtech 2018</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
 
-  </head>
-  <body  class="topic-block">
-    <section class="topic-block subtopic-grid">
-      <div class="container">
-        <div class="row card-group">
-          <div class="col-md-12 heading card-header" id="topic-title">
-            <h1 class="font-weight-bold text-monospace text-uppercase">
-              <a  data-toggle="collapse" href="#javaServlets" aria-expanded="true" aria-controls="javaServlets" id="underline-topic">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/particles.js"></script>
+	<style>
+		#particles-js {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+
+</head>
+
+<body class="topic-block">
+	<div id="particles-js"></div>
+	<section class="topic-block subtopic-grid">
+		<div class="container">
+			<div class="row card-group">
+				<div class="col-md-12 heading card-header" id="topic-title">
+					<h1 class="font-weight-bold text-monospace text-uppercase">
+						<a data-toggle="collapse" href="#javaServlets" aria-expanded="true" aria-controls="javaServlets" id="underline-topic">
                 Java Servlet
               </a>
-            </h1>
-            <div class="collapse" id="javaServlets">
-              <div class="card card-body">
-                <p>A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers. For such applications, Java Servlet technology defines HTTP-specific servlet classes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 card subtopic" id="subtopic1">
-            <div class="transform-on-hover card border-0">
-              <div class="card-body">
-                <h2>Servlet Lifecycle</h2>
-                <p class="text-muted card-text text-monospace">The life cycle of a servlet<br>has 4 stages:</p>
-              </div>
-            </div>
-            <br>            
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head1">
-                <a data-toggle="collapse" href="#stage1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Instantiation
+					</h1>
+					<div class="collapse" id="javaServlets">
+						<div class="card card-body">
+							<p>A servlet is a Java programming language class that is used to extend the capabilities of servers that host applications accessed by means of a request-response programming model. Although servlets can respond to any type of request, they are commonly used to extend the applications hosted by web servers. For such applications, Java Servlet technology defines HTTP-specific servlet classes.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 card subtopic" id="subtopic1">
+					<div class="transform-on-hover card border-0">
+						<div class="card-body">
+							<h2>Servlet Lifecycle</h2>
+							<p class="text-muted card-text text-monospace">The life cycle of a servlet<br>has 4 stages:</p>
+						</div>
+					</div>
+					<br>
+					<div class="card border-0">
+						<div class="card-header" role="tab" id="head1">
+							<a data-toggle="collapse" href="#stage1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Instantiation
                 </a>
-              </div>
-              <div id="stage1" class="collapse" role="tabpanel" aria-labelledby="head1">
-                <div class="card-body text-left">
-                  <ul class="small list-group">
-                    <li class="list-group-item list-group-item">the constructor call</li>
-                    <li class="list-group-item list-group-item-info">creates an instance of the servlet to service client requests</li>
-                    <li class="list-group-item list-group-item">invoked implicitly by the servlet container when the servlet is called upon
-                      to service client request and no instance currently exists</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+						</div>
+						<div id="stage1" class="collapse" role="tabpanel" aria-labelledby="head1">
+							<div class="card-body text-left">
+								<ul class="small list-group">
+									<li class="list-group-item list-group-item">the constructor call</li>
+									<li class="list-group-item list-group-item-info">creates an instance of the servlet to service client requests</li>
+									<li class="list-group-item list-group-item">invoked implicitly by the servlet container when the servlet is called upon to service client request and no instance currently exists</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head2">
-                <a data-toggle="collapse" href="#stage2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Initialization
+					<div class="card border-0">
+						<div class="card-header" role="tab" id="head2">
+							<a data-toggle="collapse" href="#stage2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Initialization
                 </a>
-              </div>
-              <div id="stage2" class="collapse" role="tabpanel" aria-labelledby="head2">
-                <div class="card-body text-left">
-                  <ul class="small list-group">
-                    <li class="list-group-item list-group-item"><code>init()</code> method</li>
-                    <li class="list-group-item list-group-item-info">invoked only once intended for any startup init code</li>
-                  </ul>
-                </div>
-              </div>
-            </div>  
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head3">
-                <a data-toggle="collapse" href="#stage3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3. Request Handling
+						</div>
+						<div id="stage2" class="collapse" role="tabpanel" aria-labelledby="head2">
+							<div class="card-body text-left">
+								<ul class="small list-group">
+									<li class="list-group-item list-group-item"><code>init()</code> method</li>
+									<li class="list-group-item list-group-item-info">invoked only once intended for any startup init code</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0">
+						<div class="card-header" role="tab" id="head3">
+							<a data-toggle="collapse" href="#stage3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3. Request Handling
                 </a>
-              </div>
-              <div id="stage3" class="collapse" role="tabpanel" aria-labelledby="head3">
-                <div class="card-body text-left">
-                  <ul class="small list-group">
-                    <li class="list-group-item list-group-item"><code>service()</code> method</li>
-                    <li class="list-group-item list-group-item-info">invoked for each client request</li>
-                    <li class="list-group-item list-group-item">performs whatever logic to serve request and generate response</li>
-                    <li class="list-group-item list-group-item-info">multi-threaded service instance; 'thread safe'</li>
-                  </ul>
-                </div>
-              </div>
-            </div>       
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head4">
-                <a data-toggle="collapse" href="#stage4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Destruction
+						</div>
+						<div id="stage3" class="collapse" role="tabpanel" aria-labelledby="head3">
+							<div class="card-body text-left">
+								<ul class="small list-group">
+									<li class="list-group-item list-group-item"><code>service()</code> method</li>
+									<li class="list-group-item list-group-item-info">invoked for each client request</li>
+									<li class="list-group-item list-group-item">performs whatever logic to serve request and generate response</li>
+									<li class="list-group-item list-group-item-info">multi-threaded service instance; 'thread safe'</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0">
+						<div class="card-header" role="tab" id="head4">
+							<a data-toggle="collapse" href="#stage4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Destruction
                 </a>
-              </div>
-              <div id="stage4" class="collapse" role="tabpanel" aria-labelledby="head4">
-                <div class="card-body text-left">
-                  <ul class="small list-group">
-                    <li class="list-group-item list-group-item"><code>destroy()</code> method</li>
-                    <li class="list-group-item list-group-item-info">invoked before servlet instance is 'unloaded', housekeeping cleanup code</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="transform-on-hover card border-0">
-              <div class="card-body" data-toggle="modal" data-target="#lifecycle">
-                <img src="img/lifecycle.png" class="img-fluid d-block">
-              </div>
-            </div>
-          </div>
+						</div>
+						<div id="stage4" class="collapse" role="tabpanel" aria-labelledby="head4">
+							<div class="card-body text-left">
+								<ul class="small list-group">
+									<li class="list-group-item list-group-item"><code>destroy()</code> method</li>
+									<li class="list-group-item list-group-item-info">invoked before servlet instance is 'unloaded', housekeeping cleanup code</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="transform-on-hover card border-0">
+						<div class="card-body" data-toggle="modal" data-target="#lifecycle">
+							<img src="img/lifecycle.png" class="img-fluid d-block">
+						</div>
+					</div>
+				</div>
 
-          <div class="col-md-6 col-lg-4 card subtopic" id="subtopic2">
-            <div class="transform-on-hover card border-0">
-              <div class="card-body">
-                <h2>HTTP Servlet</h2>
-                <p class="text-muted small text-monospace card-text">HTTP Servlets handles
-                  <br>HTTP requests and generates responses.<br> Hosted in a web container, it takes care of converting requests to responses.<br>The service() method call is routed to a doXXX() handler method</p>
-              </div>
-            </div>
-            <br>
-            <div class="transform-on-hover card border-0">
-              <div class="card-body" data-toggle="modal" data-target="#http">
-                <img class="img-fluid d-block mx-auto " src="img/servlet.png">
-              </div>
-            </div>
-            <div class="card border-0">
-              <div class="card-body"> 
-                <p class="small card-text">The server sends off any type of requests made by the client to the servlet’s service() method.</p>
-                <p class="small card-text">This method routes the requests to the doXXX() handler method for each HTTP request type.</p>
-              </div>
-            </div>
-            <br>
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head5">
-                <a data-toggle="collapse" href="#stage5" aria-expanded="true" aria-controls="stage5" class="card-text text-left emphasize-on-hover">List of doXXX() calls
+				<div class="col-md-6 col-lg-4 card subtopic" id="subtopic2">
+					<div class="transform-on-hover card border-0">
+						<div class="card-body">
+							<h2>HTTP Servlet</h2>
+							<p class="text-muted small text-monospace card-text">HTTP Servlets handles
+								<br>HTTP requests and generates responses.<br> Hosted in a web container, it takes care of converting requests to responses.<br>The service() method call is routed to a doXXX() handler method</p>
+						</div>
+					</div>
+					<br>
+					<div class="transform-on-hover card border-0">
+						<div class="card-body" data-toggle="modal" data-target="#http">
+							<img class="img-fluid d-block mx-auto " src="img/servlet.png">
+						</div>
+					</div>
+					<div class="card border-0">
+						<div class="card-body">
+							<p class="small card-text">The server sends off any type of requests made by the client to the servlet’s service() method.</p>
+							<p class="small card-text">This method routes the requests to the doXXX() handler method for each HTTP request type.</p>
+						</div>
+					</div>
+					<br>
+					<div class="card border-0">
+						<div class="card-header" role="tab" id="head5">
+							<a data-toggle="collapse" href="#stage5" aria-expanded="true" aria-controls="stage5" class="card-text text-left emphasize-on-hover">List of doXXX() calls
                 </a>
-              </div>
-              <div id="stage5" class="collapse" role="tabpanel" aria-labelledby="head5">
-                <div class="card-body">
-                  <ul class="small list-group">
-                    <li class="list-group-item list-group-item">doGet</li>
-                    <li class="list-group-item list-group-item-success">doPost</li>
-                    <li class="list-group-item list-group-item">doPut</li>
-                    <li class="list-group-item list-group-item-success">doDelete</li>
-                    <li class="list-group-item list-group-item">doTrace</li>
-                    <li class="list-group-item list-group-item-success">doOptions</li>
-                    <li class="list-group-item list-group-item">doHead</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="card border-0">
-              <div class="card-header" role="tab" id="head6">
-                <a data-toggle="collapse" href="#stage6" aria-expanded="true" aria-controls="stage6" class="card-text text-left emphasize-on-hover">Methods of HTTP Servlet class
+						</div>
+						<div id="stage5" class="collapse" role="tabpanel" aria-labelledby="head5">
+							<div class="card-body">
+								<ul class="small list-group">
+									<li class="list-group-item list-group-item">doGet</li>
+									<li class="list-group-item list-group-item-success">doPost</li>
+									<li class="list-group-item list-group-item">doPut</li>
+									<li class="list-group-item list-group-item-success">doDelete</li>
+									<li class="list-group-item list-group-item">doTrace</li>
+									<li class="list-group-item list-group-item-success">doOptions</li>
+									<li class="list-group-item list-group-item">doHead</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="card border-0">
+						<div class="card-header" role="tab" id="head6">
+							<a data-toggle="collapse" href="#stage6" aria-expanded="true" aria-controls="stage6" class="card-text text-left emphasize-on-hover">Methods of HTTP Servlet class
                 </a>
-              </div>
-              <div id="stage6" class="card-body collapse" role="tabpanel" aria-labelledby="head6">
-                <ul class="small list-group">
-                  <li class="list-group-item list-group-item">protected void doDelete (HttpServletRequest req,HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item-success">protected void doGet (HttpServletRequest req, HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item">protected void doHead (HttpServletRequest req, HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item-success">protected void doOptions (HttpServletRequest req, HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item">protected void doPost (HttpServletRequest req, HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item-success">protected void doPut (HttpServletRequest req, HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item">protected void doTrace (HttpServletRequest req, HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item-success">protected long getLastModified (HttpServletRequest req)</li>
-                  <li class="list-group-item list-group-item">protected void service (HttpServletRequest req, HttpServletResponse resp)</li>
-                  <li class="list-group-item list-group-item-success">void service (ServletRequest req, ServletResponse resp)</li>
-                </ul>
-              </div>
-            </div>
+						</div>
+						<div id="stage6" class="card-body collapse" role="tabpanel" aria-labelledby="head6">
+							<ul class="small list-group">
+								<li class="list-group-item list-group-item">protected void doDelete (HttpServletRequest req,HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item-success">protected void doGet (HttpServletRequest req, HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item">protected void doHead (HttpServletRequest req, HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item-success">protected void doOptions (HttpServletRequest req, HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item">protected void doPost (HttpServletRequest req, HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item-success">protected void doPut (HttpServletRequest req, HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item">protected void doTrace (HttpServletRequest req, HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item-success">protected long getLastModified (HttpServletRequest req)</li>
+								<li class="list-group-item list-group-item">protected void service (HttpServletRequest req, HttpServletResponse resp)</li>
+								<li class="list-group-item list-group-item-success">void service (ServletRequest req, ServletResponse resp)</li>
+							</ul>
+						</div>
+					</div>
 
-          </div>
-          <div class="col-md-6 col-lg-4 card subtopic" id="subtopic3">
-            <div class="transform-on-hover card border-0">
-              <div class="card-body">
-                <h2>Java Server Pages</h2>
-                <p class="text-muted card-text small text-monospace">JSP, compared to Java Servlets, which is comprised of HTML code within a Java program, allows Java code to be inserted into HTML or XML pages. </p>
-              </div>
-            </div>
-            <br>
+				</div>
+				<div class="col-md-6 col-lg-4 card subtopic" id="subtopic3">
+					<div class="transform-on-hover card border-0">
+						<div class="card-body">
+							<h2>Java Server Pages</h2>
+							<p class="text-muted card-text small text-monospace">JSP, compared to Java Servlets, which is comprised of HTML code within a Java program, allows Java code to be inserted into HTML or XML pages. </p>
+						</div>
+					</div>
+					<br>
 
-            <div class="card border-0">
-              <div class="card-body"> 
-                <p class="small card-text">When a client sends a request over the internet, the web server compiles files with the .jsp extension, converting them into executable Java Servlets before serving or processing client HTTP
-                  requests. </p> 
-              </div>
-            </div>
-            <br>
-            <div class="card border-0">
-              <div class="card-body"> 
-                <p class="small card-text">This produces
-                  a document, like a HTML page, which is then handled like any other page or servlet and sent back to
-                  the client with a HTTP response.
-                </p>
-              </div>
-            </div>
-            <br>
-            <div class="transform-on-hover card border-0">
-              <div class="card-body" data-toggle="modal" data-target="#jsp">
-                <img class="img-fluid d-block" src="img/jsp.png">
-              </div>
-            </div>
-            <br>
+					<div class="card border-0">
+						<div class="card-body">
+							<p class="small card-text">When a client sends a request over the internet, the web server compiles files with the .jsp extension, converting them into executable Java Servlets before serving or processing client HTTP requests. </p>
+						</div>
+					</div>
+					<br>
+					<div class="card border-0">
+						<div class="card-body">
+							<p class="small card-text">This produces a document, like a HTML page, which is then handled like any other page or servlet and sent back to the client with a HTTP response.
+							</p>
+						</div>
+					</div>
+					<br>
+					<div class="transform-on-hover card border-0">
+						<div class="card-body" data-toggle="modal" data-target="#jsp">
+							<img class="img-fluid d-block" src="img/jsp.png">
+						</div>
+					</div>
+					<br>
 
-            <div class="transform-on-hover card border-0">
-              <div class="card-body" role="tab" id="head99">
-                <a data-toggle="collapse" href="#stage99" aria-expanded="true" aria-controls="stage99" class="card-text text-left font-weight-bold">Elements</a>
-              </div>
-            </div>
-            <div id="stage99" class="collapse" role="tabpanel" aria-labelledby="head99">
-              <div class="card border-0">
-                <div class="card-header" role="tab" id="head7">
-                  <a data-toggle="collapse" href="#stage7" aria-expanded="true" aria-controls="stage7" class="card-text text-left emphasize-on-hover">1. Actions
+					<div class="transform-on-hover card border-0">
+						<div class="card-body" role="tab" id="head99">
+							<a data-toggle="collapse" href="#stage99" aria-expanded="true" aria-controls="stage99" class="card-text text-left font-weight-bold">Elements</a>
+						</div>
+					</div>
+					<div id="stage99" class="collapse" role="tabpanel" aria-labelledby="head99">
+						<div class="card border-0">
+							<div class="card-header" role="tab" id="head7">
+								<a data-toggle="collapse" href="#stage7" aria-expanded="true" aria-controls="stage7" class="card-text text-left emphasize-on-hover">1. Actions
                   </a>
-                </div>
-                <div id="stage7" class="collapse" role="tabpanel" aria-labelledby="head7">
-                  <div class="card-body text-left">
-                    <ul class="list-group small">
-                      <li class="list-group-item list-group-item"><strong>Uses: </strong>inserts a file, reuses JavaBeans, forwards, generates html</li>
-                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;jsp:actionName attrib="value" /></code></li>                                                                                                                                          
-                      <li class="list-group-item list-group-item"><p><strong>Action Name</strong></p>
-                        <ul class="list-group text-center">
-                          <li class="list-group-item list-group-item" data-toggle="tooltip" title="called when page is requested">include</li>
-                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="Looks for or creates object. Can use setProperty/ getProperty only after this has been called">useBean</li>
-                          <li class="list-group-item list-group-item">setProperty</li>
-                          <li class="list-group-item list-group-item-secondary">getProperty</li>
-                          <li class="list-group-item list-group-item" data-toggle="tooltip" title="can only forward to another page or servlet">forward</li>
-                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="inserts java components">plugin</li>
-                          <li class="list-group-item list-group-item">element</li>
-                          <li class="list-group-item list-group-item-secondary">attrib</li>
-                          <li class="list-group-item list-group-item">body</li>
-                          <li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="write template text">text</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+							</div>
+							<div id="stage7" class="collapse" role="tabpanel" aria-labelledby="head7">
+								<div class="card-body text-left">
+									<ul class="list-group small">
+										<li class="list-group-item list-group-item"><strong>Uses: </strong>inserts a file, reuses JavaBeans, forwards, generates html</li>
+										<li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;jsp:actionName attrib="value" /></code></li>
+										<li class="list-group-item list-group-item">
+											<p><strong>Action Name</strong></p>
+											<ul class="list-group text-center">
+												<li class="list-group-item list-group-item" data-toggle="tooltip" title="called when page is requested">include</li>
+												<li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="Looks for or creates object. Can use setProperty/ getProperty only after this has been called">useBean</li>
+												<li class="list-group-item list-group-item">setProperty</li>
+												<li class="list-group-item list-group-item-secondary">getProperty</li>
+												<li class="list-group-item list-group-item" data-toggle="tooltip" title="can only forward to another page or servlet">forward</li>
+												<li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="inserts java components">plugin</li>
+												<li class="list-group-item list-group-item">element</li>
+												<li class="list-group-item list-group-item-secondary">attrib</li>
+												<li class="list-group-item list-group-item">body</li>
+												<li class="list-group-item list-group-item-secondary" data-toggle="tooltip" title="write template text">text</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 
-              <div class="card border-0">
-                <div class="card-header" role="tab" id="head8">
-                  <a data-toggle="collapse" href="#stage8" aria-expanded="true" aria-controls="stage8" class="card-text text-left emphasize-on-hover">2. Directives
+						<div class="card border-0">
+							<div class="card-header" role="tab" id="head8">
+								<a data-toggle="collapse" href="#stage8" aria-expanded="true" aria-controls="stage8" class="card-text text-left emphasize-on-hover">2. Directives
                   </a>
-                </div>
-                <div id="stage8" class="collapse" role="tabpanel" aria-labelledby="head8">
-                  <div class="card-body text-left">
-                    <ul class="list-group small">
-                      <li class="list-group-item list-group-item"><strong>Uses: </strong>Instructions for how to translate and execute JSP </li>
-                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%@ directiveName attrib=”value” %></code>
-                      </li>
-                      <li class="list-group-item list-group-item"><p>ex:</p>
-                        <p><strong>handling jsp page errors: </strong><br><code>&lt;%@ page errorPage="filename" %></code></p>
-                      </li>
-                      <li class="list-group-item list-group-item-info">
-                        <p>ex:</p>
-                        <p>
-                          <b>static html:</b><br>
-                          <code>&lt;%@ page contentType="text/html" &></code><br>
-                          <code>&lt;%@ page pageEncoding="utf-8" %></code>
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>  
-              <div class="card border-0">
-                <div class="card-header" role="tab" id="head9">
-                  <a data-toggle="collapse" href="#stage9" aria-expanded="true" aria-controls="stage9" class="card-text text-left emphasize-on-hover">3. Expressions
+							</div>
+							<div id="stage8" class="collapse" role="tabpanel" aria-labelledby="head8">
+								<div class="card-body text-left">
+									<ul class="list-group small">
+										<li class="list-group-item list-group-item"><strong>Uses: </strong>Instructions for how to translate and execute JSP </li>
+										<li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%@ directiveName attrib=”value” %></code>
+										</li>
+										<li class="list-group-item list-group-item">
+											<p>ex:</p>
+											<p><strong>handling jsp page errors: </strong><br><code>&lt;%@ page errorPage="filename" %></code></p>
+										</li>
+										<li class="list-group-item list-group-item-info">
+											<p>ex:</p>
+											<p>
+												<b>static html:</b><br>
+												<code>&lt;%@ page contentType="text/html" &></code><br>
+												<code>&lt;%@ page pageEncoding="utf-8" %></code>
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header" role="tab" id="head9">
+								<a data-toggle="collapse" href="#stage9" aria-expanded="true" aria-controls="stage9" class="card-text text-left emphasize-on-hover">3. Expressions
                   </a>
-                </div>
-                <div id="stage9" class="collapse" role="tabpanel" aria-labelledby="head9">
-                  <div class="card-body text-left">
-                    <ul class="list-group small">
-                      <li class="list-group-item list-group-item"><strong>Syntax: </strong> <code>&lt;%= expression %></code></li>
-                      <li class="list-group-item list-group-item-info"> ex:  <code>&lt;%= new java.util.Date() %></code></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>       
-              <div class="card border-0">
-                <div class="card-header" role="tab" id="head10">
-                  <a data-toggle="collapse" href="#stage10" aria-expanded="true" aria-controls="stage10" class="card-text text-left emphasize-on-hover">4. Scriplets
+							</div>
+							<div id="stage9" class="collapse" role="tabpanel" aria-labelledby="head9">
+								<div class="card-body text-left">
+									<ul class="list-group small">
+										<li class="list-group-item list-group-item"><strong>Syntax: </strong> <code>&lt;%= expression %></code></li>
+										<li class="list-group-item list-group-item-info"> ex: <code>&lt;%= new java.util.Date() %></code></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header" role="tab" id="head10">
+								<a data-toggle="collapse" href="#stage10" aria-expanded="true" aria-controls="stage10" class="card-text text-left emphasize-on-hover">4. Scriplets
                   </a>
-                </div>
-                <div id="stage10" class="collapse" role="tabpanel" aria-labelledby="head10">
-                  <div class="card-body text-left">
-                    <ul class="list-group small">
-                      <li class="list-group-item list-group-item"><strong>Uses:</strong> inserts any Java code within the JSP file</li>
-                      <li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%= code %></code></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card border-0">
-                <div class="card-header" role="tab" id="head11">
-                  <a data-toggle="collapse" href="#stage11" aria-expanded="true" aria-controls="stage11" class="card-text text-left emphasize-on-hover">5. Declarations
+							</div>
+							<div id="stage10" class="collapse" role="tabpanel" aria-labelledby="head10">
+								<div class="card-body text-left">
+									<ul class="list-group small">
+										<li class="list-group-item list-group-item"><strong>Uses:</strong> inserts any Java code within the JSP file</li>
+										<li class="list-group-item list-group-item-info"><strong>Syntax: </strong> <code>&lt;%= code %></code></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header" role="tab" id="head11">
+								<a data-toggle="collapse" href="#stage11" aria-expanded="true" aria-controls="stage11" class="card-text text-left emphasize-on-hover">5. Declarations
                   </a>
-                </div>
-                <div id="stage11" class="collapse" role="tabpanel" aria-labelledby="head11">
-                  <div class="card-body text-left">     
-                    <ul class="list-group small">
-                      <li class="list-group-item list-group-item"><strong>Syntax: </strong><code>&lt;! code %></code></li>
-                      <li class="list-group-item list-group-item-info">ex: <code>&lt;! int i = 0; %></code></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+							</div>
+							<div id="stage11" class="collapse" role="tabpanel" aria-labelledby="head11">
+								<div class="card-body text-left">
+									<ul class="list-group small">
+										<li class="list-group-item list-group-item"><strong>Syntax: </strong><code>&lt;! code %></code></li>
+										<li class="list-group-item list-group-item-info">ex: <code>&lt;! int i = 0; %></code></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 
-              <div class="card border-0">
-                <div class="card-header" role="tab" id="head12">
-                  <a data-toggle="collapse" href="#stage12" aria-expanded="true" aria-controls="stage12" class="card-text text-left emphasize-on-hover">6. Comments
+						<div class="card border-0">
+							<div class="card-header" role="tab" id="head12">
+								<a data-toggle="collapse" href="#stage12" aria-expanded="true" aria-controls="stage12" class="card-text text-left emphasize-on-hover">6. Comments
                   </a>
-                </div>
-                <div id="stage12" class="collapse" role="tabpanel" aria-labelledby="head12">
-                  <div class="card-body text-left">
-                    <ul class="list-group">
-                      <li class="list-group-item list-group-item-light"><strong>Syntax: </strong>&lt;%-- comment --%></li>
-                    </ul>             
-                  </div>
-                </div>
-              </div>  
-              <div class="card border-0">
-                <div class="card-header" role="tab" id="head13">
-                  <a data-toggle="collapse" href="#stage13" aria-expanded="true" aria-controls="stage13" class="card-text text-left emphasize-on-hover">7. Predefined Objects
+							</div>
+							<div id="stage12" class="collapse" role="tabpanel" aria-labelledby="head12">
+								<div class="card-body text-left">
+									<ul class="list-group">
+										<li class="list-group-item list-group-item-light"><strong>Syntax: </strong>&lt;%-- comment --%></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header" role="tab" id="head13">
+								<a data-toggle="collapse" href="#stage13" aria-expanded="true" aria-controls="stage13" class="card-text text-left emphasize-on-hover">7. Predefined Objects
                   </a>
-                </div>
-                <div id="stage13" class="collapse" role="tabpanel" aria-labelledby="head13">
-                  <div class="card-body text-left">
-                    <ul class="list-group small">
-                      <li class="list-group-item list-group-item">request (HTTPServletRequest)</li>
-                      <li class="list-group-item list-group-item-info">response (HTTPServletResponse)</li>
-                      <li class="list-group-item list-group-item">out (PrintWriter)</li>
-                      <li class="list-group-item list-group-item-info">session (HTTPSession)</li>
-                      <li class="list-group-item list-group-item">application (ServletContext)</li>
-                      <li class="list-group-item list-group-item-info">page (this)</li>
-                      <li class="list-group-item list-group-item">exception</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+							</div>
+							<div id="stage13" class="collapse" role="tabpanel" aria-labelledby="head13">
+								<div class="card-body text-left">
+									<ul class="list-group small">
+										<li class="list-group-item list-group-item">request (HTTPServletRequest)</li>
+										<li class="list-group-item list-group-item-info">response (HTTPServletResponse)</li>
+										<li class="list-group-item list-group-item">out (PrintWriter)</li>
+										<li class="list-group-item list-group-item-info">session (HTTPSession)</li>
+										<li class="list-group-item list-group-item">application (ServletContext)</li>
+										<li class="list-group-item list-group-item-info">page (this)</li>
+										<li class="list-group-item list-group-item">exception</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
-        <!-- The Modals -->
-        <div class="modal fade" id="lifecycle">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 class="modal-title text-monospace">Servlet Lifecycle</h3>
-                <button type="button" class="close" data-dismiss="modal">×</button>
-              </div>
-              <div class="modal-body">
-                <img class="img-fluid" src="img/lifecycle.gif">
-              </div>
-            </div>
-          </div>
-        </div>
+			<!-- The Modals -->
+			<div class="modal fade" id="lifecycle">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title text-monospace">Servlet Lifecycle</h3>
+							<button type="button" class="close" data-dismiss="modal">×</button>
+						</div>
+						<div class="modal-body">
+							<img class="img-fluid" src="img/lifecycle.gif">
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="modal fade" id="http">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 class="modal-title text-monospace">HTTP Servlet</h3>
-                <button type="button" class="close" data-dismiss="modal">×</button>
-              </div>
-              <div class="modal-body">
-                <img class="img-fluid" src="img/servlet.gif">
-              </div>
-            </div>
-          </div>
-        </div>
+			<div class="modal fade" id="http">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title text-monospace">HTTP Servlet</h3>
+							<button type="button" class="close" data-dismiss="modal">×</button>
+						</div>
+						<div class="modal-body">
+							<img class="img-fluid" src="img/servlet.gif">
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="modal fade" id="jsp">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3 class="modal-title text-monospace">JSP</h3>
-                <button type="button" class="close" data-dismiss="modal">×</button>
-              </div>
-              <div class="modal-body">
-                <img class="img-fluid" src="img/jsp.gif">
-              </div>
-            </div>
-          </div>
-        </div>
+			<div class="modal fade" id="jsp">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title text-monospace">JSP</h3>
+							<button type="button" class="close" data-dismiss="modal">×</button>
+						</div>
+						<div class="modal-body">
+							<img class="img-fluid" src="img/jsp.gif">
+						</div>
+					</div>
+				</div>
+			</div>
 
-      </div>
-    </section>
+		</div>
+	</section>
 
-    <script>
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();   
-      });
-    </script>
+	<script>
+		$(document).ready(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
 
-  </body>
+	</script>
+	<script type="text/javascript">
+		// ParticlesJS Config.
+		particlesJS("particles-js", {
+			"particles": {
+				"number": {
+					"value": 80,
+					"density": {
+						"enable": true,
+						"value_area": 700
+					}
+				},
+				"color": {
+					"value": "#000000"
+				},
+				"shape": {
+					"type": "circle",
+					"stroke": {
+						"width": 0,
+						"color": "#000000"
+					},
+					"polygon": {
+						"nb_sides": 5
+					}
+				},
+				"opacity": {
+					"value": 0.5,
+					"random": false,
+					"anim": {
+						"enable": false,
+						"speed": 1,
+						"opacity_min": 0.1,
+						"sync": false
+					}
+				},
+				"size": {
+					"value": 3,
+					"random": true,
+					"anim": {
+						"enable": false,
+						"speed": 40,
+						"size_min": 0.1,
+						"sync": false
+					}
+				},
+				"line_linked": {
+					"enable": true,
+					"distance": 150,
+					"color": "#A9A9A9",
+					"opacity": 0.4,
+					"width": 1
+				},
+				"move": {
+					"enable": true,
+					"speed": 6,
+					"direction": "none",
+					"random": false,
+					"straight": false,
+					"out_mode": "out",
+					"bounce": false,
+					"attract": {
+						"enable": false,
+						"rotateX": 600,
+						"rotateY": 1200
+					}
+				}
+			},
+			"interactivity": {
+				"detect_on": "canvas",
+				"events": {
+					"onhover": {
+						"enable": true,
+						"mode": "grab"
+					},
+					"onclick": {
+						"enable": true,
+						"mode": "push"
+					},
+					"resize": true
+				},
+				"modes": {
+					"grab": {
+						"distance": 140,
+						"line_linked": {
+							"opacity": 1
+						}
+					},
+					"bubble": {
+						"distance": 400,
+						"size": 40,
+						"duration": 2,
+						"opacity": 8,
+						"speed": 3
+					},
+					"repulse": {
+						"distance": 200,
+						"duration": 0.4
+					},
+					"push": {
+						"particles_nb": 4
+					},
+					"remove": {
+						"particles_nb": 2
+					}
+				}
+			},
+			"retina_detect": true
+		});
+
+	</script>
+
+</body>
+
 </html>

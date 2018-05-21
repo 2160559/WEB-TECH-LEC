@@ -106,6 +106,7 @@ section > div > div> div > h1:hover::after {
 }
 
 .topic-block.subtopic-grid .card img {
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
 
 }
