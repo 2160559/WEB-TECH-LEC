@@ -141,6 +141,11 @@ section > div > div> div > h1:hover::after {
   cursor: pointer;
 }
 
-.collapse > .card-body > ul{
-  margin-left: -20px;
+.collapse > .card-body.ul{
+
+}
+
+
+.collapse > .card-body > ul li{
+
 }
