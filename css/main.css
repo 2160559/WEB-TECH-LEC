@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+/*landing */
+#left{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+#center{
+    width: 70%;
+    float: left;
+    overflow: hidden;
+}
+#center *{
+    position: center;
+    margin: auto;
+    padding: auto;
+}
+#home{
+    display: none;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+#home2{
+    display: none;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+#right{
+    width: 10%;
+    height: 100%;
+    float: right;
+
+}
+
+
+/*CONTENT*/
+
+#was-content{
+display: none;
+background:#98bf21;
+width:80%;
+height: 100%;
+/*float: left;
+clear: left;*/
+position: absolute;
+top: 0;
+right: 0;
+
+}
+
+#java-content{
+display: none;
+width:80%;
+height: 100%;
+float: left;
+position:absolute;
+}
+
+/*left and right buttons*/
+img.zoom{
+    width: 60%;
+}
+.zoom {
+    transition: transform .2s;
+    display:table-cell;
+    vertical-align:middle;
+    margin: auto;
+    padding-top: 90%;
+    overflow: hidden;
+
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+/*footer*/
+img#main-logo{
+    width:20%;
+}
+
+.aboutUs{
+    text-align: center;
+    padding: 5px;
+    background-color: grey;
+}
