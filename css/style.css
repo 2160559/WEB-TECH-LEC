@@ -94,7 +94,7 @@ section > div > div> div > h1:hover::after {
   width: 100%;
   -webkit-transition: width .5s;
   transition: width .5s;
-  content: 'Click Me';
+
   font-size: 10px;
 }
 

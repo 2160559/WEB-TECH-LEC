@@ -528,6 +528,7 @@
     <!-- WAS CONTENT-->
     <div id="was-content">
       <div class="topic-block" id="was-main-content">
+  <div id="particles-js"></div>
   <section class="topic-block subtopic-grid">
     <div class="container">
       <div class="row card-group">
@@ -543,28 +544,63 @@
               </p>
               <hr>
               <div class="row">
-                <div class="col-md-4">
-                  <p>In relation to web application security, the Open Web Application Security publishes their top 10 list of Application Security Risks. Their most recent list is the Application Security Risk for 2017.</p>
-                  <h4>Top 10 Open Web Application Security Project (OWASP) 2k17</h4>
-                  <div class="justify-content-left">
-                    <ul class="list-unstyled text-left">
-                      <li> A1 - Injection</li>
-                      <li> A2 – Broken Authentication and Session Management</li>
-                      <li>A3 – 2017-Sensitive Data Exposure</li>
-                      <li>A4 – XML External Entities (XXE)</li>
-                      <li>A5 – Broken Access Control</li>
-                      <li> A6 – Security Misconfiguration</li>
-                      <li>A7 – Cross-Site Scripting (XSS)</li>
-                      <li>A8 – Insecure Deserialization</li>
-                      <li>A9 – Using Components with Known Vulnerabilities</li>
-                      <li>A10 –Insufficient Logging &amp; Monitoring</li>
-                    </ul>
+                <div class="col-md-4">                  
+                  <h2>Top 10 Open Web Application Security Project (OWASP) 2k17</h2>
+                  <div>
+                    <table class="table table-striped table-bordered" style="font-size: .85em">
+                      <tbody>
+                        <tr>
+                          <td>A1</td>
+                          <td>Injection</td>
+                        </tr>
+                        <tr>
+                          <td>A2</td>
+                          <td>Broken Authentication and Session Management</td>
+                        </tr>
+                        <tr>
+                          <td>A3</td>
+                          <td>2017-Sensitive Data Exposure</td>
+                        </tr>
+                        <tr>
+                          <td>A4</td>
+                          <td>XML External Entities (XXE)</td>
+                        </tr>
+                        <tr>
+                          <td>A5</td>
+                          <td>Broken Access Control</td>
+                        </tr>
+                        <tr>
+                          <td>A6</td>
+                          <td>Security Misconfiguration</td>
+                        </tr>
+                        <tr>
+                          <td>A7</td>
+                          <td>Cross-Site Scripting (XSS)</td>
+                        </tr>
+                        <tr>
+                          <td>A8</td>
+                          <td>Insecure Deserialization</td>
+                        </tr>
+                        <tr>
+                          <td>A9</td>
+                          <td>Using Components with Known Vulnerabilities</td>
+                        </tr>
+                        <tr>
+                          <td>A10</td>
+                          <td>Insufficient Logging &amp; Monitoring</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <img src="img/dataprin.png" class="img-fluid">
-                  <p>The Data Privacy Act was enforced in order to ensure the presence of security in web applications.</p>
-                  <p><i>The National Privacy Commission is the country’s privacy watchdog; an independent body mandated to administer and implement the Data Privacy Act of 2012, and to monitor and ensure compliance of the country with international standards set for data protection. (NPC)</i></p>
+                  <p>In relation to web application security, the Open Web Application Security publishes their top 10 list of Application Security Risks. Their most recent list is the Application Security Risk for 2017.</p>
+                  <img src="img/dataprin.png" class="img-fluid" data-toggle="modal" data-target="#dataprin">
+                  <p style="font-size: .85em;">The Data Privacy Act was enforced in order to ensure the presence of security in web applications.</p>
+                  <hr>
+                  <div>
+                    <p><i>The National Privacy Commission is the country’s privacy watchdog; an independent body mandated to administer and implement the Data Privacy Act of 2012, and to monitor and ensure compliance of the country with international standards set for data protection. (NPC)</i></p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -637,7 +673,7 @@
           <br>
           <div class="transform-on-hover card border-0">
             <div class="card-body">
-              <img src="img/brokenAuth.png" class="img-fluid">
+              <img src="img/brokenAuth.png" class="img-fluid" data-toggle="modal" data-target="#brokenAuth">
             </div>
           </div>
         </div>
@@ -753,12 +789,55 @@
           </div>
           <br>
           <div class="transform-on-hover card border-0">
-            <div class="card-body">
+            <div class="card-body" data-toggle="modal" data-target="#InsufficientLogging">
               <img src="img/InsufficientLogging.png" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Modals -->
+      <div class="modal fade" id="dataprin">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title text-monospace">Data Privacy Act of 2012</h3>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                  <img class="img-fluid" src="img/dataprin.png">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="InsufficientLogging">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title text-monospace">Insufficient Logging &amp; Monitoring</h3>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                  <img class="img-fluid" src="img/InsufficientLogging.png">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="brokenAuth">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title text-monospace">Broken Authentication</h3>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                  <img class="img-fluid" src="img/brokenAuth.png">
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   </section>
 
