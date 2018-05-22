@@ -34,7 +34,10 @@
 
 
       });
+  </script> 
 
+
+  <script> 
       $(document).ready(function(){
           $("#home-logo").click(function(){
               $("#java-content").animate({
@@ -44,7 +47,9 @@
           });
 
       });
+  </script> 
 
+    <script> 
       $(document).ready(function(){
           $("#home-logo2").click(function(){
               $("#was-content").animate({
@@ -55,7 +60,9 @@
           });
 
       });
+  </script> 
 
+  <script> 
       $(document).ready(function(){
           $("#was-logo").click(function(){
               $("#was-content").animate({
@@ -72,46 +79,38 @@
 
 <body>
     <div id="left" style="background-color:#9fcdff">
-        <img id="java-logo" src="img/java-logo.png" alt="Java" class="zoom">
+        <img id="java-logo" src="img/java-logo.png" alt="Java Logo" class="zoom">
     </div>
 
     <div id="home2">
-      <img id="home-logo2" src="img/home-page.png" alt="Home" class="zoom">
+      <img id="home-logo2" src="img/home-page.png" alt="Home Logo" class="zoom">
     </div>
 
     <div id="center" style="padding-left: 10%;padding-top: 10%">
       <img id="main-logo" src="img/main-logo.png" class="img-fluid" alt="Responsive image" style="position: auto;">
       <br><br><br><br><br><br><br>
-            <!-- ces note: to be removed & changed;
-                 logo should be center, and right below is a div saying
-                 < Java Servlets || Web Application Security >
-                 just a suggestion?
-                 i'll fix the other css twinks later
-            -->
             <div>
-                <p id="main"></p>
+                <p id="intro"></p>
             </div>
 
             <script>
-            new TypeIt('#main', {
+            new TypeIt('#intro', {
                 speed: 150,
                 deleteSpeed: 150,
                 autoStart: false
                 })
-//                .type('Wc')
-//                .pause(500)
-//                .delete(1)
-//                .type('ellcum')
-//                .pause(1000)
-//                .delete(4)
-//                .type('come ')
-//                .pause(300)
-//                .type('to <strong>WebTech 2018</strong>!')
-                .break()
+                .type('Wc')
+                .pause(500)
+                .delete(1)
+                .type('ellcum')
+                .pause(1000)
+                .delete(4)
+                .type('come ')
                 .pause(300)
-                .type('&lt; Java Servlets ')
+                .type('to <strong>WebTech 2018</strong>!')
                 .break()
-                .type('Web App Security &gt;')
+                .pause(1000)
+                .type('<a href="#" data-toggle="tooltip" title="Click the icon on the left">Java Servlets</a> | <a href="#" data-toggle="tooltip" title="Click the icon on the right">Web Application Security</a> ')
                 .destroy();
             </script>
             

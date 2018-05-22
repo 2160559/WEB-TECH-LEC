@@ -11,21 +11,14 @@ body {
     top: 40%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
+}
+
+p#landing {
     font-family: 'Mono';
     font-size: 40px;
 }
 
-#main {
-    position: fixed;
-    left: 40%;
-    top: 40%;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: left;
-    font-family: 'Mono';
-    font-size: 40px;
-}
 
 /* Right Panel */
 
