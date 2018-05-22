@@ -11,14 +11,8 @@ body {
     top: 40%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: left;
+    text-align: center;
 }
-
-p#landing {
-    font-family: 'Mono';
-    font-size: 40px;
-}
-
 
 /* Right Panel */
 
@@ -94,7 +88,6 @@ section > div > div> div > h1:hover::after {
   width: 100%;
   -webkit-transition: width .5s;
   transition: width .5s;
-
   font-size: 10px;
 }
 

@@ -4,10 +4,10 @@
   <title>Webtech 2018</title>
   
   <meta charset="utf-8">
+  <meta name="author" content="9325A-1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A website showing off our best, rich UI/UX">
-  <meta name="author" content="9325A-1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -20,7 +20,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="js/typeit.min.js"></script>
+  <script type="text/javascript" src="js/particles.js"></script>
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
 
+  </style>
   <script> 
       $(document).ready(function(){
           $("#java-logo").click(function(){
@@ -34,10 +42,7 @@
 
 
       });
-  </script> 
 
-
-  <script> 
       $(document).ready(function(){
           $("#home-logo").click(function(){
               $("#java-content").animate({
@@ -47,9 +52,7 @@
           });
 
       });
-  </script> 
 
-    <script> 
       $(document).ready(function(){
           $("#home-logo2").click(function(){
               $("#was-content").animate({
@@ -60,9 +63,7 @@
           });
 
       });
-  </script> 
 
-  <script> 
       $(document).ready(function(){
           $("#was-logo").click(function(){
               $("#was-content").animate({
@@ -70,7 +71,6 @@
               });
               $("#home2").fadeIn(1200);
               $("#java-content").fadeOut(1200);
-
           });
       });
   </script> 
@@ -78,18 +78,18 @@
 </head>
 
 <body>
-    <div id="left" style="background-color:#9fcdff">
-        <img id="java-logo" src="img/java-logo.png" alt="Java Logo" class="zoom">
+  <div id="particles-js" style="z-index: -1"></div>
+    <div id="left" style="background-color:#C4E0FF">
+        <img id="java-logo" src="img/java-logo.png" alt="Java" class="zoom">
     </div>
 
     <div id="home2">
-      <img id="home-logo2" src="img/home-page.png" alt="Home Logo" class="zoom">
+      <img id="home-logo2" src="img/home-page.png" alt="Home" class="zoom">
     </div>
 
-    <div id="center" style="padding-left: 10%;">
+     <div id="center" style="padding-left: 10%;">
         <div class="test"> 
       <img id="main-logo" src="img/main-logo.png" class="img-fluid" alt="Responsive image" style="position: auto;">
-      <br><br><br><br><br><br><br>
             <div>
                 <p id="intro"></p>
             </div>
@@ -111,19 +111,22 @@
                 .type('to <strong>WebTech 2018</strong>!')
                 .break()
                 .pause(1000)
-                .type('<a href="#" data-toggle="tooltip" title="Click the icon on the left">Java Servlets</a> | <a href="#" data-toggle="tooltip" title="Click the icon on the right">Web Application Security</a> ')
+                .type('<a href="#" style="color:black;" data-toggle="tooltip" title="Click the icon on the left">Java Servlets</a> | <a href="#" style="color:black;" data-toggle="tooltip" title="Click the icon on the right">Web Application Security</a> ')
                 .destroy();
             </script>
             
           </div>
-          <div id="aboutUs" style="background-color:grey;padding:20px;color: white;">
+          
+          <div id="aboutUs" style="color: black;">
 
-            <a href="about.html" style="color: white;float:left;">About Us</a>
-            <div style="float:right;padding-bottom:20px; ">9325A 1-2 TF Group 1<br> &copy; May 2018</div>
+            <a href="about.html" style="color: black;float:left; font-size: 20px" class="font-weight-bold">About Us</a>
+            <div style="float:right;">9325A 1-2 TF Group 1<br> &copy; May 2018</div>
           </div>
-          <div id="aboutUs" style="background-color:grey;padding:20px;color: white;">
+          <div id="aboutUs" style="color: black;">
 
         </div>
+
+    </div>
 
     </div>
     
@@ -132,8 +135,8 @@
     </div>
 
 
-    <div id="right" style="background-color:#ff6368;">
-        <img id="was-logo" src="img/was-logo.png" alt="WAS Logo" class="zoom">
+    <div id="right" style="background-color:#FFA0A3;">
+        <img id="was-logo" src="img/was-logo.png" alt="WAS Logo" class="zoom""></a>
     </div>
 
     <!--JAVA CONTENT-->
@@ -528,18 +531,18 @@
 
     <!-- WAS CONTENT-->
     <div id="was-content">
-      <div class="topic-block" id="was-main-content">
+      <div class="topic-block">
   <div id="particles-js"></div>
   <section class="topic-block subtopic-grid">
     <div class="container">
       <div class="row card-group">
         <div class="col-md-12 heading card-header" id="topic-title">
           <h1 class="font-weight-bold text-monospace text-uppercase">
-            <a data-toggle="collapse" href="#javaServlets" aria-expanded="true" aria-controls="javaServlets" id="underline-topic">
+            <a data-toggle="collapse" href="#was" aria-expanded="true" aria-controls="javaServlets" id="underline-topic">
                 Web Application Security
               </a>
           </h1>
-          <div class="collapse" id="javaServlets">
+          <div class="collapse" id="was">
             <div class="card card-body">
               <p>WAS involves the protection of web applications on the world wide web, particularly its codes which may contain vulnerabilities or risks that can be exploited for malicious purposes. Considering how almost all online services require the use of web applications, this can greatly affect the applications’ functionalities and the people using them.
               </p>
@@ -622,30 +625,35 @@
           </div>
           <div class="card border-0">
             <div class="card-header" role="tab" id="head1">
-              <a data-toggle="collapse" href="#stage1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Set Strong Passwords</a>
+              <a data-toggle="collapse" href="#auth-1" aria-expanded="true" aria-controls="stage1" class="card-text text-left emphasize-on-hover">1. Set Strong Passwords</a>
             </div>
-            <div id="stage1" class="collapse" role="tabpanel" aria-labelledby="head1">
+            <div id="auth-1" class="collapse" role="tabpanel" aria-labelledby="head1">
               <div class="card-body text-left">
                 <p>Setting strong passwords at least eight characters long with the use of special characters and uppercase letters. Temporarily deny login service if there were too many failed attempts.</p>
               </div>
+              <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <img src="img/strongPasswordThumbnail.png" class="img-fluid" data-toggle="modal" data-target="#strongpassword">
+            </div>
+          </div>
             </div>
           </div>
 
           <div class="card border-0">
             <div class="card-header" role="tab" id="head2">
-              <a data-toggle="collapse" href="#stage2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Set Session Timeouts</a>
+              <a data-toggle="collapse" href="#auth-2" aria-expanded="true" aria-controls="stage2" class="card-text text-left emphasize-on-hover">2. Set Session Timeouts</a>
             </div>
-            <div id="stage2" class="collapse" role="tabpanel" aria-labelledby="head2">
+            <div id="auth-2" class="collapse" role="tabpanel" aria-labelledby="head2">
               <div class="card-body text-left">
                 <p>Set session timeouts when there is no user activity.</p>
               </div>
             </div>
           </div>
           <div class="card border-0">
-            <div class="card-header" role="tab" id="head3">
+            <div class="card-header" role="tab" id="auth-3">
               <a data-toggle="collapse" href="#stage3" aria-expanded="true" aria-controls="stage3" class="card-text text-left emphasize-on-hover">3. Use Invalid Username/Password</a>
             </div>
-            <div id="stage3" class="collapse" role="tabpanel" aria-labelledby="head2">
+            <div id="auth-3" class="collapse" role="tabpanel" aria-labelledby="head2">
               <div class="card-body text-left">
                 <p>When a wrong credential is entered, there should be an output saying “Invalid password/username” instead of “Invalid password” or “Invalid username”.</p>
               </div>
@@ -653,9 +661,9 @@
           </div>
           <div class="card border-0">
             <div class="card-header" role="tab" id="head4">
-              <a data-toggle="collapse" href="#stage4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Encrypt Login Details</a>
+              <a data-toggle="collapse" href="#auth-4" aria-expanded="true" aria-controls="stage4" class="card-text text-left emphasize-on-hover">4. Encrypt Login Details</a>
             </div>
-            <div id="stage4" class="collapse" role="tabpanel" aria-labelledby="head4">
+            <div id="auth-4" class="collapse" role="tabpanel" aria-labelledby="head4">
               <div class="card-body text-left">
                 <p>Login details should be encrypted or hashed when placed and transmitted to the database.</p>
               </div>
@@ -663,9 +671,9 @@
           </div>
           <div class="card border-0">
             <div class="card-header" role="tab" id="head-5">
-              <a data-toggle="collapse" href="#stage5" aria-expanded="true" aria-controls="stage5" class="card-text text-left emphasize-on-hover">5. Always Logout</a>
+              <a data-toggle="collapse" href="#auth-5" aria-expanded="true" aria-controls="stage5" class="card-text text-left emphasize-on-hover">5. Always Logout</a>
             </div>
-            <div id="stage5" class="collapse" role="tabpanel" aria-labelledby="head5">
+            <div id="auth-5" class="collapse" role="tabpanel" aria-labelledby="head5">
               <div class="card-body text-left">
                 <p>When using a PC, remember to logout the account instead of just closing the web browser.</p>
               </div>
@@ -674,7 +682,7 @@
           <br>
           <div class="transform-on-hover card border-0">
             <div class="card-body">
-              <img src="img/brokenAuth.png" class="img-fluid" data-toggle="modal" data-target="#brokenAuth">
+              <img src="img/brokenAuthThumbnail.png" class="img-fluid" data-toggle="modal" data-target="#brokenAuth">
             </div>
           </div>
         </div>
@@ -731,6 +739,12 @@
               <div class="card-body text-left">
                 <p>Unapproved libraries should be removed; otherwise, if the companies will decide to take the risk of using them, then there should be restricted use.</p>
               </div>
+            </div>
+          </div>
+          <br>
+          <div class="transform-on-hover card border-0">
+            <div class="card-body">
+              <img src="img/vulnerable.gif" class="img-fluid" data-toggle="modal" data-target="#vulnerable">
             </div>
           </div>
         </div>
@@ -791,7 +805,7 @@
           <br>
           <div class="transform-on-hover card border-0">
             <div class="card-body" data-toggle="modal" data-target="#InsufficientLogging">
-              <img src="img/InsufficientLogging.png" class="img-fluid">
+              <img src="img/InsufficientLoggingThumbnail.png" class="img-fluid">
             </div>
           </div>
         </div>
@@ -839,11 +853,41 @@
               </div>
             </div>
           </div>
+          <div class="modal fade" id="vulnerable">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title text-monospace">Using Components with Known Vulnerabilities</h3>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                  <img class="img-fluid" src="img/vulnerable.gif">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="strongpassword">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title text-monospace">Use Strong Password</h3>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                  <img class="img-fluid" src="img/strongPassword.png">
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   </section>
-
 </div>
+<script type="text/javascript">
+  // ParticlesJS Config.
+  particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 700 } }, "color": { "value": "#000000" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#A9A9A9", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true
+  });
 
+</script>
 
     </div>
 </body>
